@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="安州区人民政府门户网站,安州区政府,安州" />
+    <meta name="description" content="安州区人民政府门户网站 安州区  安州政府" />
+    <meta name="application-name" content="安州区人民政府门户网站" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true" />
+
+    <title>回应关切_公众参与_安州区人民政府门户网站</title>
+
+    <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+
+    <link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
+
+
+    <link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
+    <script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
+    <script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
+    <!--     <script src="/Content/_Common/Base/js/antiClickjack.js"></script> -->
+    <script src="/Content/_Common/Base/js/webCommon.js"></script>
+    <script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
+    <script src="/Content/_Common/Base/js/StoT.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+
+
+    <div class="topBar">
+        <ul class="list">
+            <li class="en"><a href="/english">English</a></li>
+            <li class="phone">
+                <a href="javascript:;">手机版</a>
+                <div class="pic">
+                    <img src="/qrcode/qrcode.gif">
+                    <i></i>
+                </div>
+            </li>
+
+            <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
+
+
+            <li class="wechat">
+                <a href="javascript:;">政务微信</a>
+                <div class="pic">
+                    <img src='/Content/Main/Base/img/weixin.png' />
+                    <i></i>
+                </div>
+            </li>
+            <li class="robot"><a href="/znjqr">智能机器人</a></li>
+        </ul>
+        <span class="topBarBg"></span>
+    </div>
+    <script>
+        $(".topBar li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script>
+
+    <!-- header S -->
+    <header id="header">
+        <div class="headerTop siteWidth">
+
+            <h1 title="安州区人民政府门户网站" id="logo"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
+
+            <div class="siteSearchBar">
+
+
+                <div class="s-form">
+                    <input type="hidden" id="sitelist" value="[{&quot;Name&quot;:&quot;全站群&quot;,&quot;Value&quot;:0},{&quot;Name&quot;:&quot;本站&quot;,&quot;Value&quot;:1},{&quot;Name&quot;:&quot;审计局&quot;,&quot;Value&quot;:2},{&quot;Name&quot;:&quot;农业局&quot;,&quot;Value&quot;:18}]" />
+                    <input type="hidden" id="siteid" name="sid" value="0">
+                    <div class="select-box">
+                        <a id="sOptionBtn" class="s-option" href="javascript:void(0)">全站群</a>
+                        <i class="arrow-dn"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="from-control" id="inputkeyword" placeholder="请输入关键词" spellcheck="false">
+                    </div>
+                    <div class="btn-box">
+                        <input type="submit" id="search" class="btn" onclick="gSearch();" value="搜 索">
+                        <input type="hidden" id="route" value="s" />
+                    </div>
+                </div>
+                <div class="hotWords">
+                    热门搜索：<a target="_blank" href="/s?st=1&wd=环保">环保</a><a target="_blank" href="/s?st=1&wd=生育">生育</a><a target="_blank" href="/s?st=1&wd=农业">农业</a><a target="_blank" href="/s?st=1&wd=医疗">医疗</a><a target="_blank" href="/s?st=1&wd=就业">就业</a>
+                </div>
+
+                <script src="/Content/_Common/FullTextSearch/js/default-site-search-box.js"></script>
+                <script>
+                    document.getElementById("inputkeyword").onkeydown = function (e) {
+                        e = e || window.event;
+                        if (e.keyCode == 13) {
+                            gSearch();
+                        }
+                    };
+
+                    function gSearch() {
+                        var keyword = document.getElementById('inputkeyword').value;
+                        var route = document.getElementById('route').value;
+
+                        if (keyword == '' || keyword == "请输入关键字") {
+                            alert("请输入关键字");
+                        } else {
+                            var siteid = document.getElementById('siteid').value;
+                            window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
+                        }
+                    }
+                </script>
+            </div>
+
+            <nav class="topNav clearfix">
+                <span class="menuBtn"></span>
+
+
+                <ul id="mainNav" class="mainNav">
+                    <li class="li1 first1" id="li-home">
+                        <h3 class="h1">
+                            <a class="a1" href='/'>首页</a>
+                        </h3>
+                    </li>
+
+                    <li class="li1 hasUl1" id="li-xw">
+                        <h3 class="h1">
+                            <a class="a1" href="/xw">政务动态</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-zw">
+                        <h3 class="h1">
+                            <a class="a1" href="/zw">政务公开</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-fw">
+                        <h3 class="h1">
+                            <a class="a1" href="/fw">政务服务</a></h3>
+                    </li>
+                    <li class="li1 hasUl1 on1" id="li-hd">
+                        <h3 class="h1">
+                            <a class="a1" href="/hd">公众参与</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-sq">
+                        <h3 class="h1">
+                            <a class="a1" href="/sq">走进安州</a></h3>
+                    </li>
+                </ul>
+
+                <script type="text/javascript">
+                    (function () {
+                        var navST;
+                        var navST1;
+                        var name = 'mainNav';
+                        var t = 200;
+                        var type = 1;
+                        var removeOn = 'False';
+                        var effect = 'fade';
+                        var appendItem = '#';
+                        var li = "#" + name + " li";
+                        var index = 0;
+
+                        if (!$("#" + name + " .li1").hasClass("on1")) {
+                            $("#" + name + " .li1").first().addClass("on1");
+                        } //默认第一个加.on1类
+                        index = $("#" + name + " .li1").index($("#" + name + " .on1"));
+
+                        //鼠标离开导航后，回复默认.on1类位置
+                        $("#" + name)
+                            .hover(
+                                function () {
+                                    if (navST1 != null) {
+                                        clearTimeout(navST1);
+                                    }
+                                },
+                                function () {
+                                    navST1 = setTimeout(function () {
+                                            $("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
+                                        },
+                                        500);
+                                }
+                            );
+
+                        if (type == '1') {
+                            li = "#" + name + " .li1";
+                        }
+                        if (appendItem != '#') { //插入内容
+                            var appendHtml = $(appendItem).html();
+                            $(li).first().append(appendHtml);
+                            $(appendItem).remove();
+                        }
+
+                        if (type == '3') {
+                            $("#" + name + " .on1").find("ul").first().show();
+                        }
+
+                        $(li)
+                            .hover(function () {
+                                    var curItem = $(this);
+                                    var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+                                    $(li).removeClass("on" + onNum);
+                                    curItem.addClass("on" + onNum);
+                                    navST = setTimeout(function () { //延时触发
+
+                                            if ($("ul:first", curItem).css("display") != "block") {
+                                                $(li + " .ul" + onNum).hide();
+                                                if (effect == 'fade') {
+                                                    $("ul:first", curItem).fadeIn(t);
+                                                } else {
+                                                    $("ul:first", curItem).slideDown(t);
+                                                }
+                                            };
+                                            navST = null;
+                                        },
+                                        t);
+                                },
+                                function () {
+                                    if (navST != null) {
+                                        clearTimeout(navST);
+                                    }
+                                    if (type == '1' || type == '2') {
+                                        if (effect == 'fade') {
+                                            $(this).find("ul").first().fadeOut(t);
+                                        } else {
+                                            $(this).find("ul").first().slideUp(t);
+                                        }
+                                    }
+                                    if (removeOn == 'True') {
+                                        $(this).removeClass("on1");
+                                    }
+                                },
+                                t); //end hover
+                    })()
+                </script>
+
+            </nav>
+            <script>
+                $(".topNav .h1").prepend("<i></i>")
+            </script>
+        </div>
+    </header>
+    <!-- header E -->
+
+
+    <!-- content S -->
+    <div id="content">
+        <div class="path">
+            <em>您的位置：</em><a href="/">首页</a>
+            &gt;<a href="/hd">公众参与</a>&gt;<a href="/hd/yqhy">回应关切</a></div>
+        <!-- side S -->
+        <aside class="side">
+
+
+            <div id="sideMenu" class="sideMenu">
+                <div class="hd">
+                    <h3>互动</h3>
+                </div>
+                <div class="bd">
+                    <ul class="singleList">
+                        <li><a href="/onlineinterview/">在线访谈</a></li>
+                        <li><a href="/hd/ygzw">阳光政务</a></li>
+                        <li><a href="http://anxian.my.gov.cn/" target="_blank">书记、区长信箱</a></li>
+                        <li><a href="http://anxian.my.gov.cn:82/" target="_blank">举报投诉</a></li>
+                        <li><a href="/hd/rdjyhzxta">人大政协建议提案</a></li>
+                        <li class="on"><a href="/hd/yqhy">回应关切</a></li>
+                        <li><a href="/hd/yjzj">意见征集</a></li>
+                        <li><a href="/survey/list">网上调查</a></li>
+                        <li><a href="/hd/ywzsk">智能互动</a></li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                if (jQuery("#sideMenu .bd li").size() === 0) {
+                    jQuery("#sideMenu").hide();
+                }
+            </script>
+        </aside>
+        <!-- side E -->
+        <!-- mainContent S -->
+        <div class="mainContent">
+            <div class="mainBox">
+                <div class="mHd">
+                    <h3>回应关切</h3>
+                </div>
+                <div class="mBd">
+                    <!-- 正文内容 S -->
+                    <ul class="newsList">
+
+
+
+                        <li class="first">
+                            <span class="date">2017-07-13</span>
+                            <a href="/hd/yqhy/content_105607" target="_blank" title="标题：省卫计委发布今年上半年全省报告突发公共卫生事件情况
+点击数：122
+发表时间：2017-07-13">
+                                省卫计委发布今年上半年全省报告突发公共卫生事件情况
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-07-13</span>
+                            <a href="/hd/yqhy/content_105606" target="_blank" title="标题：网传在川本一批招生高校投档线 省教育考试院辟谣：假的！
+点击数：179
+发表时间：2017-07-13">
+                                网传在川本一批招生高校投档线 省教育考试院辟谣：假的！
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-06-22</span>
+                            <a href="/hd/yqhy/content_97943" target="_blank" title="标题：安州沱三桥下穿隧道塌方是谣言 目前正在抓紧抢修
+点击数：107
+发表时间：2017-06-22">
+                                安州沱三桥下穿隧道塌方是谣言 目前正在抓紧抢修
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-05-17</span>
+                            <a href="/hd/yqhy/content_97940" target="_blank" title="标题：安州区公安局关于“5&#183;16”警情的通报
+点击数：126
+发表时间：2017-05-17">
+                                安州区公安局关于“5·16”警情的通报
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-04-10</span>
+                            <a href="/hd/yqhy/content_97941" target="_blank" title="标题：安州区公安局发布“4.8”大梯步警情通报
+点击数：32
+发表时间：2017-04-10">
+                                安州区公安局发布“4.8”大梯步警情通报
+                            </a>
+                        </li>
+
+                        <li class="split"></li>
+
+
+
+                        <li>
+                            <span class="date">2017-04-07</span>
+                            <a href="/hd/yqhy/content_97938" target="_blank" title="标题：安州区委书记：决不回避安州区太伏中学生死亡 事件暴露的问题
+点击数：39
+发表时间：2017-04-07">
+                                安州区委书记：决不回避安州区太伏中学生死亡 事件暴露的问题
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-04-05</span>
+                            <a href="/hd/yqhy/content_97939" target="_blank" title="标题：安州区公安局发布安州区太伏中学一学生死亡事件的情况通报
+点击数：35
+发表时间：2017-04-05">
+                                安州区公安局发布安州区太伏中学一学生死亡事件的情况通报
+                            </a>
+                        </li>
+
+
+
+
+                        <li class="last">
+                            <span class="date">2017-03-06</span>
+                            <a href="/hd/yqhy/content_97942" target="_blank" title="标题：安州区公安局关于摩尔在建工地发生火灾的情况通报
+点击数：22
+发表时间：2017-03-06">
+                                安州区公安局关于摩尔在建工地发生火灾的情况通报
+                            </a>
+                        </li>
+
+
+                    </ul>
+                    <div class="page">
+
+                        <a class="first" href="/hd/yqhy_1">首页</a>
+                        <a class="prev" href="/hd/yqhy_1">上一页</a>
+                        <a class='current'>1</a>         <a class="next" href="/hd/yqhy_1">下一页</a>
+                        <a class="last" href="/hd/yqhy_1">尾页</a>
+                        <span class="total">共8条信息/共1页</span>
+                        <span class="select">转到第<select id='Jumppage' onchange="if(this.options[this.selectedIndex].value!=''){location=this.options[this.selectedIndex].value;}"><option value='/hd/yqhy_1' selected>1</option></select>页</span>
+                    </div>
+                    <!-- 正文内容 E -->
+                </div>
+            </div>
+        </div>
+        <!-- mainContent E -->
+    </div>
+    <!-- content E -->
+
+    <!-- footer S -->
+    <footer id="footer">
+        <div class="siteWidth">
+            <div class="footNav">
+
+
+
+                <a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
+                <a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
+                <a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
+                <a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
+                <a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
+                <a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
+
+            </div>
+            <div class="copyRight"><p>
+                安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br/>地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br/>蜀ICP备12001441号<br/> &nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1"/>川公网安备 51070302110201号</a>
+            </p>
+                <div class="pics">
+                    <a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg"/></a> &nbsp;&nbsp;<script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg"/></a> &nbsp;&nbsp;<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png"/></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer E -->
+
+    <!-- 侧栏固定菜单 -->
+    <ul class="sideFixed" style="display:none">
+        <li class="wza"><a target="blank" target="_blank" href="/wca.html" title="无障碍版"></a></li>
+        <li class="jqr"><a target="blank" href='/znjqr' title="智能机器人"></a></li>
+        <li class="sj">
+            <a href="javascript:void(0);" title="手机版"></a>
+            <div class="pic">
+                <img src="/qrcode/qrcode.gif" />
+                <i></i>
+            </div>
+        </li>
+        <li class="wb"><a target="blank" href='http://weibo.com/luzhouzhengwu' title="政务微博"></a></li>
+        <li class="wx">
+            <a href="javascript:void(0);" title="政务微信"></a>
+            <div class="pic">
+                <img src='/Content/Main/Base/img/weixin.png' />
+                <i></i>
+            </div>
+        </li>
+        <li class="db"><a href="#" title="返回顶部"></a></li>
+    </ul>
+    <script>
+        $(".sideFixed li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script></div>
+<script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
+<script src="/Content/_Common/Base/js/power.js"></script>
+
+
+
+</body>
+</html>

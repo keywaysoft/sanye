@@ -1,0 +1,832 @@
+@charset "utf-8";
+/* 服务-首页 ----------------------------------- */
+.row{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#service-rowA .mainContent{
+    width: 888px;
+    float: left;
+}
+#service-rowA .side{
+    width: 260px;
+    float: right;
+}
+.fwTab{
+    overflow:hidden;
+    height:322px;
+}
+.fwTab .fHd{
+    width:220px;
+    float:left;
+    padding-right:20px;
+}
+.fwTab .fHd a{
+    display:block;
+    height:79px;
+    line-height:79px;
+    border-bottom:1px solid #eee;
+    background:#F8F8F8;
+    padding-left:96px;
+    font-size:18px;
+    position:relative;
+}
+.fwTab .fHd a:hover{
+    text-decoration:none;
+    color:#333
+}
+.fwTab .fHd .on a{
+    background:#F6AB4E;
+    color:#fff;
+}
+.fwTab .fHd .on s{
+    position:absolute;
+    right:-14px;
+    top:50%;
+    margin-top:-7px;
+    border-color:transparent;
+    border-style:dashed;
+    border-width:7px;
+    border-left-color:#F6AB4E;
+    border-left-style:solid;
+    content:"";
+    display:block;
+    font-size:0;
+    line-height:0;
+    width:0;
+}
+.fwTab .fHd i{
+    display:block;
+    width:60px;
+    height:60px;
+    position:absolute;
+    left: 21px;
+    top: 9px;
+    background: url(../img/fw-icons1.png) center -17px no-repeat;
+}
+.fwTab .fHd .on i{
+    background-position:center -117px;
+}
+.fwTab .fBd{
+    overflow:hidden;
+    zoom:1;
+}
+
+.fwTab .fHd .li2 i{
+    background-position:center -217px
+}
+.fwTab .fHd .li3 i{
+    background-position:center -417px
+}
+.fwTab .fHd .li4 i{
+    background-position:center -617px
+}
+.fwTab .fHd .li2.on i{
+    background-position:center -317px;
+}
+.fwTab .fHd .li3.on i{
+    background-position:center -517px;
+}
+.fwTab .fHd .li4.on i{
+    background-position:center -717px;
+}
+.grbsList li{
+    margin:0 20px 16px 0
+}
+.fwTab .grbsList a{
+    width:145px;
+    padding:0 0 10px 0;
+}
+.fwTab .grbsList a i{
+    margin:8px 0;
+}
+.fwTab .fwsxIcons a:hover{
+    background:#f5f2df;
+    color:#B9B286;
+    border-color:#e4e0c9
+}
+#spsx .grbsList li{
+    margin: 0 20px 13px 0;
+}
+#spsx .grbsList a i{
+    margin: 0;
+}
+#spsx .bmbsList li{
+    width:25%;
+}
+#spsx .bmbsList{
+    height:270px;
+}
+/* bjBox */
+.bjBox .hd{
+    height: 50px;
+    border-bottom: 0px solid #eee;
+    position: relative;
+    text-align: left;
+    margin-bottom: -6px;
+}
+.bjBox .hd h3{
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    font-size:18px;
+    font-weight:bold;
+    color:#3269B8;
+    background: url(../img/fw-icons.png) 17px -98px no-repeat #fff;
+    padding:0 20px 0 50px;
+    height:44px;
+    line-height:44px;
+    position:relative;
+}
+.bjBox .bd{
+    padding:0 0 10px 0;
+    overflow:hidden;
+}
+/* bjTable */
+.tableSlide{
+    height:196px;
+    overflow:hidden;
+    position:relative;
+}
+.bjTable{
+    width:648px;
+    margin-top: -18px;
+}
+.bjTable th{
+    border:1px solid #eee;
+    padding:5px;
+    text-align:center;
+}
+.bjTable td{
+    border:0px solid #eee;
+    padding:10px 5px;
+    text-align:center;
+}
+.bjTable td.name{
+    text-align:left;
+    padding-left:20px;
+}
+
+.bjTable th{
+    background:#F7F8F9;
+    font-weight:bold;
+    color:#3269B8;
+    border-top:2px solid #3069B8;
+}
+.bjTable .num{
+    width:250px;
+}
+.bjTable .dept{
+    width:200px;
+}
+.bjTable .state{
+    width:100px;
+}
+#bjtj{
+    border:1px solid #eee;
+    padding:10px 12px;
+    margin-top:12px;
+}
+.bjcxTable{
+    width:100%;
+    font-size:12px;
+}
+.bjcxTable td{
+    padding:5px 0;
+}
+.bjcxTable .label{
+    width:85px;
+    text-align:right;
+}
+.bjcxTable input{
+    width:130px;
+    padding:5px;
+    height:22px;
+    line-height:22px;
+    border:1px solid #eee;
+}
+.bjcxTable .submitBtn{
+    height:36px;
+    border:0;
+    background:#3269B8;
+    color:#fff;
+    font-size:14px;
+    width:100px;
+}
+/* 重点服务图标组 */
+.zdfwIcons i{
+    background:url(../img/zdfw-icons.png) center -22px no-repeat;
+}
+.zdfwIcons a:hover i,
+.zdfwIcons .on a i{
+    background-position:center -122px;
+}
+.zdfwIcons .li2 i{
+    background-position:center -222px;
+}
+.zdfwIcons .li3 i{
+    background-position:center -422px;
+}
+.zdfwIcons .li4 i{
+    background-position:center -622px;
+}
+.zdfwIcons .li5 i{
+    background-position:center -822px;
+}
+.zdfwIcons .li6 i{
+    background-position:center -1022px;
+}
+.zdfwIcons .li7 i{
+    background-position:center -1222px;
+}
+.zdfwIcons .li8 i{
+    background-position:center -1422px;
+}
+.zdfwIcons .li9 i{
+    background-position:center -1622px;
+}
+.zdfwIcons .li10 i{
+    background-position:center -1822px;
+}
+.zdfwIcons .li2 a:hover i,
+.zdfwIcons .li2.on a i{
+    background-position:center -322px;
+}
+.zdfwIcons .li3 a:hover i,
+.zdfwIcons .li3.on a i{
+    background-position:center -522px;
+}
+.zdfwIcons .li4 a:hover i,
+.zdfwIcons .li4.on a i{
+    background-position:center -722px;
+}
+.zdfwIcons .li5 a:hover i,
+.zdfwIcons .li5.on a i{
+    background-position:center -922px;
+}
+.zdfwIcons .li6 a:hover i,
+.zdfwIcons .li6.on a i{
+    background-position:center -1122px;
+}
+.zdfwIcons .li7 a:hover i,
+.zdfwIcons .li7.on a i{
+    background-position:center -1322px;
+}
+.zdfwIcons .li8 a:hover i,
+.zdfwIcons .li8.on a i{
+    background-position:center -1522px;
+}
+.zdfwIcons .li9 a:hover i,
+.zdfwIcons .li9.on a i{
+    background-position:center -1722px;
+}
+.zdfwIcons .li10 a:hover i,
+.zdfwIcons .li10.on a i{
+    background-position:center -1922px;
+}
+/* 数据开放图标组 */
+.sjkfIcons i{
+    background:url(../img/sjkf-icons.png) center -22px no-repeat;
+}
+.sjkfIcons a:hover i{
+    background-position:center -122px;
+}
+.sjkfIcons .li2 i{
+    background-position:center -222px;
+}
+.sjkfIcons .li3 i{
+    background-position:center -422px;
+}
+.sjkfIcons .li4 i{
+    background-position:center -622px;
+}
+.sjkfIcons .li5 i{
+    background-position:center -822px;
+}
+.sjkfIcons .li6 i{
+    background-position:center -1022px;
+}
+.sjkfIcons .li7 i{
+    background-position:center -1222px;
+}
+.sjkfIcons .li8 i{
+    background-position:center -1422px;
+}
+.sjkfIcons .li2 a:hover i{
+    background-position:center -322px;
+}
+.sjkfIcons .li3 a:hover i{
+    background-position:center -522px;
+}
+.sjkfIcons .li4 a:hover i{
+    background-position:center -722px;
+}
+.sjkfIcons .li5 a:hover i{
+    background-position:center -922px;
+}
+.sjkfIcons .li6 a:hover i{
+    background-position:center -1122px;
+}
+.sjkfIcons .li7 a:hover i{
+    background-position:center -1322px;
+}
+.sjkfIcons .li8 a:hover i{
+    background-position:center -1522px;
+}
+/* 查询中心 */
+.cxzx{
+    overflow:hidden;
+    height:97px;
+    background:#F8F8F8;
+    -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
+}
+.cxzx dt{
+    float:left;
+    width:16px;
+    padding:10px 12px;
+    height:77px;
+    background:#3269B8;
+    line-height:18px;
+    color:#fff;
+}
+.cxzx dt a{
+    color:#fff
+}
+.cxzx dd{
+    overflow:hidden;
+    padding:17px 0 0 15px;
+    height:68px;
+}
+.cxzx li{
+    float:left;
+    margin-right:20px;
+    height:34px;
+    line-height:34px;
+    word-break:keep-all; white-space:nowrap
+}
+/* 服务-父列表页 ----------------------------------- */
+.fwsxList{
+    margin-bottom:20px;
+    border:1px solid #eee;
+    padding:10px 0;
+    position:relative;
+    overflow:visible;
+}
+.fwsxList i{
+    background-image:url(../img/ind-service-fwsx.png);
+}
+.fwsxList .on{
+    background:#F5AA4E !important;
+    border-right:0;
+    width: 135px;
+    margin: -11px 0 -11px -1px !important;
+    height: 98px;
+    position:relative;
+}
+.fwsxList .on a{
+    color:#fff;
+}
+.fwsxList .on s{
+    border-color:transparent;
+    border-style:dashed;
+    border-width:8px;
+    border-top-color:#F5AA4E;
+    border-top-style:solid;
+    content:"";
+    display:block;
+    font-size:0;
+    line-height:0;
+    width:0;
+    position:absolute;
+    left:50%;
+    margin-left:-8px;
+    bottom:-16px;
+}
+.fwsxList li:hover{
+    margin: -11px 0 -11px 0;
+    height: 98px;
+    background: #fdb762;
+}
+.fwsxList li:hover i{
+    margin:10px 0 0 0;
+}
+.fwsxList a:hover{
+    color:#fff;
+}
+.fwsxList .on i{
+    margin:10px 0 0 0;
+}
+.fwLoop{
+    width:570px;
+    float:left;
+}
+.fwLoop .infoList{
+    overflow:hidden;
+    margin-right:-20px;
+}
+.fwLoop .infoList li{
+    width: 260px;
+    margin-right:20px;
+    float:left;
+}
+.fwLoop .boxB .hd h3{
+    border-color:#F5AA4C;
+    font-size:16px;
+}
+.fwLoop .boxB .hd h3 a{
+    color:#F5AA4C;
+}
+.sideRight{
+    width:270px;
+    float:right;
+    padding:10px 15px;
+    background:#F4F6FA
+}
+.sideRight .news-sideBox h3{
+    font-size:16px;
+    padding-left: 25px;
+    background: url(../img/fw-icons.png) 0 -277px no-repeat;
+}
+#cjwt h3{
+    background-position: 0 -362px;
+}
+#hdjl h3{
+    background-position: 0 -459px;
+}
+/* 审批事项-列表页 ----------------------------------- */
+/* 部门办事侧栏 */
+.sideType2{
+    width:259px;
+}
+.sideType2 .singleList{
+    overflow:hidden;
+    padding-left:1px;
+}
+.sideType2 .sideMenu .singleList li{
+    float:left;
+    width: 128px;
+    margin-left:-1px;
+    font-size:14px;
+}
+.sideType2 .sideMenu .singleList a{
+    padding:8px 0;
+    background-image:none
+}
+.sideType2 .sideMenu .singleList .lz-ScGsc-Org-2008-46,
+.sideType2 .sideMenu .singleList .lz-ScGsc-Org-2008-47 {
+    width:257px;
+}
+
+.approveList dd {
+    border-bottom: 1px dashed #d0d0d0;
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.approveList .title {
+    float: left;
+    width: 67%;
+}
+.approveList h1 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-left: 25px;
+}
+.approveList img{
+    vertical-align:middle;
+    margin-left:5px;
+}
+.approveList h2 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #888888;
+    margin-left: 25px;
+}
+.approveList .yu {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/icons.png) 0 -40px no-repeat;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.approveList .ja {
+    float: left;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 3px 0 0 0;
+    background: url(../img/icons.png) no-repeat;
+}
+.approveList .jian{
+    background-position:0 -20px;
+}
+.approveList .level{
+    margin-left: 25px;
+}
+.approveList .level .title {
+    margin-top: 15px;
+    float: left;
+    width: 68%;
+    line-height: 24px;
+}
+
+.approveList .level3 .title h1{
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 26px;
+}
+.approveList .level2 .title h1 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 26px;
+}
+.approveList .btns {
+    float: right;
+}
+.approveList .btns ul {
+    list-style: none;
+    float: right;
+    padding: 0;
+}
+.approveList .btns ul li {
+    margin-left: 10px;
+    float: left;
+}
+.approveList .btns ul a {
+    width: 60px;
+    height: 28px;
+    display: block;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    background: #7EADE1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.approveList .btns ul a:hover {
+    background: #3269B8;
+    text-decoration: none
+}
+
+/* 审批事项-内容页 ----------------------------------- */
+.approveDetail{
+    padding:0 20px;
+    position:relative;
+}
+.approveDetail .title{
+    text-align:center;
+    font-size:30px;
+    color:#3069B8;
+    margin-bottom:20px;
+}
+.approveDetail .detail{
+    margin-bottom:20px;
+}
+.approveDetail .detail td{
+    border:1px solid #E1EBF4;
+    padding:5px 10px;
+}
+.approveDetail .detail .label{
+    width:10%;
+    background:#F2F7FC;
+    text-align:right;
+}
+.approveDetail .btns{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:0;
+}
+.approveDetail .btns li{
+    margin: 0 60px;
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    height:40px;
+    text-align:left;
+    line-height:40px;
+    color:#fff;
+    font-size:16px;
+}
+.approveDetail .btns a{
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    width:58px;
+    color:#fff;
+    padding-left:50px;
+    background:url(../img/icons.png) 25px -72px #00508F no-repeat;
+    -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
+}
+.approveDetail .btns .li2 a{
+    background-position:25px -136px
+}
+.approveDetail .btns .li3 a{
+    background-position:24px -328px
+}
+.approveDetail .btns .li4 a{
+    background-position:25px -188px
+}
+.approveDetail .btns a:hover{
+    background-color:#045ea5;
+    text-decoration:none;
+}
+.approveDetail .detailSlide .hd{
+    height:44px;
+    line-height:44px;
+    background:#F2F7FC;
+    overflow:hidden;
+    padding:0 20px;
+}
+.approveDetail .detailSlide .hd li{
+    float:left;
+    font-size:16px;
+    padding:0 40px;
+    color:#3069B8;
+    cursor:pointer;
+}
+.approveDetail .detailSlide .hd .on{
+    border:1px solid #E1EBF4;
+    background:#fff;
+    border-top:3px solid #3069B8;
+    line-height:40px;
+    height:45px;
+}
+.approveDetail .detailSlide .bd{
+    padding:20px;
+}
+.yjclTable td,
+.yjclTable th{
+    border:1px solid #ddd;
+    text-align:center;
+    padding:5px;
+}
+.yjclTable th{
+    background:#f2f2f2;
+    padding:10px 5px;
+    font-weight:bold;
+}
+.yjclTable img{
+    vertical-align:middle;
+}
+.yjclTable .name{
+    text-align:left;
+}
+.yjclTable a{
+    color:#3069B8
+}
+.yjclTable .yj{
+    width:50%
+}
+/* popBox */
+.popBox{
+    display:none;
+    width:50%;
+    position:absolute;
+    top:30%;
+    left:25%;
+    background:#fff;
+    border:1px solid #ccc;
+    -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
+    -webkit-box-shadow:0px 0 10px rgba(0, 0, 0, .3);  -moz-box-shadow:0px 0 10px rgba(0, 0, 0, .3);  box-shadow:0px 0 10px rgba(0, 0, 0, .3);
+}
+.popBox .hd{
+    border-bottom:1px solid #ccc;
+    overflow:hidden;
+    padding: 10px 10px 10px 20px;
+}
+.popBox .hd h3{
+    font-weight:bold;
+}
+.popBox .hd .close{
+    float:right;
+    width: 28px;
+    height: 28px;
+    display:block;
+    background: url(../img/icons.png) 8px -258px no-repeat;
+    cursor:pointer;
+}
+.popBox .bd{
+    padding:20px;
+    height:200px;
+    overflow-y:scroll;
+}
+.downTable td,
+.downTable th{
+    border:1px solid #D8E0E6;
+    padding:5px;
+    text-align:center;
+    font-size:12px;
+}
+.downTable th{
+    background:#F2F7FC;
+    font-weight:bold;
+}
+.downTable a{
+    color:#3069B8;
+}
+
+/* 婚育收养 ----------------------------------- */
+#hysy-Bszn .infoList{
+    overflow:hidden
+}
+#hysy-Bszn .infoList li{
+    float:left;
+    width: 430px;
+}
+#hysy-Dffw .infoList{
+    overflow:hidden
+}
+#hysy-Dffw .infoList li{
+    float:left;
+    width: 32%;
+    margin-bottom:5px;
+}
+/* 信用信息查询平台 */
+.xxcxpt .list{
+    overflow:hidden;
+    padding:20px 0;
+}
+.xxcxpt .list li{
+    width:500px;
+    float:left;
+    _display:inline;
+    overflow:hidden;
+    margin:35px 42px 0 42px;
+}
+.xxcxpt .list a{
+    display:block;
+    height:55px;
+    line-height:55px;
+    background:#F4F4F4;
+    border:1px dotted #ccc;
+    position:relative;
+    font-size:18px;
+    font-weight:bold;
+    color:#0573C8;
+    -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
+    -webkit-transition:400ms;-o-transition:400ms;-moz-transition:400ms;transition:400ms;
+}
+.xxcxpt .list i{
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    vertical-align:middle;
+    width:18px;
+    height:18px;
+    background:#fff;
+    margin:0 20px 0 30px;
+    border:1px solid #ddd;
+    -webkit-border-radius:18px; -moz-border-radius:18px; border-radius:18px;
+}
+.xxcxpt .list a:hover{
+    background:#0573C8;
+    color:#fff;
+    text-decoration:none;
+    border:1px solid #0573C8
+}
+
+
+/*统计效果*/
+.xxtj .news_list ul li {
+    clear:both; line-height:40px;
+    border-bottom: 1px #e4e4e2 solid;
+    height: 55px;
+    background: url(/Content/Main/Base/img/icon_bsdt_tjxx.png) no-repeat;
+    padding-left: 20px;
+}
+.xxtj .news_list ul li a {
+    font-size: 14px;
+    line-height: 70px;
+}
+.xxtj .news_list ul li span font {
+    font-size: 40px;
+    font-weight: 700;
+}
+.xxtj .news_list ul li span { line-height:40px;
+    margin-top: 12px;
+}
+.xxtj .news_list ul li.gre {
+    background-position: 0 -0px;
+}
+.xxtj .news_list ul li.gre span font {
+    color: #97cd28;
+}
+.xxtj .news_list ul li.yel {
+    background-position: 0 -55px;
+}
+.xxtj .news_list ul li.yel span font {
+    color: #fccd43;
+}
+.xxtj .news_list ul li.ora span font {
+    color: #fd6b0f;
+}
+.xxtj .news_list ul li.ora {
+    background-position: 0 -110px;
+}
+.news_list span {
+    float: right;
+    color: #bebebe;
+}

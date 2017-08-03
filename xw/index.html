@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="安州区人民政府门户网站,安州区政府,安州" />
+    <meta name="description" content="安州区人民政府门户网站 安州区  安州政府" />
+    <meta name="application-name" content="安州区人民政府门户网站" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true" />
+
+    <title>政务动态_安州区人民政府门户网站</title>
+
+    <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+
+    <link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
+
+
+    <link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
+    <script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
+    <script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
+    <!--     <script src="/Content/_Common/Base/js/antiClickjack.js"></script> -->
+    <script src="/Content/_Common/Base/js/webCommon.js"></script>
+    <script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
+    <script src="/Content/_Common/Base/js/StoT.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+
+
+    <div class="topBar">
+        <ul class="list">
+            <li class="en"><a href="/english">English</a></li>
+            <li class="phone">
+                <a href="javascript:;">手机版</a>
+                <div class="pic">
+                    <img src="/qrcode/qrcode.gif">
+                    <i></i>
+                </div>
+            </li>
+
+            <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
+
+
+            <li class="wechat">
+                <a href="javascript:;">政务微信</a>
+                <div class="pic">
+                    <img src='/Content/Main/Base/img/weixin.png' />
+                    <i></i>
+                </div>
+            </li>
+            <li class="robot"><a href="/znjqr">智能机器人</a></li>
+        </ul>
+        <span class="topBarBg"></span>
+    </div>
+    <script>
+        $(".topBar li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script>
+
+    <!-- header S -->
+    <header id="header">
+        <div class="headerTop siteWidth">
+
+            <h1 title="安州区人民政府门户网站" id="logo"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
+
+            <div class="siteSearchBar">
+
+
+                <div class="s-form">
+                    <input type="hidden" id="sitelist" value="[{&quot;Name&quot;:&quot;全站群&quot;,&quot;Value&quot;:0},{&quot;Name&quot;:&quot;本站&quot;,&quot;Value&quot;:1},{&quot;Name&quot;:&quot;审计局&quot;,&quot;Value&quot;:2},{&quot;Name&quot;:&quot;农业局&quot;,&quot;Value&quot;:18}]" />
+                    <input type="hidden" id="siteid" name="sid" value="0">
+                    <div class="select-box">
+                        <a id="sOptionBtn" class="s-option" href="javascript:void(0)">全站群</a>
+                        <i class="arrow-dn"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="from-control" id="inputkeyword" placeholder="请输入关键词" spellcheck="false">
+                    </div>
+                    <div class="btn-box">
+                        <input type="submit" id="search" class="btn" onclick="gSearch();" value="搜 索">
+                        <input type="hidden" id="route" value="s" />
+                    </div>
+                </div>
+                <div class="hotWords">
+                    热门搜索：<a target="_blank" href="/s?st=1&wd=环保">环保</a><a target="_blank" href="/s?st=1&wd=生育">生育</a><a target="_blank" href="/s?st=1&wd=农业">农业</a><a target="_blank" href="/s?st=1&wd=医疗">医疗</a><a target="_blank" href="/s?st=1&wd=就业">就业</a>
+                </div>
+
+                <script src="/Content/_Common/FullTextSearch/js/default-site-search-box.js"></script>
+                <script>
+                    document.getElementById("inputkeyword").onkeydown = function (e) {
+                        e = e || window.event;
+                        if (e.keyCode == 13) {
+                            gSearch();
+                        }
+                    };
+
+                    function gSearch() {
+                        var keyword = document.getElementById('inputkeyword').value;
+                        var route = document.getElementById('route').value;
+
+                        if (keyword == '' || keyword == "请输入关键字") {
+                            alert("请输入关键字");
+                        } else {
+                            var siteid = document.getElementById('siteid').value;
+                            window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
+                        }
+                    }
+                </script>
+            </div>
+
+            <nav class="topNav clearfix">
+                <span class="menuBtn"></span>
+
+
+                <ul id="mainNav" class="mainNav">
+                    <li class="li1 first1" id="li-home">
+                        <h3 class="h1">
+                            <a class="a1" href='/'>首页</a>
+                        </h3>
+                    </li>
+
+                    <li class="li1 hasUl1 on1" id="li-xw">
+                        <h3 class="h1">
+                            <a class="a1" href="/xw">政务动态</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-zw">
+                        <h3 class="h1">
+                            <a class="a1" href="/zw">政务公开</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-fw">
+                        <h3 class="h1">
+                            <a class="a1" href="/fw">政务服务</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-hd">
+                        <h3 class="h1">
+                            <a class="a1" href="/hd">公众参与</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-sq">
+                        <h3 class="h1">
+                            <a class="a1" href="/sq">走进安州</a></h3>
+                    </li>
+                </ul>
+
+                <script type="text/javascript">
+                    (function () {
+                        var navST;
+                        var navST1;
+                        var name = 'mainNav';
+                        var t = 200;
+                        var type = 1;
+                        var removeOn = 'False';
+                        var effect = 'fade';
+                        var appendItem = '#';
+                        var li = "#" + name + " li";
+                        var index = 0;
+
+                        if (!$("#" + name + " .li1").hasClass("on1")) {
+                            $("#" + name + " .li1").first().addClass("on1");
+                        } //默认第一个加.on1类
+                        index = $("#" + name + " .li1").index($("#" + name + " .on1"));
+
+                        //鼠标离开导航后，回复默认.on1类位置
+                        $("#" + name)
+                            .hover(
+                                function () {
+                                    if (navST1 != null) {
+                                        clearTimeout(navST1);
+                                    }
+                                },
+                                function () {
+                                    navST1 = setTimeout(function () {
+                                            $("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
+                                        },
+                                        500);
+                                }
+                            );
+
+                        if (type == '1') {
+                            li = "#" + name + " .li1";
+                        }
+                        if (appendItem != '#') { //插入内容
+                            var appendHtml = $(appendItem).html();
+                            $(li).first().append(appendHtml);
+                            $(appendItem).remove();
+                        }
+
+                        if (type == '3') {
+                            $("#" + name + " .on1").find("ul").first().show();
+                        }
+
+                        $(li)
+                            .hover(function () {
+                                    var curItem = $(this);
+                                    var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+                                    $(li).removeClass("on" + onNum);
+                                    curItem.addClass("on" + onNum);
+                                    navST = setTimeout(function () { //延时触发
+
+                                            if ($("ul:first", curItem).css("display") != "block") {
+                                                $(li + " .ul" + onNum).hide();
+                                                if (effect == 'fade') {
+                                                    $("ul:first", curItem).fadeIn(t);
+                                                } else {
+                                                    $("ul:first", curItem).slideDown(t);
+                                                }
+                                            };
+                                            navST = null;
+                                        },
+                                        t);
+                                },
+                                function () {
+                                    if (navST != null) {
+                                        clearTimeout(navST);
+                                    }
+                                    if (type == '1' || type == '2') {
+                                        if (effect == 'fade') {
+                                            $(this).find("ul").first().fadeOut(t);
+                                        } else {
+                                            $(this).find("ul").first().slideUp(t);
+                                        }
+                                    }
+                                    if (removeOn == 'True') {
+                                        $(this).removeClass("on1");
+                                    }
+                                },
+                                t); //end hover
+                    })()
+                </script>
+
+            </nav>
+            <script>
+                $(".topNav .h1").prepend("<i></i>")
+            </script>
+        </div>
+    </header>
+    <!-- header E -->
+
+    <!-- content S -->
+    <div id="content" class="newsPage">
+        <div class="path">
+            <em>您的位置：</em><a href="/">首页</a>
+            &gt;<a href="/xw">政务动态</a></div>
+        <!-- rowA S -->
+        <div class="row" id="rowA">
+            <div id="focusNews" class="focusBox">
+
+                <div class="bd">
+                    <ul>
+                        <li class="li1">
+
+                            <div class="pic">
+                                <a href="/xw/tpxw/content_112948" target="_blank">
+                                    <img alt="安州区及安州区与长虹集团项目签约仪式在安州举行" src="/upload/main/image/2017/07/28/201707281531395342_500_280.jpg" />
+                                </a>
+
+                            </div>
+                            <div class="con">
+                                <h3 class="title"><a class="tit" href="/xw/tpxw/content_112948" title="安州区及安州区与长虹集团项目签约仪式在安州举行">安州区及安州区与长虹集团项目签约仪式在安州举行</a></h3>
+                                <span class="titleBg"></span>
+
+
+                            </div>
+                        </li>
+                        <li class="li2">
+
+                            <div class="pic">
+                                <a href="/xw/tpxw/content_106713" target="_blank">
+                                    <img alt="刘超、廖雪梅率队调研辽安产业合作园区" src="/upload/main/contentmanage/article/image/b42bb0feb6b3472985a881c8b93d4b51_500_280.jpg" />
+                                </a>
+
+                            </div>
+                            <div class="con">
+                                <h3 class="title"><a class="tit" href="/xw/tpxw/content_106713" title="刘超、廖雪梅率队调研辽安产业合作园区">刘超、廖雪梅率队调研辽安产业合作园区</a></h3>
+                                <span class="titleBg"></span>
+
+
+                            </div>
+                        </li>
+                        <li class="li3">
+
+                            <div class="pic">
+                                <a href="/xw/tpxw/content_106734" target="_blank">
+                                    <img alt="[安州创文]安州区委书记廖雪梅:狠抓三个落实 确保一举成功" src="/upload/main/contentmanage/article/image/50afb5b62f1447c28cb61c7ec4aa9ce2_500_280.jpg" />
+                                </a>
+
+                            </div>
+                            <div class="con">
+                                <h3 class="title"><a class="tit" href="/xw/tpxw/content_106734" title="[安州创文]安州区委书记廖雪梅:狠抓三个落实 确保一举成功">[安州创文]安州区委书记廖雪梅:狠抓三个落实 确保一举成功</a></h3>
+                                <span class="titleBg"></span>
+
+
+                            </div>
+                        </li>
+                        <li class="li4">
+
+                            <div class="pic">
+                                <a href="/xw/tpxw/content_106718" target="_blank">
+                                    <img alt="安州2017年上半年经济运行统计新闻发布会" src="/upload/main/contentmanage/article/image/ed8b5faff1af4338bab4d829658f9c2b_500_280.jpg" />
+                                </a>
+
+                            </div>
+                            <div class="con">
+                                <h3 class="title"><a class="tit" href="/xw/tpxw/content_106718" title="安州2017年上半年经济运行统计新闻发布会">安州2017年上半年经济运行统计新闻发布会</a></h3>
+                                <span class="titleBg"></span>
+
+
+                            </div>
+                        </li>
+                        <li class="li5">
+
+                            <div class="pic">
+                                <a href="/xw/tpxw/content_106499" target="_blank">
+                                    <img alt="刘超在新战略发布会上寄语郎酒发展：正当其时 大有可为" src="/upload/main/contentmanage/article/image/f71ae02f582a4c1dbe0a1014af08202e_500_280.jpg" />
+                                </a>
+
+                            </div>
+                            <div class="con">
+                                <h3 class="title"><a class="tit" href="/xw/tpxw/content_106499" title="刘超在新战略发布会上寄语郎酒发展：正当其时 大有可为">刘超在新战略发布会上寄语郎酒发展：正当其时 大有…</a></h3>
+                                <span class="titleBg"></span>
+
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hd">
+                    <ul>
+                        <li class="li1">
+
+                            <span>1</span>
+                        </li>
+                        <li class="li2">
+
+                            <span>2</span>
+                        </li>
+                        <li class="li3">
+
+                            <span>3</span>
+                        </li>
+                        <li class="li4">
+
+                            <span>4</span>
+                        </li>
+                        <li class="li5">
+
+                            <span>5</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <script language="javascript"> jQuery("#focusNews").slide({ mainCell: ".bd ul", effect: "fold", autoPlay: true, vis: "auto", interTime: 3500 });</script>
+            <ul class="topicList">
+
+
+
+                <li class="first t ">
+
+                    <div class="con">
+                        <div class="title">
+                            <a class="tit" href="/xw/zwyw/content_113125" title="市委常委、副市长王明华出席《百岁女红军—王定国》理论文献片新闻发布会">市委常委、副市长王明华出席《百岁女红军—王定国》理论文献片新闻发布会</a>
+                        </div>
+                        <span class="titleBg"></span>
+
+                        <div class="intro">
+                            为庆祝中国人民解放军建军90周年，迎接党的十九大胜利召开，7月30日，由中国林业生态发展促进会王定国公益委员会、上海亚洲电视艺术中心联合制作的理论文献纪录片《百岁女红军—王定国》新闻发布会在北京举行。中…                </div>
+                    </div>
+
+                </li>
+
+
+
+
+                <li class="n">
+                    <span class="date">2017-07-31</span>
+                    <a class="tit" href="/xw/zwyw/content_113078" title="全省深化统计管理体制改革座谈会在安州召开">全省深化统计管理体制改革座谈会在安州召开</a>
+                </li>
+
+
+
+
+                <li class="n">
+                    <span class="date">2017-07-31</span>
+                    <a class="tit" href="/xw/zwyw/content_113071" title="辽安产业合作园区召开&quot;自贸红利、区域共享&quot;对接会">辽安产业合作园区召开"自贸红利、区域共享"对接会</a>
+                </li>
+
+
+
+
+                <li class="n">
+                    <span class="date">2017-07-31</span>
+                    <a class="tit" href="/xw/qxdt/content_113084" title="安州区花荄镇、桑枣镇将成为南开大学基层实践基地">安州区花荄镇、桑枣镇将成为南开大学基层实践基地</a>
+                </li>
+
+
+
+
+                <li class="n">
+                    <span class="date">2017-07-31</span>
+                    <a class="tit" href="/xw/zwyw/content_113083" title="安州区花荄镇、桑枣镇将成为南开大学基层实践基地">安州区花荄镇、桑枣镇将成为南开大学基层实践基地</a>
+                </li>
+
+
+
+
+                <li class="n">
+                    <span class="date">2017-07-31</span>
+                    <a class="tit" href="/xw/qxdt/content_113063" title="廖雪梅率队督导安州区环境保护突出问题">廖雪梅率队督导安州区环境保护突出问题</a>
+                </li>
+
+
+
+
+                <li class="n">
+                    <span class="date">2017-07-31</span>
+                    <a class="tit" href="/xw/qxdt/content_113113" title="四川挂牌督办10个突出环境问题，看看有哪些进展？">四川挂牌督办10个突出环境问题，看看有哪些进展？</a>
+                </li>
+
+
+            </ul>
+        </div>
+        <!-- rowA E -->
+
+        <!-- rowB S -->
+        <div class="row" id="rowB">
+            <div class="mainContent">
+                <!-- 盒子切换 -->
+                <div class="boxB">
+                    <div class="hd">
+                        <a class="more" href='javascript:void(0)'>更多&gt;&gt;</a>
+                        <ul>
+                            <li><a href="/xw/jrxx">今日安州</a></li>
+                            <li><a href="/xw/zwyw">政务要闻</a></li>
+                            <li><a href="/xw/gsyw">国省要闻</a></li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <ul class="infoList">
+
+
+
+                            <li class="first">
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/jrxx/content_113077" target="_blank" title="标题：全省深化统计管理体制改革座谈会在安州召开
+点击数：351
+发表时间：2017-07-31">
+                                    全省深化统计管理体制改革座谈会在安州召开
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/jrxx/content_113070" target="_blank" title="标题：辽安产业合作园区召开&quot;自贸红利、区域共享&quot;对接会
+点击数：421
+发表时间：2017-07-31">
+                                    辽安产业合作园区召开"自贸红利、区域共享"对接会
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/jrxx/content_113082" target="_blank" title="标题：安州区花荄镇、桑枣镇将成为南开大学基层实践基地
+点击数：380
+发表时间：2017-07-31">
+                                    安州区花荄镇、桑枣镇将成为南开大学基层实践基地
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/jrxx/content_113062" target="_blank" title="标题：廖雪梅率队督导安州区环境保护突出问题
+点击数：310
+发表时间：2017-07-31">
+                                    廖雪梅率队督导安州区环境保护突出问题
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/jrxx/content_113058" target="_blank" title="标题：廖雪梅率队督导安州桑枣镇和乐兴镇环保突出问题
+点击数：349
+发表时间：2017-07-31">
+                                    廖雪梅率队督导安州桑枣镇和乐兴镇环保突出问题
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/jrxx/content_113067" target="_blank" title="标题：安州区表扬100名优秀复员退伍军人
+点击数：249
+发表时间：2017-07-31">
+                                    安州区表扬100名优秀复员退伍军人
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="last">
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/jrxx/content_113056" target="_blank" title="标题：安州召开集贸市场创文工作现场推进会
+点击数：151
+发表时间：2017-07-31">
+                                    安州召开集贸市场创文工作现场推进会
+                                </a>
+                            </li>
+
+
+                        </ul>
+                        <ul class="infoList">
+
+
+
+                            <li class="first">
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/zwyw/content_113125" target="_blank" title="标题：市委常委、副市长王明华出席《百岁女红军—王定国》理论文献片新闻发布会
+点击数：120
+发表时间：2017-07-31">
+                                    市委常委、副市长王明华出席《百岁女红军—王定国》理论文献片新闻发布会
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/zwyw/content_113078" target="_blank" title="标题：全省深化统计管理体制改革座谈会在安州召开
+点击数：83
+发表时间：2017-07-31">
+                                    全省深化统计管理体制改革座谈会在安州召开
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/zwyw/content_113071" target="_blank" title="标题：辽安产业合作园区召开&quot;自贸红利、区域共享&quot;对接会
+点击数：107
+发表时间：2017-07-31">
+                                    辽安产业合作园区召开"自贸红利、区域共享"对接会
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/zwyw/content_113083" target="_blank" title="标题：安州区花荄镇、桑枣镇将成为南开大学基层实践基地
+点击数：72
+发表时间：2017-07-31">
+                                    安州区花荄镇、桑枣镇将成为南开大学基层实践基地
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/zwyw/content_113106" target="_blank" title="标题：我省将推广绿色机关标准化建设 在安州等3市试点
+点击数：83
+发表时间：2017-07-31">
+                                    我省将推广绿色机关标准化建设 在安州等3市试点
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/zwyw/content_113035" target="_blank" title="标题：抓好2017下半年工作 省政府放九个大招
+点击数：61
+发表时间：2017-07-31">
+                                    抓好2017下半年工作 省政府放九个大招
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="last">
+                                <span class="date">2017-07-28</span>
+                                <a href="/xw/zwyw/content_112942" target="_blank" title="标题：安州区及安州区与长虹集团项目签约仪式在安州举行
+点击数：204
+发表时间：2017-07-28">
+                                    安州区及安州区与长虹集团项目签约仪式在安州举行
+                                </a>
+                            </li>
+
+
+                        </ul>
+                        <ul class="infoList">
+
+
+
+                            <li class="first">
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/gsyw/content_113115" target="_blank" title="标题：图解：2017年7月28日国务院常务会议
+点击数：71
+发表时间：2017-07-31">
+                                    图解：2017年7月28日国务院常务会议
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/gsyw/content_113076" target="_blank" title="标题：财经观察：中国将继续发挥全球经济“稳定器”作用——国际机构看好中国经济前景
+点击数：59
+发表时间：2017-07-31">
+                                    财经观察：中国将继续发挥全球经济“稳定器”作用——国际机构看好中国经济前景
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/gsyw/content_113075" target="_blank" title="标题：国际机构纷纷上调我国经济增速预期 彰显经济发展底气
+点击数：53
+发表时间：2017-07-31">
+                                    国际机构纷纷上调我国经济增速预期 彰显经济发展底气
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/gsyw/content_113112" target="_blank" title="标题：四川挂牌督办10个突出环境问题，看看有哪些进展？
+点击数：79
+发表时间：2017-07-31">
+                                    四川挂牌督办10个突出环境问题，看看有哪些进展？
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/gsyw/content_113109" target="_blank" title="标题：四川这14个村被国家点名表扬，有望获得100万补助！
+点击数：78
+发表时间：2017-07-31">
+                                    四川这14个村被国家点名表扬，有望获得100万补助！
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/gsyw/content_113107" target="_blank" title="标题：至2019年底 四川将建设污水垃圾处理设施1608个
+点击数：60
+发表时间：2017-07-31">
+                                    至2019年底 四川将建设污水垃圾处理设施1608个
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="last">
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/gsyw/content_113105" target="_blank" title="标题：我省将推广绿色机关标准化建设 在安州等3市试点
+点击数：62
+发表时间：2017-07-31">
+                                    我省将推广绿色机关标准化建设 在安州等3市试点
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- 盒子切换 -->
+                <div class="boxB">
+                    <div class="hd">
+                        <a class="more" href='javascript:void(0)'>更多&gt;&gt;</a>
+                        <ul>
+                            <li><a href="/xw/qxdt">区县动态</a></li>
+                            <li><a href="/xw/bmdt122">部门动态</a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <ul class="infoList">
+
+
+
+                            <li class="first">
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/qxdt/content_113084" target="_blank" title="标题：安州区花荄镇、桑枣镇将成为南开大学基层实践基地
+点击数：62
+发表时间：2017-07-31">
+                                    安州区花荄镇、桑枣镇将成为南开大学基层实践基地
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/qxdt/content_113063" target="_blank" title="标题：廖雪梅率队督导安州区环境保护突出问题
+点击数：54
+发表时间：2017-07-31">
+                                    廖雪梅率队督导安州区环境保护突出问题
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/qxdt/content_113113" target="_blank" title="标题：四川挂牌督办10个突出环境问题，看看有哪些进展？
+点击数：35
+发表时间：2017-07-31">
+                                    四川挂牌督办10个突出环境问题，看看有哪些进展？
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/qxdt/content_113110" target="_blank" title="标题：四川这14个村被国家点名表扬，有望获得100万补助！
+点击数：33
+发表时间：2017-07-31">
+                                    四川这14个村被国家点名表扬，有望获得100万补助！
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/qxdt/content_113059" target="_blank" title="标题：廖雪梅率队督导安州桑枣镇和乐兴镇环保突出问题
+点击数：27
+发表时间：2017-07-31">
+                                    廖雪梅率队督导安州桑枣镇和乐兴镇环保突出问题
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/qxdt/content_113045" target="_blank" title="标题：花荄镇：李昊天出席全区整治群众身边“微腐败”村级财务审计工作动员会
+点击数：25
+发表时间：2017-07-31">
+                                    花荄镇：李昊天出席全区整治群众身边“微腐败”村级财务审计工作动员会
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="last">
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/qxdt/content_113040" target="_blank" title="标题：安州区：挂牌运行百余日 辽安产业合作园区交出亮丽成绩单
+点击数：34
+发表时间：2017-07-31">
+                                    安州区：挂牌运行百余日 辽安产业合作园区交出亮丽成绩单
+                                </a>
+                            </li>
+
+
+                        </ul>
+                        <ul class="infoList">
+
+
+
+                            <li class="first">
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/bmdt122/content_113068" target="_blank" title="标题：安州区表扬100名优秀复员退伍军人
+点击数：85
+发表时间：2017-07-31">
+                                    安州区表扬100名优秀复员退伍军人
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/bmdt122/content_113053" target="_blank" title="标题：安州森林防火指挥部：森林防火防控要“无死角、无盲区”
+点击数：72
+发表时间：2017-07-31">
+                                    安州森林防火指挥部：森林防火防控要“无死角、无盲区”
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/bmdt122/content_113047" target="_blank" title="标题：安州城西将建连江公园 造价3.5亿元绿地率82.5%
+点击数：104
+发表时间：2017-07-31">
+                                    安州城西将建连江公园 造价3.5亿元绿地率82.5%
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/bmdt122/content_113027" target="_blank" title="标题：安州区发放首批四川省工会会员服务卡
+点击数：64
+发表时间：2017-07-31">
+                                    安州区发放首批四川省工会会员服务卡
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/bmdt122/content_113023" target="_blank" title="标题：安州区开通“智慧安州医保” 实现掌上医保服务
+点击数：68
+发表时间：2017-07-31">
+                                    安州区开通“智慧安州医保” 实现掌上医保服务
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-28</span>
+                                <a href="/xw/bmdt122/content_111488" target="_blank" title="标题：预留轨道 双向六车道的安州长江五桥通过专家评审
+点击数：232
+发表时间：2017-07-28">
+                                    预留轨道 双向六车道的安州长江五桥通过专家评审
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="last">
+                                <span class="date">2017-07-28</span>
+                                <a href="/xw/bmdt122/content_111520" target="_blank" title="标题：安州：发挥人才库智囊团作用 聚焦热点难点问题
+点击数：131
+发表时间：2017-07-28">
+                                    安州：发挥人才库智囊团作用 聚焦热点难点问题
+                                </a>
+                            </li>
+
+
+                        </ul>
+                        <ul class="infoList">
+
+
+                            <li class="noData">暂无资料</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- 盒子切换 -->
+                <div class="boxB">
+                    <div class="hd">
+                        <a class="more" href='javascript:void(0)'>更多&gt;&gt;</a>
+                        <ul>
+                            <li><a href="/xw/mskd">民生快递</a></li>
+                            <li><a href="/xw/jjfz">经济发展</a></li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <ul class="infoList">
+
+
+
+                            <li class="first">
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/mskd/content_113086" target="_blank" title="标题：安州区花荄镇、桑枣镇将成为南开大学基层实践基地
+点击数：53
+发表时间：2017-07-31">
+                                    安州区花荄镇、桑枣镇将成为南开大学基层实践基地
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/mskd/content_113064" target="_blank" title="标题：廖雪梅率队督导安州区环境保护突出问题
+点击数：57
+发表时间：2017-07-31">
+                                    廖雪梅率队督导安州区环境保护突出问题
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/mskd/content_113057" target="_blank" title="标题：安州召开集贸市场创文工作现场推进会
+点击数：73
+发表时间：2017-07-31">
+                                    安州召开集贸市场创文工作现场推进会
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/mskd/content_113055" target="_blank" title="标题：四川日报：安州“创文” 小举动折射大文明
+点击数：53
+发表时间：2017-07-31">
+                                    四川日报：安州“创文” 小举动折射大文明
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/mskd/content_113049" target="_blank" title="标题：安州城西将建连江公园 造价3.5亿元绿地率82.5%
+点击数：41
+发表时间：2017-07-31">
+                                    安州城西将建连江公园 造价3.5亿元绿地率82.5%
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/mskd/content_113029" target="_blank" title="标题：安州区发放首批四川省工会会员服务卡
+点击数：31
+发表时间：2017-07-31">
+                                    安州区发放首批四川省工会会员服务卡
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="last">
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/mskd/content_113025" target="_blank" title="标题：安州区开通“智慧安州医保” 实现掌上医保服务
+点击数：36
+发表时间：2017-07-31">
+                                    安州区开通“智慧安州医保” 实现掌上医保服务
+                                </a>
+                            </li>
+
+
+                        </ul>
+                        <ul class="infoList">
+
+
+
+                            <li class="first">
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/jjfz/qsjjfz/content_113079" target="_blank" title="标题：全省深化统计管理体制改革座谈会在安州召开
+点击数：28
+发表时间：2017-07-31">
+                                    全省深化统计管理体制改革座谈会在安州召开
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/jjfz/qsjjfz/content_113072" target="_blank" title="标题：辽安产业合作园区召开&quot;自贸红利、区域共享&quot;对接会
+点击数：29
+发表时间：2017-07-31">
+                                    辽安产业合作园区召开"自贸红利、区域共享"对接会
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/jjfz/qxjjfz/content_113065" target="_blank" title="标题：廖雪梅率队督导安州区环境保护突出问题
+点击数：30
+发表时间：2017-07-31">
+                                    廖雪梅率队督导安州区环境保护突出问题
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/jjfz/qxjjfz/content_113060" target="_blank" title="标题：廖雪梅率队督导安州桑枣镇和乐兴镇环保突出问题
+点击数：33
+发表时间：2017-07-31">
+                                    廖雪梅率队督导安州桑枣镇和乐兴镇环保突出问题
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/jjfz/qxjjfz/content_113041" target="_blank" title="标题：安州区：挂牌运行百余日 辽安产业合作园区交出亮丽成绩单
+点击数：31
+发表时间：2017-07-31">
+                                    安州区：挂牌运行百余日 辽安产业合作园区交出亮丽成绩单
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <span class="date">2017-07-31</span>
+                                <a href="/xw/jjfz/qxjjfz/content_113038" target="_blank" title="标题：安州区召开2017年第三次安委（扩大）会暨第17次县长督办会
+点击数：31
+发表时间：2017-07-31">
+                                    安州区召开2017年第三次安委（扩大）会暨第17次县长督办会
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="last">
+                                <span class="date">2017-07-28</span>
+                                <a href="/xw/jjfz/qxjjfz/content_112945" target="_blank" title="标题：安州区及安州区与长虹集团项目签约仪式在安州举行
+点击数：68
+发表时间：2017-07-28">
+                                    安州区及安州区与长虹集团项目签约仪式在安州举行
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <script>
+                    jQuery(".boxB").slide({ vis:1, delayTime:0, startFun: function (i, c, s, t) { s.find(".more").attr("href", t.eq(i).find("a").attr("href")) } });
+                </script>
+                <!-- 图片新闻 -->
+                <div class="boxB" id="tpxw">
+                    <div class="hd">
+                        <a class="more" href="/xw/tpxw">更多&gt;&gt;</a>
+                        <h3><a href="/xw/tpxw">图片新闻</a></h3>
+                    </div>
+                    <div class="bd">
+                        <ul class="picPageList picPageListA">
+
+                            <li class="first">
+                                <div class="pic">
+                                    <a href="/xw/tpxw/content_112948">
+
+                                        <img alt="安州区及安州区与长虹集团项目签约仪式在安州举行" src="/upload/main/image/2017/07/28/201707281531395342_240_180.jpg" width="240" height="180" />
+
+                                    </a>
+                                </div>
+
+                                <div class="title">
+                                    <a class="tit" href="/xw/tpxw/content_112948" title="安州区及安州区与长虹集团项目签约仪式在安州举行">安州区及安州区与长虹集团项目签约仪式在安州举行</a>
+                                </div>
+                                <span class="titleBg"></span>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="/xw/tpxw/content_106713">
+
+                                        <img alt="刘超、廖雪梅率队调研辽安产业合作园区" src="/upload/main/contentmanage/article/image/b42bb0feb6b3472985a881c8b93d4b51_240_180.jpg" width="240" height="180" />
+
+                                    </a>
+                                </div>
+
+                                <div class="title">
+                                    <a class="tit" href="/xw/tpxw/content_106713" title="刘超、廖雪梅率队调研辽安产业合作园区">刘超、廖雪梅率队调研辽安产业合作园区</a>
+                                </div>
+                                <span class="titleBg"></span>
+                            </li>
+                            <li class="last">
+                                <div class="pic">
+                                    <a href="/xw/tpxw/content_106734">
+
+                                        <img alt="[安州创文]安州区委书记廖雪梅:狠抓三个落实 确保一举成功" src="/upload/main/contentmanage/article/image/50afb5b62f1447c28cb61c7ec4aa9ce2_240_180.jpg" width="240" height="180" />
+
+                                    </a>
+                                </div>
+
+                                <div class="title">
+                                    <a class="tit" href="/xw/tpxw/content_106734" title="[安州创文]安州区委书记廖雪梅:狠抓三个落实 确保一举成功">[安州创文]安州区委书记廖雪梅:狠抓三个落实 确保一举成功</a>
+                                </div>
+                                <span class="titleBg"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- mainContent E -->
+            <div class="side">
+                <!-- 政府公告 -->
+                <div class="news-sideBox" id="zfgg">
+                    <div class="hd">
+                        <a class="more" href="/zw/hzjcgk/zfgg">更多&gt;&gt;</a>
+                        <h3><a href="/zw/hzjcgk/zfgg">政府公告</a></h3>
+                    </div>
+                    <div class="bd">
+                        <ul class="dateList">
+
+
+                            <li class="first">
+
+                                <dl class="date">
+                                    <dt>27</dt>
+                                    <dd>2017-07</dd>
+                                </dl>
+                                <div class="con">
+                                    <div class="title">
+                                        <a class="tit" href="/zw/hzjcgk/zfgg/content_111438" title="安州区国有建设用地使用权挂牌出让公告 （泸市国土资告［2017］23号）">安州区国有建设用地使用权挂牌出…</a>
+                                    </div>
+
+                                    <div class="intro">
+                                        根据《中华人民共和国土地管理法》、《中华人民共和国城市房地产管理…
+                                        <a class="more" href="/zw/hzjcgk/zfgg/content_111438">[详细]</a>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+
+                                <dl class="date">
+                                    <dt>25</dt>
+                                    <dd>2017-07</dd>
+                                </dl>
+                                <div class="con">
+                                    <div class="title">
+                                        <a class="tit" href="/zw/hzjcgk/zfgg/content_111300" title="安州区公安局监管支队关于公开邀请招标代理机构的公告">安州区公安局监管支队关于公开邀…</a>
+                                    </div>
+
+                                    <div class="intro">
+                                        安州区强制医疗所（以下简称强医所）通过购买社会服务方式与安州泰康…
+                                        <a class="more" href="/zw/hzjcgk/zfgg/content_111300">[详细]</a>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="last">
+
+                                <dl class="date">
+                                    <dt>25</dt>
+                                    <dd>2017-07</dd>
+                                </dl>
+                                <div class="con">
+                                    <div class="title">
+                                        <a class="tit" href="/zw/hzjcgk/zfgg/content_111205" title="安州区国有建设用地使用权出让公告 （泸市国土资告[2017]22号）">安州区国有建设用地使用权出让公…</a>
+                                    </div>
+
+                                    <div class="intro">
+                                        根据《中华人民共和国土地管理法》、《中华人民共和国城市房地产管理…
+                                        <a class="more" href="/zw/hzjcgk/zfgg/content_111205">[详细]</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- 便民公告 -->
+                <div class="news-sideBox" id="bmgg">
+                    <div class="hd">
+                        <a class="more" href="/xw/bmgg">更多&gt;&gt;</a>
+                        <h3><a href="/xw/bmgg">便民公告</a></h3>
+                    </div>
+                    <div class="bd">
+                        <ul class="infoList">
+
+
+
+                            <li class="first">
+                                <a href="/xw/bmgg/content_113092" target="_blank" title="标题：7月31日-8月14日 安州停电消息播报
+点击数：105
+发表时间：2017-07-31">
+                                    7月31日-8月14日 安州停电消息播报
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <a href="/xw/bmgg/content_113091" target="_blank" title="标题：安州电表欠费跳闸 反插购电卡可透支10元电量应急
+点击数：129
+发表时间：2017-07-31">
+                                    安州电表欠费跳闸 反插购电卡可透支10元电量应急
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <a href="/xw/bmgg/content_113090" target="_blank" title="标题：安州：花荄镇城区公立幼儿园摇号结果产生
+点击数：88
+发表时间：2017-07-31">
+                                    安州：花荄镇城区公立幼儿园摇号结果产生
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <a href="/xw/bmgg/content_111392" target="_blank" title="标题：安州区：公立幼儿园摇号入学 入读普惠性幼儿园有补贴
+点击数：214
+发表时间：2017-07-26">
+                                    安州区：公立幼儿园摇号入学 入读普惠性幼儿…
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <a href="/xw/bmgg/content_111165" target="_blank" title="标题：安州：着急补种疫苗？开学前没打完不影响入学
+点击数：209
+发表时间：2017-07-25">
+                                    安州：着急补种疫苗？开学前没打完不影响入学
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <a href="/xw/bmgg/content_110826" target="_blank" title="标题：7月24—8月7日 安州停电消息播报
+点击数：425
+发表时间：2017-07-24">
+                                    7月24—8月7日 安州停电消息播报
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <a href="/xw/bmgg/content_110824" target="_blank" title="标题：安州龙马潭新增电子警察自动抓拍点位6处
+点击数：247
+发表时间：2017-07-24">
+                                    安州龙马潭新增电子警察自动抓拍点位6处
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="last">
+                                <a href="/xw/bmgg/content_106895" target="_blank" title="标题：2017年普通高校在川招生本科一批调档线发布啦！
+点击数：299
+发表时间：2017-07-21">
+                                    2017年普通高校在川招生本科一批调档线发布啦！
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- 热点推荐 -->
+                <div class="news-sideBox" id="rdtj">
+                    <div class="hd">
+                        <h3><a>热点推荐</a></h3>
+                    </div>
+                    <div class="bd">
+                        <ul class="rankList">
+
+
+
+                            <li class="first hot">
+                                <em class="number">1</em>
+                                <a href="/xw/rdgz/content_113085" target="_blank" title="标题：安州区花荄镇、桑枣镇将成为南开大学基层实践基地
+点击数：66
+发表时间：2017-07-31">
+                                    安州区花荄镇、桑枣镇将成为南开大学基层实践基地
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="hot">
+                                <em class="number">2</em>
+                                <a href="/xw/rdgz/content_113114" target="_blank" title="标题：四川挂牌督办10个突出环境问题，看看有哪些进展？
+点击数：82
+发表时间：2017-07-31">
+                                    四川挂牌督办10个突出环境问题，看看有哪些进展？
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="hot">
+                                <em class="number">3</em>
+                                <a href="/xw/rdgz/content_113111" target="_blank" title="标题：四川这14个村被国家点名表扬，有望获得100万补助！
+点击数：86
+发表时间：2017-07-31">
+                                    四川这14个村被国家点名表扬，有望获得100万补…
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <em class="number">4</em>
+                                <a href="/xw/rdgz/content_113108" target="_blank" title="标题：至2019年底 四川将建设污水垃圾处理设施1608个
+点击数：73
+发表时间：2017-07-31">
+                                    至2019年底 四川将建设污水垃圾处理设施1608个
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <em class="number">5</em>
+                                <a href="/xw/rdgz/content_113048" target="_blank" title="标题：安州城西将建连江公园 造价3.5亿元绿地率82.5%
+点击数：140
+发表时间：2017-07-31">
+                                    安州城西将建连江公园 造价3.5亿元绿地率82.5%
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <em class="number">6</em>
+                                <a href="/xw/rdgz/content_113028" target="_blank" title="标题：安州区发放首批四川省工会会员服务卡
+点击数：74
+发表时间：2017-07-31">
+                                    安州区发放首批四川省工会会员服务卡
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <em class="number">7</em>
+                                <a href="/xw/rdgz/content_113024" target="_blank" title="标题：安州区开通“智慧安州医保” 实现掌上医保服务
+点击数：67
+发表时间：2017-07-31">
+                                    安州区开通“智慧安州医保” 实现掌上医保服务
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <em class="number">8</em>
+                                <a href="/xw/rdgz/content_111489" target="_blank" title="标题：预留轨道 双向六车道的安州长江五桥通过专家评审
+点击数：231
+发表时间：2017-07-28">
+                                    预留轨道 双向六车道的安州长江五桥通过专家评审
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <em class="number">9</em>
+                                <a href="/xw/rdgz/content_111533" target="_blank" title="标题：8月起，这些新规将影响你我生活
+点击数：170
+发表时间：2017-07-28">
+                                    8月起，这些新规将影响你我生活
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="last">
+                                <em class="number">10</em>
+                                <a href="/xw/rdgz/content_111525" target="_blank" title="标题：总理力推的“医保异地结算”，有了重大突破！
+点击数：145
+发表时间：2017-07-28">
+                                    总理力推的“医保异地结算”，有了重大突破！
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- side E -->
+        </div>
+        <!-- rowB E -->
+    </div>
+    <!-- content E -->
+
+    <!-- footer S -->
+    <footer id="footer">
+        <div class="siteWidth">
+            <div class="footNav">
+
+
+
+                <a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
+                <a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
+                <a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
+                <a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
+                <a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
+                <a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
+
+            </div>
+            <div class="copyRight"><p>
+                安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br/>地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br/>蜀ICP备12001441号<br/> &nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1"/>川公网安备 51070302110201号</a>
+            </p>
+                <div class="pics">
+                    <a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg"/></a> &nbsp;&nbsp;<script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg"/></a> &nbsp;&nbsp;<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png"/></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer E -->
+
+    <!-- 侧栏固定菜单 -->
+    <ul class="sideFixed" style="display:none">
+        <li class="wza"><a target="blank" target="_blank" href="/wca.html" title="无障碍版"></a></li>
+        <li class="jqr"><a target="blank" href='/znjqr' title="智能机器人"></a></li>
+        <li class="sj">
+            <a href="javascript:void(0);" title="手机版"></a>
+            <div class="pic">
+                <img src="/qrcode/qrcode.gif" />
+                <i></i>
+            </div>
+        </li>
+        <li class="wb"><a target="blank" href='http://weibo.com/luzhouzhengwu' title="政务微博"></a></li>
+        <li class="wx">
+            <a href="javascript:void(0);" title="政务微信"></a>
+            <div class="pic">
+                <img src='/Content/Main/Base/img/weixin.png' />
+                <i></i>
+            </div>
+        </li>
+        <li class="db"><a href="#" title="返回顶部"></a></li>
+    </ul>
+    <script>
+        $(".sideFixed li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script></div>
+<script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
+<script src="/Content/_Common/Base/js/power.js"></script>
+
+
+
+</body>
+</html>

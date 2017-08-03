@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="安州区人民政府门户网站,安州区政府,安州" />
+    <meta name="description" content="安州区人民政府门户网站 安州区  安州政府" />
+    <meta name="application-name" content="安州区人民政府门户网站" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true" />
+
+    <title>公众参与_安州区人民政府门户网站</title>
+
+    <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+
+    <link href="/Content/Main/Interaction/css/interaction.css" rel="stylesheet" />
+
+
+    <link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
+    <script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
+    <script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
+    <!--     <script src="/Content/_Common/Base/js/antiClickjack.js"></script> -->
+    <script src="/Content/_Common/Base/js/webCommon.js"></script>
+    <script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
+    <script src="/Content/_Common/Base/js/StoT.js"></script>
+</head>
+<body class="interactionPage">
+
+<div class="wrap">
+
+
+    <div class="topBar">
+        <ul class="list">
+            <li class="en"><a href="/english">English</a></li>
+            <li class="phone">
+                <a href="javascript:;">手机版</a>
+                <div class="pic">
+                    <img src="/qrcode/qrcode.gif">
+                    <i></i>
+                </div>
+            </li>
+
+            <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
+
+
+            <li class="wechat">
+                <a href="javascript:;">政务微信</a>
+                <div class="pic">
+                    <img src='/Content/Main/Base/img/weixin.png' />
+                    <i></i>
+                </div>
+            </li>
+            <li class="robot"><a href="/znjqr">智能机器人</a></li>
+        </ul>
+        <span class="topBarBg"></span>
+    </div>
+    <script>
+        $(".topBar li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script>
+
+    <!-- header S -->
+    <header id="header">
+        <div class="headerTop siteWidth">
+
+            <h1 title="安州区人民政府门户网站" id="logo"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
+
+            <div class="siteSearchBar">
+
+
+                <div class="s-form">
+                    <input type="hidden" id="sitelist" value="[{&quot;Name&quot;:&quot;全站群&quot;,&quot;Value&quot;:0},{&quot;Name&quot;:&quot;本站&quot;,&quot;Value&quot;:1},{&quot;Name&quot;:&quot;审计局&quot;,&quot;Value&quot;:2},{&quot;Name&quot;:&quot;农业局&quot;,&quot;Value&quot;:18}]" />
+                    <input type="hidden" id="siteid" name="sid" value="0">
+                    <div class="select-box">
+                        <a id="sOptionBtn" class="s-option" href="javascript:void(0)">全站群</a>
+                        <i class="arrow-dn"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="from-control" id="inputkeyword" placeholder="请输入关键词" spellcheck="false">
+                    </div>
+                    <div class="btn-box">
+                        <input type="submit" id="search" class="btn" onclick="gSearch();" value="搜 索">
+                        <input type="hidden" id="route" value="s" />
+                    </div>
+                </div>
+                <div class="hotWords">
+                    热门搜索：<a target="_blank" href="/s?st=1&wd=环保">环保</a><a target="_blank" href="/s?st=1&wd=生育">生育</a><a target="_blank" href="/s?st=1&wd=农业">农业</a><a target="_blank" href="/s?st=1&wd=医疗">医疗</a><a target="_blank" href="/s?st=1&wd=就业">就业</a>
+                </div>
+
+                <script src="/Content/_Common/FullTextSearch/js/default-site-search-box.js"></script>
+                <script>
+                    document.getElementById("inputkeyword").onkeydown = function (e) {
+                        e = e || window.event;
+                        if (e.keyCode == 13) {
+                            gSearch();
+                        }
+                    };
+
+                    function gSearch() {
+                        var keyword = document.getElementById('inputkeyword').value;
+                        var route = document.getElementById('route').value;
+
+                        if (keyword == '' || keyword == "请输入关键字") {
+                            alert("请输入关键字");
+                        } else {
+                            var siteid = document.getElementById('siteid').value;
+                            window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
+                        }
+                    }
+                </script>
+            </div>
+
+            <nav class="topNav clearfix">
+                <span class="menuBtn"></span>
+
+
+                <ul id="mainNav" class="mainNav">
+                    <li class="li1 first1" id="li-home">
+                        <h3 class="h1">
+                            <a class="a1" href='/'>首页</a>
+                        </h3>
+                    </li>
+
+                    <li class="li1 hasUl1" id="li-xw">
+                        <h3 class="h1">
+                            <a class="a1" href="/xw">政务动态</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-zw">
+                        <h3 class="h1">
+                            <a class="a1" href="/zw">政务公开</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-fw">
+                        <h3 class="h1">
+                            <a class="a1" href="/fw">政务服务</a></h3>
+                    </li>
+                    <li class="li1 hasUl1 on1" id="li-hd">
+                        <h3 class="h1">
+                            <a class="a1" href="/hd">公众参与</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-sq">
+                        <h3 class="h1">
+                            <a class="a1" href="/sq">走进安州</a></h3>
+                    </li>
+                </ul>
+
+                <script type="text/javascript">
+                    (function () {
+                        var navST;
+                        var navST1;
+                        var name = 'mainNav';
+                        var t = 200;
+                        var type = 1;
+                        var removeOn = 'False';
+                        var effect = 'fade';
+                        var appendItem = '#';
+                        var li = "#" + name + " li";
+                        var index = 0;
+
+                        if (!$("#" + name + " .li1").hasClass("on1")) {
+                            $("#" + name + " .li1").first().addClass("on1");
+                        } //默认第一个加.on1类
+                        index = $("#" + name + " .li1").index($("#" + name + " .on1"));
+
+                        //鼠标离开导航后，回复默认.on1类位置
+                        $("#" + name)
+                            .hover(
+                                function () {
+                                    if (navST1 != null) {
+                                        clearTimeout(navST1);
+                                    }
+                                },
+                                function () {
+                                    navST1 = setTimeout(function () {
+                                            $("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
+                                        },
+                                        500);
+                                }
+                            );
+
+                        if (type == '1') {
+                            li = "#" + name + " .li1";
+                        }
+                        if (appendItem != '#') { //插入内容
+                            var appendHtml = $(appendItem).html();
+                            $(li).first().append(appendHtml);
+                            $(appendItem).remove();
+                        }
+
+                        if (type == '3') {
+                            $("#" + name + " .on1").find("ul").first().show();
+                        }
+
+                        $(li)
+                            .hover(function () {
+                                    var curItem = $(this);
+                                    var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+                                    $(li).removeClass("on" + onNum);
+                                    curItem.addClass("on" + onNum);
+                                    navST = setTimeout(function () { //延时触发
+
+                                            if ($("ul:first", curItem).css("display") != "block") {
+                                                $(li + " .ul" + onNum).hide();
+                                                if (effect == 'fade') {
+                                                    $("ul:first", curItem).fadeIn(t);
+                                                } else {
+                                                    $("ul:first", curItem).slideDown(t);
+                                                }
+                                            };
+                                            navST = null;
+                                        },
+                                        t);
+                                },
+                                function () {
+                                    if (navST != null) {
+                                        clearTimeout(navST);
+                                    }
+                                    if (type == '1' || type == '2') {
+                                        if (effect == 'fade') {
+                                            $(this).find("ul").first().fadeOut(t);
+                                        } else {
+                                            $(this).find("ul").first().slideUp(t);
+                                        }
+                                    }
+                                    if (removeOn == 'True') {
+                                        $(this).removeClass("on1");
+                                    }
+                                },
+                                t); //end hover
+                    })()
+                </script>
+
+            </nav>
+            <script>
+                $(".topNav .h1").prepend("<i></i>")
+            </script>
+        </div>
+    </header>
+    <!-- header E -->
+
+
+    <!-- content S -->
+    <div id="content" class="interactionPage">
+        <div class="path">
+            <em>您的位置：</em><a href="/">首页</a>
+            &gt;<a href="/hd">公众参与</a></div>
+        <div class="mainContent">
+            <!-- 书记信箱等切换 -->
+            <div class="box indTab" id="indSjxx">
+                <div class="hd">
+                <span class="more">
+                    <a href="http://anxian.my.gov.cn/" target="_blank">更多&gt;&gt;</a>
+                    <a href="http://anxian.my.gov.cn:82/" target="_blank">更多&gt;&gt;</a>
+                </span>
+                    <ul>
+                        <li><a href="http://anxian.my.gov.cn/" target="_blank">书记、区长信箱</a></li>
+                        <li><a href="http://anxian.my.gov.cn:82/" target="_blank">举报投诉</a></li>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <div class="item szrxBody">
+                        <table class="letterList">
+                            <thead>
+                            <tr>
+                                <th class="num">编号</th>
+                                <th class="ico">&nbsp;</th>
+                                <th class="title">信件主题</th>
+                                <th class="dep">类型</th>
+                                <th class="state">处理情况</th>
+                                <th class="date">写信日期</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="num">1</td>
+                                <td class="ico"><i></i></td>
+                                <td class="title"><a target="_blank" href="http://anxian.my.gov.cn/ShowMail.aspx?id=620AC16D053D95BA"> 辽安二级路段施工</a></td>
+                                <td class="dep">投诉</td>
+                                <td class="state"><i class="s3">已办结</i></td>
+                                <td class="date">05-27</td>
+                            </tr>
+
+                            <tr>
+                                <td class="num">2</td>
+                                <td class="ico"><i></i></td>
+                                <td class="title"><a target="_blank" href="http://anxian.my.gov.cn/ShowMail.aspx?id=1988A9CF431F8F7B">关于城区占道停车收费的问题</a></td>
+                                <td class="dep">咨询</td>
+                                <td class="state"><i class="s3">已办结</i></td>
+                                <td class="date">05-12</td>
+                            </tr>
+
+                            <tr>
+                                <td class="num">3</td>
+                                <td class="ico"><i></i></td>
+                                <td class="title"><a target="_blank" href="http://anxian.my.gov.cn/ShowMail.aspx?id=9714927AE6B435AA">关于关口读书难的问题</a></td>
+                                <td class="dep">求助</td>
+                                <td class="state"><i class="s3">已办结</i></td>
+                                <td class="date">05-10</td>
+                            </tr>
+
+                            <tr>
+                                <td class="num">4</td>
+                                <td class="ico"><i></i></td>
+                                <td class="title"><a target="_blank" href="http://anxian.my.gov.cn/ShowMail.aspx?id=577EAE040544B3F8">咨询市城管部门办临时占道是否收费</a></td>
+                                <td class="dep">咨询</td>
+                                <td class="state"><i class="s3">已办结</i></td>
+                                <td class="date">05-05</td>
+                            </tr>
+
+                            <tr>
+                                <td class="num">5</td>
+                                <td class="ico"><i></i></td>
+                                <td class="title"><a target="_blank" href="http://anxian.my.gov.cn/ShowMail.aspx?id=8B54DE693EF78BB8">安州事业单位教师生育险怎么报</a></td>
+                                <td class="dep">咨询</td>
+                                <td class="state"><i class="s3">已办结</i></td>
+                                <td class="date">04-30</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="item szrxBody">
+                        <table class="letterList">
+                            <thead>
+                            <tr>
+                                <th class="num">编号</th>
+                                <th class="ico">&nbsp;</th>
+                                <th class="title">信件主题</th>
+                                <th class="dep">类型</th>
+                                <th class="state">处理情况</th>
+                                <th class="date">写信日期</th>
+                            </tr>
+                            </thead>
+                            <tbody id="letterContent">
+                            <tr  ws=aimselectinfo oble='659131'><td class='num'>659131</td><td class='ico'><i></i></td><td class='title'><a href = '#'>桑枣镇中心村电压低影响村民生活</a></td><td class='dep'>电话</td><td class='state'><i class='s3'>办理完成 </i></td> <td class='date'>07-30</td></tr><tr class='even' ws=aimselectinfo oble='658469'><td class='num'>658469</td><td class='ico'><i></i></td><td class='title'><a href = '#'>咨询辽安街道花果山公园何时修建</a></td><td class='dep'>阳光政务推送</td><td class='state'><i class='s3'>办理完成 </i></td> <td class='date'>07-28</td></tr><tr  ws=aimselectinfo oble='657502'><td class='num'>657502</td><td class='ico'><i></i></td><td class='title'><a href = '#'>秀水镇老街频繁停水影响居民生活</a></td><td class='dep'>电话</td><td class='state'><i class='s3'>办理完成 </i></td> <td class='date'>07-26</td></tr><tr class='even' ws=aimselectinfo oble='657413'><td class='num'>657413</td><td class='ico'><i></i></td><td class='title'><a href = '#'>建议增设辽安未来锦城至黄土镇的公交路线</a></td><td class='dep'>电话</td><td class='state'><i class='s3'>办理完成 </i></td> <td class='date'>07-26</td></tr><tr  ws=aimselectinfo oble='657286'><td class='num'>657286</td><td class='ico'><i></i></td><td class='title'><a href = '#'>黄土镇五路口垃圾库未及时清理产生异味</a></td><td class='dep'>电话</td><td class='state'><i class='s3'>办理完成 </i></td> <td class='date'>07-26</td></tr><tr class='even' ws=aimselectinfo oble='657163'><td class='num'>657163</td><td class='ico'><i></i></td><td class='title'><a href = '#'>咨询安州区90岁以上的老人可领取多少高龄津贴</a></td><td class='dep'>电话</td><td class='state'><i class='s3'>办理完成 </i></td> <td class='date'>07-25</td></tr><tr  ws=aimselectinfo oble='656777'><td class='num'>656777</td><td class='ico'><i></i></td><td class='title'><a href = '#'>希望在七一实验中学门前安装隔离桩</a></td><td class='dep'>因特网</td><td class='state'><i class='s3'>办理完成 </i></td> <td class='date'>07-25</td></tr><tr class='even' ws=aimselectinfo oble='656738'><td class='num'>656738</td><td class='ico'><i></i></td><td class='title'><a href = '#'>建议福集镇商业一街安装水泥下水管道</a></td><td class='dep'>电话</td><td class='state'><i class='s3'>办理完成 </i></td> <td class='date'>07-25</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 回应关切 -->
+            <div class="box" id="indHygq">
+                <div class="hd">
+                    <h3><a>回应关切</a></h3>
+                </div>
+                <div class="bd">
+                    <!-- 新闻发布厅 -->
+                    <div class="xwfbBox" id="indXwfb">
+                        <div class="xHd">
+                            <a class="more" href="/zw/hzjcgk/xwfbt">更多&gt;&gt;</a>
+                            <h3><a href="/zw/hzjcgk/xwfbt">新闻发布会</a></h3>
+                        </div>
+                        <div class="xBd">
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">07-21</span>
+                                    <a href="/zw/hzjcgk/xwfbt/swszfxwfbt/content_106926" target="_blank" title="标题：安州区全民参保登记工作新闻发布会
+点击数：236
+发表时间：2017-07-21">
+                                        安州区全民参保登记工作新闻发布会
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">07-21</span>
+                                    <a href="/zw/hzjcgk/xwfbt/swszfxwfbt/content_106924" target="_blank" title="标题：安州区攻坚城建项目建设区域中心新闻发布会
+点击数：250
+发表时间：2017-07-21">
+                                        安州区攻坚城建项目建设区域中心新闻发布会
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">07-19</span>
+                                    <a href="/zw/hzjcgk/xwfbt/swszfxwfbt/content_106647" target="_blank" title="标题：安州2017年上半年经济运行统计新闻发布会
+点击数：261
+发表时间：2017-07-19">
+                                        安州2017年上半年经济运行统计新闻发布会
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">06-09</span>
+                                    <a href="/zw/hzjcgk/xwfbt/swszfxwfbt/content_99754" target="_blank" title="标题：安州区环境污染防治“三大战役”工作推进情况新闻发布会
+点击数：143
+发表时间：2017-06-09">
+                                        安州区环境污染防治“三大战役”工作推进情况新闻发布会
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 回应关切 -->
+                    <div class="xwfbBox" id="indYqhy">
+                        <div class="xHd">
+                            <a class="more" href="/hd/yqhy">更多&gt;&gt;</a>
+                            <h3><a href="/hd/yqhy">回应关切</a></h3>
+                        </div>
+                        <div class="xBd">
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">07-13</span>
+                                    <a href="/hd/yqhy/content_105607" target="_blank" title="标题：省卫计委发布今年上半年全省报告突发公共卫生事件情况
+点击数：122
+发表时间：2017-07-13">
+                                        省卫计委发布今年上半年全省报告突发公共卫生事件情况
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">07-13</span>
+                                    <a href="/hd/yqhy/content_105606" target="_blank" title="标题：网传在川本一批招生高校投档线 省教育考试院辟谣：假的！
+点击数：179
+发表时间：2017-07-13">
+                                        网传在川本一批招生高校投档线 省教育考试院辟谣：假的！
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">06-22</span>
+                                    <a href="/hd/yqhy/content_97943" target="_blank" title="标题：安州沱三桥下穿隧道塌方是谣言 目前正在抓紧抢修
+点击数：107
+发表时间：2017-06-22">
+                                        安州沱三桥下穿隧道塌方是谣言 目前正在抓紧抢修
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">05-17</span>
+                                    <a href="/hd/yqhy/content_97940" target="_blank" title="标题：安州区公安局关于“5&#183;16”警情的通报
+点击数：126
+发表时间：2017-05-17">
+                                        安州区公安局关于“5·16”警情的通报
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 意见征集等切换 -->
+            <div class="box indTab" id="indYjzj">
+                <div class="hd">
+                <span class="more">
+                    <a href="/hd/yjzj">更多&gt;&gt;</a>
+                    <a href="/survey/list">更多&gt;&gt;</a>
+                </span>
+                    <ul>
+                        <li><a href="/hd/yjzj">意见征集</a></li>
+                        <li><a href="/survey/list">网上调查</a></li>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <ul class="yjzjList">
+
+
+                        <li class="first">
+                            <dl class="on">
+                                <dt>08-01</dt>
+                                <dd>征集中</dd>
+                            </dl>
+                            <div class="con">
+                                <div class="title">
+                                    <a class="tit" href="/hd/yjzj/zzjh/content_113156" title="安州区农业局关于公开征求《安州区城区活畜禽交易屠宰管理实施意见（试行）》意见的公告 ">安州区农业局关于公开征求《安州区城区活畜禽…</a>
+                                </div>
+                                <div class="intro">
+                                    为加强活畜禽交易屠宰管理，防止疫病传播，确保畜禽产品质量安全，保障人民群众身体健康，根据《中华人民共和国动物防疫法》《…
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <dl class="end">
+                                <dt>07-12</dt>
+                                <dd>已结束</dd>
+                            </dl>
+                            <div class="con">
+                                <div class="title">
+                                    <a class="tit" href="/hd/yjzj/wqhg/content_105592" title="《全国农业现代化规划（2016-2020年）》实施方案（征求意见稿）征求意见">《全国农业现代化规划（2016-2020年）》实施…</a>
+                                </div>
+                                <div class="intro">
+                                    为认真贯彻落实《中华人民共和国国民经济和社会发展第十三个五年规划纲要》的部署，大力推进农业现代化，国务院印发了《全国农…
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="last">
+                            <dl class="end">
+                                <dt>07-12</dt>
+                                <dd>已结束</dd>
+                            </dl>
+                            <div class="con">
+                                <div class="title">
+                                    <a class="tit" href="/hd/yjzj/wqhg/content_105591" title="《四川省高速公路网路线命名和编号方案》征求意见">《四川省高速公路网路线命名和编号方案》征求…</a>
+                                </div>
+                                <div class="intro">
+                                    　　高速公路网路线命名编号体系与人民群众的便捷出行密切相关，是规范完善公路标志标牌工作的前置条件，既要符合路网发展的整…
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <ul class="infoList">
+
+                        <li><a href="/survey/19">2017年安州区政府信息公开公众满意度网上调查</a></li>
+                        <li><a href="/survey/18">2017年安州“3.15”消费者权益日专项网上调查…</a></li>
+                        <li><a href="/survey/13">您认为本网站栏目调整后，哪一块内容得到提升…</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 人大代表建议等切换 -->
+            <div class="box indTab" id="indRddbjy">
+                <div class="hd">
+                <span class="more">
+                    <a href="/hd/rdjyhzxta">更多&gt;&gt;</a>
+                    <a href="/hd/rdjyhzxta">更多&gt;&gt;</a>
+                </span>
+                    <ul>
+                        <li><a href="/hd/rdjyhzxta/rddbjyhdf">政策解读</a></li>
+                        <li><a href="/hd/rdjyhzxta/zxtahdf">政协提案和答复</a></li>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <ul class="infoList">
+
+
+
+                        <li class="first">
+                            <span class="date">2017-06-30</span>
+                            <a href="http://www.luzhou.gov.cn/publicity_dept28/subject04/subject140/60202" target="_blank" title="标题：安州区金融办公室关于对市八届人大一次会议第14号建议的复函
+点击数：0
+发表时间：2017-06-30">
+                                安州区金融办公室关于对市八届人大一次会议第…
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-06-05</span>
+                            <a href="http://www.luzhou.gov.cn/publicity_dept14/subject010/subject189/59399" target="_blank" title="标题：安州区城市管理行政执法局对市人大八届一次会议第101号建议的答复
+点击数：0
+发表时间：2017-06-05">
+                                安州区城市管理行政执法局对市人大八届一次会…
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-05-27</span>
+                            <a href="http://www.luzhou.gov.cn/publicity_dept19/subject01/subject13/59223" target="_blank" title="标题：安州区商务局关于市八届人大一次会议第43号建议的复函
+点击数：0
+发表时间：2017-05-27">
+                                安州区商务局关于市八届人大一次会议第43号建…
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-05-26</span>
+                            <a href="http://www.luzhou.gov.cn/publicity_dept21/subject01/subject13/59132" target="_blank" title="标题：安州区卫生和计划生育委员会对市人大八届第一次会议第130号建议答复的函
+点击数：0
+发表时间：2017-05-26">
+                                安州区卫生和计划生育委员会对市人大八届第一…
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-03-07</span>
+                            <a href="http://www.luzhou.gov.cn/publicity_dept21/subject014/subject1103/56537" target="_blank" title="标题：安州区卫生和计划生育委员会对市第七届人大六次会议建议的答复（6件）
+点击数：0
+发表时间：2017-03-07">
+                                安州区卫生和计划生育委员会对市第七届人大六…
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2016-08-31</span>
+                            <a href="/hd/rdjyhzxta/rddbjyhdf/content_104881" target="_blank" title="标题：安州区扶贫和移民工作局对市七届六次人大会议第109号建议答复的函
+点击数：116
+发表时间：2016-08-31">
+                                安州区扶贫和移民工作局对市七届六次人大会议…
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2016-08-31</span>
+                            <a href="/hd/rdjyhzxta/rddbjyhdf/content_104880" target="_blank" title="标题：安州区扶贫和移民工作局对市七届六次人大会议第110号建议答复的函
+点击数：108
+发表时间：2016-08-31">
+                                安州区扶贫和移民工作局对市七届六次人大会议…
+                            </a>
+                        </li>
+
+
+
+
+                        <li class="last">
+                            <span class="date">2016-08-31</span>
+                            <a href="/hd/rdjyhzxta/rddbjyhdf/content_104879" target="_blank" title="标题：安州区扶贫和移民工作局对市七届六次人大会议第27号建议答复的函
+点击数：102
+发表时间：2016-08-31">
+                                安州区扶贫和移民工作局对市七届六次人大会议…
+                            </a>
+                        </li>
+
+
+                    </ul>
+                    <ul class="infoList">
+
+
+
+                        <li class="first">
+                            <span class="date">2017-06-30</span>
+                            <a href="http://www.luzhou.gov.cn/publicity_dept28/subject04/subject140/60204" target="_blank" title="标题：安州区金融办公室关于对市政协八届一次会议第538号提案答复的函
+点击数：0
+发表时间：2017-06-30">
+                                安州区金融办公室关于对市政协八届一次会议第…
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-05-05</span>
+                            <a href="http://www.luzhou.gov.cn/publicity_dept21/subject01/subject13/58492" target="_blank" title="标题：对市政协八届委员会第一次会议第491号提案答复的函
+点击数：0
+发表时间：2017-05-05">
+                                对市政协八届委员会第一次会议第491号提案答…
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-04-27</span>
+                            <a href="http://www.luzhou.gov.cn/publicity_dept21/subject01/subject13/58123" target="_blank" title="标题：对政协安州区第八届委员会第一次会议第364号委员提案答复的函
+点击数：0
+发表时间：2017-04-27">
+                                对政协安州区第八届委员会第一次会议第364号…
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-03-07</span>
+                            <a href="http://www.luzhou.gov.cn/publicity_dept21/subject014/subject1103/56538" target="_blank" title="标题：对市政协第七届五次会议提案的答复（15件）
+点击数：0
+发表时间：2017-03-07">
+                                对市政协第七届五次会议提案的答复（15件）
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2016-09-18</span>
+                            <a href="/hd/rdjyhzxta/zxtahdf/content_105183" target="_blank" title="标题：对市七届人大六次会议第88号建议答复的函
+点击数：113
+发表时间：2016-09-18">
+                                对市七届人大六次会议第88号建议答复的函
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2016-09-18</span>
+                            <a href="/hd/rdjyhzxta/zxtahdf/content_105182" target="_blank" title="标题：对市七届人大六次会议第83号建议答复的函
+点击数：113
+发表时间：2016-09-18">
+                                对市七届人大六次会议第83号建议答复的函
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2016-09-18</span>
+                            <a href="/hd/rdjyhzxta/zxtahdf/content_105181" target="_blank" title="标题：对市政协七届五次会议第28号提案答复的函
+点击数：115
+发表时间：2016-09-18">
+                                对市政协七届五次会议第28号提案答复的函
+                            </a>
+                        </li>
+
+
+
+
+                        <li class="last">
+                            <span class="date">2016-09-18</span>
+                            <a href="/hd/rdjyhzxta/zxtahdf/content_105180" target="_blank" title="标题：对市政协七届五次会议第123号提案答复的函
+点击数：105
+发表时间：2016-09-18">
+                                对市政协七届五次会议第123号提案答复的函
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div><!-- mainContent E -->
+        <div class="side">
+            <ul class="hdIconsBtn">
+                <li class="li1"><a target="_blank" href="http://anxian.my.gov.cn/index.aspx"><i></i>给书记区长写信</a></li>
+                <li class="li2"><a target="_blank" href="http://anxian.my.gov.cn/MailList.aspx"><i></i>信件处理情况</a></li>
+                <li class="li3"><a href="/hd/ywzsk"><i></i>智能互动</a></li>
+                <li class="li5"><a target="_blank" href="http://axmail.my.gov.cn:8080/login"><i></i>网上信访</br>投诉受理</a></li>
+                <li class="li4"><a target="_blank" href="http://liuyan.people.com.cn/city.php?fid=407"><i></i>人民网地方</br>领导留言板</a></li>
+                <li class="li6">
+                    <a><i></i>政务微信</a>
+                    <p class="pic">
+                        <img src='/Content/Main/Base/img/weixin.png' />
+                    </p>
+                </li>
+            </ul>
+
+            <!-- 在线访谈 -->
+            <div class="box" id="indZxft">
+                <div class="hd">
+                    <a class="more" href="/onlineinterview/">更多&gt;&gt;</a>
+                    <h3><a href="/onlineinterview/">在线访谈</a></h3>
+                </div>
+                <div class="bd">
+
+                    <div class="interviewItem">
+                        <div class="interviewPic">
+
+                            <a href="/onlineinterview/36">
+
+                                <img alt="河长制･河长治" src="/upload/main/onlineinterview/moduledefault/image/201707241711158886_200_150.jpg" width="200" height="150" />
+
+                            </a></div>
+                        <div class="interviewCon">
+                            <div class="title">
+                                <span class="label">主题：</span>
+                                <span class="con"><a href="/onlineinterview/36">河长制･河长治</a></span>
+                            </div>
+                            <div class="date">
+                                <span class="label">时间：</span>
+                                <span class="con">2017-07-31 10:00</span>
+                            </div>
+                            <div class="guest">
+                                <span class="label">嘉宾：</span>
+                                <span class="con">区水务局局长 杨小海</span>
+                            </div>
+                            <div class="intro">
+                                <span class="label">简介：</span>
+                                <span class="con">实施河长制是落实绿色发展理念、推进生态文明建设的必然要求；是解决复杂水问题、维护河湖健康生命的有效举措；是完善水治理体系、保障水安全的制度创新。本期我们就“河长制･河长治”这一主题与广大网友进行在线交流...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="itvBtns">
+                        <li class="li1"><a href="/onlineinterview/">往期访谈</a></li>
+                        <li class="li2"><a href="/onlineinterview/">访谈预告</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 阳光政务 -->
+            <div class="box" id="indYgzw">
+                <div class="hd">
+                    <a class="more" href="/hd/ygzw">更多&gt;&gt;</a>
+                    <h3><a href="/hd/ygzw">阳光政务</a></h3>
+                </div>
+                <div class="bd">
+                    <ul class="ygzwList">
+
+
+
+                        <li class="first">
+                            <div class="pic">
+                                <a href="/hd/ygzw/content_106756">
+                                    <img alt="阳光政务第十四期（农业局）" src="/upload/main/contentmanage/article/image/2a7c721fcf9e4ee899cef0d57079b72d_320_240.jpg" width="320" height="240" />
+                                </a>
+                            </div>
+                            <div class="con">
+                                <dl class="name">
+                                    <dt>主题：</dt>
+                                    <dd><a class="tit" href="/hd/ygzw/content_106756" title="阳光政务第十四期（农业局）">阳光政务第十四期（农业局）</a></dd>
+                                </dl>
+                                <dl class="date">
+                                    <dt>时间：</dt>
+                                    <dd>2017年7月11日</dd>
+                                </dl>
+                                <dl class="guest">
+                                    <dt>嘉宾：</dt>
+                                    <dd>安州区农业局</dd>
+                                </dl>
+                                <dl class="intro">
+                                    <dt>简介：</dt>
+                                    <dd>
+                                        2017年7月11日，农业局局长黄月桂，以及各科室相关负责人做客《阳光政务·政风行风热线》，就低保、五保、社会救助、社会福利、婚姻登记、殡葬管理、退役士兵、民间组织、救灾捐赠、光荣院、儿童收养、地名命名…            </dd>
+                                </dl>
+                            </div>
+                        </li>
+
+
+
+                        <li class="last">
+                            <div class="pic">
+                                <a href="/hd/ygzw/content_106557">
+                                    <img alt="阳光政务第十三期（法院）" src="/upload/main/contentmanage/article/image/7856144c9aa342c186ae25a817ebb912_320_240.jpg" width="320" height="240" />
+                                </a>
+                            </div>
+                            <div class="con">
+                                <dl class="name">
+                                    <dt>主题：</dt>
+                                    <dd><a class="tit" href="/hd/ygzw/content_106557" title="阳光政务第十三期（法院）">阳光政务第十三期（法院）</a></dd>
+                                </dl>
+                                <dl class="date">
+                                    <dt>时间：</dt>
+                                    <dd>2017年6月27日</dd>
+                                </dl>
+                                <dl class="guest">
+                                    <dt>嘉宾：</dt>
+                                    <dd>安州区法院</dd>
+                                </dl>
+                                <dl class="intro">
+                                    <dt>简介：</dt>
+                                    <dd>
+                                        2017年6月27日，安州区法院部门负责人做客《阳光政务·政风行风热线》，就我市公路建设、养护、车辆超限运输、公路建筑控制区建房等相关问…            </dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <a class="xwhktBtn" target="_blank" href=""></a> -->
+        </div><!-- side E -->
+    </div>
+    <!-- content E -->
+    <script>
+        $(".indTab").slide({delayTime: 0, targetCell:".more a"});
+        hover($(".hdIconsBtn .li6"),"on")
+
+    </script>
+
+    <!-- footer S -->
+    <footer id="footer">
+        <div class="siteWidth">
+            <div class="footNav">
+
+
+
+                <a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
+                <a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
+                <a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
+                <a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
+                <a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
+                <a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
+
+            </div>
+            <div class="copyRight"><p>
+                安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br/>地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br/>蜀ICP备12001441号<br/> &nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1"/>川公网安备 51070302110201号</a>
+            </p>
+                <div class="pics">
+                    <a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg"/></a> &nbsp;&nbsp;<script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg"/></a> &nbsp;&nbsp;<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png"/></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer E -->
+
+    <!-- 侧栏固定菜单 -->
+    <ul class="sideFixed" style="display:none">
+        <li class="wza"><a target="blank" target="_blank" href="/wca.html" title="无障碍版"></a></li>
+        <li class="jqr"><a target="blank" href='/znjqr' title="智能机器人"></a></li>
+        <li class="sj">
+            <a href="javascript:void(0);" title="手机版"></a>
+            <div class="pic">
+                <img src="/qrcode/qrcode.gif" />
+                <i></i>
+            </div>
+        </li>
+        <li class="wb"><a target="blank" href='http://weibo.com/luzhouzhengwu' title="政务微博"></a></li>
+        <li class="wx">
+            <a href="javascript:void(0);" title="政务微信"></a>
+            <div class="pic">
+                <img src='/Content/Main/Base/img/weixin.png' />
+                <i></i>
+            </div>
+        </li>
+        <li class="db"><a href="#" title="返回顶部"></a></li>
+    </ul>
+    <script>
+        $(".sideFixed li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script></div>
+<script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
+<script src="/Content/_Common/Base/js/power.js"></script>
+
+
+
+</body>
+</html>

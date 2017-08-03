@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="../images/zx_conter20170606.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="/cn/images/jquery.min20160809.js"></script>
+<script type="text/javascript" src="/cn/images/slideshow20160809.js"></script>
+<script type="text/javascript" src="/cn/images/hhDrop20160906.js"></script>
+<style>
+    #myTab8 span.hover {
+        background: #14c735;
+        color: #fff;
+        text-decoration: none;
+    }
+    #myTab8 span {
+        height: 20px;
+        width: 20px;
+        color: #303e6e;
+        font-size: 14px;
+        text-align: center;
+        line-height: 20px;
+        display: inline;
+        background: #f6f6f6;
+        margin: 0 3px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .zxbs_con_right .zxbs_fw_con .fw_ul ul li a {
+        line-height:14px;
+        padding: 0px 0px 0 0px;
+        display: inline-block;
+    }
+    .zxbs_con_right.zxbs_fw_con .fw_ul ul li a:hover{ text-decoration:none;}
+
+    .zxbs_con_right .zxbs_fw_con .fw_ul ul li {
+        width: 210px;
+        height: 42px;
+        padding-right:10px;
+    }
+    .fw_btn p img{width:145px}
+    /*#myTab2_Content0 .bg2{display:none;}
+    #myTab2_Content0 .bg15{display:none;}
+    #myTab1_Content1 .ullb .bg5{display:none;}*/
+    #myTab6_Content0 .bg8{display:none;}
+    #myTab1_Content1 .ullb .bg11{display:none;}
+    #myTab1_Content2 .ullb .bg9{display:none;}
+</style>
+<script>
+    $(function(){
+        $('#hhDrop00').hhDrop({});
+        $('#hhDrop01').hhDrop({});
+    })
+</script>
+<script type="text/JavaScript">
+    function nTabs(thisObj,Num){
+        if(thisObj.className == "hover")return;
+        var tabObj = thisObj.parentNode.id;
+        var tabList = document.getElementById(tabObj).getElementsByTagName("span");
+        for(i=0; i <tabList.length; i++)
+        {
+            if (i == Num)
+            {
+                thisObj.className = "hover";
+                document.getElementById(tabObj+"_Content"+i).style.display = "block";
+            }else{
+                tabList[i].className = "";
+                document.getElementById(tabObj+"_Content"+i).style.display = "none";
+            }
+        }
+    }
+
+    function changentabs(cnum){
+        document.getElementById("fw_ul1").style.display = "none";
+        document.getElementById("fw_ul2").style.display = "none";
+        document.getElementById("fw_ul3").style.display = "none";
+        document.getElementById("fw_ul"+cnum).style.display = "block";
+        var textvalue=$("#searchange"+cnum).html();
+        document.getElementById("keywordsize14").innerHTML=textvalue;
+
+    }
+</script>
+</head>
+<body>
+<div class="zxbs_con_left">
+    <div class="zxbs_tit"  id="myTab3"><span class="hover"  onclick="nTabs(this,0);">个人办事</span><span id="zxbs_tit2"  onclick="nTabs(this,1);">法人事项</span></div>
+    <div class="left_sx_con"  id="myTab3_Content0"   style="display:block;">
+        <div class="zxbs_tit_tab"  id="myTab1">
+            <span class="hover" onclick="nTabs(this,0);"><em></em>主题分类</span>
+            <span onclick="nTabs(this,1);"><em></em>人生事件</span>
+            <span onclick="nTabs(this,2);"><em></em>特定对象</span></div>
+        <div class="zxbs_tit_tab_con"   id="myTab1_Content0"   style="display:block;">
+            <div class="page" id="myTab2"><span class="hover" onclick="nTabs(this,0);">1</span><span  onclick="nTabs(this,1);">2</span></div>
+            <ul class="ullb" id="myTab2_Content0"  style="display:block;">
+                <!-- 个人办事  主题分类   01819_3-->
+
+                <li class="bg1"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01822_3"name="01822_3" >生育收养</a></li>
+
+                <li class="bg2"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01831_3"name="01831_3" >婚姻</a></li>
+
+                <li class="bg3"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01832_3"name="01832_3" >医疗</a></li>
+
+                <li class="bg4"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01833_3"name="01833_3" >出入境</a></li>
+
+                <li class="bg5"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01834_3"name="01834_3" >社会救助</a></li>
+
+                <li class="bg6"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01835_3"name="01835_3" >司法公证</a></li>
+
+                <li class="bg7"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01836_3"name="01836_3" >死亡殡葬</a></li>
+
+                <li class="bg8"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01837_3"name="01837_3" >职业资格</a></li>
+
+                <li class="bg9"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01838_3"name="01838_3" >消费维权</a></li>
+
+                <li class="bg10"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01839_3"name="01839_3" >交通</a></li>
+
+                <li class="bg11"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01840_3"name="01840_3" >知识产权</a></li>
+
+                <li class="bg12"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01823_3"name="01823_3" >户籍</a></li>
+
+                <li class="bg13"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01841_3"name="01841_3" >民族宗教</a></li>
+
+                <li class="bg14"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01824_3"name="01824_3" >教育</a></li>
+
+                <li class="bg15"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01825_3"name="01825_3" >文化体育</a></li>
+
+
+            </ul>
+            <ul id="myTab2_Content1">
+                <li class="bg16"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01826_3"name="01826_3" >住房</a></li>
+
+                <li class="bg17"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01827_3"name="01827_3" >兵役</a></li>
+
+                <li class="bg18"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01829_3"name="01829_3" >纳税</a></li>
+
+                <li class="bg19"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01830_3"name="01830_3" >社保</a></li>
+
+                <li class="bg20"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=913"name="913" >其他</a></li>
+            </ul>
+        </div>
+        <div class="zxbs_tit_tab_con"   id="myTab1_Content1"  >
+            <ul class="ullb" style="display:block;">
+                <!-- 个人办事  人生事件   01820_3-->
+
+                <li class="bg1"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01843_3"name="01843_3" >升学</a></li>
+
+                <li class="bg2"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01852_3"name="01852_3" >后事</a></li>
+
+                <li class="bg3"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01844_3"name="01844_3" >找工作</a></li>
+
+                <li class="bg4"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01845_3"name="01845_3" >买房子</a></li>
+
+                <li class="bg5"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01846_3"name="01846_3" >结婚</a></li>
+
+                <li class="bg6"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01847_3"name="01847_3" >生小孩</a></li>
+
+                <li class="bg7"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01848_3"name="01848_3" >失业</a></li>
+
+                <li class="bg8"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01849_3"name="01849_3" >创业</a></li>
+
+                <li class="bg9"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01850_3"name="01850_3" >迁居</a></li>
+
+                <li class="bg10"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01851_3"name="01851_3" >退休</a></li>
+
+                <li class="bg11"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=910"name="910" >其他</a></li>
+
+            </ul>
+        </div>
+        <div class="zxbs_tit_tab_con"   id="myTab1_Content2"  >
+            <ul class="ullb" style="display:block;">
+                <!-- 个人办事   特定对象   01821_3-->
+
+                <li class="bg1"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01854_3"name="01854_3" >高校毕业生</a></li>
+
+                <li class="bg2"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01863_3"name="01863_3" >港澳台侨</a></li>
+
+                <li class="bg3"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01855_3"name="01855_3" >人才</a></li>
+
+                <li class="bg4"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01856_3"name="01856_3" >老年人</a></li>
+
+                <li class="bg5"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01857_3"name="01857_3" >残疾人</a></li>
+
+                <li class="bg6"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01858_3"name="01858_3" >特困家庭</a></li>
+
+                <li class="bg7"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01859_3"name="01859_3" >儿童青少年</a></li>
+
+                <li class="bg8"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01860_3"name="01860_3" >妇女</a></li>
+
+                <li class="bg9"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01861_3"name="01861_3" >农民</a></li>
+
+                <li class="bg10"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01862_3"name="01862_3" >外国人</a></li>
+
+                <li class="bg11"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=914"name="914" >其他</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="left_sx_con"  id="myTab3_Content1" >
+        <div class="zxbs_tit_tab"  id="myTab5">
+            <span class="hover" onclick="nTabs(this,0);"><em></em>主题分类</span>
+            <span onclick="nTabs(this,1);"><em></em>人生事件</span>
+            <span onclick="nTabs(this,2);"><em></em>特定对象</span></div>
+
+        <div class="zxbs_tit_tab_con"   id="myTab5_Content0"   style="display:block;" >
+            <div class="page" id="myTab6"><span class="hover" onclick="nTabs(this,0);">1</span><span  onclick="nTabs(this,1);">2</span></div>
+            <ul id="myTab6_Content0"   style="display:block;">
+                <!-- 法人事项  主题分类   01865_3-->
+
+                <li class="bg1"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01888_3"name="01888_3" >设立变更</a></li>
+
+                <li class="bg2"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01897_3"name="01897_3" >建设管理</a></li>
+
+                <li class="bg3"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01898_3"name="01898_3" >劳动保障</a></li>
+
+                <li class="bg4"><a target="_blank" target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01899_3"name="01899_3" >人力资源</a></li>
+
+                <li class="bg5"><a target="_blank" target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01900_3"name="01900_3" >质量检查</a></li>
+
+                <li class="bg6"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01901_3"name="01901_3" >安全防护</a></li>
+
+                <li class="bg7"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01902_3"name="01902_3" >环保绿化</a></li>
+
+                <li class="bg8"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01903_3"name="01903_3" >土地房产</a></li>
+
+                <li class="bg9"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01904_3"name="01904_3" >文物保护</a></li>
+
+                <li class="bg10"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01905_3"name="01905_3" >新闻广电</a></li>
+
+                <li class="bg11"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01906_3"name="01906_3" >交通运输</a></li>
+
+                <li class="bg12"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01889_3"name="01889_3" >年检年审</a></li>
+
+                <li class="bg13"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01907_3"name="01907_3" >农林牧渔</a></li>
+
+                <li class="bg14"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01908_3"name="01908_3" >水利水务</a></li>
+
+                <li class="bg15"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01909_3"name="01909_3" >医疗卫生</a></li>
+                <li class="bg16"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01910_3"name="01910_3" >知识产权</a></li>
+
+            </ul>
+            <ul id="myTab6_Content1">
+
+
+                <li class="bg17"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01911_3"name="01911_3" >破产注销</a></li>
+
+                <li class="bg18"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01890_3"name="01890_3" >财务税务</a></li>
+
+                <li class="bg19"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01891_3"name="01891_3" >准营准办</a></li>
+
+                <li class="bg20"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01892_3"name="01892_3" >立项审批</a></li>
+
+                <li class="bg21"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01893_3"name="01893_3" >资质认证</a></li>
+
+                <li class="bg22"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01894_3"name="01894_3" >金融投资</a></li>
+
+                <li class="bg23"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01895_3"name="01895_3" >对外交流</a></li>
+
+                <li class="bg24"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01896_3"name="01896_3" >司法公证</a></li>
+
+                <li class="bg25"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01912_3"name="01912_3" >其他</a></li>
+            </ul>
+        </div>
+        <div class="zxbs_tit_tab_con"   id="myTab5_Content1" >
+            <ul class="ullb"  style="display:block;">
+                <!-- 法人事项  人生事件   01866_3-->
+
+                <li class="bg1"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01877_3"name="01877_3" >开办企业</a></li>
+
+                <li class="bg2"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01886_3"name="01886_3" >申请破产</a></li>
+
+                <li class="bg3"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01878_3"name="01878_3" >申请资质</a></li>
+
+                <li class="bg4"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01879_3"name="01879_3" >投资立项</a></li>
+
+                <li class="bg5"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01880_3"name="01880_3" >扩大生产</a></li>
+
+                <li class="bg6"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01881_3"name="01881_3" >引进人才</a></li>
+
+                <li class="bg7"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01882_3"name="01882_3" >办理社保</a></li>
+
+                <li class="bg8"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01883_3"name="01883_3" >申请专利</a></li>
+
+                <li class="bg9"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01884_3"name="01884_3" >纳税缴费</a></li>
+
+                <li class="bg10"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01885_3"name="01885_3" >申请贷款</a></li>
+
+                <li class="bg11"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=911"name="911" >其他</a></li>
+
+            </ul>
+        </div>
+        <div class="zxbs_tit_tab_con"   id="myTab5_Content2"  >
+            <ul class="ullb" style="display:block;">
+                <!-- 法人事项   特定对象   01867_3-->
+
+                <li class="bg1"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01868_3"name="01868_3" >中小企业</a></li>
+
+                <li class="bg2"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01869_3"name="01869_3" >民营企业</a></li>
+
+                <li class="bg3"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01870_3"name="01870_3" >高新技术企业</a></li>
+
+                <li class="bg4"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01871_3"name="01871_3" >困难企业</a></li>
+
+                <li class="bg5"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01872_3"name="01872_3" >重点企业</a></li>
+
+                <li class="bg6"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01873_3"name="01873_3" >私营企业</a></li>
+
+                <li class="bg7"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01874_3"name="01874_3" >社会组织</a></li>
+
+                <li class="bg8"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=01875_3"name="01875_3" >个体工商户</a></li>
+
+                <li class="bg9"><a target="_blank" href="/qzqd/szfgbm_1537/bs_30114.htm?flbm=912"name="912" >其他</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="zxbs_con_right">
+    <div class="zxbs_tit"><span>部门服务</span></div>
+    <div class=" zxbs_fw_con">
+        <div class=" fw_list">
+            <div class="thRelative" id="hhDrop00">
+                <div class="boxSearch">
+          <span class="key_word">
+            <b class="size_14" id="keywordsize14">区政府工作部门</b>
+          </span>
+                </div>
+                <div class="search_form_suggest" style="display:none;">
+                    <h3><a class="ico btn_close thRight" item="close">关闭</a><a onclick="changentabs(1);" id="searchange1">区政府工作部门</a></h3>
+                    <h3><a onclick="changentabs(2);" id="searchange2">市管单位及其他</a></h3>
+                    <h3><a onclick="changentabs(3);" id="searchange3">区政府（管委会）</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="fw_ul" id="fw_ul1" name="fwul">
+            <ul id="myTab8_Content0"   style="display:block;height:265px;">
+
+                <li><a href="/fzggj/ywgz" target="_blank">绵阳市发展和改革委员会</a></li>
+
+                <li><a href="/sjxw/ywgz" target="_blank">绵阳市经济贸易和信息化委员会</a></li>
+
+                <li><a href="/kjcxw/ywgz" target="_blank">绵阳市科技创新委员会</a></li>
+
+                <li><a href="/czj/ywgz" target="_blank">绵阳市财政委员会</a></li>
+
+                <li><a href="/ghj/ywgz" target="_blank">绵阳市规划和国土资源委员会</a></li>
+
+                <li><a href="/gsj/ywgz" target="_blank">绵阳市市场和质量监督管理委员会</a></li>
+
+                <li><a href="/hjbhj/ywgz" target="_blank">绵阳市人居环境委员会</a></li>
+
+                <li><a href="/jtj/ywgz" target="_blank">绵阳市交通运输委员会</a></li>
+
+                <li><a href="/wsj/ywgz" target="_blank">绵阳市卫生和计划生育委员会</a></li>
+
+                <li><a href="/jyj/ywgz" target="_blank">绵阳市教育局</a></li>
+
+                <li><a href="/gaj/ywgz" target="_blank">绵阳市公安局</a></li>
+
+                <li><a href="/mzj/ywgz" target="_blank">绵阳市民政局</a></li>
+
+            </ul>
+            <ul id="myTab8_Content1"   style="display:none;height:265px;">
+
+                <li><a href="/sfj/ywgz" target="_blank">绵阳市司法局</a></li>
+
+                <li><a href="/rsj/ywgz" target="_blank">绵阳市人力资源和社会保障局</a></li>
+
+                <li><a href="/whj/ywgz" target="_blank">绵阳市文体旅游局</a></li>
+
+                <li><a href="/sjj/ywgz" target="_blank">绵阳市审计局</a></li>
+
+                <li><a href="/gzw/ywgz" target="_blank">绵阳市人民政府国有资产监督管理委员会</a></li>
+
+                <li><a href="/jsj/ywgz" target="_blank">绵阳市住房和建设局</a></li>
+
+                <li><a href="/shuiwj/ywgz" target="_blank">绵阳市水务局</a></li>
+
+                <li><a href="/dfswj/ywgz" target="_blank">绵阳市地方税务局</a></li>
+
+                <li><a href="/tjj/ywgz" target="_blank">绵阳市统计局</a></li>
+
+                <li><a href="/csglj/ywgz" target="_blank">绵阳市城市管理局</a></li>
+
+                <li><a href="/qxj/ywgz" target="_blank">绵阳市气象局（台）</a></li>
+
+                <li><a href="/rmzfkabgs/ywgz" target="_blank">绵阳市人民政府口岸办公室</a></li>
+
+            </ul>
+            <ul id="myTab8_Content2"   style="display:none;height:265px;">
+
+                <li><a href="/rmzffzbgs/ywgz" target="_blank">绵阳市人民政府法制办公室</a></li>
+
+                <li><a href="/rmzfwsbgs/ywgz" target="_blank">绵阳市人民政府外事办公室</a></li>
+
+                <li><a href="/yjzhzx/ywgz" target="_blank">绵阳市人民政府应急管理办公室</a></li>
+
+                <li><a href="/jrb/ywgz" target="_blank">绵阳市人民政府金融发展服务办公室</a></li>
+
+            </ul>
+            <div class="page" id="myTab8" style="margin-top: 8px;" ><span class="hover" onclick="nTabs(this,0);">1</span><span  onclick="nTabs(this,1);">2</span><span  onclick="nTabs(this,2);">3</span></div>
+        </div>
+        <div class="fw_ul" id="fw_ul2" style="display:none;" name="fwul">
+            <ul style="height:240px;">
+
+                <li><a href="/sbjjblj/ywgz" target="_blank">绵阳市社会保险基金管理局</a></li>
+
+                <li><a href="/qhglj/ywgz" target="_blank">绵阳市前海深港现代服务业合作区管理局</a></li>
+
+                <li><a href="/daj/ywgz" target="_blank">绵阳市档案局</a></li>
+
+                <li><a href="/wxdglj/ywgz" target="_blank">绵阳市无线电管理局</a></li>
+
+                <li><a href="/szfcgzx/ywgz" target="_blank">绵阳市政府采购中心</a></li>
+
+                <li><a href="/zfgjj/ywgz" target="_blank">绵阳市住房公积金管理中心</a></li>
+
+            </ul>
+        </div>
+        <div class="fw_ul" id="fw_ul3" style="display:none;" name="fwul">
+            <ul style="height:240px;">
+
+                <li><a href="/ftq/ywgz" target="_blank">绵阳市福田区人民政府</a></li>
+
+                <li><a href="/lhq/ywgz" target="_blank">绵阳市罗湖区人民政府</a></li>
+
+                <li><a href="/ytq/ywgz" target="_blank">绵阳市盐田区人民政府</a></li>
+
+                <li><a href="/nsq/ywgz" target="_blank">绵阳市南山区人民政府</a></li>
+
+                <li><a href="/baq/ywgz" target="_blank">绵阳市宝安区人民政府</a></li>
+
+                <li><a href="/lgq/ywgz" target="_blank">绵阳市龙岗区人民政府</a></li>
+
+                <li><a href="/lhxq/ywgz" target="_blank">绵阳市龙华区人民政府</a></li>
+
+                <li><a href="/psxq/ywgz" target="_blank">绵阳市坪山区人民政府</a></li>
+
+                <li><a href="/gmxq/ywgz" target="_blank">绵阳市光明新区管理委员会</a></li>
+
+                <li><a href="/dpxq/ywgz" target="_blank">绵阳市大鹏新区管理委员会</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="fw_btn">
+        <p><a href="/qzqd" target="_blank"><img style="width:auto;" src="/cn/images/qzqd20170724.jpg" /></a></p>
+        <p><a href="http://wsbs.sz.gov.cn/shenzhen/project/BusyQuery?type=CX" target="_blank"><img style="width:auto;" src="/cn/images/ztcx_20170704.jpg" /></a></p>
+    </div>
+</div>
+
+</body>
+</html>

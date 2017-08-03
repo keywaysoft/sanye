@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="安州区人民政府门户网站,安州区政府,安州" />
+    <meta name="description" content="安州区人民政府门户网站 安州区  安州政府" />
+    <meta name="application-name" content="安州区人民政府门户网站" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true" />
+
+    <title>政务服务_安州区人民政府门户网站</title>
+
+    <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+
+    <link href="/Content/Main/ServiceHall/css/service.css" rel="stylesheet" />
+
+
+    <link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
+    <script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
+    <script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
+    <!--     <script src="/Content/_Common/Base/js/antiClickjack.js"></script> -->
+    <script src="/Content/_Common/Base/js/webCommon.js"></script>
+    <script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
+    <script src="/Content/_Common/Base/js/StoT.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+
+
+    <div class="topBar">
+        <ul class="list">
+            <li class="en"><a href="/english">English</a></li>
+            <li class="phone">
+                <a href="javascript:;">手机版</a>
+                <div class="pic">
+                    <img src="/qrcode/qrcode.gif">
+                    <i></i>
+                </div>
+            </li>
+            <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
+            <li class="wechat">
+                <a href="javascript:;">政务微信</a>
+                <div class="pic">
+                    <img src='/Content/Main/Base/img/weixin.png' />
+                    <i></i>
+                </div>
+            </li>
+            <li class="robot"><a href="/znjqr">智能机器人</a></li>
+        </ul>
+        <span class="topBarBg"></span>
+    </div>
+    <script>
+        $(".topBar li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script>
+
+    <!-- header S -->
+    <header id="header">
+        <div class="headerTop siteWidth">
+
+            <h1 title="安州区人民政府门户网站" id="logo"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
+
+            <div class="siteSearchBar">
+
+
+                <div class="s-form">
+                    <input type="hidden" id="sitelist" value="[{&quot;Name&quot;:&quot;全站群&quot;,&quot;Value&quot;:0},{&quot;Name&quot;:&quot;本站&quot;,&quot;Value&quot;:1},{&quot;Name&quot;:&quot;审计局&quot;,&quot;Value&quot;:2},{&quot;Name&quot;:&quot;农业局&quot;,&quot;Value&quot;:18}]" />
+                    <input type="hidden" id="siteid" name="sid" value="0">
+                    <div class="select-box">
+                        <a id="sOptionBtn" class="s-option" href="javascript:void(0)">全站群</a>
+                        <i class="arrow-dn"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="from-control" id="inputkeyword" placeholder="请输入关键词" spellcheck="false">
+                    </div>
+                    <div class="btn-box">
+                        <input type="submit" id="search" class="btn" onclick="gSearch();" value="搜 索">
+                        <input type="hidden" id="route" value="s" />
+                    </div>
+                </div>
+                <div class="hotWords">
+                    热门搜索：<a target="_blank" href="/s?st=1&wd=环保">环保</a><a target="_blank" href="/s?st=1&wd=生育">生育</a><a target="_blank" href="/s?st=1&wd=农业">农业</a><a target="_blank" href="/s?st=1&wd=医疗">医疗</a><a target="_blank" href="/s?st=1&wd=就业">就业</a>
+                </div>
+
+                <script src="/Content/_Common/FullTextSearch/js/default-site-search-box.js"></script>
+                <script>
+                    document.getElementById("inputkeyword").onkeydown = function (e) {
+                        e = e || window.event;
+                        if (e.keyCode == 13) {
+                            gSearch();
+                        }
+                    };
+
+                    function gSearch() {
+                        var keyword = document.getElementById('inputkeyword').value;
+                        var route = document.getElementById('route').value;
+
+                        if (keyword == '' || keyword == "请输入关键字") {
+                            alert("请输入关键字");
+                        } else {
+                            var siteid = document.getElementById('siteid').value;
+                            window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
+                        }
+                    }
+                </script>
+            </div>
+
+            <nav class="topNav clearfix">
+                <span class="menuBtn"></span>
+
+
+                <ul id="mainNav" class="mainNav">
+                    <li class="li1 first1" id="li-home">
+                        <h3 class="h1">
+                            <a class="a1" href='/'>首页</a>
+                        </h3>
+                    </li>
+
+                    <li class="li1 hasUl1" id="li-xw">
+                        <h3 class="h1">
+                            <a class="a1" href="/xw">政务动态</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-zw">
+                        <h3 class="h1">
+                            <a class="a1" href="/zw">政务公开</a></h3>
+                    </li>
+                    <li class="li1 hasUl1 on1" id="li-fw">
+                        <h3 class="h1">
+                            <a class="a1" href="/fw">政务服务</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-hd">
+                        <h3 class="h1">
+                            <a class="a1" href="/hd">公众参与</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-sq">
+                        <h3 class="h1">
+                            <a class="a1" href="/sq">走进安州</a></h3>
+                    </li>
+                </ul>
+
+                <script type="text/javascript">
+                    (function () {
+                        var navST;
+                        var navST1;
+                        var name = 'mainNav';
+                        var t = 200;
+                        var type = 1;
+                        var removeOn = 'False';
+                        var effect = 'fade';
+                        var appendItem = '#';
+                        var li = "#" + name + " li";
+                        var index = 0;
+
+                        if (!$("#" + name + " .li1").hasClass("on1")) {
+                            $("#" + name + " .li1").first().addClass("on1");
+                        } //默认第一个加.on1类
+                        index = $("#" + name + " .li1").index($("#" + name + " .on1"));
+
+                        //鼠标离开导航后，回复默认.on1类位置
+                        $("#" + name)
+                            .hover(
+                                function () {
+                                    if (navST1 != null) {
+                                        clearTimeout(navST1);
+                                    }
+                                },
+                                function () {
+                                    navST1 = setTimeout(function () {
+                                            $("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
+                                        },
+                                        500);
+                                }
+                            );
+
+                        if (type == '1') {
+                            li = "#" + name + " .li1";
+                        }
+                        if (appendItem != '#') { //插入内容
+                            var appendHtml = $(appendItem).html();
+                            $(li).first().append(appendHtml);
+                            $(appendItem).remove();
+                        }
+
+                        if (type == '3') {
+                            $("#" + name + " .on1").find("ul").first().show();
+                        }
+
+                        $(li)
+                            .hover(function () {
+                                    var curItem = $(this);
+                                    var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+                                    $(li).removeClass("on" + onNum);
+                                    curItem.addClass("on" + onNum);
+                                    navST = setTimeout(function () { //延时触发
+
+                                            if ($("ul:first", curItem).css("display") != "block") {
+                                                $(li + " .ul" + onNum).hide();
+                                                if (effect == 'fade') {
+                                                    $("ul:first", curItem).fadeIn(t);
+                                                } else {
+                                                    $("ul:first", curItem).slideDown(t);
+                                                }
+                                            };
+                                            navST = null;
+                                        },
+                                        t);
+                                },
+                                function () {
+                                    if (navST != null) {
+                                        clearTimeout(navST);
+                                    }
+                                    if (type == '1' || type == '2') {
+                                        if (effect == 'fade') {
+                                            $(this).find("ul").first().fadeOut(t);
+                                        } else {
+                                            $(this).find("ul").first().slideUp(t);
+                                        }
+                                    }
+                                    if (removeOn == 'True') {
+                                        $(this).removeClass("on1");
+                                    }
+                                },
+                                t); //end hover
+                    })()
+                </script>
+
+            </nav>
+            <script>
+                $(".topNav .h1").prepend("<i></i>")
+            </script>
+        </div>
+    </header>
+    <!-- header E -->
+
+
+    <div id="content">
+
+        <!-- 政务服务 -->
+        <iframe src="/cn/zxbs/index_sl_23449.html" height="506" width="100%" scrolling="no" frameborder="0"></iframe>
+
+
+        <!-- 办件展示 -->
+        <div class="bjBox">
+            <div class="hd">
+                <h3>办件展示</h3>
+            </div>
+            <div class="bd">
+                <iframe src="/cn/fw" width="100%" scrolling="no" height="236" frameborder="0" vspace="0" hspace="0" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+
+        <!-- 办件统计 -->
+        <div class="bjBox">
+            <div class="bd">
+
+            </div>
+        </div>
+        <!-- service-rowA S -->
+        <div class="row" id="service-rowA">
+            <div class="mainContent">
+                <section class="fwTab">
+                    <div class="fHd">
+                        <ul>
+                            <li class="li1"><a href="javascript:void(0)"><i></i>重点服务<s></s></a></li>
+                            <li class="li2"><a href="javascript:void(0)"><i></i>行政职权目录<s></s></a></li>
+                            <li class="li3"><a href="javascript:void(0)"><i></i>办件统计<s></s></a></li>
+                            <li class="li4"><a href="javascript:void(0)"><i></i>数据开放<s></s></a></li>
+                        </ul>
+                    </div>
+                    <div class="fBd">
+                        <div class="item">
+                            <ul class="grbsList fwsxIcons">
+
+
+
+                                <li class="li1 first">
+                                    <a class="tit" href="/fw/fwsx/jyfw" title="身份证">身份证</a>
+                                </li>
+                                <li class="li2">
+                                    <a class="tit" href="/fw/fwsx/sbfw" title="户口">户口</a>
+                                </li>
+                                <li class="li3">
+                                    <a class="tit" href="/fw/fwsx/ylfw" title="生育服务">生育服务</a>
+                                </li>
+                                <li class="li4">
+                                    <a class="tit" href="/fw/fwsx/jiuyfw" title="保障性住房">保障性住房</a>
+                                </li>
+                                <li class="li5">
+                                    <a class="tit" href="/fw/fwsx/zffw" title="房屋产权">房屋产权</a>
+                                </li>
+                                <li class="li6">
+                                    <a class="tit" href="/fw/fwsx/ggjt" title="公积金">公积金</a>
+                                </li>
+                                <li class="li7">
+                                    <a class="tit" href="/fw/fwsx/qykb" title="机动车驾驶证">机动车驾驶证</a>
+                                </li>
+                                <li class="li8">
+                                    <a class="tit" href="/fw/fwsx/zjbl" title="老年人福利">老年人福利</a>
+                                </li>
+                                <li class="li9">
+                                    <a class="tit" href="/fw/fwsx/hysy" title="残疾人服务">残疾人服务</a>
+                                </li>
+                                <li class="li10">
+                                    <a class="tit" href="/fw/fwsx/ggsy" title="企业服务">企业服务</a>
+                                </li>
+                                <li class="li11">
+                                    <a class="tit" href="/fw/fwsx/zsyz" title="招商引资">招商引资</a>
+                                </li>
+                                <li class="li12 last">
+                                    <a class="tit" href="/fw/fwsx/kjcx" title="科技创新">科技创新</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <!-- 审批事项切换 -->
+                            <div class="boxB boxB-small" id="spsx">
+                                <div class="hd">
+                                    <ul>
+                                        <li><a href="/luzhouservicehall/servicelist?type=0">事项性质类型</a></li>
+                                        <li><a href="/luzhouservicehall/servicelist?type=1">行政职权目录</a></li>
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <ul class="grbsList lxbsIcons">
+                                        <li class="li1"><a target="_blank" href="http://zwdt.luzhou.gov.cn/eGovP1/portal/pc/pages10000/egov_openness/power/list.jsp?type=A">行政审批</a></li>
+                                        <li class="li2"><a target="_blank" href="http://zwdt.luzhou.gov.cn/eGovP1/portal/pc/pages10000/egov_openness/power/list.jsp?type=B">行政处罚</a></li>
+                                        <li class="li3"><a target="_blank" href="http://zwdt.luzhou.gov.cn/eGovP1/portal/pc/pages10000/egov_openness/power/list.jsp?type=C">行政强制</a></li>
+                                        <li class="li4"><a target="_blank" href="http://zwdt.luzhou.gov.cn/eGovP1/portal/pc/pages10000/egov_openness/power/list.jsp?type=D">行政征收</a></li>
+                                        <li class="li5"><a target="_blank" href="http://zwdt.luzhou.gov.cn/eGovP1/portal/pc/pages10000/egov_openness/power/list.jsp?type=E">行政裁决</a></li>
+                                        <li class="li6"><a target="_blank" href="http://zwdt.luzhou.gov.cn/eGovP1/portal/pc/pages10000/egov_openness/power/list.jsp?type=F">行政确认</a></li>
+                                        <li class="li7"><a target="_blank" href="http://zwdt.luzhou.gov.cn/eGovP1/portal/pc/pages10000/egov_openness/power/list.jsp?type=G">行政给付</a></li>
+                                        <li class="li8"><a target="_blank" href="http://zwdt.luzhou.gov.cn/eGovP1/portal/pc/pages10000/egov_openness/power/list.jsp?type=Z">其他事项</a></li>
+                                    </ul>
+                                    <ul class="bmbsList">
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-1">市工商局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-11">市民政局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-14">市安监局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-15">市人社局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-16">市住建局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-17">市国税局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-19">市教育局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-20">市商务局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-21">市路政支队</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-22">市运管局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-23">市城管局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-25">市水务局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-26">市经信委</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-28">市卫计委</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-3">市航务局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-31">市质监局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-35">市气象局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-36">市环保局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-4">市食药监局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-40">综合窗口</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-43">市社保局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-46">市不动产登记窗口</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-47">市车辆管理服务分中心</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-56">市国土局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-6">市发改委</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-7">市公安局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-8">市司法局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2008-9">市消防支队</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2013-63">市地税局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2014-68">市住房公积金中心</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2014-69">市规划局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2016-83">市出入境支队</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2014-66">市医保局</a>
+
+                                        </li>
+                                        <li><a href="/luzhouservicehall/serviceitemlist?type=2&amp;code=lz-ScGsc-Org-2014-67">市就业局</a>
+
+                                        </li>
+
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- 办件统计 -->
+                            <div class="boxB boxB-small" id="bjtj1">
+                                <div class="hd">
+                                    <ul>
+                                        <li><a href="#">月度统计</a></li>
+                                        <li><a href="#">办件信息明细</a></li>
+                                    </ul>
+                                </div>
+                                <div class="bd xxtj">
+                                    <div class="news_list line ">
+                                        <ul>
+                                            <li class="gre"><p><span><font><b id="MonNew" style=" display:inline-block; float:left">202</b></font>件</span></p><a title="本月业务申请数量" href="#">本月业务申请数量</a></li>
+                                            <li class="yel"><p><span><font><b id="MonACK" style="float:left">156</b></font>件</span></p><a title="本月受理数量" href="#">本月受理数量</a></li>
+                                            <li class="ora"><p><span><font><b id="MonEnd" style="float:left">144</b></font>件</span></p><a title="本月办结数量" href="#">本月办结数量</a></li>
+                                            <li class="ora"><p><span><font><b id="AllCount" style="float:left">1893</b></font>件</span></p><a title="累计办结" href="#">年度累计办结</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <table class="bjTable">
+                                        <tbody>
+                                        <tr>
+                                            <th>办理状态</th>
+                                            <th>申请</th>
+                                            <th>受理</th>
+                                            <th>不予受理</th>
+                                            <th>办结</th>
+                                            <th>在办</th>
+                                        </tr>
+                                        <tr>
+                                            <td>今天</td>
+                                            <td>0件</td>
+                                            <td>0件</td>
+                                            <td>0件</td>
+                                            <td>0件</td>
+                                            <td>0件</td>
+                                        </tr>
+                                        <tr>
+                                            <td>本月</td>
+                                            <td>20件</td>
+                                            <td>19件</td>
+                                            <td>0件</td>
+                                            <td>15件</td>
+                                            <td>4件</td>
+                                        </tr>
+                                        <tr>
+                                            <td>本年</td>
+                                            <td>5375件</td>
+                                            <td>5328件</td>
+                                            <td>1件</td>
+                                            <td>5208件</td>
+                                            <td>120件</td>
+                                        </tr>
+                                        <tr>
+                                            <td>全部</td>
+                                            <td>114448件</td>
+                                            <td>113993件</td>
+                                            <td>30件</td>
+                                            <td>113776件</td>
+                                            <td>216件</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <ul class="grbsList sjkfIcons">
+
+
+
+                                <li class="li1 first">
+                                    <a class="tit" href="/fw/sjkf/jjjssj" title="经济建设数据">经济建设数据</a>
+                                </li>
+                                <li class="li2">
+                                    <a class="tit" href="/fw/sjkf/hjzysj" title="环境资源数据">环境资源数据</a>
+                                </li>
+                                <li class="li3">
+                                    <a class="tit" href="/fw/sjkf/csjssj" title="城市建设数据">城市建设数据</a>
+                                </li>
+                                <li class="li4">
+                                    <a class="tit" href="/fw/sjkf/dljtsj" title="道路交通数据">道路交通数据</a>
+                                </li>
+                                <li class="li5">
+                                    <a class="tit" href="/fw/sjkf/jykjsj" title="教育科技数据">教育科技数据</a>
+                                </li>
+                                <li class="li6">
+                                    <a class="tit" href="/fw/sjkf/xyxxsj" title="信用信息数据">信用信息数据</a>
+                                </li>
+                                <li class="li7">
+                                    <a class="tit" href="/fw/sjkf/ggaqsj" title="公共安全数据">公共安全数据</a>
+                                </li>
+                                <li class="li8 last">
+                                    <a class="tit" href="/fw/sjkf/tjbbsj" title="统计报表数据">统计报表数据</a>
+                                </li>
+
+                            </ul>
+                            <dl class="cxzx">
+                                <dt><a href="/fw/cyfwcx">查询中心</a></dt>
+                                <dd>
+                                    <ul class="infoList infoList-arrow">
+
+
+
+                                        <li class="first">
+                                            <a href="https://sc.122.gov.cn/" target="_blank" title="标题：交通违章查询
+点击数：133
+发表时间：2015-09-17">
+                                                交通违章查询
+                                            </a>
+                                        </li>
+
+
+
+
+                                        <li>
+                                            <a href="http://gjj.my.gov.cn/MYGOV/150596907922620416/20170327/1920886.html" target="_blank" title="标题：绵阳市住房公积金查询
+点击数：40
+发表时间：2015-09-17">
+                                                绵阳市住房公积金查询
+                                            </a>
+                                        </li>
+
+
+
+
+                                        <li>
+                                            <a href="http://scmywater.com.cn/shcx/" target="_blank" title="标题：水费查询
+点击数：0
+发表时间：2017-07-13">
+                                                水费查询
+                                            </a>
+                                        </li>
+
+
+
+
+                                        <li>
+                                            <a href="http://www.95598.cn/member/login.shtml?%aa%a7%a1rdnjjnmd%a5%9a%a7d%96%98%98%a4%aa%a3%a9d%9e%a3%9e%a9x%a4%a3%a8%7e%a3%9b%a4%5b%a5%96%a7%a9%83%a4r%85%82egeefeef" target="_blank" title="标题：电量电费查询
+点击数：108
+发表时间：2015-09-16">
+                                                电量电费查询
+                                            </a>
+                                        </li>
+
+
+
+
+                                        <li>
+                                            <a href="http://www.myrq12319.com/html/qfcx.asp?classid=020505" target="_blank" title="标题：气费查询
+点击数：0
+发表时间：2017-02-07">
+                                                气费查询
+                                            </a>
+                                        </li>
+
+
+
+
+                                        <li>
+                                            <a href="http://luzhou.114chn.com/t/510700/2012110300000004/ware.html" target="_blank" title="标题：身份证办理进度查询
+点击数：24
+发表时间：2016-09-17">
+                                                身份证办理进度查询
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <script>
+                    $(".grbsList a").prepend("<i></i>")
+                    $("#spsx").slide({ mainCell:".bd", delayTime:0 });
+                    $("#bjtj1").slide({ mainCell:".bd", delayTime:0 });
+                    $(".fwTab").slide({ mainCell:".fBd", titCell:".fHd li", delayTime:0 });
+                </script>
+            </div><!-- mainContent E -->
+            <div class="side">
+                <a href="http://zwdt.luzhou.gov.cn/eGovP1/portal/index_pc10000.jsp" target="_blank" class="zwdtBtn">
+                    <img src='/Content/Main/ServiceHall/img/fw-zwdt.jpg' />
+                </a>
+                <!-- 办件查询 -->
+                <div class="bjBox" id="bjtj">
+                    <div class="hd">
+                        <h3>办件状态查询</h3>
+                    </div>
+                    <div class="bd">
+                        <table class="bjcxTable">
+                            <tr>
+                                <td class="label">按受理编号：</td>
+                                <td><input id="code" type="text" placeholder="请输入受理编号"></td>
+                            </tr>
+                            <tr>
+                                <td class="label">按身份证号：</td>
+                                <td><input id="idcart" type="text" placeholder="请输入身份证号"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="label"></td>
+                                <td><input type="button" class="submitBtn" value="查询" onclick="search('http://egov.lzszwfw.gov.cn/status.aspx')"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div><!-- side E -->
+        </div>
+        <!-- service-rowA E -->
+
+
+    </div>
+    <script>
+        function search(url) {
+            window.open(url + "?code=" + $("#code").val() + "&idcart=" + $("#idcart").val())
+            //location.href = url + "?code=" + $("#code").val() + "&idcart=" + $("#idcart").val();
+        }
+    </script>
+
+    <!-- footer S -->
+    <footer id="footer">
+        <div class="siteWidth">
+            <div class="footNav">
+
+
+
+                <a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
+                <a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
+                <a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
+                <a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
+                <a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
+                <a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
+
+            </div>
+            <div class="copyRight"><p>
+                安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br/>地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br/>蜀ICP备12001441号<br/> &nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1"/>川公网安备 51070302110201号</a>
+            </p>
+                <div class="pics">
+                    <a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg"/></a> &nbsp;&nbsp;<script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg"/></a> &nbsp;&nbsp;<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png"/></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer E -->
+
+    <!-- 侧栏固定菜单 -->
+    <ul class="sideFixed" style="display:none">
+        <li class="wza"><a target="blank" target="_blank" href="/wca.html" title="无障碍版"></a></li>
+        <li class="jqr"><a target="blank" href='/znjqr' title="智能机器人"></a></li>
+        <li class="sj">
+            <a href="javascript:void(0);" title="手机版"></a>
+            <div class="pic">
+                <img src="/qrcode/qrcode.gif" />
+                <i></i>
+            </div>
+        </li>
+        <li class="wb"><a target="blank" href='http://weibo.com/luzhouzhengwu' title="政务微博"></a></li>
+        <li class="wx">
+            <a href="javascript:void(0);" title="政务微信"></a>
+            <div class="pic">
+                <img src='/Content/Main/Base/img/weixin.png' />
+                <i></i>
+            </div>
+        </li>
+        <li class="db"><a href="#" title="返回顶部"></a></li>
+    </ul>
+    <script>
+        $(".sideFixed li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script></div>
+<script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
+<script src="/Content/_Common/Base/js/power.js"></script>
+
+
+
+</body>
+</html>

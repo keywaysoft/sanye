@@ -1,0 +1,544 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="/Content/_Common/Assets/Scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="/Content/_Common/Assets/Scripts/jquery.SuperSlide.js" type="text/javascript"></script>
+    <title>
+        办件展示
+    </title></head>
+<style type="text/css">
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        font-size:14px;
+        line-height:2;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .tableSlide{
+        height:196px;
+        overflow:hidden;
+        position:relative;
+    }
+    .bjTable{
+        width:100%;
+    }
+    .bjTable tr{
+        border:1px solid #eee;
+    }
+
+    .bjTable td{
+        border:0px solid #eee;
+        padding:5px;
+        text-align:center;
+    }
+    .bjTable td.name{
+        text-align:left;
+        padding-left:20px;
+    }
+
+    .bjTable th{
+        background:#F3F4F5;
+        font-weight:bold;
+        color:#3269B8;
+        border-top:2px solid #3069B8;
+    }
+    .bjTable .num{
+        width:250px;
+    }
+    .bjTable .dept{
+        width:200px;
+    }
+    .bjTable .state{
+        width:100px;
+    }
+    #bjtj{
+        border:1px solid #eee;
+        padding:10px 12px;
+        margin-top:12px;
+    }
+    .bjcxTable{
+        width:100%;
+        font-size:12px;
+    }
+    .bjcxTable td{
+        padding:5px 0;
+    }
+    .bjcxTable .label{
+        width:85px;
+        text-align:right;
+    }
+    .bjcxTable input{
+        width:130px;
+        padding:5px;
+        height:22px;
+        line-height:22px;
+        border:1px solid #eee;
+    }
+    .bjcxTable .submitBtn{
+        height:36px;
+        border:0;
+        background:#3269B8;
+        color:#fff;
+        font-size:14px;
+        width:100px;
+    }
+</style>
+
+<body>
+<form method="post" action="./projectlist.aspx" id="form1">
+    <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTE4NDk2MTI2MmRkEMf/JvzBI3AVCF/fmsXMQoi8rjUDaLXQKWBTs8RMQU8=" />
+    </div>
+
+    <div class="aspNetHidden">
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B5A8DED1" />
+    </div>
+    <table class="bjTable">
+        <tr>
+            <th class="num">受理编号</th>
+            <th class="dept">受理单位</th>
+            <th class="name">申请项目</th>
+            <th class="state">办理状态</th>
+        </tr>
+    </table>
+    <div class="tableSlide">
+        <div class="in">
+            <table class="bjTable">
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000019</td>
+                    <td width="21%" align="center" valign="middle">市出入境支队</td>
+                    <td width="44%" align="left" valign="middle">外国人申请签证、居留许可</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000018</td>
+                    <td width="21%" align="center" valign="middle">市出入境支队</td>
+                    <td width="44%" align="left" valign="middle">大陆居民往来台湾通行证</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000017</td>
+                    <td width="21%" align="center" valign="middle">市出入境支队</td>
+                    <td width="44%" align="left" valign="middle">往来港澳通行证</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000016</td>
+                    <td width="21%" align="center" valign="middle">市出入境支队</td>
+                    <td width="44%" align="left" valign="middle">普通护照</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000015</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">第二类医疗器械经营企业备案</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000014</td>
+                    <td width="21%" align="center" valign="middle">市卫计委</td>
+                    <td width="44%" align="left" valign="middle">医疗机构变更</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000013</td>
+                    <td width="21%" align="center" valign="middle">市工商局</td>
+                    <td width="44%" align="left" valign="middle">企业集团登记  </td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000012</td>
+                    <td width="21%" align="center" valign="middle">市卫计委</td>
+                    <td width="44%" align="left" valign="middle">医疗机构变更</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000011</td>
+                    <td width="21%" align="center" valign="middle">市住建局</td>
+                    <td width="44%" align="left" valign="middle">商品房预售许可</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000010</td>
+                    <td width="21%" align="center" valign="middle">市路政支队</td>
+                    <td width="44%" align="left" valign="middle">超限运输车辆行驶公路审批</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000009</td>
+                    <td width="21%" align="center" valign="middle">市路政支队</td>
+                    <td width="44%" align="left" valign="middle">超限运输车辆行驶公路审批</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000008</td>
+                    <td width="21%" align="center" valign="middle">市工商局</td>
+                    <td width="44%" align="left" valign="middle">公司备案登记</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000007</td>
+                    <td width="21%" align="center" valign="middle">市安监局</td>
+                    <td width="44%" align="left" valign="middle">特种作业人员操作证审批（省管和中央在川企业除外）</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000006</td>
+                    <td width="21%" align="center" valign="middle">市工商局</td>
+                    <td width="44%" align="left" valign="middle">非公司企业变更法定代表人登记 </td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000005</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">第二类医疗器械经营备案凭证变更</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000004</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">第二类医疗器械经营企业备案</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000003</td>
+                    <td width="21%" align="center" valign="middle">市公安局</td>
+                    <td width="44%" align="left" valign="middle">爆破作业人员许可</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000002</td>
+                    <td width="21%" align="center" valign="middle">市公安局</td>
+                    <td width="44%" align="left" valign="middle">爆破作业人员许可</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170802-000001</td>
+                    <td width="21%" align="center" valign="middle">市教育局</td>
+                    <td width="44%" align="left" valign="middle">普通高中毕业证验印</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000021</td>
+                    <td width="21%" align="center" valign="middle">市水务局</td>
+                    <td width="44%" align="left" valign="middle">开发建设项目水土保持方案审批</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000020</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">药品零售（连锁）企业筹建</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000019</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">药品零售（连锁）企业《药品经营许可证》变更</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000018</td>
+                    <td width="21%" align="center" valign="middle">市社保局</td>
+                    <td width="44%" align="left" valign="middle">企业、事业单位社会保险费申报审核征收</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000017</td>
+                    <td width="21%" align="center" valign="middle">市社保局</td>
+                    <td width="44%" align="left" valign="middle">个体社会保险费申报审核征收</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000016</td>
+                    <td width="21%" align="center" valign="middle">市住建局</td>
+                    <td width="44%" align="left" valign="middle">商品房预售许可</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000015</td>
+                    <td width="21%" align="center" valign="middle">市公安局</td>
+                    <td width="44%" align="left" valign="middle">省内枪支（弹药）运输许可</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000014</td>
+                    <td width="21%" align="center" valign="middle">市安监局</td>
+                    <td width="44%" align="left" valign="middle">特种作业人员操作证审批（省管和中央在川企业除外）</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000013</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">药品零售（连锁）企业筹建</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000012</td>
+                    <td width="21%" align="center" valign="middle">市工商局</td>
+                    <td width="44%" align="left" valign="middle">有限责任公司设立登记 </td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000011</td>
+                    <td width="21%" align="center" valign="middle">综合窗口</td>
+                    <td width="44%" align="left" valign="middle">涉及国家安全事项建设项目房屋涉外销售、出租和转让审查</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000010</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">药品零售（连锁）企业筹建</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000009</td>
+                    <td width="21%" align="center" valign="middle">综合窗口</td>
+                    <td width="44%" align="left" valign="middle">出版物批发单位变更、兼并、合作或分立（联审件）</td>
+                    <td width="13%" align="center" valign="middle">申请</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000008</td>
+                    <td width="21%" align="center" valign="middle">市工商局</td>
+                    <td width="44%" align="left" valign="middle">公司名称变更登记</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000007</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">药品零售（连锁）企业筹建</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000006</td>
+                    <td width="21%" align="center" valign="middle">综合窗口</td>
+                    <td width="44%" align="left" valign="middle">涉及国家安全事项建设项目房屋涉外销售、出租和转让审查</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000005</td>
+                    <td width="21%" align="center" valign="middle">市航务局</td>
+                    <td width="44%" align="left" valign="middle">船员适任证书核发</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000004</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">药品零售（连锁）企业筹建</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000003</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">药品零售（连锁）企业《药品经营许可证》变更</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000002</td>
+                    <td width="21%" align="center" valign="middle">市住房公积金中心</td>
+                    <td width="44%" align="left" valign="middle">住房公积金贷款</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170731-000001</td>
+                    <td width="21%" align="center" valign="middle">市公安局</td>
+                    <td width="44%" align="left" valign="middle">非营业性爆破作业单位许可</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000036</td>
+                    <td width="21%" align="center" valign="middle">市环保局</td>
+                    <td width="44%" align="left" valign="middle">辐射安全许可证核发</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000035</td>
+                    <td width="21%" align="center" valign="middle">市环保局</td>
+                    <td width="44%" align="left" valign="middle">辐射安全许可证核发</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000034</td>
+                    <td width="21%" align="center" valign="middle">市环保局</td>
+                    <td width="44%" align="left" valign="middle">辐射安全许可证核发</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000033</td>
+                    <td width="21%" align="center" valign="middle">市环保局</td>
+                    <td width="44%" align="left" valign="middle">辐射安全许可证核发</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000032</td>
+                    <td width="21%" align="center" valign="middle">市教育局</td>
+                    <td width="44%" align="left" valign="middle">中等职业学校毕业证验印</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000031</td>
+                    <td width="21%" align="center" valign="middle">市卫计委</td>
+                    <td width="44%" align="left" valign="middle">医疗机构设置审批</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000030</td>
+                    <td width="21%" align="center" valign="middle">市工商局</td>
+                    <td width="44%" align="left" valign="middle">有限责任公司设立登记 </td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000029</td>
+                    <td width="21%" align="center" valign="middle">市工商局</td>
+                    <td width="44%" align="left" valign="middle">公司法定代表人姓名变更登记</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000028</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">第二类医疗器械经营企业备案</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000027</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">第二类医疗器械经营企业备案</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000026</td>
+                    <td width="21%" align="center" valign="middle">市民政局</td>
+                    <td width="44%" align="left" valign="middle">社会团体登记</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000025</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">第二类医疗器械经营企业备案</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000024</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">第二类医疗器械经营企业备案</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000023</td>
+                    <td width="21%" align="center" valign="middle">市环保局</td>
+                    <td width="44%" align="left" valign="middle">建设项目环境影响评价审批（报告书）</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000022</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">第二类医疗器械经营企业备案</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000021</td>
+                    <td width="21%" align="center" valign="middle">市环保局</td>
+                    <td width="44%" align="left" valign="middle">建设项目环境保护设施竣工验收（申请表）</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000020</td>
+                    <td width="21%" align="center" valign="middle">市环保局</td>
+                    <td width="44%" align="left" valign="middle">建设项目环境影响评价审批（报告表）</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000019</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">第二类医疗器械经营企业备案</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000018</td>
+                    <td width="21%" align="center" valign="middle">市食药监局</td>
+                    <td width="44%" align="left" valign="middle">第二类医疗器械经营企业备案</td>
+                    <td width="13%" align="center" valign="middle">办结</td>
+                </tr>
+
+                <tr>
+                    <td width="22%" align="center" valign="middle">510700-20170728-000017</td>
+                    <td width="21%" align="center" valign="middle">市公安局</td>
+                    <td width="44%" align="left" valign="middle">爆破作业人员许可</td>
+                    <td width="13%" align="center" valign="middle">受理</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <script>jQuery(".tableSlide").slide({ mainCell: ".in", effect: "topMarquee", autoPlay: true, interTime: 80, vis: 1 });</script>
+</form>
+</body>
+</html>

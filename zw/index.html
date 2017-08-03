@@ -1,0 +1,4634 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="安州区人民政府门户网站,安州区政府,安州" />
+    <meta name="description" content="安州区人民政府门户网站 安州区  安州政府" />
+    <meta name="application-name" content="安州区人民政府门户网站" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true" />
+
+    <title>政务公开_安州区人民政府门户网站</title>
+
+    <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+
+    <link href="/Content/Main/InfoPublicity/css/infoPublicity.css" rel="stylesheet" />
+
+
+    <link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
+    <script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
+    <script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
+    <!--     <script src="/Content/_Common/Base/js/antiClickjack.js"></script> -->
+    <script src="/Content/_Common/Base/js/webCommon.js"></script>
+    <script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
+    <script src="/Content/_Common/Base/js/StoT.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+
+
+    <div class="topBar">
+        <ul class="list">
+            <li class="en"><a href="/english">English</a></li>
+            <li class="phone">
+                <a href="javascript:;">手机版</a>
+                <div class="pic">
+                    <img src="/qrcode/qrcode.gif">
+                    <i></i>
+                </div>
+            </li>
+
+            <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
+
+
+            <li class="wechat">
+                <a href="javascript:;">政务微信</a>
+                <div class="pic">
+                    <img src='/Content/Main/Base/img/weixin.png' />
+                    <i></i>
+                </div>
+            </li>
+            <li class="robot"><a href="/znjqr">智能机器人</a></li>
+        </ul>
+        <span class="topBarBg"></span>
+    </div>
+    <script>
+        $(".topBar li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script>
+
+    <!-- header S -->
+    <header id="header">
+        <div class="headerTop siteWidth">
+
+            <h1 title="安州区人民政府门户网站" id="logo"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
+
+            <div class="siteSearchBar">
+
+
+                <div class="s-form">
+                    <input type="hidden" id="sitelist" value="[{&quot;Name&quot;:&quot;全站群&quot;,&quot;Value&quot;:0},{&quot;Name&quot;:&quot;本站&quot;,&quot;Value&quot;:1},{&quot;Name&quot;:&quot;审计局&quot;,&quot;Value&quot;:2},{&quot;Name&quot;:&quot;农业局&quot;,&quot;Value&quot;:18}]" />
+                    <input type="hidden" id="siteid" name="sid" value="0">
+                    <div class="select-box">
+                        <a id="sOptionBtn" class="s-option" href="javascript:void(0)">全站群</a>
+                        <i class="arrow-dn"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="from-control" id="inputkeyword" placeholder="请输入关键词" spellcheck="false">
+                    </div>
+                    <div class="btn-box">
+                        <input type="submit" id="search" class="btn" onclick="gSearch();" value="搜 索">
+                        <input type="hidden" id="route" value="s" />
+                    </div>
+                </div>
+                <div class="hotWords">
+                    热门搜索：<a target="_blank" href="/s?st=1&wd=环保">环保</a><a target="_blank" href="/s?st=1&wd=生育">生育</a><a target="_blank" href="/s?st=1&wd=农业">农业</a><a target="_blank" href="/s?st=1&wd=医疗">医疗</a><a target="_blank" href="/s?st=1&wd=就业">就业</a>
+                </div>
+
+                <script src="/Content/_Common/FullTextSearch/js/default-site-search-box.js"></script>
+                <script>
+                    document.getElementById("inputkeyword").onkeydown = function (e) {
+                        e = e || window.event;
+                        if (e.keyCode == 13) {
+                            gSearch();
+                        }
+                    };
+
+                    function gSearch() {
+                        var keyword = document.getElementById('inputkeyword').value;
+                        var route = document.getElementById('route').value;
+
+                        if (keyword == '' || keyword == "请输入关键字") {
+                            alert("请输入关键字");
+                        } else {
+                            var siteid = document.getElementById('siteid').value;
+                            window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
+                        }
+                    }
+                </script>
+            </div>
+
+            <nav class="topNav clearfix">
+                <span class="menuBtn"></span>
+
+
+                <ul id="mainNav" class="mainNav">
+                    <li class="li1 first1" id="li-home">
+                        <h3 class="h1">
+                            <a class="a1" href='/'>首页</a>
+                        </h3>
+                    </li>
+
+                    <li class="li1 hasUl1" id="li-xw">
+                        <h3 class="h1">
+                            <a class="a1" href="/xw">政务动态</a></h3>
+                    </li>
+                    <li class="li1 hasUl1 on1" id="li-zw">
+                        <h3 class="h1">
+                            <a class="a1" href="/zw">政务公开</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-fw">
+                        <h3 class="h1">
+                            <a class="a1" href="/fw">政务服务</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-hd">
+                        <h3 class="h1">
+                            <a class="a1" href="/hd">公众参与</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-sq">
+                        <h3 class="h1">
+                            <a class="a1" href="/sq">走进安州</a></h3>
+                    </li>
+                </ul>
+
+                <script type="text/javascript">
+                    (function () {
+                        var navST;
+                        var navST1;
+                        var name = 'mainNav';
+                        var t = 200;
+                        var type = 1;
+                        var removeOn = 'False';
+                        var effect = 'fade';
+                        var appendItem = '#';
+                        var li = "#" + name + " li";
+                        var index = 0;
+
+                        if (!$("#" + name + " .li1").hasClass("on1")) {
+                            $("#" + name + " .li1").first().addClass("on1");
+                        } //默认第一个加.on1类
+                        index = $("#" + name + " .li1").index($("#" + name + " .on1"));
+
+                        //鼠标离开导航后，回复默认.on1类位置
+                        $("#" + name)
+                            .hover(
+                                function () {
+                                    if (navST1 != null) {
+                                        clearTimeout(navST1);
+                                    }
+                                },
+                                function () {
+                                    navST1 = setTimeout(function () {
+                                            $("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
+                                        },
+                                        500);
+                                }
+                            );
+
+                        if (type == '1') {
+                            li = "#" + name + " .li1";
+                        }
+                        if (appendItem != '#') { //插入内容
+                            var appendHtml = $(appendItem).html();
+                            $(li).first().append(appendHtml);
+                            $(appendItem).remove();
+                        }
+
+                        if (type == '3') {
+                            $("#" + name + " .on1").find("ul").first().show();
+                        }
+
+                        $(li)
+                            .hover(function () {
+                                    var curItem = $(this);
+                                    var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+                                    $(li).removeClass("on" + onNum);
+                                    curItem.addClass("on" + onNum);
+                                    navST = setTimeout(function () { //延时触发
+
+                                            if ($("ul:first", curItem).css("display") != "block") {
+                                                $(li + " .ul" + onNum).hide();
+                                                if (effect == 'fade') {
+                                                    $("ul:first", curItem).fadeIn(t);
+                                                } else {
+                                                    $("ul:first", curItem).slideDown(t);
+                                                }
+                                            };
+                                            navST = null;
+                                        },
+                                        t);
+                                },
+                                function () {
+                                    if (navST != null) {
+                                        clearTimeout(navST);
+                                    }
+                                    if (type == '1' || type == '2') {
+                                        if (effect == 'fade') {
+                                            $(this).find("ul").first().fadeOut(t);
+                                        } else {
+                                            $(this).find("ul").first().slideUp(t);
+                                        }
+                                    }
+                                    if (removeOn == 'True') {
+                                        $(this).removeClass("on1");
+                                    }
+                                },
+                                t); //end hover
+                    })()
+                </script>
+
+            </nav>
+            <script>
+                $(".topNav .h1").prepend("<i></i>")
+            </script>
+        </div>
+    </header>
+    <!-- header E -->
+
+
+    <!-- content S -->
+    <div id="content">
+        <div class="path">
+            <em>您的位置：</em><a href="/">首页</a>
+            &gt;<a href="/zw">政务公开</a></div>
+        <!-- columnA S -->
+        <div class="column" id="columnA">
+            <!-- 信息公开按钮组123 -->
+            <ul class="zwgkBtns">
+
+
+
+                <li class="li1 first">
+                    <a class="tit" href="/zw/zfxxgk/zfxxgkzn" title="政府信息公开指南">政府信息公开指南</a>
+                </li>
+                <li class="li2">
+                    <a class="tit" href="/zw/zfxxgk/cateinfos" title="政府信息公开目录">政府信息公开目录</a>
+                </li>
+                <li class="li3">
+                    <a class="tit" href="/zw/zfxxgk/zfxxgkzd" title="政府信息公开制度">政府信息公开制度</a>
+                </li>
+                <li class="li4">
+                    <a class="tit" href="/zw/zfxxgk/zfxxgknb" title="政府信息公开年报">政府信息公开年报</a>
+                </li>
+                <li class="li5">
+                    <a class="tit" href="/infopublicity/applicationform" title="政府信息公开申请">政府信息公开申请</a>
+                </li>
+                <li class="li6">
+                    <a class="tit" href="/zw/zfxxgk/qmtjwgk" title="全面推进五公开">全面推进五公开</a>
+                </li>
+                <li class="li7">
+                    <a class="tit" href="/zw/zfxxgk/zdlyxxgk" title="信息公开年度要点">信息公开年度要点</a>
+                </li>
+                <li class="li8">
+                    <a class="tit" href="http://www.zzgsc.gov.cn/info/index/510700000" title="工程领域信息公开">工程领域信息公开</a>
+                </li>
+                <li class="li9 last">
+                    <a class="tit" href="/zw/zfxxgk/bmxxgktjbb" title="部门信息公开统计报表">部门信息公开统计报表</a>
+                </li>
+
+            </ul>
+            <script>
+                $(".zwgkBtns li").prepend("<s></s>")
+            </script>
+            <!-- 区政府公开目录 -->
+            <div class="govSideBox" id="sideGkml">
+                <div class="hd">
+                    <h3><a href="/publicity">区政府公开目录</a></h3>
+                </div>
+                <div class="bd">
+                    <ul class="sideNodeList">
+                        <li><a href="/ld">政府领导</a></li>
+                        <li><a href="/jg">机构职能</a></li>
+                        <li><a href="/zw/zcfg">政府文件</a></li>
+                        <li><a href="/sq">概况信息</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?BasicCategoryId=14">统计数据</a></li>
+                        <li><a target="_blank" href="http://218.89.136.60/ceinwz/indexnewlz.htm">政府采购</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?BasicCategoryId=22">行政收费</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?BasicCategoryId=12">发展规划</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?BasicCategoryId=5">办事指南</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?BasicCategoryId=27">重大项目</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?IsSearch=true&title=扶贫">扶贫服务</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2176">教育服务</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2184">医疗服务</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2191">社会保障</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?BasicCategoryId=28">应急预案</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2171">环境保护</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2184">公共卫生</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2167">安全生产</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2166">食品药品</a></li>
+                        <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2164">产品质量</a></li>
+                        <li><a href="/zt/sjbmys">预决算公开</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="govSideBox" id="sideZdly">
+                <div class="hd">
+                    <h3><a href="/zw/zfxxgk/zdlyxxgk">信息公开年度要点</a></h3>
+                </div>
+                <div class="bd">
+                    <ul class="sideNodeList">
+
+
+
+                        <li class="li1 first">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/xzqlyh" title="行政权力运行">行政权力运行</a>
+                        </li>
+                        <li class="li2">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/czzj" title="财政资金">财政资金</a>
+                        </li>
+                        <li class="li3">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggzypz" title="公共资源配置">公共资源配置</a>
+                        </li>
+                        <li class="li4">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/jsjfwz" title="减税降费">减税降费</a>
+                        </li>
+                        <li class="li5">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/jzfpwz" title="精准扶贫">精准扶贫</a>
+                        </li>
+                        <li class="li6">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/hjbhwz" title="环境保护">环境保护</a>
+                        </li>
+                        <li class="li7">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/gyqywz" title="国有企业">国有企业</a>
+                        </li>
+                        <li class="li8">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/jghsfwz" title="价格和收费">价格和收费</a>
+                        </li>
+                        <li class="li9">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggfwwz" title="公共服务">公共服务</a>
+                        </li>
+                        <li class="li10">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/spypaqwz" title="食品药品安全">食品药品安全</a>
+                        </li>
+                        <li class="li11">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/aqscwz" title=" 安全生产"> 安全生产</a>
+                        </li>
+                        <li class="li12">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggqsydwxxwz" title="公共企事业单位信息">公共企事业单位信息</a>
+                        </li>
+                        <li class="li13">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/zdjsxmwz" title="重大建设项目">重大建设项目</a>
+                        </li>
+                        <li class="li14">
+                            <a class="tit" href="/zt/sjbmys" target="_blank" title="三公经费">三公经费</a>
+                        </li>
+                        <li class="li15">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="社会组织、中介机构">社会组织、中介机构</a>
+                        </li>
+                        <li class="li16">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="信用">信用</a>
+                        </li>
+                        <li class="li17 last">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/czsjwz" target="_blank" title="财政审计">财政审计</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 分类树 S -->
+            <div class="govSideBox" id="sideGkml1">
+
+                <div class="zpBox">
+                    <!--所有分类树 S-->
+                    <div class="bd">
+                        <dl class="zpCate">
+                            <dt>按基础分类</dt>
+                            <dd>
+                                <div id="Dnav">
+                                    <ul id="Basic_Catelog" class="subjectCategoryList category-list ztree" style="overflow: auto;"></ul>
+                                </div>
+                                <input type="hidden" id="basicoryUrls"
+                                       data-getbasiccategoriesurl="/infopublicity/basiccategory/getbasiccategorytree.js"
+                                       data-subjectcategoryid="0" />
+
+                                <script>
+
+                                    $(function () {
+
+                                        var treeid = "Basic_Catelog",
+                                            urls = $('#basicoryUrls').data(),
+                                            $getbasiccategoriesurl = urls.getbasiccategoriesurl;
+
+                                        buildBasicCategoryTree($getbasiccategoriesurl); // 获得主题树。
+
+                                        // 获得主题树。
+                                        function buildBasicCategoryTree(url) {
+                                            new pe.ui.tree(treeid,
+                                                {
+                                                    url: url,
+                                                    check: {
+                                                        enable: false
+                                                    },
+                                                    selectDefaultNode: false
+                                                });
+                                        }
+                                    });
+                                </script>
+                            </dd>
+                            <dt>按主题分类</dt>
+                            <dd>
+                                <div id="Dnav">
+                                    <ul id="Gov_Catelog" class="subjectCategoryList category-list ztree" style="overflow: auto;"></ul>
+                                </div>
+                                <input type="hidden" id="subjectoryUrls"
+                                       data-getpubliccategoriesurl="/infopublicity/subjectcategory/getsubjectcategorytreeall.js"
+                                       data-subjectcategoryid="0" />
+
+                                <link href="/Content/_Common/Assets/Content/zTreeStyle.css" type="text/css" rel="stylesheet">
+                                <script src="/Content/_Common/Assets/Scripts/jquery.ztree.all-3.5.min.js"></script>
+                                <script src="/Content/_Common/Assets/Scripts/jquery.ztree.exhide-3.5.min.js"></script>
+                                <script src="/Content/_Common/Base/js/power.core.js"></script>
+                                <script src="/Content/_Common/Base/js/power.ui.js"></script>
+                                <script src="/Content/_Common/Base/js/power.ui.tree.js"></script>
+
+                                <script>
+
+                                    $(function () {
+
+                                        var treeid = "Gov_Catelog",
+                                            urls = $('#subjectoryUrls').data(),
+                                            $getpubliccategoriesurl = urls.getpubliccategoriesurl;
+
+                                        buildSubjectCategoryTree($getpubliccategoriesurl); // 获得主题树。
+
+                                        // 获得主题树。
+                                        function buildSubjectCategoryTree(url) {
+                                            new pe.ui.tree(treeid,
+                                                {
+                                                    url: url,
+                                                    check: {
+                                                        enable: false
+                                                    },
+                                                    selectDefaultNode: false
+                                                });
+                                        }
+                                    });
+                                </script>
+                            </dd>
+                            <dt>按体裁分类</dt>
+                            <dd>
+                                <div id="Dnav">
+                                    <ul id="Theme_Catelog" class="subjectCategoryList category-list ztree" style="overflow: auto;"></ul>
+                                </div>
+                                <input type="hidden" id="themeUrls"
+                                       data-getcustomercategoriesurl="/infopublicity/themecategory/getthemecategorytree.js"
+                                       data-subjectcategoryid="0" />
+
+
+
+                                <script>
+
+                                    $(function () {
+
+                                        var treeid = "Theme_Catelog",
+                                            urls = $('#themeUrls').data(),
+                                            $getthemecategoriesurl = urls.getcustomercategoriesurl;
+
+                                        buildThemeCategoryTree($getthemecategoriesurl); // 获得主题树。
+
+                                        // 获得主题树。
+                                        function buildThemeCategoryTree(url) {
+                                            new pe.ui.tree(treeid,
+                                                {
+                                                    url: url,
+                                                    check: {
+                                                        enable: false
+                                                    },
+                                                    selectDefaultNode: false
+                                                });
+                                        }
+                                    });
+                                </script>
+                            </dd>
+                            <dt>按服务对象分类</dt>
+                            <dd>
+
+                                <div id="Dnav">
+                                    <ul id="Customer_Catelog" class="subjectCategoryList category-list ztree" style="overflow: auto;"></ul>
+                                </div>
+                                <input type="hidden" id="customerUrls"
+                                       data-getcustomercategoriesurl="/infopublicity/customercategory/getcustomercategorytree.js"
+                                       data-subjectcategoryid="0" />
+
+
+
+                                <script>
+
+                                    $(function () {
+
+                                        var treeid = "Customer_Catelog",
+                                            urls = $('#customerUrls').data(),
+                                            $getcutomsercategoriesurl = urls.getcustomercategoriesurl;
+
+                                        buildCustomerCategoryTree($getcutomsercategoriesurl); // 获得主题树。
+
+                                        // 获得主题树。
+                                        function buildCustomerCategoryTree(url) {
+                                            new pe.ui.tree(treeid,
+                                                {
+                                                    url: url,
+                                                    check: {
+                                                        enable: false
+                                                    },
+                                                    selectDefaultNode: false
+                                                });
+                                        }
+                                    });
+                                </script>
+                            </dd>
+                        </dl>
+                    </div>
+                    <script>
+                        $(".zpCate").slide({ targetCell:"dd",titCell:"dt",effect:"slideDown",trigger:"click" })
+                    </script>
+                </div>
+            </div>
+            <!-- 分类树 E -->
+
+
+
+        </div>
+        <!-- columnA E -->
+        <!-- columnB S -->
+        <div class="column" id="columnB">
+            <!-- 政务要闻等切换 -->
+            <div class="box tab" id="indZwyw">
+                <div class="hd">
+                    <ul>
+                        <li><a href="/xw/zwyw">政务要闻</a></li>
+                        <li><a>最新政府信息公开</a></li>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <ul class="infoList">
+
+
+
+                        <li class="first">
+                            <span class="date">2017-07-31</span>
+                            <a href="/xw/zwyw/content_113125" target="_blank" title="标题：市委常委、副市长王明华出席《百岁女红军—王定国》理论文献片新闻发布会
+点击数：122
+发表时间：2017-07-31">
+                                市委常委、副市长王明华出席《百岁女红军—王定国》理论文献片新闻发…
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-07-31</span>
+                            <a href="/xw/zwyw/content_113078" target="_blank" title="标题：全省深化统计管理体制改革座谈会在安州召开
+点击数：83
+发表时间：2017-07-31">
+                                全省深化统计管理体制改革座谈会在安州召开
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-07-31</span>
+                            <a href="/xw/zwyw/content_113071" target="_blank" title="标题：辽安产业合作园区召开&quot;自贸红利、区域共享&quot;对接会
+点击数：109
+发表时间：2017-07-31">
+                                辽安产业合作园区召开"自贸红利、区域共享"对接会
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-07-31</span>
+                            <a href="/xw/zwyw/content_113083" target="_blank" title="标题：安州区花荄镇、桑枣镇将成为南开大学基层实践基地
+点击数：72
+发表时间：2017-07-31">
+                                安州区花荄镇、桑枣镇将成为南开大学基层实践基地
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-07-31</span>
+                            <a href="/xw/zwyw/content_113106" target="_blank" title="标题：我省将推广绿色机关标准化建设 在安州等3市试点
+点击数：83
+发表时间：2017-07-31">
+                                我省将推广绿色机关标准化建设 在安州等3市试点
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-07-31</span>
+                            <a href="/xw/zwyw/content_113035" target="_blank" title="标题：抓好2017下半年工作 省政府放九个大招
+点击数：61
+发表时间：2017-07-31">
+                                抓好2017下半年工作 省政府放九个大招
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-07-28</span>
+                            <a href="/xw/zwyw/content_112942" target="_blank" title="标题：安州区及安州区与长虹集团项目签约仪式在安州举行
+点击数：204
+发表时间：2017-07-28">
+                                安州区及安州区与长虹集团项目签约仪式在安州举行
+                            </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <span class="date">2017-07-28</span>
+                            <a href="/xw/zwyw/content_111482" target="_blank" title="标题：安州：抓好自贸区建设 加快发展外向型经济
+点击数：158
+发表时间：2017-07-28">
+                                安州：抓好自贸区建设 加快发展外向型经济
+                            </a>
+                        </li>
+
+
+
+
+                        <li class="last">
+                            <span class="date">2017-07-28</span>
+                            <a href="/xw/zwyw/content_111499" target="_blank" title="标题：安州区领导慰问区人武部官兵:发扬双拥传统 支持安州发展
+点击数：241
+发表时间：2017-07-28">
+                                安州区领导慰问区人武部官兵:发扬双拥传统 支持安州发展
+                            </a>
+                        </li>
+
+
+                    </ul>
+                    <ul class="infoList">
+
+                        <li class=first>
+                            <span class="date">2017-07-31</span>
+
+                            <a class="tit" href="/publicity_dept12/subject05/subject141/60976" title="联合检查煤矿超层越界专项整治工作">联合检查煤矿超层越界专项整治工作</a>
+
+                        </li>
+                        <li >
+                            <span class="date">2017-07-31</span>
+
+                            <a class="tit" href="/publicity_dept41/subject010/subject184/60975" title="市城乡规划管理局陈军局长深入包保社区开展创文督导工作">市城乡规划管理局陈军局长深入包保社区开展创文督导工作</a>
+
+                        </li>
+                        <li >
+                            <span class="date">2017-07-31</span>
+
+                            <a class="tit" href="/publicity_dept41/subject010/subject184/60974" title="市城乡规划管理局组织干部职工深入包保社区开展创文宣传工作">市城乡规划管理局组织干部职工深入包保社区开展创文宣传工作</a>
+
+                        </li>
+                        <li >
+                            <span class="date">2017-07-31</span>
+
+                            <a class="tit" href="/publicity_dept41/subject010/subject184/60973" title="安州区委第二巡察组向市城乡规划管理局反馈巡察情况">安州区委第二巡察组向市城乡规划管理局反馈巡察情况</a>
+
+                        </li>
+                        <li >
+                            <span class="date">2017-07-31</span>
+
+                            <a class="tit" href="/publicity_dept41/subject010/subject184/60972" title="安州区城乡规划管理局花荄镇分局关于安州泸酒包装制品有限公司酒类包材生产车间及库房建设项目设计方案的公示">安州区城乡规划管理局花荄镇分局关于安州泸酒包装制品有限公司酒类包…</a>
+
+                        </li>
+                        <li >
+                            <span class="date">2017-07-31</span>
+
+                            <a class="tit" href="/publicity_dept41/subject010/subject184/60971" title="安州区城乡规划管理局花荄镇分局关于安州区石寨镇镇区西片控制详细规划（2015-2030）的公示">安州区城乡规划管理局花荄镇分局关于安州区石寨镇镇区西片控制详细规…</a>
+
+                        </li>
+                        <li >
+                            <span class="date">2017-07-31</span>
+
+                            <a class="tit" href="/publicity_dept25/subject08/subject174/60970" title="安州区安全生产大检查综合督查组第九组督查乐兴镇安全工作">安州区安全生产大检查综合督查组第九组督查乐兴镇安全工作</a>
+
+                        </li>
+                        <li >
+                            <span class="date">2017-07-31</span>
+
+                            <a class="tit" href="/publicity_dept25/subject08/subject174/60969" title="安州区外事侨务旅游局在安州区指导开展旅行社创文宣传培训">安州区外事侨务旅游局在安州区指导开展旅行社创文宣传培训</a>
+
+                        </li>
+                        <li class=last>
+                            <span class="date">2017-07-31</span>
+
+                            <a class="tit" href="/publicity_dept25/subject08/subject174/60968" title="安州区外事侨务旅游局督导花荄镇旅游行业创文工作">安州区外事侨务旅游局督导花荄镇旅游行业创文工作</a>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 政策法规等切换 -->
+            <div class="tabBox" id="indZcfg">
+                <div class="tHd">
+                    <ul>
+                        <li><a href="/zw/zcfg">政策法规</a><i></i></li>
+                        <li><a href="/zw/hzql">行政权力</a><i></i></li>
+                        <li><a href="/zw/fazgh">发展规划</a><i></i></li>
+                        <li><a href="/zw/zfgzxx">政府工作信息</a><i></i></li>
+                        <li><a href="/zw/zdgz">重点工作</a><i></i></li>
+                    </ul>
+                </div>
+                <div class="tBd">
+                    <!-- 循环1 -->
+                    <section class="tabBoxIn">
+                        <div class="hd">
+                            <ul>
+
+
+                                <li class="li1 first">
+                                    <a class="tit" href="/zw/zcfg/gwyfg" title="国务院法规">国务院法规</a>
+                                </li>
+                                <li class="li2">
+                                    <a class="tit" href="/zw/zcfg/szfwj" title="区政府文件">区政府文件</a>
+                                </li>
+                                <li class="li3 last">
+                                    <a class="tit" href="/zw/zcfg/zcjd" title="政策解读">政策解读</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-26</span>
+                                    <a href="/zw/zcfg/gwyfg/content_111321" target="_blank" title="标题：国务院办公厅关于建立现代医院管理制度的指导意见
+点击数：92
+发表时间：2017-07-26">
+                                        国务院办公厅关于建立现代医院管理制度的指导意见
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a href="/zw/zcfg/gwyfg/content_111316" target="_blank" title="标题：国务院关于印发新一代人工智能发展规划的通知
+点击数：103
+发表时间：2017-07-26">
+                                        国务院关于印发新一代人工智能发展规划的通知
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-20</span>
+                                    <a href="http://www.gov.cn/zhengce/content/2017-07/19/content_5211752.htm" target="_blank" title="标题：国务院办公厅关于印发国家突发事件应急体系建设“十三五”规划的通知
+点击数：0
+发表时间：2017-07-20">
+                                        国务院办公厅关于印发国家突发事件应急体系建设“十三五”规划的通知
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-18</span>
+                                    <a href="/zw/zcfg/gwyfg/content_106654" target="_blank" title="标题：中共中央关于修改《中国共产党巡视工作条例》的决定
+点击数：224
+发表时间：2017-07-18">
+                                        中共中央关于修改《中国共产党巡视工作条例》的决定
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-18</span>
+                                    <a href="/zw/zcfg/gwyfg/content_106651" target="_blank" title="标题：国务院办公厅关于印发国民营养计划（2017—2030年）的通知
+点击数：203
+发表时间：2017-07-18">
+                                        国务院办公厅关于印发国民营养计划（2017—2030年）的通知
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-17</span>
+                                    <a href="/zw/zcfg/gwyfg/content_106556" target="_blank" title="标题：国务院办公厅关于公布黑龙江盘中等17处新建国家级自然保护区名单的通知
+点击数：195
+发表时间：2017-07-17">
+                                        国务院办公厅关于公布黑龙江盘中等17处新建国家级自然保护区名单的通知
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2017-07-17</span>
+                                    <a href="/zw/zcfg/gwyfg/content_106555" target="_blank" title="标题：国务院办公厅关于深化医教协同进一步推进医学教育改革与发展的意见
+点击数：186
+发表时间：2017-07-17">
+                                        国务院办公厅关于深化医教协同进一步推进医学教育改革与发展的意见
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-28</span>
+                                    <a href="/zw/zcfg/szfwj/lsfbf/content_111529" target="_blank" title="标题：安州区人民政府办公室关于印发安州区政府质量奖评选管理办法的通知
+点击数：73
+发表时间：2017-07-28">
+                                        安州区人民政府办公室关于印发安州区政府质量奖评选管理办法的通知
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-28</span>
+                                    <a href="/zw/zcfg/szfwj/lsfbf/content_111527" target="_blank" title="标题：安州区人民政府办公室关于印发安州区沱江水体达标方案的通知
+点击数：81
+发表时间：2017-07-28">
+                                        安州区人民政府办公室关于印发安州区沱江水体达标方案的通知
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-28</span>
+                                    <a href="/zw/zcfg/szfwj/lsfbf/content_111522" target="_blank" title="标题：安州区人民政府办公室关于印发安州区企业集群注册登记管理暂行办法的通知
+点击数：61
+发表时间：2017-07-28">
+                                        安州区人民政府办公室关于印发安州区企业集群注册登记管理暂行办法的…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-28</span>
+                                    <a href="/zw/zcfg/szfwj/lsfbf/content_111516" target="_blank" title="标题：安州区人民政府办公室关于印发安州区商事主体住所（经营场所）登记管理暂行办法的通知
+点击数：86
+发表时间：2017-07-28">
+                                        安州区人民政府办公室关于印发安州区商事主体住所（经营场所）登记管…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-28</span>
+                                    <a href="/zw/zcfg/szfwj/lsfbh/content_111509" target="_blank" title="标题：安州区人民政府办公室关于进一步加强政府信息公开工作的通知
+点击数：67
+发表时间：2017-07-28">
+                                        安州区人民政府办公室关于进一步加强政府信息公开工作的通知
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-28</span>
+                                    <a href="/zw/zcfg/szfwj/lsfbh/content_111505" target="_blank" title="标题：安州区人民政府办公室关于印发安州区村级农产品质量安全协管员管理办法的通知
+点击数：62
+发表时间：2017-07-28">
+                                        安州区人民政府办公室关于印发安州区村级农产品质量安全协管员管理办…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2017-07-28</span>
+                                    <a href="/zw/zcfg/szfwj/lsfbh/content_111500" target="_blank" title="标题：安州区人民政府办公室转发市工商局关于实行“最多跑一次”改革提升办事效能的实施意见的通知
+点击数：71
+发表时间：2017-07-28">
+                                        安州区人民政府办公室转发市工商局关于实行“最多跑一次”改革提升办…
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-26</span>
+                                    <a href="/zw/zcfg/zcjd/content_111312" target="_blank" title="标题：四川出台方案深化药品生产流通使用体制改革
+点击数：85
+发表时间：2017-07-26">
+                                        四川出台方案深化药品生产流通使用体制改革
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a href="/zw/zcfg/zcjd/content_111311" target="_blank" title="标题：“十三五”期间 四川力争建成2827万亩高标准农田
+点击数：83
+发表时间：2017-07-26">
+                                        “十三五”期间 四川力争建成2827万亩高标准农田
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a href="/zw/zcfg/zcjd/content_111310" target="_blank" title="标题：我省出台意见进一步完善集体林权制度
+点击数：81
+发表时间：2017-07-26">
+                                        我省出台意见进一步完善集体林权制度
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a href="/zw/zcfg/zcjd/content_111309" target="_blank" title="标题：到2020年四川湿地公园和湿地保护小区数量要达70个
+点击数：82
+发表时间：2017-07-26">
+                                        到2020年四川湿地公园和湿地保护小区数量要达70个
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a href="/zw/zcfg/zcjd/content_111308" target="_blank" title="标题：集体林权流转不能搞强迫命令 不能违背承包农户意愿
+点击数：83
+发表时间：2017-07-26">
+                                        集体林权流转不能搞强迫命令 不能违背承包农户意愿
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-18</span>
+                                    <a href="/zw/zcfg/zcjd/content_106662" target="_blank" title="标题：多部门负责人解读《关于制定和实施老年人照顾服务项目的意见》
+点击数：198
+发表时间：2017-07-18">
+                                        多部门负责人解读《关于制定和实施老年人照顾服务项目的意见》
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2017-07-18</span>
+                                    <a href="/zw/zcfg/zcjd/content_106660" target="_blank" title="标题：发布会 | 医学教育改革将有哪些大动作？三部门详解
+点击数：123
+发表时间：2017-07-18">
+                                        发布会 | 医学教育改革将有哪些大动作？三部门详解
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </section>
+                    <!-- 循环2 -->
+                    <section class="tabBoxIn">
+                        <div class="hd">
+                            <ul>
+                                <li><a href="/zw/hzql/hzqlqd1">行政权力责任清单</a></li>
+                                <li><a href="/zw/hzql/hzqlqd">行政权力清单</a></li>
+                                <li><a href="/zw/hzql/xzzfgk">行政权力“双公示”</a></li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <div class="item">
+                                <ul class="infoList">
+
+
+
+                                    <li class="first">
+                                        <span class="date">2016-07-26</span>
+                                        <a href="/zw/hzql/hzqlqd1/content_92763" target="_blank" title="标题：安州区安全生产监督管理局责任清单
+点击数：156
+发表时间：2016-07-26">
+                                            安州区安全生产监督管理局责任清单
+                                        </a>
+                                    </li>
+
+
+
+
+                                    <li>
+                                        <span class="date">2016-07-26</span>
+                                        <a href="/zw/hzql/hzqlqd1/content_92762" target="_blank" title="标题：安州区财政局责任清单
+点击数：144
+发表时间：2016-07-26">
+                                            安州区财政局责任清单
+                                        </a>
+                                    </li>
+
+
+
+
+                                    <li>
+                                        <span class="date">2016-07-26</span>
+                                        <a href="/zw/hzql/hzqlqd1/content_92761" target="_blank" title="标题：安州区残疾人联合会责任清单
+点击数：134
+发表时间：2016-07-26">
+                                            安州区残疾人联合会责任清单
+                                        </a>
+                                    </li>
+
+
+
+
+                                    <li>
+                                        <span class="date">2016-07-26</span>
+                                        <a href="/zw/hzql/hzqlqd1/content_92760" target="_blank" title="标题：安州区城市管理行政执法局责任清单
+点击数：180
+发表时间：2016-07-26">
+                                            安州区城市管理行政执法局责任清单
+                                        </a>
+                                    </li>
+
+
+
+
+                                    <li class="last">
+                                        <span class="date">2016-07-26</span>
+                                        <a href="/zw/hzql/hzqlqd1/content_92759" target="_blank" title="标题：安州区城乡规划管理局责任清单
+点击数：162
+发表时间：2016-07-26">
+                                            安州区城乡规划管理局责任清单
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                                <div class="btns">
+                                    <a class="linkBtn fl linkBtn1" href="http://zwdt.luzhou.gov.cn/eGovP1/portal/pc/pages10000/egov_openness/power/list.jsp">行政权力事项目录</a>
+                                    <a class="linkBtn fr linkBtn2" href="/zw/zfxxgk/zdlyxxgk/xzqlyh">行政权力运行</a>
+                                </div>
+                            </div>
+
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-03-16</span>
+                                    <a href="/zw/hzql/hzqlqd/content_98031" target="_blank" title="标题：新调整安州区行政权力清单目录（2017-03-08）
+点击数：257
+发表时间：2017-03-16">
+                                        新调整安州区行政权力清单目录（2017-03-08）
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-26</span>
+                                    <a href="/zw/hzql/hzqlqd/content_92727" target="_blank" title="标题：市安全监管局行政权力事项目录表
+点击数：201
+发表时间：2016-07-26">
+                                        市安全监管局行政权力事项目录表
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-26</span>
+                                    <a href="/zw/hzql/hzqlqd/content_92726" target="_blank" title="标题：市保密局行政权力事项目录表
+点击数：167
+发表时间：2016-07-26">
+                                        市保密局行政权力事项目录表
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-26</span>
+                                    <a href="/zw/hzql/hzqlqd/content_92725" target="_blank" title="标题：市财政局行政权力事项目录表
+点击数：153
+发表时间：2016-07-26">
+                                        市财政局行政权力事项目录表
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-26</span>
+                                    <a href="/zw/hzql/hzqlqd/content_92724" target="_blank" title="标题：市城管执法局行政权力事项目录表
+点击数：174
+发表时间：2016-07-26">
+                                        市城管执法局行政权力事项目录表
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-26</span>
+                                    <a href="/zw/hzql/hzqlqd/content_92723" target="_blank" title="标题：市畜牧局行政权力事项目录
+点击数：155
+发表时间：2016-07-26">
+                                        市畜牧局行政权力事项目录
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2016-07-26</span>
+                                    <a href="/zw/hzql/hzqlqd/content_92722" target="_blank" title="标题：市档案局行政权力事项目录表
+点击数：141
+发表时间：2016-07-26">
+                                        市档案局行政权力事项目录表
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList infoList-4">
+
+
+
+                                <li class="first">
+                                    <a href="http://www.lzst.gov.cn/xingzhengzhifasanxiangzhidushidianzhuanlan/" target="_blank" title="标题：科技局
+点击数：0
+发表时间：2017-07-10">
+                                        科技局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.lzly.gov.cn/zwgk/ShowClass.asp?ClassID=57" target="_blank" title="标题：林业局
+点击数：0
+发表时间：2017-07-10">
+                                        林业局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.lzfda.gov.cn/news/default.asp?cataid=44" target="_blank" title="标题：食药监局
+点击数：0
+发表时间：2017-07-10">
+                                        食药监局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.lzhb.gov.cn/template/default/list_hjwfpgt.jsp" target="_blank" title="标题：环保局
+点击数：0
+发表时间：2017-07-10">
+                                        环保局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.lzjtj.gov.cn/Index/gzdt/gzdt.aspx?PcId=71" target="_blank" title="标题：交通局
+点击数：0
+发表时间：2017-07-10">
+                                        交通局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.lzswjw.gov.cn/Category_8/Index.aspx" target="_blank" title="标题：卫计委
+点击数：0
+发表时间：2017-07-10">
+                                        卫计委
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.lzsgtj.cn/jsp/de_list/209" target="_blank" title="标题：国土局
+点击数：0
+发表时间：2017-07-10">
+                                        国土局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://cgj.luzhou.gov.cn/cgj/ShowClass.asp?ClassID=129" target="_blank" title="标题：城管局
+点击数：0
+发表时间：2017-07-10">
+                                        城管局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.aiclz.gov.cn/site/less_column.aspx?typeid=187&amp;id=127" target="_blank" title="标题：工商局
+点击数：0
+发表时间：2017-07-10">
+                                        工商局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.lzsajj.gov.cn/new/index2.asp" target="_blank" title="标题：安监局
+点击数：0
+发表时间：2017-07-10">
+                                        安监局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.lzsf.gov.cn/sxzfzl.asp?typeid=66" target="_blank" title="标题：司法局
+点击数：0
+发表时间：2017-07-10">
+                                        司法局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.lzsj.gov.cn/zhuantizhuanlan/sanxiangzhidushidian/" target="_blank" title="标题：审计局
+点击数：0
+发表时间：2017-07-10">
+                                        审计局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://slj.luzhou.gov.cn/Article/ShowClass.asp?ClassID=24" target="_blank" title="标题：水务局
+点击数：0
+发表时间：2017-07-10">
+                                        水务局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.lzgjj.gov.cn/list/267.html" target="_blank" title="标题：住建局
+点击数：0
+发表时间：2017-07-10">
+                                        住建局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.sc-n-tax.gov.cn/TaxWeb/template.go?_template=13874&amp;item_id=105148" target="_blank" title="标题：国税局
+点击数：0
+发表时间：2017-07-10">
+                                        国税局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://lz.sc-l-tax.gov.cn/cdzwgk/cdxzzqml/" target="_blank" title="标题：地税局
+点击数：0
+发表时间：2017-07-10">
+                                        地税局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://sclz.lss.gov.cn/zwgk_pagelist.jsp?id=0d6b52a77a904b25b1e370a5073ebe74" target="_blank" title="标题：人社局
+点击数：0
+发表时间：2017-07-10">
+                                        人社局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.lzfgw.gov.cn/sanxiangzhidugongshilan/" target="_blank" title="标题：发改委
+点击数：0
+发表时间：2017-07-10">
+                                        发改委
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.longmatan.gov.cn/Category_114/Index_1.aspx" target="_blank" title="标题：安州区
+点击数：0
+发表时间：2017-07-10">
+                                        安州区
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.jiangyang.gov.cn/template/default/news_list.jsp?classId=4028813d3ee405b1013ee41a10ee077e" target="_blank" title="标题：花荄镇
+点击数：0
+发表时间：2017-07-10">
+                                        花荄镇
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.naxi.gov.cn/pagelist_xzzf.jsp" target="_blank" title="标题：纳溪区
+点击数：0
+发表时间：2017-07-10">
+                                        纳溪区
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.luxian.gov.cn/pagelist.jsp?id=86fd8baae32a4456b968ca63530ac8ef" target="_blank" title="标题：安州区
+点击数：0
+发表时间：2017-07-10">
+                                        安州区
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://www.lzghj.gov.cn/zhengwugongkai/xingzhengchufagongkai/" target="_blank" title="标题：市规划局
+点击数：0
+发表时间：2017-07-10">
+                                        市规划局
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <a href="http://www.lzghj.gov.cn/zhengwugongkai/xingzhengchufagongkai/" target="_blank" title="标题：市城管局
+点击数：0
+发表时间：2017-07-10">
+                                        市城管局
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- 循环3 -->
+                    <section class="tabBoxIn">
+                        <div class="hd">
+                            <ul>
+
+
+                                <li class="li1 first">
+                                    <a class="tit" href="/zw/fazgh/fzgh" title="五年规划">五年规划</a>
+                                </li>
+                                <li class="li2">
+                                    <a class="tit" href="/zw/fazgh/sgszlfzjs" title="专项规划">专项规划</a>
+                                </li>
+                                <li class="li3">
+                                    <a class="tit" href="/zw/fazgh/csgh" title="城市规划">城市规划</a>
+                                </li>
+                                <li class="li4 last">
+                                    <a class="tit" href="/zw/fazgh/qygh" title="区域规划">区域规划</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-06-01</span>
+                                    <a href="/zw/fazgh/fzgh/content_102478" target="_blank" title="标题：投资超900亿 安州交通运输&quot;十三五&quot;规划出炉
+点击数：208
+发表时间：2017-06-01">
+                                        投资超900亿 安州交通运输"十三五"规划出炉
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-01</span>
+                                    <a href="/zw/fazgh/fzgh/content_102476" target="_blank" title="标题：&quot;十三五&quot;期间 安州主城区将新建、改扩建60所中小学校
+点击数：177
+发表时间：2017-06-01">
+                                        "十三五"期间 安州主城区将新建、改扩建60所中小学校
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-02-16</span>
+                                    <a href="/zw/fazgh/fzgh/content_12555" target="_blank" title="标题：《西部大开发“十三五”规划》确定安州为长江—川藏通道西段节点城市
+点击数：138
+发表时间：2017-02-16">
+                                        《西部大开发“十三五”规划》确定安州为长江—川藏通道西段节点城市
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-09-07</span>
+                                    <a href="/zw/fazgh/fzgh/content_10402" target="_blank" title="标题：五大经济区“十三五”发展规划全解析
+点击数：348
+发表时间：2016-09-07">
+                                        五大经济区“十三五”发展规划全解析
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-09-07</span>
+                                    <a href="/zw/fazgh/fzgh/content_10399" target="_blank" title="标题：我省首次编制五大经济区发展规划
+点击数：228
+发表时间：2016-09-07">
+                                        我省首次编制五大经济区发展规划
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/fazgh/fzgh/content_92800" target="_blank" title="标题：安州区国民经济和社会发展第十三个五年规划纲要
+点击数：1648
+发表时间：2016-07-27">
+                                        安州区国民经济和社会发展第十三个五年规划纲要
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2016-01-19</span>
+                                    <a href="/zw/fazgh/fzgh/content_89850" target="_blank" title="标题：安州区工业转型升级发展规划
+点击数：453
+发表时间：2016-01-19">
+                                        安州区工业转型升级发展规划
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-06-01</span>
+                                    <a href="/zw/fazgh/sgszlfzjs/content_102475" target="_blank" title="标题：投资超900亿 安州交通运输&quot;十三五&quot;规划出炉
+点击数：142
+发表时间：2017-06-01">
+                                        投资超900亿 安州交通运输"十三五"规划出炉
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-01</span>
+                                    <a href="/zw/fazgh/sgszlfzjs/content_102477" target="_blank" title="标题：&quot;十三五&quot;期间 安州主城区将新建、改扩建60所中小学校
+点击数：170
+发表时间：2017-06-01">
+                                        "十三五"期间 安州主城区将新建、改扩建60所中小学校
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-04-25</span>
+                                    <a href="/zw/fazgh/sgszlfzjs/content_98893" target="_blank" title="标题：中共安州区委 安州区人民政府关于印发《安州区2017年工业经济攻坚发展实施意见》、《安州区2017年产业发展突破实施方案》等“六个突破”实施方案和《安州区2017年营造良好发展环境实施方案》的通知
+点击数：169
+发表时间：2017-04-25">
+                                        中共安州区委 安州区人民政府关于印发《安州区2017年工业经济攻坚发…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-03-15</span>
+                                    <a href="/zw/fazgh/sgszlfzjs/content_97953" target="_blank" title="标题：安州区人民政府关于印发中国制造2025安州行动方案的通知
+点击数：270
+发表时间：2017-03-15">
+                                        安州区人民政府关于印发中国制造2025安州行动方案的通知
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-06-01</span>
+                                    <a href="/zw/fazgh/sgszlfzjs/content_91904" target="_blank" title="标题：安州区中远期客运枢纽布局规划图
+点击数：444
+发表时间：2016-06-01">
+                                        安州区中远期客运枢纽布局规划图
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-06-01</span>
+                                    <a href="/zw/fazgh/sgszlfzjs/content_91903" target="_blank" title="标题：安州区远期公交主体网布局规划图—城乡换乘型
+点击数：337
+发表时间：2016-06-01">
+                                        安州区远期公交主体网布局规划图—城乡换乘型
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2016-06-01</span>
+                                    <a href="/zw/fazgh/sgszlfzjs/content_91902" target="_blank" title="标题：安州区远期公交主体网布局规划图—骨架补充型
+点击数：266
+发表时间：2016-06-01">
+                                        安州区远期公交主体网布局规划图—骨架补充型
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-05-23</span>
+                                    <a href="/zw/fazgh/csgh/content_102247" target="_blank" title="标题：重塑安州“新小市” 打造多元活力街区
+点击数：150
+发表时间：2017-05-23">
+                                        重塑安州“新小市” 打造多元活力街区
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-02-16</span>
+                                    <a href="/zw/fazgh/csgh/content_95804" target="_blank" title="标题：《西部大开发“十三五”规划》确定安州为长江—川藏通道西段节点城市
+点击数：129
+发表时间：2017-02-16">
+                                        《西部大开发“十三五”规划》确定安州为长江—川藏通道西段节点城市
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-09-07</span>
+                                    <a href="/zw/fazgh/csgh/content_10403" target="_blank" title="标题：五大经济区“十三五”发展规划全解析
+点击数：347
+发表时间：2016-09-07">
+                                        五大经济区“十三五”发展规划全解析
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-09-07</span>
+                                    <a href="/zw/fazgh/csgh/content_10400" target="_blank" title="标题：我省首次编制五大经济区发展规划
+点击数：243
+发表时间：2016-09-07">
+                                        我省首次编制五大经济区发展规划
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-06-01</span>
+                                    <a href="/zw/fazgh/csgh/content_91905" target="_blank" title="标题：安州区市域道路交通规划图
+点击数：785
+发表时间：2016-06-01">
+                                        安州区市域道路交通规划图
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-06-01</span>
+                                    <a href="/zw/fazgh/csgh/content_91895" target="_blank" title="标题：安州区市域城乡空间规划图
+点击数：611
+发表时间：2016-06-01">
+                                        安州区市域城乡空间规划图
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2015-10-12</span>
+                                    <a href="/zw/fazgh/csgh/content_88264" target="_blank" title="标题：城南新区控规
+点击数：727
+发表时间：2015-10-12">
+                                        城南新区控规
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-05-23</span>
+                                    <a href="/zw/fazgh/qygh/content_102246" target="_blank" title="标题：重塑安州“新小市” 打造多元活力街区
+点击数：139
+发表时间：2017-05-23">
+                                        重塑安州“新小市” 打造多元活力街区
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-02-16</span>
+                                    <a href="/zw/fazgh/qygh/content_12556" target="_blank" title="标题：《西部大开发“十三五”规划》确定安州为长江—川藏通道西段节点城市
+点击数：131
+发表时间：2017-02-16">
+                                        《西部大开发“十三五”规划》确定安州为长江—川藏通道西段节点城市
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-09-07</span>
+                                    <a href="/zw/fazgh/qygh/content_10404" target="_blank" title="标题：五大经济区“十三五”发展规划全解析
+点击数：416
+发表时间：2016-09-07">
+                                        五大经济区“十三五”发展规划全解析
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-09-07</span>
+                                    <a href="/zw/fazgh/qygh/content_10401" target="_blank" title="标题：我省首次编制五大经济区发展规划
+点击数：198
+发表时间：2016-09-07">
+                                        我省首次编制五大经济区发展规划
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-06-01</span>
+                                    <a href="/zw/fazgh/qygh/content_91908" target="_blank" title="标题：茜草组团概念性规划设计整体鸟瞰效果图
+点击数：419
+发表时间：2016-06-01">
+                                        茜草组团概念性规划设计整体鸟瞰效果图
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-06-01</span>
+                                    <a href="/zw/fazgh/qygh/content_91907" target="_blank" title="标题：茜草组团概念性规划设计总平面图
+点击数：346
+发表时间：2016-06-01">
+                                        茜草组团概念性规划设计总平面图
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2016-06-01</span>
+                                    <a href="/zw/fazgh/qygh/content_91906" target="_blank" title="标题：茜草组团概念性规划设计土地利用图
+点击数：260
+发表时间：2016-06-01">
+                                        茜草组团概念性规划设计土地利用图
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </section>
+                    <!-- 循环4 -->
+                    <section class="tabBoxIn">
+                        <div class="hd">
+                            <ul>
+
+
+                                <li class="li1 first">
+                                    <a class="tit" href="/zw/zfgzxx/ssdb" title="实事督办">实事督办</a>
+                                </li>
+                                <li class="li2">
+                                    <a class="tit" href="/zw/zfxxgk/cateinfos?basiccategoryid=28" target="_blank" title="应急管理">应急管理</a>
+                                </li>
+                                <li class="li3">
+                                    <a class="tit" href="/zw/zfgzxx/jhzj" title="计划总结">计划总结</a>
+                                </li>
+                                <li class="li4">
+                                    <a class="tit" href="/zw/zfgzxx/gzjh" title="工作报告">工作报告</a>
+                                </li>
+                                <li class="li5 last">
+                                    <a class="tit" href="/zw/zfgzxx/szfgztb" title="工作通报">工作通报</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <!-- 实事督办 -->
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-31</span>
+                                    <a href="/zw/zfgzxx/ssdb/content_113095" target="_blank" title="标题：安州区召开2017年第三次安委（扩大）会暨第17次县长督办会
+点击数：54
+发表时间：2017-07-31">
+                                        安州区召开2017年第三次安委（扩大）会暨第17次县长督办会
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-31</span>
+                                    <a href="/zw/zfgzxx/ssdb/content_113094" target="_blank" title="标题：廖雪梅率队督导安州区环境保护突出问题
+点击数：52
+发表时间：2017-07-31">
+                                        廖雪梅率队督导安州区环境保护突出问题
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-31</span>
+                                    <a href="/zw/zfgzxx/ssdb/content_113093" target="_blank" title="标题：廖雪梅率队督导安州桑枣镇和乐兴镇环保突出问题
+点击数：70
+发表时间：2017-07-31">
+                                        廖雪梅率队督导安州桑枣镇和乐兴镇环保突出问题
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-24</span>
+                                    <a href="/zw/zfgzxx/ssdb/content_111109" target="_blank" title="标题：国务院督查组莅叙督查巡查脱贫攻坚工作
+点击数：201
+发表时间：2017-07-24">
+                                        国务院督查组莅叙督查巡查脱贫攻坚工作
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-24</span>
+                                    <a href="/zw/zfgzxx/ssdb/content_111108" target="_blank" title="标题：安州区召开在建工程乱象专项整治工作会
+点击数：196
+发表时间：2017-07-24">
+                                        安州区召开在建工程乱象专项整治工作会
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-24</span>
+                                    <a href="/zw/zfgzxx/ssdb/content_111107" target="_blank" title="标题：安州区安委会2017年第三次全体成员会、第34次市长督办会召开
+点击数：199
+发表时间：2017-07-24">
+                                        安州区安委会2017年第三次全体成员会、第34次市长督办会召开
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2017-07-24</span>
+                                    <a href="/zw/zfgzxx/ssdb/content_111106" target="_blank" title="标题：市委常委、市总工会主席刘云率队督导安州区环境保护工作
+点击数：241
+发表时间：2017-07-24">
+                                        市委常委、市总工会主席刘云率队督导安州区环境保护工作
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                            <!-- 应急管理 -->
+                            <ul class="infoList">
+
+
+                                <li>
+                                    <span class="date">2017-06-05</span>
+                                    <a class="tit" href="/publicity_dept16/subject06/subject151/59417" title="市水务局强化汛期应急值班值守业务培训">市水务局强化汛期应急值班值守业务培训</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2017-05-17</span>
+                                    <a class="tit" href="/publicity_dept21/subject01/subject13/58869" title="安州区卫生和计划生育委员会关于印发《安州区重污染天气卫生应急预案》的通知">安州区卫生和计划生育委员会关于印发《安州区重污染天气卫生应急预案…</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2017-05-16</span>
+                                    <a class="tit" href="/publicity_dept32/subject08/subject171/58792" title="安州区供销合作社关于修订和完善《防汛抗洪应急救援安全工作预案》的通知">安州区供销合作社关于修订和完善《防汛抗洪应急救援安全工作预案》的…</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2016-12-26</span>
+                                    <a class="tit" href="/publicity_dept14/subject010/subject189/54812" title="安州区城市管理行政执法局关于印发《重污染天气应急预案（试行）》的通  知">安州区城市管理行政执法局关于印发《重污染天气应急预案（试行）》的…</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2016-06-08</span>
+                                    <a class="tit" href="/publicity_dept32/subject08/subject171/50385" title="安州区供销社防汛抗洪应急救援安全工作预案 ">安州区供销社防汛抗洪应急救援安全工作预案 </a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2015-09-01</span>
+                                    <a class="tit" href="/publicity_dept21/subject013/subject199/43779" title="关于印发安州区突发中毒事件卫生应急人员防护导则的通知">关于印发安州区突发中毒事件卫生应急人员防护导则的通知</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2015-08-26</span>
+                                    <a class="tit" href="/publicity_dept21/subject013/subject199/43672" title="市卫生计生委专家组指导白腊乡卫生应急救援">市卫生计生委专家组指导白腊乡卫生应急救援</a>
+
+                                </li>
+
+                            </ul>
+
+                            <!-- 计划总结 -->
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-24</span>
+                                    <a href="/zw/zfgzxx/jhzj/content_111114" target="_blank" title="标题：安州区城市管理行政执法局关于2017年上半年驻村帮扶工作情况的报告
+点击数：306
+发表时间：2017-07-24">
+                                        安州区城市管理行政执法局关于2017年上半年驻村帮扶工作情况的报告
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-24</span>
+                                    <a href="/zw/zfgzxx/jhzj/content_111103" target="_blank" title="标题：安州区发展和改革委员会2017年城乡环境综合治理半年工作总结
+点击数：282
+发表时间：2017-07-24">
+                                        安州区发展和改革委员会2017年城乡环境综合治理半年工作总结
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-19</span>
+                                    <a href="/zw/zfgzxx/jhzj/content_106779" target="_blank" title="标题：乐兴镇财政局2017年帮扶工作计划
+点击数：255
+发表时间：2017-07-19">
+                                        乐兴镇财政局2017年帮扶工作计划
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-19</span>
+                                    <a href="/zw/zfgzxx/jhzj/content_106766" target="_blank" title="标题：安州区发展和改革委员会2017年度政务公开工作实施方案
+点击数：304
+发表时间：2017-07-19">
+                                        安州区发展和改革委员会2017年度政务公开工作实施方案
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-03-15</span>
+                                    <a href="/zw/zfgzxx/jhzj/content_97955" target="_blank" title="标题：安州区供销社2016年农业农村经济发展和助农增收工作总结
+点击数：242
+发表时间：2017-03-15">
+                                        安州区供销社2016年农业农村经济发展和助农增收工作总结
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/zfgzxx/jhzj/content_92805" target="_blank" title="标题：2016年安州区财政局收支预算总表和支出预算表
+点击数：290
+发表时间：2016-07-27">
+                                        2016年安州区财政局收支预算总表和支出预算表
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/zfgzxx/jhzj/content_92803" target="_blank" title="标题：安州区财政投资评审咨询中心2016年部门收支预算总表
+点击数：265
+发表时间：2016-07-27">
+                                        安州区财政投资评审咨询中心2016年部门收支预算总表
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                            <!-- 工作报告 -->
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-02-28</span>
+                                    <a href="/zw/zfgzxx/gzjh/content_96021" target="_blank" title="标题：政府工作报告（2017-1-6)
+点击数：367
+发表时间：2017-02-28">
+                                        政府工作报告（2017-1-6)
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-02-29</span>
+                                    <a href="/zw/zfgzxx/gzjh/content_90401" target="_blank" title="标题：政府工作报告（2016-2-1)
+点击数：1216
+发表时间：2016-02-29">
+                                        政府工作报告（2016-2-1)
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2015-02-12</span>
+                                    <a href="/zw/zfgzxx/gzjh/content_84735" target="_blank" title="标题：政府工作报告（2015-2-5)
+点击数：1235
+发表时间：2015-02-12">
+                                        政府工作报告（2015-2-5)
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2014-02-26</span>
+                                    <a href="/zw/zfgzxx/gzjh/content_1796" target="_blank" title="标题：政府工作报告(2014-2-20)
+点击数：2655
+发表时间：2014-02-26">
+                                        政府工作报告(2014-2-20)
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2013-03-05</span>
+                                    <a href="/zw/zfgzxx/gzjh/content_31540" target="_blank" title="标题：政府工作报告(2013-2-28)
+点击数：4333
+发表时间：2013-03-05">
+                                        政府工作报告(2013-2-28)
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2012-05-11</span>
+                                    <a href="/zw/zfgzxx/gzjh/content_31095" target="_blank" title="标题：政府工作报告(2012-1-3)
+点击数：2021
+发表时间：2012-05-11">
+                                        政府工作报告(2012-1-3)
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2012-05-11</span>
+                                    <a href="/zw/zfgzxx/gzjh/content_31094" target="_blank" title="标题：政府工作报告(2011-2-23)
+点击数：919
+发表时间：2012-05-11">
+                                        政府工作报告(2011-2-23)
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                            <!-- 工作通报 -->
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-01-16</span>
+                                    <a href="/zw/zfgzxx/szfgztb/content_95341" target="_blank" title="标题：安州区人民政府工作通报2017(2)安州区人民政府秘书长、副秘书长分工
+点击数：454
+发表时间：2017-01-16">
+                                        安州区人民政府工作通报2017(2)安州区人民政府秘书长、副秘书长分工
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-01-16</span>
+                                    <a href="/zw/zfgzxx/szfgztb/content_95340" target="_blank" title="标题：安州区人民政府工作通报2017(1)安州区人民政府市长、副市长、市长助理、秘书长分工
+点击数：407
+发表时间：2017-01-16">
+                                        安州区人民政府工作通报2017(1)安州区人民政府市长、副市长、市长助…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/zfgzxx/szfgztb/content_92787" target="_blank" title="标题：安州区人民政府办公室关于2015年度质量强市绩效考核结果的通报
+点击数：157
+发表时间：2016-07-27">
+                                        安州区人民政府办公室关于2015年度质量强市绩效考核结果的通报
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/zfgzxx/szfgztb/content_92786" target="_blank" title="标题：安州区人民政府办公室关于2015年推动大众创新创业工作考核情况的通报
+点击数：158
+发表时间：2016-07-27">
+                                        安州区人民政府办公室关于2015年推动大众创新创业工作考核情况的通报
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/zfgzxx/szfgztb/content_92785" target="_blank" title="标题：安州区教育局关于2015年职业教育与成人教育工作综合评估情况的通报
+点击数：127
+发表时间：2016-07-27">
+                                        安州区教育局关于2015年职业教育与成人教育工作综合评估情况的通报
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/zfgzxx/szfgztb/content_92784" target="_blank" title="标题：关于2015年度导游年审结果的通报
+点击数：220
+发表时间：2016-07-27">
+                                        关于2015年度导游年审结果的通报
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/zfgzxx/szfgztb/content_92782" target="_blank" title="标题：安州区人民政府办公室关于2015年重点工业企业考评情况的通报
+点击数：196
+发表时间：2016-07-27">
+                                        安州区人民政府办公室关于2015年重点工业企业考评情况的通报
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-31</span>
+                                    <a href="/zw/zfgzxx/ssdb/content_113095" target="_blank" title="标题：安州区召开2017年第三次安委（扩大）会暨第17次县长督办会
+点击数：54
+发表时间：2017-07-31">
+                                        安州区召开2017年第三次安委（扩大）会暨第17次县长督办会
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-31</span>
+                                    <a href="/zw/zfgzxx/ssdb/content_113094" target="_blank" title="标题：廖雪梅率队督导安州区环境保护突出问题
+点击数：52
+发表时间：2017-07-31">
+                                        廖雪梅率队督导安州区环境保护突出问题
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-31</span>
+                                    <a href="/zw/zfgzxx/ssdb/content_113093" target="_blank" title="标题：廖雪梅率队督导安州桑枣镇和乐兴镇环保突出问题
+点击数：70
+发表时间：2017-07-31">
+                                        廖雪梅率队督导安州桑枣镇和乐兴镇环保突出问题
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-24</span>
+                                    <a href="/zw/zfgzxx/ssdb/content_111109" target="_blank" title="标题：国务院督查组莅叙督查巡查脱贫攻坚工作
+点击数：201
+发表时间：2017-07-24">
+                                        国务院督查组莅叙督查巡查脱贫攻坚工作
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-24</span>
+                                    <a href="/zw/zfgzxx/ssdb/content_111108" target="_blank" title="标题：安州区召开在建工程乱象专项整治工作会
+点击数：196
+发表时间：2017-07-24">
+                                        安州区召开在建工程乱象专项整治工作会
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-24</span>
+                                    <a href="/zw/zfgzxx/ssdb/content_111107" target="_blank" title="标题：安州区安委会2017年第三次全体成员会、第34次市长督办会召开
+点击数：199
+发表时间：2017-07-24">
+                                        安州区安委会2017年第三次全体成员会、第34次市长督办会召开
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2017-07-24</span>
+                                    <a href="/zw/zfgzxx/ssdb/content_111106" target="_blank" title="标题：市委常委、市总工会主席刘云率队督导安州区环境保护工作
+点击数：241
+发表时间：2017-07-24">
+                                        市委常委、市总工会主席刘云率队督导安州区环境保护工作
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+                                <li class="noData">暂无资料</li>
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-24</span>
+                                    <a href="/zw/zfgzxx/jhzj/content_111114" target="_blank" title="标题：安州区城市管理行政执法局关于2017年上半年驻村帮扶工作情况的报告
+点击数：306
+发表时间：2017-07-24">
+                                        安州区城市管理行政执法局关于2017年上半年驻村帮扶工作情况的报告
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-24</span>
+                                    <a href="/zw/zfgzxx/jhzj/content_111103" target="_blank" title="标题：安州区发展和改革委员会2017年城乡环境综合治理半年工作总结
+点击数：282
+发表时间：2017-07-24">
+                                        安州区发展和改革委员会2017年城乡环境综合治理半年工作总结
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-19</span>
+                                    <a href="/zw/zfgzxx/jhzj/content_106779" target="_blank" title="标题：乐兴镇财政局2017年帮扶工作计划
+点击数：255
+发表时间：2017-07-19">
+                                        乐兴镇财政局2017年帮扶工作计划
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-19</span>
+                                    <a href="/zw/zfgzxx/jhzj/content_106766" target="_blank" title="标题：安州区发展和改革委员会2017年度政务公开工作实施方案
+点击数：304
+发表时间：2017-07-19">
+                                        安州区发展和改革委员会2017年度政务公开工作实施方案
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-03-15</span>
+                                    <a href="/zw/zfgzxx/jhzj/content_97955" target="_blank" title="标题：安州区供销社2016年农业农村经济发展和助农增收工作总结
+点击数：242
+发表时间：2017-03-15">
+                                        安州区供销社2016年农业农村经济发展和助农增收工作总结
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/zfgzxx/jhzj/content_92805" target="_blank" title="标题：2016年安州区财政局收支预算总表和支出预算表
+点击数：290
+发表时间：2016-07-27">
+                                        2016年安州区财政局收支预算总表和支出预算表
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/zfgzxx/jhzj/content_92803" target="_blank" title="标题：安州区财政投资评审咨询中心2016年部门收支预算总表
+点击数：265
+发表时间：2016-07-27">
+                                        安州区财政投资评审咨询中心2016年部门收支预算总表
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-02-28</span>
+                                    <a href="/zw/zfgzxx/gzjh/content_96021" target="_blank" title="标题：政府工作报告（2017-1-6)
+点击数：367
+发表时间：2017-02-28">
+                                        政府工作报告（2017-1-6)
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-02-29</span>
+                                    <a href="/zw/zfgzxx/gzjh/content_90401" target="_blank" title="标题：政府工作报告（2016-2-1)
+点击数：1216
+发表时间：2016-02-29">
+                                        政府工作报告（2016-2-1)
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2015-02-12</span>
+                                    <a href="/zw/zfgzxx/gzjh/content_84735" target="_blank" title="标题：政府工作报告（2015-2-5)
+点击数：1235
+发表时间：2015-02-12">
+                                        政府工作报告（2015-2-5)
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2014-02-26</span>
+                                    <a href="/zw/zfgzxx/gzjh/content_1796" target="_blank" title="标题：政府工作报告(2014-2-20)
+点击数：2655
+发表时间：2014-02-26">
+                                        政府工作报告(2014-2-20)
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2013-03-05</span>
+                                    <a href="/zw/zfgzxx/gzjh/content_31540" target="_blank" title="标题：政府工作报告(2013-2-28)
+点击数：4333
+发表时间：2013-03-05">
+                                        政府工作报告(2013-2-28)
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2012-05-11</span>
+                                    <a href="/zw/zfgzxx/gzjh/content_31095" target="_blank" title="标题：政府工作报告(2012-1-3)
+点击数：2021
+发表时间：2012-05-11">
+                                        政府工作报告(2012-1-3)
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2012-05-11</span>
+                                    <a href="/zw/zfgzxx/gzjh/content_31094" target="_blank" title="标题：政府工作报告(2011-2-23)
+点击数：919
+发表时间：2012-05-11">
+                                        政府工作报告(2011-2-23)
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-01-16</span>
+                                    <a href="/zw/zfgzxx/szfgztb/content_95341" target="_blank" title="标题：安州区人民政府工作通报2017(2)安州区人民政府秘书长、副秘书长分工
+点击数：454
+发表时间：2017-01-16">
+                                        安州区人民政府工作通报2017(2)安州区人民政府秘书长、副秘书长分工
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-01-16</span>
+                                    <a href="/zw/zfgzxx/szfgztb/content_95340" target="_blank" title="标题：安州区人民政府工作通报2017(1)安州区人民政府市长、副市长、市长助理、秘书长分工
+点击数：407
+发表时间：2017-01-16">
+                                        安州区人民政府工作通报2017(1)安州区人民政府市长、副市长、市长助…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/zfgzxx/szfgztb/content_92787" target="_blank" title="标题：安州区人民政府办公室关于2015年度质量强市绩效考核结果的通报
+点击数：157
+发表时间：2016-07-27">
+                                        安州区人民政府办公室关于2015年度质量强市绩效考核结果的通报
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/zfgzxx/szfgztb/content_92786" target="_blank" title="标题：安州区人民政府办公室关于2015年推动大众创新创业工作考核情况的通报
+点击数：158
+发表时间：2016-07-27">
+                                        安州区人民政府办公室关于2015年推动大众创新创业工作考核情况的通报
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/zfgzxx/szfgztb/content_92785" target="_blank" title="标题：安州区教育局关于2015年职业教育与成人教育工作综合评估情况的通报
+点击数：127
+发表时间：2016-07-27">
+                                        安州区教育局关于2015年职业教育与成人教育工作综合评估情况的通报
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/zfgzxx/szfgztb/content_92784" target="_blank" title="标题：关于2015年度导游年审结果的通报
+点击数：220
+发表时间：2016-07-27">
+                                        关于2015年度导游年审结果的通报
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2016-07-27</span>
+                                    <a href="/zw/zfgzxx/szfgztb/content_92782" target="_blank" title="标题：安州区人民政府办公室关于2015年重点工业企业考评情况的通报
+点击数：196
+发表时间：2016-07-27">
+                                        安州区人民政府办公室关于2015年重点工业企业考评情况的通报
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </section>
+                    <!-- 循环5 -->
+                    <section class="tabBoxIn">
+                        <div class="hd">
+                            <ul>
+
+
+                                <li class="li1 first">
+                                    <a class="tit" href="/zw/zdgz/lzhmhdzt" title="惠民行动">惠民行动</a>
+                                </li>
+                                <li class="li2">
+                                    <a class="tit" href="/zw/zdgz/zhdgz" title="重点工作">重点工作</a>
+                                </li>
+                                <li class="li3">
+                                    <a class="tit" href="/zw/zfxxgk/cateinfos?basiccategoryid=27" target="_blank" title="重点项目">重点项目</a>
+                                </li>
+                                <li class="li4 last">
+                                    <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggzypz/zdxxwz" title="征地拆迁">征地拆迁</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <!-- 惠民行动 -->
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-06-15</span>
+                                    <a href="/zw/zdgz/lzhmhdzt/content_103311" target="_blank" title="标题：5.3亿元扶贫基金 助力安州脱贫攻坚
+点击数：280
+发表时间：2017-06-15">
+                                        5.3亿元扶贫基金 助力安州脱贫攻坚
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-12</span>
+                                    <a href="/zw/zdgz/lzhmhdzt/content_103312" target="_blank" title="标题：妥善解决乡村医生养老问题 安州区在全省率先实施乡村医生养老保险财政补助政策
+点击数：174
+发表时间：2017-06-12">
+                                        妥善解决乡村医生养老问题 安州区在全省率先实施乡村医生养老保险财政…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-07</span>
+                                    <a href="/zw/zdgz/lzhmhdzt/content_103313" target="_blank" title="标题：安州交警开辟“高考绿色通道” 送考车辆可进入管制区
+点击数：240
+发表时间：2017-06-07">
+                                        安州交警开辟“高考绿色通道” 送考车辆可进入管制区
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-05-24</span>
+                                    <a href="/zw/zdgz/lzhmhdzt/content_103314" target="_blank" title="标题：安州区将确保就业困难家庭高校毕业生100%就业
+点击数：164
+发表时间：2017-05-24">
+                                        安州区将确保就业困难家庭高校毕业生100%就业
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-05-23</span>
+                                    <a href="/zw/zdgz/lzhmhdzt/content_103316" target="_blank" title="标题：连续7年 安州提高城乡居民最低生活保障标准
+点击数：219
+发表时间：2017-05-23">
+                                        连续7年 安州提高城乡居民最低生活保障标准
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-04-18</span>
+                                    <a href="/zw/zdgz/lzhmhdzt/content_103319" target="_blank" title="标题：酒城人才新政出炉:安州每年设立5000万元的人才发展基金
+点击数：338
+发表时间：2017-04-18">
+                                        酒城人才新政出炉:安州每年设立5000万元的人才发展基金
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2016-04-18</span>
+                                    <a href="/zw/zdgz/lzhmhdzt/content_8523" target="_blank" title="标题：纳溪警方开设防范通讯网络诈骗“流动课堂”
+点击数：195
+发表时间：2016-04-18">
+                                        纳溪警方开设防范通讯网络诈骗“流动课堂”
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                            <!-- 重点工作 -->
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-06-21</span>
+                                    <a href="/zw/zdgz/zhdgz/content_103093" target="_blank" title="标题：2017健康安州建设推进会召开 不断做大做强医疗健康产业
+点击数：152
+发表时间：2017-06-21">
+                                        2017健康安州建设推进会召开 不断做大做强医疗健康产业
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-04-19</span>
+                                    <a href="/zw/zdgz/zhdgz/content_8521" target="_blank" title="标题：7500万冷链物流项目 解决龙眼等农产品&quot;卖难&quot;问题
+点击数：321
+发表时间：2016-04-19">
+                                        7500万冷链物流项目 解决龙眼等农产品"卖难"问题
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-04-19</span>
+                                    <a href="/zw/zdgz/zhdgz/content_8522" target="_blank" title="标题：航天（安州）工业园9月试生产
+点击数：261
+发表时间：2016-04-19">
+                                        航天（安州）工业园9月试生产
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-04-15</span>
+                                    <a href="/zw/zdgz/zhdgz/content_8524" target="_blank" title="标题：安州古叙高速有望年内通车 串联起白酒金三角
+点击数：570
+发表时间：2016-04-15">
+                                        安州古叙高速有望年内通车 串联起白酒金三角
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-04-07</span>
+                                    <a href="/zw/zdgz/zhdgz/content_8526" target="_blank" title="标题：安州将建设统一信用信息平台 将金融、社保等纳入
+点击数：341
+发表时间：2016-04-07">
+                                        安州将建设统一信用信息平台 将金融、社保等纳入
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-03-30</span>
+                                    <a href="/zw/zdgz/zhdgz/content_8531" target="_blank" title="标题：川南城际铁路内自泸线今年底前开工
+点击数：608
+发表时间：2016-03-30">
+                                        川南城际铁路内自泸线今年底前开工
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2016-03-08</span>
+                                    <a href="/zw/zdgz/zhdgz/content_7947" target="_blank" title="标题：今年 安州加快建设安州机场迁建、长江六桥等
+点击数：482
+发表时间：2016-03-08">
+                                        今年 安州加快建设安州机场迁建、长江六桥等
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                            <!--重大项目 调用信息公开-->
+                            <ul class="infoList">
+
+
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a class="tit" href="/publicity_dept1/subject022/60880" title="我市2017年上半年粮食重点项目建设成绩明显">我市2017年上半年粮食重点项目建设成绩明显</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-14</span>
+                                    <a class="tit" href="/publicity_dept1/subject022/60603" title="省政协副主席王正荣莅泸督察古叙生活垃圾焚烧发电项目建设">省政协副主席王正荣莅泸督察古叙生活垃圾焚烧发电项目建设</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-14</span>
+                                    <a class="tit" href="/publicity_dept1/subject010/subject186/60602" title="古叙生活垃圾焚烧发电项目建设有序推进">古叙生活垃圾焚烧发电项目建设有序推进</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-10</span>
+                                    <a class="tit" href="/publicity_dept1/subject022/60458" title="安州江阳国家粮食储备库项目正式开工建设">安州江阳国家粮食储备库项目正式开工建设</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-06</span>
+                                    <a class="tit" href="/publicity_dept1/subject022/60371" title="安州区2017年1—5月重点项目完成情况">安州区2017年1—5月重点项目完成情况</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-03</span>
+                                    <a class="tit" href="/publicity_dept16/subject06/subject151/60231" title="省水利厅调研我市已成中型灌区配套改造建设项目">省水利厅调研我市已成中型灌区配套改造建设项目</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2017-06-13</span>
+                                    <a class="tit" href="/publicity_dept1/subject07/subject162/59683" title="安州迁建机场航站楼及配套设施扩建项目获批">安州迁建机场航站楼及配套设施扩建项目获批</a>
+
+                                </li>
+
+                            </ul>
+
+                            <!--1768征地信息-->
+                            <ul class="infoList">
+
+                                <li>
+                                    <span class="date">2017-07-12</span>
+                                    <a class="tit" href="/publicity_dept12/subject05/subject141/60523" title="区国土资源分局：宣传贯彻落实上级“微腐败”工作会议精神">区国土资源分局：宣传贯彻落实上级“微腐败”工作会议精神</a>
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-11</span>
+                                    <a class="tit" href="/publicity_dept12/subject05/subject141/60495" title="花荄镇国土资源局召开整治群众身边的不正之风和腐败问题工作动员会">花荄镇国土资源局召开整治群众身边的不正之风和腐败问题工作动员会</a>
+                                </li>
+                                <li>
+                                    <span class="date">2017-06-23</span>
+                                    <a class="tit" href="/publicity_dept12/subject05/subject141/59993" title="花荄镇：“一新三到位”加速推进重大项目征地拆迁">花荄镇：“一新三到位”加速推进重大项目征地拆迁</a>
+                                </li>
+                                <li>
+                                    <span class="date">2017-06-23</span>
+                                    <a class="tit" href="/publicity_dept12/subject05/subject141/59986" title="花荄镇智能终端产业园项目三期征地动员会在辽安街道召开">花荄镇智能终端产业园项目三期征地动员会在辽安街道召开</a>
+                                </li>
+                                <li>
+                                    <span class="date">2017-06-16</span>
+                                    <a class="tit" href="/publicity_dept12/subject05/subject141/59850" title="徐利专题研究麒麟新城组团用地工作">徐利专题研究麒麟新城组团用地工作</a>
+                                </li>
+                                <li>
+                                    <span class="date">2017-05-26</span>
+                                    <a class="tit" href="/publicity_dept12/subject05/subject141/59126" title="法律顾问把脉国土资源依法行政疑难杂症">法律顾问把脉国土资源依法行政疑难杂症</a>
+                                </li>
+                                <li>
+                                    <span class="date">2017-05-24</span>
+                                    <a class="tit" href="/publicity_dept6/subject016/subject1111/59081" title="市公安局交警支队“四项措施”扎实推进队伍风险防控工作">市公安局交警支队“四项措施”扎实推进队伍风险防控工作</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- 五公开等切换 -->
+            <div class="tabBox" id="indZcfg">
+                <div class="tHd">
+                    <ul>
+                        <li><a href="/zw/zfxxgk/qmtjwgk">全面推进五公开</a><i></i></li>
+                        <li><a href="/zt/sjbmys" target="_blank">财政公开</a><i></i></li>
+                        <li><a href="/zw/rsxx">人事信息</a><i></i></li>
+                        <li><a href="/zw/tjxx">统计信息</a><i></i></li>
+                        <li><a href="/zw/gysy">公益事业</a><i></i></li>
+                    </ul>
+                </div>
+                <div class="tBd">
+                    <!-- 循环1 -->
+                    <section class="tabBoxIn">
+                        <div class="hd">
+                            <ul>
+
+
+                                <li class="li1 first">
+                                    <a class="tit" href="/zw/zfxxgk/qmtjwgk/jcgk" title="决策公开">决策公开</a>
+                                </li>
+                                <li class="li2">
+                                    <a class="tit" href="/zw/zfxxgk/qmtjwgk/zhgk" title="执行公开">执行公开</a>
+                                </li>
+                                <li class="li3">
+                                    <a class="tit" href="/zw/zfxxgk/qmtjwgk/glgk" title="管理公开">管理公开</a>
+                                </li>
+                                <li class="li4">
+                                    <a class="tit" href="/zw/zfxxgk/qmtjwgk/fwgk" title="服务公开">服务公开</a>
+                                </li>
+                                <li class="li5 last">
+                                    <a class="tit" href="/zw/zfxxgk/qmtjwgk/jggk" title="结果公开">结果公开</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-31</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/jcgk/content_113050" target="_blank" title="标题：安州城西将建连江公园 造价3.5亿元绿地率82.5%
+点击数：23
+发表时间：2017-07-31">
+                                        安州城西将建连江公园 造价3.5亿元绿地率82.5%
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-28</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/jcgk/content_111474" target="_blank" title="标题：安州区：加快自贸区建设打造内陆开放型经济新高地
+点击数：35
+发表时间：2017-07-28">
+                                        安州区：加快自贸区建设打造内陆开放型经济新高地
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/jcgk/content_111345" target="_blank" title="标题：扶持入驻企业 安州国家高新区出台系列政策
+点击数：58
+发表时间：2017-07-26">
+                                        扶持入驻企业 安州国家高新区出台系列政策
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/jcgk/content_111330" target="_blank" title="标题：安州整治食品药品安全风险隐患 非法违法生产经营单位将遭关闭取缔
+点击数：57
+发表时间：2017-07-26">
+                                        安州整治食品药品安全风险隐患 非法违法生产经营单位将遭关闭取缔
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/jcgk/content_111340" target="_blank" title="标题：7月28日安州将拍卖84辆公车 最低5000元起拍
+点击数：98
+发表时间：2017-07-26">
+                                        7月28日安州将拍卖84辆公车 最低5000元起拍
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-25</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/jcgk/content_111192" target="_blank" title="标题：市长廖雪梅：大排查大整治重大事故隐患
+点击数：64
+发表时间：2017-07-25">
+                                        市长廖雪梅：大排查大整治重大事故隐患
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2017-07-25</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/jcgk/content_111188" target="_blank" title="标题：安州反复出现隐患的煤矿将停工停产 并给予严厉处罚
+点击数：59
+发表时间：2017-07-25">
+                                        安州反复出现隐患的煤矿将停工停产 并给予严厉处罚
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-31</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/zhgk/content_113051" target="_blank" title="标题：安州城西将建连江公园 造价3.5亿元绿地率82.5%
+点击数：20
+发表时间：2017-07-31">
+                                        安州城西将建连江公园 造价3.5亿元绿地率82.5%
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/zhgk/content_111346" target="_blank" title="标题：扶持入驻企业 安州国家高新区出台系列政策
+点击数：53
+发表时间：2017-07-26">
+                                        扶持入驻企业 安州国家高新区出台系列政策
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/zhgk/content_111331" target="_blank" title="标题：安州整治食品药品安全风险隐患 非法违法生产经营单位将遭关闭取缔
+点击数：55
+发表时间：2017-07-26">
+                                        安州整治食品药品安全风险隐患 非法违法生产经营单位将遭关闭取缔
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/zhgk/content_111341" target="_blank" title="标题：7月28日安州将拍卖84辆公车 最低5000元起拍
+点击数：52
+发表时间：2017-07-26">
+                                        7月28日安州将拍卖84辆公车 最低5000元起拍
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-25</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/zhgk/content_111193" target="_blank" title="标题：市长廖雪梅：大排查大整治重大事故隐患
+点击数：60
+发表时间：2017-07-25">
+                                        市长廖雪梅：大排查大整治重大事故隐患
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-25</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/zhgk/content_111172" target="_blank" title="标题：沱江五桥、茜草滨江路、钓鱼台路加宽 安州要干这些事
+点击数：70
+发表时间：2017-07-25">
+                                        沱江五桥、茜草滨江路、钓鱼台路加宽 安州要干这些事
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2017-07-24</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/zhgk/content_110797" target="_blank" title="标题：安州遏制预防危化品运输交通事故 不符合规定将受处罚
+点击数：71
+发表时间：2017-07-24">
+                                        安州遏制预防危化品运输交通事故 不符合规定将受处罚
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-11</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/glgk/content_106337" target="_blank" title="标题：安州电台又放大招了 找找就业服务平台正式上线
+点击数：104
+发表时间：2017-07-11">
+                                        安州电台又放大招了 找找就业服务平台正式上线
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-10</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/glgk/content_106284" target="_blank" title="标题：安州多项措施强化汛期交通安全
+点击数：98
+发表时间：2017-07-10">
+                                        安州多项措施强化汛期交通安全
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-10</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/glgk/content_106273" target="_blank" title="标题：2017上半年安州审批核准备案项目954个 总投资达1266亿
+点击数：99
+发表时间：2017-07-10">
+                                        2017上半年安州审批核准备案项目954个 总投资达1266亿
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-28</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/glgk/content_103258" target="_blank" title="标题：廖雪梅市长强调：抓安全生产工作不能简单化，善于以问题为导向举一反三
+点击数：97
+发表时间：2017-06-28">
+                                        廖雪梅市长强调：抓安全生产工作不能简单化，善于以问题为导向举一反三
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-23</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/glgk/content_103135" target="_blank" title="标题：安州率先在四川省出台 “ 双总河长” 制度
+点击数：101
+发表时间：2017-06-23">
+                                        安州率先在四川省出台 “ 双总河长” 制度
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-12</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/glgk/content_102807" target="_blank" title="标题：安州持续推进环境污染防治&quot;三大战役&quot; 可举报违法行为
+点击数：107
+发表时间：2017-06-12">
+                                        安州持续推进环境污染防治"三大战役" 可举报违法行为
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2017-06-08</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/glgk/content_102745" target="_blank" title="标题：[安州创文]纳溪区三个“百分百” 确保打赢创文攻坚战
+点击数：101
+发表时间：2017-06-08">
+                                        [安州创文]纳溪区三个“百分百” 确保打赢创文攻坚战
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-27</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/fwgk/content_111436" target="_blank" title="标题：安州区科知局高标准严要求开展市级众创空间认定
+点击数：46
+发表时间：2017-07-27">
+                                        安州区科知局高标准严要求开展市级众创空间认定
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-12</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/fwgk/content_106386" target="_blank" title="标题：安州公积金实现“全国漫游” 市民可以享受三大福利
+点击数：99
+发表时间：2017-07-12">
+                                        安州公积金实现“全国漫游” 市民可以享受三大福利
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-11</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/fwgk/content_106341" target="_blank" title="标题：加强汛期旅游安全监管 安州景区实行24小时值班值守
+点击数：96
+发表时间：2017-07-11">
+                                        加强汛期旅游安全监管 安州景区实行24小时值班值守
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-11</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/fwgk/content_106336" target="_blank" title="标题：安州电台又放大招了 找找就业服务平台正式上线
+点击数：98
+发表时间：2017-07-11">
+                                        安州电台又放大招了 找找就业服务平台正式上线
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-10</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/fwgk/content_106292" target="_blank" title="标题：[安州创文]12315、12333：保护您的合法权益
+点击数：98
+发表时间：2017-07-10">
+                                        [安州创文]12315、12333：保护您的合法权益
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-10</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/fwgk/content_106272" target="_blank" title="标题：2017上半年安州审批核准备案项目954个 总投资达1266亿
+点击数：97
+发表时间：2017-07-10">
+                                        2017上半年安州审批核准备案项目954个 总投资达1266亿
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2017-07-05</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/fwgk/content_106159" target="_blank" title="标题：安州公积金贷款政策7月起有调整
+点击数：147
+发表时间：2017-07-05">
+                                        安州公积金贷款政策7月起有调整
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-31</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/jggk/content_113042" target="_blank" title="标题：安州区：挂牌运行百余日 辽安产业合作园区交出亮丽成绩单
+点击数：21
+发表时间：2017-07-31">
+                                        安州区：挂牌运行百余日 辽安产业合作园区交出亮丽成绩单
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-28</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/jggk/content_111492" target="_blank" title="标题：预留轨道 双向六车道的安州长江五桥通过专家评审
+点击数：38
+发表时间：2017-07-28">
+                                        预留轨道 双向六车道的安州长江五桥通过专家评审
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-27</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/jggk/content_111430" target="_blank" title="标题：省委编办领导莅泸调研 安州&quot;岗编分离&quot;工作受肯定
+点击数：68
+发表时间：2017-07-27">
+                                        省委编办领导莅泸调研 安州"岗编分离"工作受肯定
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-27</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/jggk/content_111437" target="_blank" title="标题：安州区科知局高标准严要求开展市级众创空间认定
+点击数：64
+发表时间：2017-07-27">
+                                        安州区科知局高标准严要求开展市级众创空间认定
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-25</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/jggk/content_111200" target="_blank" title="标题：安州列入四川省工会会员普惠性服务试点城市
+点击数：60
+发表时间：2017-07-25">
+                                        安州列入四川省工会会员普惠性服务试点城市
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-25</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/jggk/content_111160" target="_blank" title="标题：活力、创新、效率 辽安产业合作园区百日成绩单喜人
+点击数：73
+发表时间：2017-07-25">
+                                        活力、创新、效率 辽安产业合作园区百日成绩单喜人
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2017-07-25</span>
+                                    <a href="/zw/zfxxgk/qmtjwgk/jggk/content_111184" target="_blank" title="标题：未按规定年报 安州1779户企业被列入经营异常名录
+点击数：60
+发表时间：2017-07-25">
+                                        未按规定年报 安州1779户企业被列入经营异常名录
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </section>
+                    <!-- 循环2 -->
+                    <section class="tabBoxIn">
+                        <div class="hd">
+                            <ul>
+
+
+                                <li class="li1 first">
+                                    <a class="tit" href="/zt/sjbmys/zfyjs" target="_blank" title="政府预决算">政府预决算</a>
+                                </li>
+                                <li class="li2">
+                                    <a class="tit" href="/zt/sjbmys/bmyjs" target="_blank" title="部门预决算">部门预决算</a>
+                                </li>
+                                <li class="li3">
+                                    <a class="tit" href="/zt/sjbmys/sgjfyjs" target="_blank" title="“三公”经费预决算">“三公”经费预决算</a>
+                                </li>
+                                <li class="li4 last">
+                                    <a class="tit" href="/zw/zfxxgk/zdlyxxgk/czsjwz" title="财政、审计公开">财政、审计公开</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <!-- 财政 -->
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-06-15</span>
+                                    <a href="/publicity_dept10/subject04/subject132/55509" target="_blank" title="标题：安州区2017年财政预算报告
+点击数：0
+发表时间：2017-06-15">
+                                        安州区2017年财政预算报告
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-15</span>
+                                    <a href="/publicity_dept10/subject04/subject132/52289" target="_blank" title="标题：安州区2015年财政决算报告
+点击数：0
+发表时间：2017-06-15">
+                                        安州区2015年财政决算报告
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-15</span>
+                                    <a href="/publicity_dept10/subject04/subject132/49228" target="_blank" title="标题：安州区市本级2016年“三公”经费预算汇总情况
+点击数：0
+发表时间：2017-06-15">
+                                        安州区市本级2016年“三公”经费预算汇总情况
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-15</span>
+                                    <a href="/publicity_dept10/subject04/subject132/44231" target="_blank" title="标题：安州区2014年财政决算报告
+点击数：0
+发表时间：2017-06-15">
+                                        安州区2014年财政决算报告
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-15</span>
+                                    <a href="/publicity_dept10/subject04/subject132/42546" target="_blank" title="标题：安州区市本级2015年“三公”经费预算汇总情况
+点击数：0
+发表时间：2017-06-15">
+                                        安州区市本级2015年“三公”经费预算汇总情况
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-15</span>
+                                    <a href="/publicity_dept10/subject04/subject132/37030" target="_blank" title="标题：安州区市本级2013年度“三公”经费决算汇总情况
+点击数：0
+发表时间：2017-06-15">
+                                        安州区市本级2013年度“三公”经费决算汇总情况
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2017-06-15</span>
+                                    <a href="/publicity_dept10/subject04/subject132/28587" target="_blank" title="标题：安州区市本级2012年“三公”经费决算汇总情况
+点击数：0
+发表时间：2017-06-15">
+                                        安州区市本级2012年“三公”经费决算汇总情况
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <div class="group2">
+                                <ul class="infoList">
+
+
+
+                                    <li class="li1 first">
+                                        <a class="tit" href="/zt/sjbmys/bmyjs/bmys/2017nbmys">2017年部门预算</a>
+                                    </li>
+                                    <li class="li2 last">
+                                        <a class="tit" href="/zt/sjbmys/bmyjs/bmys/2016nbmys">2016年部门预算</a>
+                                    </li>
+
+                                </ul>
+                                <ul class="infoList">
+
+
+
+                                    <li class="li1 last">
+                                        <a class="tit" href="/zt/sjbmys/bmyjs/bmjs/2016nbmjs" title="2015年部门决算">2015年部门决算</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="group2">
+                                <ul class="infoList">
+
+
+
+                                    <li class="li1 first">
+                                        <a class="tit" href="/zt/sjbmys/sgjfyjs/sgjfys/2017nsgjfys">2017年“三公”经费预算</a>
+                                    </li>
+                                    <li class="li2 last">
+                                        <a class="tit" href="/zt/sjbmys/sgjfyjs/sgjfys/2016nsgjfys">2016年“三公”经费预算</a>
+                                    </li>
+
+                                </ul>
+                                <ul class="infoList">
+
+
+
+                                    <li class="li1 last">
+                                        <a class="tit" href="/zt/sjbmys/sgjfyjs/sgjfjs/2016nsgjfjs" title="2015年“三公”经费决算">2015年“三公”经费决算</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <ul class="infoList">
+
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a class="tit" href="/publicity_dept12/subject05/subject141/60868" title="花荄镇国土资源局召开2017年农村土地整理扶贫专项项目业主例会">花荄镇国土资源局召开2017年农村土地整理扶贫专项项目业主例会</a>
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-17</span>
+                                    <a class="tit" href="/publicity_dept10/subject017/subject1120/60631" title="省财政厅莅临桑枣镇开展扶贫资金审计整改督查工作">省财政厅莅临桑枣镇开展扶贫资金审计整改督查工作</a>
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-06</span>
+                                    <a class="tit" href="/publicity_dept12/subject05/subject141/60380" title="乐兴镇国土资源局组织召开2017年度土地整理项目技术交底暨开工动员会">乐兴镇国土资源局组织召开2017年度土地整理项目技术交底暨开工动员会</a>
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-05</span>
+                                    <a class="tit" href="/publicity_dept12/subject05/subject141/60317" title="打古镇云回村三社滑坡治理工程终验合格">打古镇云回村三社滑坡治理工程终验合格</a>
+                                </li>
+                                <li>
+                                    <span class="date">2017-06-12</span>
+                                    <a class="tit" href="/publicity_dept12/subject05/subject141/59651" title="桑枣镇国土资源局召开2017年第一批6个土地整理项目开工动员大会">桑枣镇国土资源局召开2017年第一批6个土地整理项目开工动员大会</a>
+                                </li>
+                                <li>
+                                    <span class="date">2017-05-19</span>
+                                    <a class="tit" href="/publicity_dept6/subject016/subject1111/58908" title="市公安局党委委员、纪委书记张玉帆主持召开纪监督审部门5月工作例会">市公安局党委委员、纪委书记张玉帆主持召开纪监督审部门5月工作例会</a>
+                                </li>
+                                <li>
+                                    <span class="date">2017-05-19</span>
+                                    <a class="tit" href="/publicity_dept6/subject016/subject1111/58900" title="副市长、公安局长何绍明在全市公安机关党风廉政建设电视电话会议上强调：">副市长、公安局长何绍明在全市公安机关党风廉政建设电视电话会议上强…</a>
+                                </li>
+                                <!--财政、审计公开-->
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- 循环3 -->
+                    <section class="tabBoxIn">
+                        <div class="bd" style="height:243px; padding-top:12px">
+                            <div class="item">
+                                <ul class="infoList">
+
+
+
+                                    <li class="first">
+                                        <span class="date">2017-07-10</span>
+                                        <a href="/zw/rsxx/rdzfrm/content_105857" target="_blank" title="标题：安州区人民政府关于任命张国蓉等职务的通知
+点击数：808
+发表时间：2017-07-10">
+                                            安州区人民政府关于任命张国蓉等职务的通知
+                                        </a>
+                                    </li>
+
+
+
+
+                                    <li>
+                                        <span class="date">2017-07-10</span>
+                                        <a href="/zw/rsxx/rdzfrm/content_105855" target="_blank" title="标题：安州区人民政府关于任免靳地胜等职务的通知
+点击数：769
+发表时间：2017-07-10">
+                                            安州区人民政府关于任免靳地胜等职务的通知
+                                        </a>
+                                    </li>
+
+
+
+
+                                    <li>
+                                        <span class="date">2017-07-10</span>
+                                        <a href="/zw/rsxx/rdzfrm/content_105854" target="_blank" title="标题：安州区人民政府关于任免钟华贵等职务的通知
+点击数：750
+发表时间：2017-07-10">
+                                            安州区人民政府关于任免钟华贵等职务的通知
+                                        </a>
+                                    </li>
+
+
+
+
+                                    <li>
+                                        <span class="date">2017-07-10</span>
+                                        <a href="/zw/rsxx/rdzfrm/content_105853" target="_blank" title="标题：安州区人民政府关于任免刘伟涛等职务的通知
+点击数：673
+发表时间：2017-07-10">
+                                            安州区人民政府关于任免刘伟涛等职务的通知
+                                        </a>
+                                    </li>
+
+
+
+
+                                    <li>
+                                        <span class="date">2017-07-10</span>
+                                        <a href="/zw/rsxx/rdzfrm/content_105852" target="_blank" title="标题：安州区人民政府关于任免叶伦汉等职务的通知
+点击数：702
+发表时间：2017-07-10">
+                                            安州区人民政府关于任免叶伦汉等职务的通知
+                                        </a>
+                                    </li>
+
+
+
+
+                                    <li class="last">
+                                        <span class="date">2017-02-27</span>
+                                        <a href="/zw/rsxx/rdzfrm/content_12742" target="_blank" title="标题：安州区人民政府关于任免尹德良等职务的通知
+点击数：797
+发表时间：2017-02-27">
+                                            安州区人民政府关于任免尹德良等职务的通知
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                                <div class="btns">
+                                    <a class="linkBtn fl linkBtn3" href="http://www.lzrsks.gov.cn/Index.aspx" target="_blank">公招公选</a>
+                                    <a class="linkBtn fr linkBtn4" href="http://www.lzrsks.gov.cn/News/NewsList.aspx?typeId=402998863ba3622a013bb75aca1e410f" target="_blank">公务员考录</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 循环4 -->
+                    <section class="tabBoxIn">
+                        <div class="hd">
+                            <ul>
+
+
+                                <li class="li1 first">
+                                    <a class="tit" href="/zw/zfxxgk/cateinfos?basiccategoryid=14" target="_blank" title="统计数据">统计数据</a>
+                                </li>
+                                <li class="li2 last">
+                                    <a class="tit" href="/zw/tjxx/tjfx" title="统计分析">统计分析</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <!--统计数据 调用信息公开-->
+                            <ul class="infoList">
+
+
+                                <li>
+                                    <span class="date">2017-07-28</span>
+                                    <a class="tit" href="/publicity_dept1/subject03/subject122/60960" title="商贸物流重点项目支撑安州构建区域商贸物流中心">商贸物流重点项目支撑安州构建区域商贸物流中心</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a class="tit" href="/publicity_dept1/subject03/subject122/60870" title="安州区投资高速增长继续领跑全川">安州区投资高速增长继续领跑全川</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-26</span>
+                                    <a class="tit" href="/publicity_dept1/subject03/subject122/60869" title="我市经济增长完成“双过半”目标任务">我市经济增长完成“双过半”目标任务</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-24</span>
+                                    <a class="tit" href="/publicity_dept42/subject07/subject163/60822" title="安州区邮政管理局公布2017年6月邮政业发展情况">安州区邮政管理局公布2017年6月邮政业发展情况</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-12</span>
+                                    <a class="tit" href="/publicity_dept42/subject07/subject163/60510" title="安州区邮政管理局公布2017年5月邮政业发展情况">安州区邮政管理局公布2017年5月邮政业发展情况</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-11</span>
+                                    <a class="tit" href="/publicity_dept27/subject03/subject125/60486" title="2017年6月安州区国有企业经营情况">2017年6月安州区国有企业经营情况</a>
+
+                                </li>
+                                <li>
+                                    <span class="date">2017-07-11</span>
+                                    <a class="tit" href="/publicity_dept21/subject01/subject13/60477" title="2017年第二季度城区生活饮用水质（末梢水）监测结果">2017年第二季度城区生活饮用水质（末梢水）监测结果</a>
+
+                                </li>
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-19</span>
+                                    <a href="/zw/tjxx/tjfx/content_106772" target="_blank" title="标题：安州区投资高速增长继续领跑全川
+点击数：93
+发表时间：2017-07-19">
+                                        安州区投资高速增长继续领跑全川
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-19</span>
+                                    <a href="/zw/tjxx/tjfx/content_106768" target="_blank" title="标题：我市经济增长完成“双过半”目标任务
+点击数：110
+发表时间：2017-07-19">
+                                        我市经济增长完成“双过半”目标任务
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-18</span>
+                                    <a href="/zw/tjxx/tjfx/content_106722" target="_blank" title="标题：安州2017年上半年经济运行统计新闻发布会
+点击数：137
+发表时间：2017-07-18">
+                                        安州2017年上半年经济运行统计新闻发布会
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-23</span>
+                                    <a href="/zw/tjxx/tjfx/content_103150" target="_blank" title="标题：1-5月安州工业增长11.2%
+点击数：101
+发表时间：2017-06-23">
+                                        1-5月安州工业增长11.2%
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-05-09</span>
+                                    <a href="/zw/tjxx/tjfx/content_101792" target="_blank" title="标题：安州工业跑出&quot;加速度&quot; 一季度规模以上工业增速全省第二
+点击数：109
+发表时间：2017-05-09">
+                                        安州工业跑出"加速度" 一季度规模以上工业增速全省第二
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-04-21</span>
+                                    <a href="/zw/tjxx/tjfx/content_101311" target="_blank" title="标题：2017年一季度安州区经济运行统计新闻发布稿
+点击数：123
+发表时间：2017-04-21">
+                                        2017年一季度安州区经济运行统计新闻发布稿
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2017-04-19</span>
+                                    <a href="/zw/tjxx/tjfx/content_101228" target="_blank" title="标题：2017年一季度安州GDP达376.1亿 同比增长10.1%
+点击数：120
+发表时间：2017-04-19">
+                                        2017年一季度安州GDP达376.1亿 同比增长10.1%
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- 循环5 -->
+                    <section class="tabBoxIn">
+                        <div class="hd">
+                            <ul>
+
+
+                                <li class="li1 first">
+                                    <a class="tit" href="/zw/gysy/csjz" title="慈善救助">慈善救助</a>
+                                </li>
+                                <li class="li2">
+                                    <a class="tit" href="/zw/gysy/csjk" title="慈善捐款">慈善捐款</a>
+                                </li>
+                                <li class="li3 last">
+                                    <a class="tit" href="/zw/gysy/jzgs" title="捐赠公示">捐赠公示</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-20</span>
+                                    <a href="/zw/gysy/csjz/content_106828" target="_blank" title="标题：《慈善法》的50个问与答
+点击数：173
+发表时间：2017-07-20">
+                                        《慈善法》的50个问与答
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-14</span>
+                                    <a href="/zw/gysy/csjz/content_106456" target="_blank" title="标题：安州启动&quot;慈善&#183;福彩帮困助学&quot;活动 285名贫困生将获资助
+点击数：99
+发表时间：2017-07-14">
+                                        安州启动"慈善·福彩帮困助学"活动 285名贫困生将获资助
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-07-10</span>
+                                    <a href="/zw/gysy/csjz/content_106294" target="_blank" title="标题：依法行善——安州区慈善总会成为安州区首家具有公开募捐资格的全市性慈善组织
+点击数：108
+发表时间：2017-07-10">
+                                        依法行善——安州区慈善总会成为安州区首家具有公开募捐资格的全市性…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-20</span>
+                                    <a href="/zw/gysy/csjz/content_103045" target="_blank" title="标题：确保贫困家庭学生不因贫失学 安州启动2017年栋梁工程
+点击数：103
+发表时间：2017-06-20">
+                                        确保贫困家庭学生不因贫失学 安州启动2017年栋梁工程
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-05-31</span>
+                                    <a href="/zw/gysy/csjz/content_99572" target="_blank" title="标题：80名大病贫困患者喜领慈善救助金
+点击数：108
+发表时间：2017-05-31">
+                                        80名大病贫困患者喜领慈善救助金
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-05-02</span>
+                                    <a href="/zw/gysy/csjz/content_98966" target="_blank" title="标题：“致泸合作”农村产业扶贫捐赠仪式举行
+点击数：110
+发表时间：2017-05-02">
+                                        “致泸合作”农村产业扶贫捐赠仪式举行
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2017-04-13</span>
+                                    <a href="/zw/gysy/csjz/content_98645" target="_blank" title="标题：四川圣杰药业每月捐助500户低保特困户
+点击数：107
+发表时间：2017-04-13">
+                                        四川圣杰药业每月捐助500户低保特困户
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-07-10</span>
+                                    <a href="/zw/gysy/csjk/content_105849" target="_blank" title="标题：依法行善——安州区慈善总会成为安州区首家具有公开募捐资格的全市性慈善组织
+点击数：161
+发表时间：2017-07-10">
+                                        依法行善——安州区慈善总会成为安州区首家具有公开募捐资格的全市性…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-06-20</span>
+                                    <a href="/zw/gysy/csjk/content_103046" target="_blank" title="标题：确保贫困家庭学生不因贫失学 安州启动2017年栋梁工程
+点击数：98
+发表时间：2017-06-20">
+                                        确保贫困家庭学生不因贫失学 安州启动2017年栋梁工程
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-05-31</span>
+                                    <a href="/zw/gysy/csjk/content_102444" target="_blank" title="标题：80名大病贫困患者喜领慈善救助金
+点击数：106
+发表时间：2017-05-31">
+                                        80名大病贫困患者喜领慈善救助金
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-05-27</span>
+                                    <a href="/zw/gysy/csjk/content_99541" target="_blank" title="标题：花荄镇人大组织各界捐款71.5万元 真帮实扶助脱贫
+点击数：101
+发表时间：2017-05-27">
+                                        花荄镇人大组织各界捐款71.5万元 真帮实扶助脱贫
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-05-11</span>
+                                    <a href="/zw/gysy/csjk/content_101906" target="_blank" title="标题：安州区慈善总会关于开展2016年“慈善一日捐”活动的公告
+点击数：106
+发表时间：2017-05-11">
+                                        安州区慈善总会关于开展2016年“慈善一日捐”活动的公告
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-05-02</span>
+                                    <a href="/zw/gysy/csjk/content_101528" target="_blank" title="标题：“致泸合作”农村产业扶贫捐赠仪式举行
+点击数：109
+发表时间：2017-05-02">
+                                        “致泸合作”农村产业扶贫捐赠仪式举行
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2017-04-14</span>
+                                    <a href="/zw/gysy/csjk/content_98669" target="_blank" title="标题：厦门安州商会情系家乡献爱心
+点击数：117
+发表时间：2017-04-14">
+                                        厦门安州商会情系家乡献爱心
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="infoList">
+
+
+
+                                <li class="first">
+                                    <span class="date">2017-05-11</span>
+                                    <a href="/zw/gysy/jzgs/content_99212" target="_blank" title="标题：安州区慈善总会关于开展2016年“慈善一日捐”活动的公告
+点击数：130
+发表时间：2017-05-11">
+                                        安州区慈善总会关于开展2016年“慈善一日捐”活动的公告
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2017-05-02</span>
+                                    <a href="/zw/gysy/jzgs/content_101529" target="_blank" title="标题：“致泸合作”农村产业扶贫捐赠仪式举行
+点击数：112
+发表时间：2017-05-02">
+                                        “致泸合作”农村产业扶贫捐赠仪式举行
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-12-06</span>
+                                    <a href="/zw/gysy/jzgs/content_94695" target="_blank" title="标题：安州区慈善总会 关于开展2016年“慈善一日捐”活动倡议书
+点击数：127
+发表时间：2016-12-06">
+                                        安州区慈善总会 关于开展2016年“慈善一日捐”活动倡议书
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-04-20</span>
+                                    <a href="/zw/gysy/jzgs/content_91286" target="_blank" title="标题：安州区慈善总会2015年1-12月捐赠活动支出情况
+点击数：139
+发表时间：2016-04-20">
+                                        安州区慈善总会2015年1-12月捐赠活动支出情况
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-03-09</span>
+                                    <a href="/zw/gysy/jzgs/content_7961" target="_blank" title="标题：安州男子10万礼金助学 曾捐上百万为家乡建小学
+点击数：143
+发表时间：2016-03-09">
+                                        安州男子10万礼金助学 曾捐上百万为家乡建小学
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <span class="date">2016-03-08</span>
+                                    <a href="/zw/gysy/jzgs/content_90667" target="_blank" title="标题：安州启动2015年慈善一日捐活动 捐赠账号公布
+点击数：131
+发表时间：2016-03-08">
+                                        安州启动2015年慈善一日捐活动 捐赠账号公布
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <span class="date">2015-09-10</span>
+                                    <a href="/zw/gysy/jzgs/content_87578" target="_blank" title="标题：安州区慈善总会关于开展2015年元旦春节“送温暖?慈善一日捐”活动的公告
+点击数：141
+发表时间：2015-09-10">
+                                        安州区慈善总会关于开展2015年元旦春节“送温暖?慈善一日捐”活动的…
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- columnB E -->
+        <!-- columnC S -->
+        <div class="column" id="columnC">
+            <!-- 政府公告等切换 -->
+            <div class="box tab" id="indZfgg">
+                <div class="hd">
+                    <ul>
+                        <li><a href="/zw/hzjcgk/zfgs">政府公示</a></li>
+                        <li><a href="/zw/hzjcgk/zfgg">政府公告</a></li>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <ul class="dateList">
+
+
+                        <li class="first">
+
+                            <dl class="date">
+                                <dt>31</dt>
+                                <dd>2017-07</dd>
+                            </dl>
+                            <div class="con">
+                                <div class="title">
+                                    <a class="tit" href="/zw/hzjcgk/zfgs/content_113152" title="安州区村（社区）开具证明保留事项公示">安州区村（社区）开具证明保留事项公示</a>
+                                </div>
+
+                                <div class="intro">
+                                    为认真贯彻国务院、省政府“放管服”改革和“减证便民”专项行动部署…
+                                    <a class="more" href="/zw/hzjcgk/zfgs/content_113152">[详细]</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li>
+
+                            <dl class="date">
+                                <dt>31</dt>
+                                <dd>2017-07</dd>
+                            </dl>
+                            <div class="con">
+                                <div class="title">
+                                    <a class="tit" href="/zw/hzjcgk/zfgs/content_113145" title="中合新农业畜牧有限公司中合新农业大营种猪场（二期） 环境影响评价第二次公示">中合新农业畜牧有限公司中合新农业大营种猪场（二期） 环境…</a>
+                                </div>
+
+                                <div class="intro">
+                                    我单位中合新农业大营种猪场（二期）环境影响报告书初稿已由四川省国环…
+                                    <a class="more" href="/zw/hzjcgk/zfgs/content_113145">[详细]</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="last">
+
+                            <dl class="date">
+                                <dt>26</dt>
+                                <dd>2017-07</dd>
+                            </dl>
+                            <div class="con">
+                                <div class="title">
+                                    <a class="tit" href="/zw/hzjcgk/zfgs/content_111372" title="绵阳市投资控股（集团）有限公司安州区沱江新城城北片区道路基础设施项目环境影响评价第二次公示">绵阳市投资控股（集团）有限公司安州区沱江新城城北片区道…</a>
+                                </div>
+
+                                <div class="intro">
+                                    我单位已承接绵阳市投资控股（集团）有限公司安州区沱江新城城北片区道…
+                                    <a class="more" href="/zw/hzjcgk/zfgs/content_111372">[详细]</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <ul class="dateList">
+
+
+                        <li class="first">
+
+                            <dl class="date">
+                                <dt>27</dt>
+                                <dd>2017-07</dd>
+                            </dl>
+                            <div class="con">
+                                <div class="title">
+                                    <a class="tit" href="/zw/hzjcgk/zfgg/content_111438" title="安州区国有建设用地使用权挂牌出让公告 （泸市国土资告［2017］23号）">安州区国有建设用地使用权挂牌出让公告 （泸市国土资告…</a>
+                                </div>
+
+                                <div class="intro">
+                                    根据《中华人民共和国土地管理法》、《中华人民共和国城市房地产管理…
+                                    <a class="more" href="/zw/hzjcgk/zfgg/content_111438">[详细]</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li>
+
+                            <dl class="date">
+                                <dt>25</dt>
+                                <dd>2017-07</dd>
+                            </dl>
+                            <div class="con">
+                                <div class="title">
+                                    <a class="tit" href="/zw/hzjcgk/zfgg/content_111300" title="安州区公安局监管支队关于公开邀请招标代理机构的公告">安州区公安局监管支队关于公开邀请招标代理机构的公告</a>
+                                </div>
+
+                                <div class="intro">
+                                    安州区强制医疗所（以下简称强医所）通过购买社会服务方式与安州泰康…
+                                    <a class="more" href="/zw/hzjcgk/zfgg/content_111300">[详细]</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="last">
+
+                            <dl class="date">
+                                <dt>25</dt>
+                                <dd>2017-07</dd>
+                            </dl>
+                            <div class="con">
+                                <div class="title">
+                                    <a class="tit" href="/zw/hzjcgk/zfgg/content_111205" title="安州区国有建设用地使用权出让公告 （泸市国土资告[2017]22号）">安州区国有建设用地使用权出让公告 （泸市国土资告[2017…</a>
+                                </div>
+
+                                <div class="intro">
+                                    根据《中华人民共和国土地管理法》、《中华人民共和国城市房地产管理…
+                                    <a class="more" href="/zw/hzjcgk/zfgg/content_111205">[详细]</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 常务会议 -->
+            <div class="cwhyBox">
+                <a class="picBtn" href="/zw/cwhy"></a>
+                <ul class="indCwhy">
+
+
+                    <li class="first last">
+                        <div class="title">
+                            <a class="tit" href="/zw/cwhy/lzsrmzflccwh/content_106620" title="安州区八届人民政府第16次常务会议公开信息内容">安州区八届人民政府第16次常务会议公开信…</a>
+                        </div>
+                        <div class="con">
+                            <dl>
+                                <dd>
+                                    <label>会议时间：</label>
+                                    <span class="date">2017年7月18日</span>
+                                </dd>
+                                <dd>
+                                    <label>会议摘要：</label>
+                                    <span>第16次常务会议时间：2017年7月18日上午摘要：市委副书记、市长廖雪梅主持召开市八届人民政府第16次常务会议，研究了安州高新区相关项目合作投资协议有关议题。市委常委、常务副市长曹俊杰，副市长马宗慧、丁湘、何…</span>
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+            <!-- 新闻发布厅 -->
+            <div class="box" id="indXwfb">
+                <div class="hd">
+                    <a class="more" href="/zw/hzjcgk/xwfbt">更多&gt;&gt;</a>
+                    <h3><a href="/zw/hzjcgk/xwfbt">新闻发布会</a></h3>
+                </div>
+                <div class="bd">
+                    <ul class="xwfbList">
+
+
+                        <li class="first last">
+                            <div class="pic">
+                                <a href="/zw/hzjcgk/xwfbt/swszfxwfbt/content_106926">
+                                    <img alt="安州区全民参保登记工作新闻发布会" src="/upload/main/contentmanage/article/image/f312cfe95a8045e89d0ce29c6a9f3dfd_320_140.jpg" />
+                                </a>
+                            </div>
+
+                            <div class="con">
+                                <dl>
+                                    <dd class="name">
+                                        <label>发布主题</label>
+                                        <span><a class="tit" href="/zw/hzjcgk/xwfbt/swszfxwfbt/content_106926" title="安州区全民参保登记工作新闻发布会">安州区全民参保登记工作新闻发布会</a></span>
+                                    </dd>
+                                    <dd>
+                                        <label>发布时间</label>
+                                        <span>2017/7/31 11:28:00</span>
+                                    </dd>
+                                    <dd>
+                                        <label>发布单位</label>
+                                        <span>本站原创</span>
+                                    </dd>
+                                </dl>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- columnC E -->
+        <!-- 部门等切换 -->
+        <div class="box tab" id="indSjbm">
+            <div class="hd">
+                <ul>
+                    <li><a>直管部门</a></li>
+                    <li><a>乡镇</a></li>
+                </ul>
+            </div>
+            <div class="bd">
+                <ul class="bsbmList">
+
+                    <li class="deptId59">
+                        <a href="/publicity_dept0" title="政府办" target="_blank">
+                            政府办
+                        </a>
+                    </li>
+                    <li class="deptId60">
+                        <a href="/publicity_dept1" title="应急办" target="_blank">
+                            应急办
+                        </a>
+                    </li>
+                    <li class="deptId61">
+                        <a href="/publicity_dept2" title="政务中心" target="_blank">
+                            政务中心
+                        </a>
+                    </li>
+                    <li class="deptId62">
+                        <a href="/publicity_dept3" title="审计局" target="_blank">
+                            审计局
+                        </a>
+                    </li>
+                    <li class="deptId63">
+                        <a href="/publicity_dept4" title="档案局" target="_blank">
+                            档案局
+                        </a>
+                    </li>
+                    <li class="deptId64">
+                        <a href="/publicity_dept5" title="金融办" target="_blank">
+                            金融办
+                        </a>
+                    </li>
+                    <li class="deptId65">
+                        <a href="/publicity_dept6" title="林业局" target="_blank">
+                            林业局
+                        </a>
+                    </li>
+                    <li class="deptId66">
+                        <a href="/publicity_dept7" title="民宗局" target="_blank">
+                            民宗局
+                        </a>
+                    </li>
+                    <li class="deptId67">
+                        <a href="/publicity_dept8" title="工信局" target="_blank">
+                            工信局
+                        </a>
+                    </li>
+                    <li class="deptId68">
+                        <a href="/publicity_dept9" title="统计局" target="_blank">
+                            统计局
+                        </a>
+                    </li>
+                    <li class="deptId69">
+                        <a href="/publicity_dept10" title="扶贫开发局" target="_blank">
+                            扶贫开发局
+                        </a>
+                    </li>
+                    <li class="deptId70">
+                        <a href="/publicity_dept11" title="国土局" target="_blank">
+                            国土局
+                        </a>
+                    </li>
+                    <li class="deptId71">
+                        <a href="/publicity_dept12" title="城管局" target="_blank">
+                            城管局
+                        </a>
+                    </li>
+                    <li class="deptId72">
+                        <a href="/publicity_dept13" title="公安局" target="_blank">
+                            公安局
+                        </a>
+                    </li>
+                    <li class="deptId73">
+                        <a href="/publicity_dept14" title="供销社" target="_blank">
+                            供销社
+                        </a>
+                    </li>
+                    <li class="deptId74">
+                        <a href="/publicity_dept15" title="国税局" target="_blank">
+                            国税局
+                        </a>
+                    </li>
+                    <li class="deptId75">
+                        <a href="/publicity_dept16" title="水务局" target="_blank">
+                            水务局
+                        </a>
+                    </li>
+                    <li class="deptId76">
+                        <a href="/publicity_dept17" title="气象局" target="_blank">
+                            气象局
+                        </a>
+                    </li>
+                    <li class="deptId77">
+                        <a href="/publicity_dept18" title="科技局" target="_blank">
+                            科技局
+                        </a>
+                    </li>
+                    <li class="deptId78">
+                        <a href="/publicity_dept19" title="交通局" target="_blank">
+                            交通局
+                        </a>
+                    </li>
+                    <li class="deptId79">
+                        <a href="/publicity_dept20" title="防震减灾局" target="_blank">
+                            防震减灾局
+                        </a>
+                    </li>
+                    <li class="deptId80">
+                        <a href="/publicity_dept21" title="法制办" target="_blank">
+                            法制办
+                        </a>
+                    </li>
+                    <li class="deptId81">
+                        <a href="/publicity_dept22" title="人社局" target="_blank">
+                            人社局
+                        </a>
+                    </li>
+                    <li class="deptId82">
+                        <a href="/publicity_dept23" title="司法局" target="_blank">
+                            司法局
+                        </a>
+                    </li>
+                    <li class="deptId83">
+                        <a href="/publicity_dept24" title="安监局" target="_blank">
+                            安监局
+                        </a>
+                    </li>
+                    <li class="deptId84">
+                        <a href="/publicity_dept25" title="地税局" target="_blank">
+                            地税局
+                        </a>
+                    </li>
+                    <li class="deptId85">
+                        <a href="/publicity_dept26" title="卫计局" target="_blank">
+                            卫计局
+                        </a>
+                    </li>
+                    <li class="deptId86">
+                        <a href="/publicity_dept27" title="方志办" target="_blank">
+                            方志办
+                        </a>
+                    </li>
+                    <li class="deptId87">
+                        <a href="/publicity_dept28" title="投促局" target="_blank">
+                            投促局
+                        </a>
+                    </li>
+                    <li class="deptId88">
+                        <a href="/publicity_dept29" title="教体局" target="_blank">
+                            教体局
+                        </a>
+                    </li>
+                    <li class="deptId89">
+                        <a href="/publicity_dept30" title="公积金管理处" target="_blank">
+                            公积金管理处
+                        </a>
+                    </li>
+                    <li class="deptId90">
+                        <a href="/publicity_dept31" title="监察局" target="_blank">
+                            监察局
+                        </a>
+                    </li>
+                    <li class="deptId91">
+                        <a href="/publicity_dept32" title="民政局" target="_blank">
+                            民政局
+                        </a>
+                    </li>
+                    <li class="deptId92">
+                        <a href="/publicity_dept33" title="农业局" target="_blank">
+                            农业局
+                        </a>
+                    </li>
+                    <li class="deptId93">
+                        <a href="/publicity_dept34" title="住建局" target="_blank">
+                            住建局
+                        </a>
+                    </li>
+                    <li class="deptId94">
+                        <a href="/publicity_dept35" title="发改局" target="_blank">
+                            发改局
+                        </a>
+                    </li>
+                    <li class="deptId95">
+                        <a href="/publicity_dept36" title="商旅局" target="_blank">
+                            商旅局
+                        </a>
+                    </li>
+                    <li class="deptId96">
+                        <a href="/publicity_dept37" title="文广新局" target="_blank">
+                            文广新局
+                        </a>
+                    </li>
+                    <li class="deptId97">
+                        <a href="/publicity_dept38" title="食药工质局" target="_blank">
+                            食药工质局
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="bsbmList">
+
+                    <li class="deptId103">
+                        <a href="http://anxian.my.gov.cn:83/" title="花荄" target="_blank">
+                            花荄
+                        </a>
+                    </li>
+                    <li class="deptId104">
+                        <a href="http://anxian.my.gov.cn:86/" title="桑枣" target="_blank">
+                            桑枣
+                        </a>
+                    </li>
+                    <li class="deptId105">
+                        <a href="http://anxian.my.gov.cn:84/" title="黄土" target="_blank">
+                            黄土
+                        </a>
+                    </li>
+                    <li class="deptId106">
+                        <a href="http://anxian.my.gov.cn:85/" title="乐兴" target="_blank">
+                            乐兴
+                        </a>
+                    </li>
+                    <li class="deptId107">
+                        <a href="http://anxian.my.gov.cn:88/" title="沸水" target="_blank">
+                            沸水
+                        </a>
+                    </li>
+                    <li class="deptId108">
+                        <a href="http://anxian.my.gov.cn:81/" title="永河" target="_blank">
+                            永河
+                        </a>
+                    </li>
+                    <li class="deptId109">
+                        <a href="http://anxian.my.gov.cn:82/" title="千佛" target="_blank">
+                            千佛
+                        </a>
+                    </li>
+                    <li class="deptId109">
+                        <a href="http://anxian.my.gov.cn:82/" title="界牌" target="_blank">
+                            界牌
+                        </a>
+                    </li>
+                    <li class="deptId109">
+                        <a href="http://anxian.my.gov.cn:82/" title="兴仁" target="_blank">
+                            兴仁
+                        </a>
+                    </li>
+                    <li class="deptId109">
+                        <a href="http://anxian.my.gov.cn:82/" title="塔水" target="_blank">
+                            塔水
+                        </a>
+                    </li>
+                    <li class="deptId109">
+                        <a href="http://anxian.my.gov.cn:82/" title="宝林" target="_blank">
+                            宝林
+                        </a>
+                    </li>
+                    <li class="deptId109">
+                        <a href="http://anxian.my.gov.cn:82/" title="清泉" target="_blank">
+                            清泉
+                        </a>
+                    </li>
+                    <li class="deptId109">
+                        <a href="http://anxian.my.gov.cn:82/" title="秀水" target="_blank">
+                            秀水
+                        </a>
+                    </li>
+                    <li class="deptId109">
+                        <a href="http://anxian.my.gov.cn:82/" title="雎水" target="_blank">
+                            雎水
+                        </a>
+                    </li>
+                    <li class="deptId109">
+                        <a href="http://anxian.my.gov.cn:82/" title="高川" target="_blank">
+                            高川
+                        </a>
+                    </li>
+                    <li class="deptId109">
+                        <a href="http://anxian.my.gov.cn:82/" title="河清" target="_blank">
+                            河清
+                        </a>
+                    </li>
+                    <li class="deptId109">
+                        <a href="http://anxian.my.gov.cn:82/" title="迎新" target="_blank">
+                            迎新
+                        </a>
+                    </li>
+                    <li class="deptId109">
+                        <a href="http://anxian.my.gov.cn:82/" title="晓坝" target="_blank">
+                            晓坝
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".tab, .tabBoxIn").slide({ delayTime:0 });
+        $(".tabBox").slide({ delayTime:0, titCell:".tHd li", mainCell:".tBd" });
+    </script>
+
+    <!-- footer S -->
+    <footer id="footer">
+        <div class="siteWidth">
+            <div class="footNav">
+
+
+
+                <a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
+                <a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
+                <a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
+                <a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
+                <a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
+                <a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
+
+            </div>
+            <div class="copyRight"><p>
+                安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br/>地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br/>蜀ICP备12001441号<br/> &nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1"/>川公网安备 51070302110201号</a>
+            </p>
+                <div class="pics">
+                    <a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg"/></a> &nbsp;&nbsp;<script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg"/></a> &nbsp;&nbsp;<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png"/></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer E -->
+
+    <!-- 侧栏固定菜单 -->
+    <ul class="sideFixed" style="display:none">
+        <li class="wza"><a target="blank" target="_blank" href="/wca.html" title="无障碍版"></a></li>
+        <li class="jqr"><a target="blank" href='/znjqr' title="智能机器人"></a></li>
+        <li class="sj">
+            <a href="javascript:void(0);" title="手机版"></a>
+            <div class="pic">
+                <img src="/qrcode/qrcode.gif" />
+                <i></i>
+            </div>
+        </li>
+        <li class="wb"><a target="blank" href='http://weibo.com/luzhouzhengwu' title="政务微博"></a></li>
+        <li class="wx">
+            <a href="javascript:void(0);" title="政务微信"></a>
+            <div class="pic">
+                <img src='/Content/Main/Base/img/weixin.png' />
+                <i></i>
+            </div>
+        </li>
+        <li class="db"><a href="#" title="返回顶部"></a></li>
+    </ul>
+    <script>
+        $(".sideFixed li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script></div>
+<script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
+<script src="/Content/_Common/Base/js/power.js"></script>
+
+
+
+</body>
+</html>

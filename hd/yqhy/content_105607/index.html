@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" />
+    <meta name="description" />
+    <meta name="application-name" content="安州区人民政府门户网站" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true" />
+
+    <title>省卫计委发布今年上半年全省报告突发公共卫生事件情况_回应关切_互动_安州区人民政府门户网站</title>
+
+    <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+
+    <link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
+
+
+    <link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
+    <script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
+    <script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
+    <!--     <script src="/Content/_Common/Base/js/antiClickjack.js"></script> -->
+    <script src="/Content/_Common/Base/js/webCommon.js"></script>
+    <script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
+    <script src="/Content/_Common/Base/js/StoT.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+
+
+    <div class="topBar">
+        <ul class="list">
+            <li class="en"><a href="/english">English</a></li>
+            <li class="phone">
+                <a href="javascript:;">手机版</a>
+                <div class="pic">
+                    <img src="/qrcode/qrcode.gif">
+                    <i></i>
+                </div>
+            </li>
+
+            <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
+
+
+            <li class="wechat">
+                <a href="javascript:;">政务微信</a>
+                <div class="pic">
+                    <img src='/Content/Main/Base/img/weixin.png' />
+                    <i></i>
+                </div>
+            </li>
+            <li class="robot"><a href="/znjqr">智能机器人</a></li>
+        </ul>
+        <span class="topBarBg"></span>
+    </div>
+    <script>
+        $(".topBar li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script>
+
+    <!-- header S -->
+    <header id="header">
+        <div class="headerTop siteWidth">
+
+            <h1 title="安州区人民政府门户网站" id="logo"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
+
+            <div class="siteSearchBar">
+
+
+                <div class="s-form">
+                    <input type="hidden" id="sitelist" value="[{&quot;Name&quot;:&quot;全站群&quot;,&quot;Value&quot;:0},{&quot;Name&quot;:&quot;本站&quot;,&quot;Value&quot;:1},{&quot;Name&quot;:&quot;审计局&quot;,&quot;Value&quot;:2},{&quot;Name&quot;:&quot;农业局&quot;,&quot;Value&quot;:18}]" />
+                    <input type="hidden" id="siteid" name="sid" value="0">
+                    <div class="select-box">
+                        <a id="sOptionBtn" class="s-option" href="javascript:void(0)">全站群</a>
+                        <i class="arrow-dn"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="from-control" id="inputkeyword" placeholder="请输入关键词" spellcheck="false">
+                    </div>
+                    <div class="btn-box">
+                        <input type="submit" id="search" class="btn" onclick="gSearch();" value="搜 索">
+                        <input type="hidden" id="route" value="s" />
+                    </div>
+                </div>
+                <div class="hotWords">
+                    热门搜索：<a target="_blank" href="/s?st=1&wd=环保">环保</a><a target="_blank" href="/s?st=1&wd=生育">生育</a><a target="_blank" href="/s?st=1&wd=农业">农业</a><a target="_blank" href="/s?st=1&wd=医疗">医疗</a><a target="_blank" href="/s?st=1&wd=就业">就业</a>
+                </div>
+
+                <script src="/Content/_Common/FullTextSearch/js/default-site-search-box.js"></script>
+                <script>
+                    document.getElementById("inputkeyword").onkeydown = function (e) {
+                        e = e || window.event;
+                        if (e.keyCode == 13) {
+                            gSearch();
+                        }
+                    };
+
+                    function gSearch() {
+                        var keyword = document.getElementById('inputkeyword').value;
+                        var route = document.getElementById('route').value;
+
+                        if (keyword == '' || keyword == "请输入关键字") {
+                            alert("请输入关键字");
+                        } else {
+                            var siteid = document.getElementById('siteid').value;
+                            window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
+                        }
+                    }
+                </script>
+            </div>
+
+            <nav class="topNav clearfix">
+                <span class="menuBtn"></span>
+
+
+                <ul id="mainNav" class="mainNav">
+                    <li class="li1 first1" id="li-home">
+                        <h3 class="h1">
+                            <a class="a1" href='/'>首页</a>
+                        </h3>
+                    </li>
+
+                    <li class="li1 hasUl1" id="li-xw">
+                        <h3 class="h1">
+                            <a class="a1" href="/xw">政务动态</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-zw">
+                        <h3 class="h1">
+                            <a class="a1" href="/zw">政务公开</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-fw">
+                        <h3 class="h1">
+                            <a class="a1" href="/fw">政务服务</a></h3>
+                    </li>
+                    <li class="li1 hasUl1 on1" id="li-hd">
+                        <h3 class="h1">
+                            <a class="a1" href="/hd">公众参与</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-sq">
+                        <h3 class="h1">
+                            <a class="a1" href="/sq">走进安州</a></h3>
+                    </li>
+                </ul>
+
+                <script type="text/javascript">
+                    (function () {
+                        var navST;
+                        var navST1;
+                        var name = 'mainNav';
+                        var t = 200;
+                        var type = 1;
+                        var removeOn = 'False';
+                        var effect = 'fade';
+                        var appendItem = '#';
+                        var li = "#" + name + " li";
+                        var index = 0;
+
+                        if (!$("#" + name + " .li1").hasClass("on1")) {
+                            $("#" + name + " .li1").first().addClass("on1");
+                        } //默认第一个加.on1类
+                        index = $("#" + name + " .li1").index($("#" + name + " .on1"));
+
+                        //鼠标离开导航后，回复默认.on1类位置
+                        $("#" + name)
+                            .hover(
+                                function () {
+                                    if (navST1 != null) {
+                                        clearTimeout(navST1);
+                                    }
+                                },
+                                function () {
+                                    navST1 = setTimeout(function () {
+                                            $("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
+                                        },
+                                        500);
+                                }
+                            );
+
+                        if (type == '1') {
+                            li = "#" + name + " .li1";
+                        }
+                        if (appendItem != '#') { //插入内容
+                            var appendHtml = $(appendItem).html();
+                            $(li).first().append(appendHtml);
+                            $(appendItem).remove();
+                        }
+
+                        if (type == '3') {
+                            $("#" + name + " .on1").find("ul").first().show();
+                        }
+
+                        $(li)
+                            .hover(function () {
+                                    var curItem = $(this);
+                                    var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+                                    $(li).removeClass("on" + onNum);
+                                    curItem.addClass("on" + onNum);
+                                    navST = setTimeout(function () { //延时触发
+
+                                            if ($("ul:first", curItem).css("display") != "block") {
+                                                $(li + " .ul" + onNum).hide();
+                                                if (effect == 'fade') {
+                                                    $("ul:first", curItem).fadeIn(t);
+                                                } else {
+                                                    $("ul:first", curItem).slideDown(t);
+                                                }
+                                            };
+                                            navST = null;
+                                        },
+                                        t);
+                                },
+                                function () {
+                                    if (navST != null) {
+                                        clearTimeout(navST);
+                                    }
+                                    if (type == '1' || type == '2') {
+                                        if (effect == 'fade') {
+                                            $(this).find("ul").first().fadeOut(t);
+                                        } else {
+                                            $(this).find("ul").first().slideUp(t);
+                                        }
+                                    }
+                                    if (removeOn == 'True') {
+                                        $(this).removeClass("on1");
+                                    }
+                                },
+                                t); //end hover
+                    })()
+                </script>
+
+            </nav>
+            <script>
+                $(".topNav .h1").prepend("<i></i>")
+            </script>
+        </div>
+    </header>
+    <!-- header E -->
+
+
+    <!-- content S -->
+    <div id="content">
+        <div class="path">
+            <em>您的位置：</em><a href="/">首页</a>
+            &gt;<a href="/hd">公众参与</a>&gt;<a href="/hd/yqhy">回应关切</a>&gt;<span>详细内容</span></div>
+        <!-- 正文内容 S -->
+        <article class="articleCon">
+            <div class="printArea" data-power-area='content'>
+                <!-- 标题 -->
+                <h2 class="title">
+                    省卫计委发布今年上半年全省报告突发公共卫生事件情况            </h2>
+                <div class="property">
+                    <span>来源： </span> <span>发布时间：2017-07-13</span> <span>浏览次数：124 次</span> <span class="size">【字体：<a href="javascript:;" data-power-command="reducefont">小</a> <a href="javascript:;" data-power-command="enlargefont">大</a>】</span>
+                </div>
+                <!-- 正文 -->
+                <div class="conTxt" data-power-defaultFontSize="16" data-power-defaultLineHeight="2" data-power-imgMaxWidth="800">
+                    <p>&nbsp; &nbsp; 省卫计委发布今年上半年全省报告突发公共卫生事件情况。根据国家传染病报告信息管理系统统计，2017年1月1日至6月30日，全省共报告甲乙类传染病21种，发病88823例，死亡1050人。无鼠疫、霍乱、传染性非典型肺炎、脊髓灰质炎、人感染高致病性禽流感、白喉和血吸虫病发病、死亡报告。报告发病数居前5位的病种依次为：肺结核、乙肝、梅毒、丙肝和艾滋病。报告死亡数居前3位的病种依次为：艾滋病、肺结核和人感染H7N9流感。<br/><br/>　　上半年报告丙类传染病10种，发病60506例，死亡3人(流行性感冒2人、手足口病1人)。无丝虫病发病、死亡报告。报告发病数居前3位的病种依次为：手足口病、其他感染性腹泻病和流行性腮腺炎。<br/><br/>　　根据国家突发公共卫生事件管理信息系统统计，上半年全省共报告突发公共卫生事件30起，发病500例，死亡16人。<br/><br/></p><p style="text-align:center;"><a href="http://imgs.sc.gov.cn/10462/12771/2017/7/13/201771382611_311121.jpg" target="_blank"><img border="0" src="/Upload/main/contentmanage/article/image/ca6443f6800a467093f73b8afac4fe29.jpg"/></a></p><p><br/></p>
+                </div>
+            </div>
+
+
+
+
+            <div class="qrCode">
+                扫一扫在手机打开当前页<br/>
+                <img src="/qrcode/qrcode.gif" />
+            </div>
+            <div class="userControl">
+
+                <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+                <script>
+                    window._bd_share_config = {
+                        "common": {
+                            "bdSnsKey": {},
+                            "bdText": "",
+                            "bdMini": "2",
+                            "bdMiniList": false,
+                            "bdPic": "",
+                            "bdStyle": "1",
+                            "bdSize": "24"
+                        },
+                        "share": {}
+                    };
+                    with (document) {
+                        0[(getElementsByTagName('head')[0] || body)
+                            .appendChild(createElement('script'))
+                            .src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' +
+                            ~(-new Date() / 36e5)];
+                    }
+                </script>
+                <a href="javascript:;" class="dyBtn" data-power-command="printarea">【打印正文】</a>
+            </div>
+            <div class="others">
+
+                <div class="prev">
+                    <span>上一篇：</span><a href="/hd/yqhy/content_105606">网传在川本一批招生高校投档线 省教育考试院辟谣：假的！</a>
+                    <span class="date">[ 2017-07-13 ]</span>
+                </div>
+
+                <div class="next">
+                    <span>下一篇：没有了！</span>
+                </div>
+
+            </div>
+            <div class="rankWrap">
+                <!-- 点击排行 -->
+                <div class="boxA" id="djph">
+                    <div class="hd">
+                        <h3>点击排行</h3>
+                    </div>
+                    <div class="bd">
+                        <ul class="rankList">
+
+
+
+                            <li class="first hot">
+                                <em class="number">1</em>
+                                <a href="/xw/rdgz/content_4596" target="_blank" title="标题：安州房产市场发展28条出台 大学生、农民购房可享补助
+点击数：2878
+发表时间：2015-04-28">
+                                    安州房产市场发展28条出台 大学生、农民购房可享补助
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="hot">
+                                <em class="number">2</em>
+                                <a href="/xw/rdgz/content_3678" target="_blank" title="标题：打破“铁饭碗” 机关事业单位人员今后咋养老？
+点击数：2772
+发表时间：2015-01-15">
+                                    打破“铁饭碗” 机关事业单位人员今后咋养老？
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="hot">
+                                <em class="number">3</em>
+                                <a href="/xw/rdgz/content_4893" target="_blank" title="标题：安州今年养老金个体参保标准出台 年缴费最低4308元
+点击数：2732
+发表时间：2015-06-08">
+                                    安州今年养老金个体参保标准出台 年缴费最低4308元
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <em class="number">4</em>
+                                <a href="/xw/rdgz/content_3963" target="_blank" title="标题：政府工作报告绘就新一年安州区发展蓝图
+点击数：2649
+发表时间：2015-02-06">
+                                    政府工作报告绘就新一年安州区发展蓝图
+                                </a>
+                            </li>
+
+
+
+
+                            <li>
+                                <em class="number">5</em>
+                                <a href="/xw/rdgz/content_4888" target="_blank" title="标题：7月1日起四川提高最低工资标准 平均上调10.5%
+点击数：2324
+发表时间：2015-06-09">
+                                    7月1日起四川提高最低工资标准 平均上调10.5%
+                                </a>
+                            </li>
+
+
+
+
+                            <li class="last">
+                                <em class="number">6</em>
+                                <a href="/xw/rdgz/content_8180" target="_blank" title="标题：200元/平米购房补贴政策 安州继续实施一年
+点击数：2245
+发表时间：2016-03-24">
+                                    200元/平米购房补贴政策 安州继续实施一年
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- 热点图文 -->
+                <div class="boxA" id="rdtw">
+                    <div class="hd">
+                        <h3>热点图文</h3>
+                    </div>
+                    <div class="bd">
+                        <ul class="picPageList picPageListA">
+
+                            <li class="first">
+                                <div class="pic">
+                                    <a href="/xw/jrxx/content_113178">
+
+                                        <img alt="安州：创新机制抓双拥 军民融合抓双拥" src="/upload/main/image/2017/08/01/201708020903158425_240_180.jpg" width="240" height="180" />
+
+                                    </a>
+                                </div>
+
+                                <div class="title">
+                                    <a class="tit" href="/xw/jrxx/content_113178" title="安州：创新机制抓双拥 军民融合抓双拥">安州：创新机制抓双拥 军民融合抓双拥</a>
+                                </div>
+                                <span class="titleBg"></span>
+                            </li>
+                            <li class="last">
+                                <div class="pic">
+                                    <a href="/xw/jrxx/content_113176">
+
+                                        <img alt="花荄镇对89个村开展财务审计 整治“微腐败”" src="/upload/main/image/2017/08/01/201708020900070984_240_180.jpg" width="240" height="180" />
+
+                                    </a>
+                                </div>
+
+                                <div class="title">
+                                    <a class="tit" href="/xw/jrxx/content_113176" title="花荄镇对89个村开展财务审计 整治“微腐败”">花荄镇对89个村开展财务审计 整治“微腐败”</a>
+                                </div>
+                                <span class="titleBg"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 正文内容 E -->
+    </div>
+    <!-- content E -->
+
+
+    <!-- footer S -->
+    <footer id="footer">
+        <div class="siteWidth">
+            <div class="footNav">
+
+
+
+                <a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
+                <a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
+                <a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
+                <a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
+                <a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
+                <a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
+
+            </div>
+            <div class="copyRight"><p>
+                安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br/>地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br/>蜀ICP备12001441号<br/> &nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1"/>川公网安备 51070302110201号</a>
+            </p>
+                <div class="pics">
+                    <a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg"/></a> &nbsp;&nbsp;<script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg"/></a> &nbsp;&nbsp;<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png"/></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer E -->
+
+    <!-- 侧栏固定菜单 -->
+    <ul class="sideFixed" style="display:none">
+        <li class="wza"><a target="blank" target="_blank" href="/wca.html" title="无障碍版"></a></li>
+        <li class="jqr"><a target="blank" href='/znjqr' title="智能机器人"></a></li>
+        <li class="sj">
+            <a href="javascript:void(0);" title="手机版"></a>
+            <div class="pic">
+                <img src="/qrcode/qrcode.gif" />
+                <i></i>
+            </div>
+        </li>
+        <li class="wb"><a target="blank" href='http://weibo.com/luzhouzhengwu' title="政务微博"></a></li>
+        <li class="wx">
+            <a href="javascript:void(0);" title="政务微信"></a>
+            <div class="pic">
+                <img src='/Content/Main/Base/img/weixin.png' />
+                <i></i>
+            </div>
+        </li>
+        <li class="db"><a href="#" title="返回顶部"></a></li>
+    </ul>
+    <script>
+        $(".sideFixed li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script></div>
+<script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
+<script src="/Content/_Common/Base/js/power.js"></script>
+
+
+<script src="/Content/_Common/Assets/Scripts/jquery.PrintArea.js"></script>
+<script src="/Content/_Common/Base/js/article.js"></script>
+
+
+</body>
+</html>

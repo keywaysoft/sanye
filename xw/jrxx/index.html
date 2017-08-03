@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="安州区人民政府门户网站,安州区政府,安州" />
+    <meta name="description" content="安州区人民政府门户网站 安州区  安州政府" />
+    <meta name="application-name" content="安州区人民政府门户网站" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true" />
+
+    <title>今日安州_新闻_安州区人民政府门户网站</title>
+
+    <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+
+    <link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
+
+
+    <link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
+    <script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
+    <script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
+    <!--     <script src="/Content/_Common/Base/js/antiClickjack.js"></script> -->
+    <script src="/Content/_Common/Base/js/webCommon.js"></script>
+    <script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
+    <script src="/Content/_Common/Base/js/StoT.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+
+
+    <div class="topBar">
+        <ul class="list">
+            <li class="en"><a href="/english">English</a></li>
+            <li class="phone">
+                <a href="javascript:;">手机版</a>
+                <div class="pic">
+                    <img src="/qrcode/qrcode.gif">
+                    <i></i>
+                </div>
+            </li>
+
+            <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
+
+
+            <li class="wechat">
+                <a href="javascript:;">政务微信</a>
+                <div class="pic">
+                    <img src='/Content/Main/Base/img/weixin.png' />
+                    <i></i>
+                </div>
+            </li>
+            <li class="robot"><a href="/znjqr">智能机器人</a></li>
+        </ul>
+        <span class="topBarBg"></span>
+    </div>
+    <script>
+        $(".topBar li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script>
+
+    <!-- header S -->
+    <header id="header">
+        <div class="headerTop siteWidth">
+
+            <h1 title="安州区人民政府门户网站" id="logo"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
+
+            <div class="siteSearchBar">
+
+
+                <div class="s-form">
+                    <input type="hidden" id="sitelist" value="[{&quot;Name&quot;:&quot;全站群&quot;,&quot;Value&quot;:0},{&quot;Name&quot;:&quot;本站&quot;,&quot;Value&quot;:1},{&quot;Name&quot;:&quot;审计局&quot;,&quot;Value&quot;:2},{&quot;Name&quot;:&quot;农业局&quot;,&quot;Value&quot;:18}]" />
+                    <input type="hidden" id="siteid" name="sid" value="0">
+                    <div class="select-box">
+                        <a id="sOptionBtn" class="s-option" href="javascript:void(0)">全站群</a>
+                        <i class="arrow-dn"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="from-control" id="inputkeyword" placeholder="请输入关键词" spellcheck="false">
+                    </div>
+                    <div class="btn-box">
+                        <input type="submit" id="search" class="btn" onclick="gSearch();" value="搜 索">
+                        <input type="hidden" id="route" value="s" />
+                    </div>
+                </div>
+                <div class="hotWords">
+                    热门搜索：<a target="_blank" href="/s?st=1&wd=环保">环保</a><a target="_blank" href="/s?st=1&wd=生育">生育</a><a target="_blank" href="/s?st=1&wd=农业">农业</a><a target="_blank" href="/s?st=1&wd=医疗">医疗</a><a target="_blank" href="/s?st=1&wd=就业">就业</a>
+                </div>
+
+                <script src="/Content/_Common/FullTextSearch/js/default-site-search-box.js"></script>
+                <script>
+                    document.getElementById("inputkeyword").onkeydown = function (e) {
+                        e = e || window.event;
+                        if (e.keyCode == 13) {
+                            gSearch();
+                        }
+                    };
+
+                    function gSearch() {
+                        var keyword = document.getElementById('inputkeyword').value;
+                        var route = document.getElementById('route').value;
+
+                        if (keyword == '' || keyword == "请输入关键字") {
+                            alert("请输入关键字");
+                        } else {
+                            var siteid = document.getElementById('siteid').value;
+                            window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
+                        }
+                    }
+                </script>
+            </div>
+
+            <nav class="topNav clearfix">
+                <span class="menuBtn"></span>
+
+
+                <ul id="mainNav" class="mainNav">
+                    <li class="li1 first1" id="li-home">
+                        <h3 class="h1">
+                            <a class="a1" href='/'>首页</a>
+                        </h3>
+                    </li>
+
+                    <li class="li1 hasUl1 on1" id="li-xw">
+                        <h3 class="h1">
+                            <a class="a1" href="/xw">政务动态</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-zw">
+                        <h3 class="h1">
+                            <a class="a1" href="/zw">政务公开</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-fw">
+                        <h3 class="h1">
+                            <a class="a1" href="/fw">政务服务</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-hd">
+                        <h3 class="h1">
+                            <a class="a1" href="/hd">公众参与</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-sq">
+                        <h3 class="h1">
+                            <a class="a1" href="/sq">走进安州</a></h3>
+                    </li>
+                </ul>
+
+                <script type="text/javascript">
+                    (function () {
+                        var navST;
+                        var navST1;
+                        var name = 'mainNav';
+                        var t = 200;
+                        var type = 1;
+                        var removeOn = 'False';
+                        var effect = 'fade';
+                        var appendItem = '#';
+                        var li = "#" + name + " li";
+                        var index = 0;
+
+                        if (!$("#" + name + " .li1").hasClass("on1")) {
+                            $("#" + name + " .li1").first().addClass("on1");
+                        } //默认第一个加.on1类
+                        index = $("#" + name + " .li1").index($("#" + name + " .on1"));
+
+                        //鼠标离开导航后，回复默认.on1类位置
+                        $("#" + name)
+                            .hover(
+                                function () {
+                                    if (navST1 != null) {
+                                        clearTimeout(navST1);
+                                    }
+                                },
+                                function () {
+                                    navST1 = setTimeout(function () {
+                                            $("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
+                                        },
+                                        500);
+                                }
+                            );
+
+                        if (type == '1') {
+                            li = "#" + name + " .li1";
+                        }
+                        if (appendItem != '#') { //插入内容
+                            var appendHtml = $(appendItem).html();
+                            $(li).first().append(appendHtml);
+                            $(appendItem).remove();
+                        }
+
+                        if (type == '3') {
+                            $("#" + name + " .on1").find("ul").first().show();
+                        }
+
+                        $(li)
+                            .hover(function () {
+                                    var curItem = $(this);
+                                    var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+                                    $(li).removeClass("on" + onNum);
+                                    curItem.addClass("on" + onNum);
+                                    navST = setTimeout(function () { //延时触发
+
+                                            if ($("ul:first", curItem).css("display") != "block") {
+                                                $(li + " .ul" + onNum).hide();
+                                                if (effect == 'fade') {
+                                                    $("ul:first", curItem).fadeIn(t);
+                                                } else {
+                                                    $("ul:first", curItem).slideDown(t);
+                                                }
+                                            };
+                                            navST = null;
+                                        },
+                                        t);
+                                },
+                                function () {
+                                    if (navST != null) {
+                                        clearTimeout(navST);
+                                    }
+                                    if (type == '1' || type == '2') {
+                                        if (effect == 'fade') {
+                                            $(this).find("ul").first().fadeOut(t);
+                                        } else {
+                                            $(this).find("ul").first().slideUp(t);
+                                        }
+                                    }
+                                    if (removeOn == 'True') {
+                                        $(this).removeClass("on1");
+                                    }
+                                },
+                                t); //end hover
+                    })()
+                </script>
+
+            </nav>
+            <script>
+                $(".topNav .h1").prepend("<i></i>")
+            </script>
+        </div>
+    </header>
+    <!-- header E -->
+
+
+    <!-- content S -->
+    <div id="content">
+        <div class="path">
+            <em>您的位置：</em><a href="/">首页</a>
+            &gt;<a href="/xw">新闻</a>&gt;<a href="/xw/jrxx">今日安州</a></div>
+        <!-- side S -->
+        <aside class="side">
+
+
+            <div id="sideMenu" class="sideMenu">
+                <div class="hd">
+                    <h3>新闻</h3>
+                </div>
+                <div class="bd">
+                    <ul class="singleList">
+                        <li><a href="/xw/tpxw">图片新闻</a></li>
+                        <li class="on"><a href="/xw/jrxx">今日安州</a></li>
+                        <li><a href="/xw/zwyw">政务要闻</a></li>
+                        <li><a href="/xw/gsyw">国省要闻</a></li>
+                        <li><a href="/xw/qxdt">区县动态</a></li>
+                        <li><a href="/xw/bmdt122">部门动态</a></li>
+                        <li><a href="/xw/bmgg">便民公告</a></li>
+                        <li><a href="/xw/rdgz">热点关注</a></li>
+                        <li><a href="/xw/mskd">民生快递</a></li>
+                        <li><a href="/xw/jjfz">经济发展</a></li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                if (jQuery("#sideMenu .bd li").size() === 0) {
+                    jQuery("#sideMenu").hide();
+                }
+            </script>
+        </aside>
+        <!-- side E -->
+        <!-- mainContent S -->
+        <div class="mainContent">
+            <div class="mainBox">
+                <div class="mHd">
+                    <h3>今日安州</h3>
+                </div>
+                <div class="mBd">
+                    <!-- 正文内容 S -->
+                    <ul class="pageTPList">
+
+
+                        <li class="first">
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113178" title="安州：创新机制抓双拥 军民融合抓双拥">安州：创新机制抓双拥 军民融合抓双拥</a>
+                            </div>
+                            <div class="pic">
+                                <a href="/xw/jrxx/content_113178">
+                                    <img alt="安州：创新机制抓双拥 军民融合抓双拥" src="/upload/main/image/2017/08/01/201708020903158425_140_85.jpg" />
+                                </a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    安州区举行庆祝中国人民解放军建军90周年暨表扬双拥先进文艺晚会7月31日晚，“铁血军魂铸酒城”安州区庆祝中国人民解放军建军90周年暨表扬双拥先进文艺晚会在安州电视台演播大厅举行。记者 刘林 摄“双拥情洒酒城…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-08-01</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113204" title="安州区领导带队慰问区人武部官兵 送祝福道感谢">安州区领导带队慰问区人武部官兵 送祝福道感谢</a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    在“八一”建军节前夕，7月31日，安州区副市长熊启权带队慰问区人武部官兵，并向他们送去了节日的祝福。当日，熊启权一行来到武警安州区消防支队、武警安州区支队、31678部队、安州区军休所，看望慰问区人武部官兵…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-08-01</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113189" title="沱江二桥改造项目下穿隧道八月上旬交付验收">沱江二桥改造项目下穿隧道八月上旬交付验收</a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    　　沱江二桥是连接我市南北的重要交通枢纽，自沱江二桥加宽改造工程实施以来，沱江二桥新桥和高架桥的通车，极大便利了市民出行需求。随着工程的稳步推进，明珠广场五岔路口下穿隧道也通车在即。　　沱江二桥加宽…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-08-01</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113176" title="花荄镇对89个村开展财务审计 整治“微腐败”">花荄镇对89个村开展财务审计 整治“微腐败”</a>
+                            </div>
+                            <div class="pic">
+                                <a href="/xw/jrxx/content_113176">
+                                    <img alt="花荄镇对89个村开展财务审计 整治“微腐败”" src="/upload/main/image/2017/08/01/201708020900070984_140_85.jpg" />
+                                </a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    “花荄镇作为全市村级财务审计工作试点县区，必须精心组织、统筹协调、形成合力，定区域、定责任、定人员、定时限，逐村逐户走访了解，逐项逐笔开展审计，逐个问题、逐条线索开展核查，确保10月底前形成可复制、可…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-08-01</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113174" title="安州区：区委书记刘光明到部队慰问官兵">安州区：区委书记刘光明到部队慰问官兵</a>
+                            </div>
+                            <div class="pic">
+                                <a href="/xw/jrxx/content_113174">
+                                    <img alt="安州区：区委书记刘光明到部队慰问官兵" src="/upload/main/image/2017/08/01/201708020856514662_140_85.jpg" />
+                                </a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    7月27日，在“八一”建军节即将到来之际，区委书记刘光明率队前往部队开展慰问活动，副区长胡兴成陪同慰问。在安州军分区，刘光明代表安州区委、区政府向广大官兵致以了节日的慰问，对长期以来部队官兵为龙马潭…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-08-01</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113172" title="纳溪区庆祝建军九十周年大会举行">纳溪区庆祝建军九十周年大会举行</a>
+                            </div>
+                            <div class="pic">
+                                <a href="/xw/jrxx/content_113172">
+                                    <img alt="纳溪区庆祝建军九十周年大会举行" src="/upload/main/image/2017/08/01/201708020853478908_140_85.jpg" />
+                                </a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    7月31日，纳溪区庆祝中国人民解放军建军九十周年暨双拥创建工作推进会举行。会议表扬拥军优属等先进单位和先进个人，并举行了文艺节目汇演。区领导徐利、詹忠平、朱太成、熊杰、姚波、周涛、潘浩、张耀峰、王刚、…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-08-01</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113169" title="安州区召开县委中心组环保专题学习会">安州区召开县委中心组环保专题学习会</a>
+                            </div>
+                            <div class="pic">
+                                <a href="/xw/jrxx/content_113169">
+                                    <img alt="安州区召开县委中心组环保专题学习会" src="/upload/main/image/2017/08/01/201708020852053231_140_85.jpg" />
+                                </a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    7月31日，安州区召开县委中心组环保专题学习会。县委书记薛学深，县委副书记、县长肖刚，县人大常委会主任颜习林，县政协主席李镇出席会议。在家县级领导张学彬、喻彬、张文杰、金林松、李高和、张国华、李盛春、杨…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-08-01</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113166" title="花荄镇委书记张季頫出席“南开大学—花荄镇、桑枣镇基层实践基地”签约授牌仪式">花荄镇委书记张季頫出席“南开大学—花荄镇、桑枣镇基层实践基地”签约授牌仪式</a>
+                            </div>
+                            <div class="pic">
+                                <a href="/xw/jrxx/content_113166">
+                                    <img alt="花荄镇委书记张季頫出席“南开大学—花荄镇、桑枣镇基层实践基地”签约授牌仪式" src="/upload/main/image/2017/08/01/201708020849581791_140_85.jpg" />
+                                </a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    7月28日晚，南开大学在安州区南苑宾馆举行“南开大学基层实践基地”签约授牌仪式，南开大学党委副书记、校长龚克，安州区委副书记、市长廖雪梅，花荄镇委书记张季頫等领导出席。南开大学与花荄镇签订了《南开大学基…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-08-01</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113163" title="桑枣镇第十七届人大常委会第五次会议召开">桑枣镇第十七届人大常委会第五次会议召开</a>
+                            </div>
+                            <div class="pic">
+                                <a href="/xw/jrxx/content_113163">
+                                    <img alt="桑枣镇第十七届人大常委会第五次会议召开" src="/upload/main/image/2017/08/01/201708020847451854_140_85.jpg" />
+                                </a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    7月28日，桑枣镇第十七届人大常委会第五次会议召开，县人大常委会主任张秋平主持会议，县委副书记、县长唐杰应邀列席会议，县人大常委会副主任李官培、韩燕、高崇明、李小英出席会议。副县长袁维荣、石磊，县人民…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-08-01</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113192" title="1-6月安州白酒出口同比增长78.78%">1-6月安州白酒出口同比增长78.78%</a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    截至6月30日，安州白酒出口65批，269.35万美元，同比分别增长62.50%、78.78%，在连续三年增长基础上，继续保持稳定增长态势。安州白酒主要出口至亚洲、美洲、非洲、大洋洲18个国家和地区，出口前三位国家和地区依…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-08-01</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113200" title="安州今年已发布14次高温橙色预警 预计城区今日降雨">安州今年已发布14次高温橙色预警 预计城区今日降雨</a>
+                            </div>
+                            <div class="pic">
+                                <a href="/xw/jrxx/content_113200">
+                                    <img alt="安州今年已发布14次高温橙色预警 预计城区今日降雨" src="/upload/main/image/2017/08/01/201708020931187589_140_85.jpg" />
+                                </a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    7月31日，安州区气象台发布高温橙色预警，这是安州区今年第14次发布高温橙色预警。7月31日受古蔺降雨的影响，安州区三区四县最高气温未达到39℃。高温下的安州天气 资料图市气象台预计8月1日、8月4日，安州城区有…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-08-01</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113183" title="助力大学生创业 科技创新类项目可获创业启动资金资助">助力大学生创业 科技创新类项目可获创业启动资金资助</a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    日前，记者从安州区就业服务管理局了解到，入驻安州区大学生创新创业活动中心的科技创新类大学生创业项目将享受房租减免、创业启动资金补助、融资贷款补贴、专利奖励补贴及其他奖励补贴等奖励补助政策，帮助大学生…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-08-01</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113077" title="全省深化统计管理体制改革座谈会在安州召开">全省深化统计管理体制改革座谈会在安州召开</a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    要在大数据运用上走出新路子7月27日至28日，全省深化统计管理体制改革座谈会在安州召开。会议强调，要围绕大局，加强统计预警、预测分析，提高统计服务水平，在创新中做到应统尽统。省统计局局长陈炜出席会议并讲…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-07-31</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113070" title="辽安产业合作园区召开&quot;自贸红利、区域共享&quot;对接会">辽安产业合作园区召开"自贸红利、区域共享"对接会</a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    廖雪梅、张彤、罗佳明出席并讲话7月30日，中国（四川）自由贸易试验区川南临港片区“自贸红利、区域共享”对接会先后在乐山、眉山召开，与两市共谋发展，加快打造服务四川、服务滇黔的协同开放窗口。安州区委副书记…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-07-31</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li class="last">
+
+                            <div class="title">
+                                <a class="tit" href="/xw/jrxx/content_113082" title="安州区花荄镇、桑枣镇将成为南开大学基层实践基地">安州区花荄镇、桑枣镇将成为南开大学基层实践基地</a>
+                            </div>
+
+                            <div class="con">
+
+                                <div class="intro">
+                                    龚克、廖雪梅出席签约授牌仪式7月28日晚，“南开大学——安州区花荄镇桑枣镇基层实践基地”签约授牌仪式暨暑期实践座谈交流会在南苑宾馆举行。中央候补委员、南开大学党委副书记、校长龚克分别为南开大学在花荄镇叙…            </div>
+
+                                <div class="others">
+                                    <span class="date">2017-07-31</span>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+                    <script>hover($(".pageTPList li"), "on")</script>
+                    <div class="page">
+
+                        <a class="first" href="/xw/jrxx_1">首页</a>
+                        <a class="prev" href="/xw/jrxx_1">上一页</a>
+                        <a class='current'>1</a> <a href='/xw/jrxx_2'>2</a> <a href='/xw/jrxx_3'>3</a> <a href='/xw/jrxx_4'>4</a> <a href='/xw/jrxx_5'>5</a> <a href='/xw/jrxx_6'>6</a> <a href='/xw/jrxx_7'>7</a>         <a class="next" href="/xw/jrxx_2">下一页</a>
+                        <a class="last" href="/xw/jrxx_2655">尾页</a>
+                        <span class="total">共39824条信息/共2655页</span>
+                        <span class="select">转到第<input title="按回车键跳转到指定页" onkeypress="javascript:return quickJumpPage(event, 'quickJumpButton')" type="text" style="width:24px" id="quickJumpInput" class="quickJumpInput " value="1" /><script type="text/javascript">var pageNameUrl = '/xw/jrxx_{pageid}';function quickJumpPage(){if (event.keyCode == 13 && !(event.srcElement && (event.srcElement.tagName.toLowerCase() == 'textarea'))) {var number = document.getElementById('quickJumpInput').value;if (/\d+/i.test(number)){if (number > 2655) number = 2655;if(number < 1) number = 1;window.location.href = pageNameUrl.replace("{pageid}", number);}else{alert('输入的页数有误！');}}}</script>页</span>
+                    </div>
+                    <!-- 正文内容 E -->
+                </div>
+            </div>
+        </div>
+        <!-- mainContent E -->
+    </div>
+    <!-- content E -->
+
+    <!-- footer S -->
+    <footer id="footer">
+        <div class="siteWidth">
+            <div class="footNav">
+
+
+
+                <a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
+                <a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
+                <a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
+                <a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
+                <a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
+                <a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
+
+            </div>
+            <div class="copyRight"><p>
+                安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br/>地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br/>蜀ICP备12001441号<br/> &nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1"/>川公网安备 51070302110201号</a>
+            </p>
+                <div class="pics">
+                    <a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg"/></a> &nbsp;&nbsp;<script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg"/></a> &nbsp;&nbsp;<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png"/></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer E -->
+
+    <!-- 侧栏固定菜单 -->
+    <ul class="sideFixed" style="display:none">
+        <li class="wza"><a target="blank" target="_blank" href="/wca.html" title="无障碍版"></a></li>
+        <li class="jqr"><a target="blank" href='/znjqr' title="智能机器人"></a></li>
+        <li class="sj">
+            <a href="javascript:void(0);" title="手机版"></a>
+            <div class="pic">
+                <img src="/qrcode/qrcode.gif" />
+                <i></i>
+            </div>
+        </li>
+        <li class="wb"><a target="blank" href='http://weibo.com/luzhouzhengwu' title="政务微博"></a></li>
+        <li class="wx">
+            <a href="javascript:void(0);" title="政务微信"></a>
+            <div class="pic">
+                <img src='/Content/Main/Base/img/weixin.png' />
+                <i></i>
+            </div>
+        </li>
+        <li class="db"><a href="#" title="返回顶部"></a></li>
+    </ul>
+    <script>
+        $(".sideFixed li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script></div>
+<script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
+<script src="/Content/_Common/Base/js/power.js"></script>
+
+
+
+</body>
+</html>
