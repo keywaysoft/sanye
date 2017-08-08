@@ -103,7 +103,7 @@ img {
 }
 .slide-news {
     width: 1170px;
-    height: 390px;
+    height: 360px;
     overflow: hidden;
     background-color: #f0f0f0;
 }
@@ -159,7 +159,7 @@ img {
     bottom: 30px;
     height: 19px;
     overflow: hidden;
-    right: 100px;
+    right: 150px;
 }
 .slide-tabs li {
     text-align: center;

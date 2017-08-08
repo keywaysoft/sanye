@@ -1183,11 +1183,11 @@ body {
 }
 .grbsList li{
     float:left;
-    margin:0 10px 10px 0;
+    margin:4px 4px 0 0;
 }
 .grbsList a{
     display:block;
-    width: 105px;
+    width: 122px;
     border:1px solid #EEEEEE;
     line-height:22px;
     padding:0 0 5px 0;
@@ -1658,8 +1658,8 @@ div.codeinp input {
 .link{ width:1140px; height:52px; margin:0 auto;}
 .link ul li{ padding:0 32px 0px 31px; width:auto; height:52px; line-height:52px; margin-right:13px;  float:left; text-align:right;  background:url(../img/linkdot.png) right center no-repeat; color:#333; display: block;cursor: pointer;position: relative; font-size:14px;}
 .link ul li.asect{ background:url(../img/linkdoth.png) right center no-repeat #0f57b2; color:#fff;}
-.select_content{background:#fff;width:auto;padding:20px 30px;position:absolute;left:0px;bottom:52px!important; border-top:3px solid #e0e0e0; border-left:1px solid #e6e6e6;  border-right:1px solid #e6e6e6; width:1108px; z-index:99}
-.select_con{height:82px; overflow-x:hidden; overflow-y:auto;}
+.select_content{background:#fff;width:auto;padding:20px 30px;position:absolute;left:0px;bottom:52px!important; border-top:1px solid #e0e0e0; border-left:1px solid #e6e6e6;  border-right:1px solid #e6e6e6; width:1108px; z-index:99}
+.select_con{height:85px; overflow-x:hidden; overflow-y:auto;}
 .select_con a{ width:140px;white-space: nowrap; height:30px; line-height:30px; float:left; text-align:left; background:url(../img/dot.jpg) left no-repeat; padding-left:11px;}
 #select_content1{ left:-15px;}
 #select_content2{ left:-217px;}

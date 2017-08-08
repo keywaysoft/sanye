@@ -210,7 +210,7 @@
     -webkit-border-radius:0;
     -moz-border-radius:0;
     border-radius:0;
-    border-bottom:1px solid #EBEBEB
+    border-bottom:0px solid #EBEBEB
 }
 #content .midColumns{
     -webkit-border-radius:0 0 5px 5px;
@@ -438,13 +438,13 @@
 /* 首页---------------------------------------- */
 /* 热点关注 */
 .headNew {
-    padding:10px 20px 25px 0px;
+    padding:5px 20px 5px 0px;
     text-align:left;
 }
 .headNew dt {
     float: left;
     width: 150px;
-    height: 98px;
+    height: 69px;
     position: relative;
     margin-right: 25px;
 }
@@ -454,10 +454,11 @@
     background: #fb6e52;
 }
 .jrgz_bt {
-    height: 59px;
+    height: 30px;
     background: #f3f2f2;
     text-align: center;
     overflow: hidden;
+    line-height:36px;
 }
 .jrgz_top p {
     color: #fff;
@@ -485,7 +486,7 @@
 .headNew .intro{
     font-size:14px;
     line-height: 24px;
-    height: 48px;
+    height: 30px;
     overflow:hidden;
     color:#999;
 }
@@ -1218,7 +1219,7 @@
     float:right;
 }
 .grbsList{
-   height: 246px;
+   height: 237px;
 }
 .zdfwList{
     overflow:hidden;
