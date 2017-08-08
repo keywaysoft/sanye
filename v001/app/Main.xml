@@ -1,0 +1,68 @@
+﻿<project version="2.1" name="anzhou" ID="627C5F3D-AC19-4566-95BC-D7017EEDA202" addTime="2017-06-12">
+  <params>
+    <pageParam version="4.2" minAllowVersion="4.1"/>
+    <projectParam version="2.1" minAllowVersion="2.0" platform="MtWeb" pageSize="(1920,3585)" backgroundColor="4294967295" fontSize="0" fontFamily="" from="FmLocal" webDemoPreviewCenter="True"/>
+  </params>
+  <modules>
+    <page name="index" ID="FE1F7727-F98F-4E70-A3A1-6E6A7E82A957" expanded="True" code="TKpM3BZFer" thumbCode="TKpM3BZFer" status="psWhite">
+      <images>
+        <image key="408C15DC8FD3B3B604C9F7768FB27C66.png"/>
+      </images>
+    </page>
+    <page name="index2" ID="AE1B4171-2D3D-4B3B-A799-22325A848396" expanded="False" code="A6UggbuIHl" thumbCode="CcTyYYnh3c" status="psWhite">
+      <images>
+        <image key="EB86B6EB888D75DCCD48BBAA902C442F.png"/>
+      </images>
+    </page>
+    <page name="zwgk" ID="132072C4-72BC-44E2-937D-617A1ECA5843" expanded="True" code="oqI9IEp2IQ" thumbCode="hoBCtj4ooX" status="psWhite">
+      <images>
+        <image key="8DCDDCEB26A23A81B5F66BD257CB3446.png"/>
+      </images>
+      <page name="ldxx" ID="AD961580-1FA7-41CB-9AB8-A2266A7DCB84" expanded="False" code="NVaITzG4sU" thumbCode="NVaITzG4sU" status="psWhite">
+        <images>
+          <image key="45B4DAAB877E1CC87D67E615786B738D.png"/>
+        </images>
+      </page>
+      <page name="jgjs" ID="3EC075E9-367A-4E35-B6B2-D706DB329C97" expanded="True" code="Q2F464rm7R" thumbCode="Q2F464rm7R" status="psWhite">
+        <images>
+          <image key="6BFBCA4A41E20821226CE3D3AF32B2DD.png"/>
+        </images>
+      </page>
+    </page>
+    <page name="zwyw" ID="4A296614-80E6-4536-831A-8FFA922FFB29" expanded="True" code="EE4uZCgeQb" thumbCode="tQEioUqJbN" status="psWhite">
+      <images>
+        <image key="60070C5BF5BDBA4406BDE369A3BB1E2D.png"/>
+      </images>
+      <page name="wz" ID="3EC2B441-A909-48C1-B722-2259B777FF23" expanded="False" code="8Z534BmMdd" thumbCode="8Z534BmMdd" status="psWhite">
+        <images>
+          <image key="68149B293397C59242C3B821A31BFF15.png"/>
+        </images>
+      </page>
+      <page name="sp" ID="74728E70-F69E-48DD-BAE3-5F33245BDF18" expanded="False" code="6SHz29lr89" thumbCode="6SHz29lr89" status="psWhite" isLastOpen="True">
+        <images>
+          <image key="3AE8F1CA8BB1647EFB35162D0185DAC8.png"/>
+        </images>
+      </page>
+    </page>
+    <page name="yd" ID="3713B18E-F9D9-4C35-9554-B90C32AFE6F2" expanded="True" code="hkwPDsSbxG" thumbCode="VcNHM6fUT1" status="psWhite">
+      <images>
+        <image key="2AFE6259381AB6C5CFB018029E46FBA4.png"/>
+      </images>
+    </page>
+  </modules>
+  <masters/>
+  <images>
+    <image key="408C15DC8FD3B3B604C9F7768FB27C66.png"/>
+    <image key="EB86B6EB888D75DCCD48BBAA902C442F.png"/>
+    <image key="6BFBCA4A41E20821226CE3D3AF32B2DD.png"/>
+    <image key="45B4DAAB877E1CC87D67E615786B738D.png"/>
+    <image key="3AE8F1CA8BB1647EFB35162D0185DAC8.png"/>
+    <image key="68149B293397C59242C3B821A31BFF15.png"/>
+    <image key="8DCDDCEB26A23A81B5F66BD257CB3446.png"/>
+    <image key="2AFE6259381AB6C5CFB018029E46FBA4.png"/>
+    <image key="60070C5BF5BDBA4406BDE369A3BB1E2D.png"/>
+  </images>
+  <others>
+    <favoriteColors/>
+  </others>
+</project>

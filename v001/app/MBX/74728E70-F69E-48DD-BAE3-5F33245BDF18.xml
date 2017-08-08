@@ -1,0 +1,42 @@
+﻿<mockup version="4.2" platform="MtWeb" defaultW="1920" defaultH="3585" from="FmLocal" minAllowVersion="4.1" ID="74728E70-F69E-48DD-BAE3-5F33245BDF18" measureW="1920" measureH="2125" mobileScreenScale="0">
+  <controls controlCount="1">
+    <control controlID="F4665F48-FDF4-40B6-9F9C-BBB8085A4A9B" controlTypeID="Image" isShow="True" caption="%E5%9B%BE%E7%89%87" x="0" y="0" w="1920" h="2125" measuredW="150" measuredH="150" zOrder="0" locked="False" sizeLocked="False">
+      <controlProperties>
+        <basic color="4294967295" borderVisible="False" borderColor="4284900966" isAutoSize="False" status="MsEnabled" opacity="1" isCommentCom="False" canMove="True" alias="" rotation="0"/>
+        <states/>
+        <verticalScrollbarShow>False</verticalScrollbarShow>
+        <verticalScrollbarProgress>0</verticalScrollbarProgress>
+        <horizontalScrollbarShow>False</horizontalScrollbarShow>
+        <horizontalScrollbarProgress>0</horizontalScrollbarProgress>
+        <links eventType="AtDoubleClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+          <link targetPageID="3713B18E-F9D9-4C35-9554-B90C32AFE6F2" linkType="ltPageLink" isApplyIncludePage="False" title="yd">
+            <area shape="0" alt="" ID="{9F4F6892-2CC2-41EB-9299-D17C4AFE8372}" coords="(0,0,1920,2125)"/>
+          </link>
+        </links>
+        <interactiveData>
+          <entry title="">
+            <area shape="0" alt="" ID="{41B9CB01-8573-482B-954A-E7534FAEB0AE}" coords="(0,0,1920,2125)"/>
+            <events title=""/>
+          </entry>
+        </interactiveData>
+        <rotationAngle>TdZero</rotationAngle>
+        <clipShapeType>SbRectangle</clipShapeType>
+        <radius>0</radius>
+        <radiusIsPercent>False</radiusIsPercent>
+        <filterType>MfNone</filterType>
+        <filterPencilValue>2</filterPencilValue>
+        <filterSketchValue>5</filterSketchValue>
+        <URL>3AE8F1CA8BB1647EFB35162D0185DAC8.png</URL>
+        <FlipHorizontal>False</FlipHorizontal>
+        <FlipVertical>False</FlipVertical>
+        <fitMode>2</fitMode>
+      </controlProperties>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontFamily>%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91</fontFamily>
+    <fontSize>14</fontSize>
+    <guideLines/>
+  </param>
+</mockup>
