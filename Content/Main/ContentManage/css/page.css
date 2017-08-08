@@ -13,10 +13,10 @@
     margin-right:25px;
 }
 #aboutUs-rowA .lzIntro{
-    padding-top:80px;
+    padding-top:100px;
     overflow:hidden;
     zoom:1;
-    background:url(../../Base/img/aboutUs-zmlz.jpg) 0 0 no-repeat;
+    /*background:url(../../Base/img/aboutUs-zmlz.jpg) 0 0 no-repeat;*/
 }
 .aboutUs-iconBtns{
     border-bottom:1px solid #eee;

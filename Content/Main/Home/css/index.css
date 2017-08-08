@@ -76,7 +76,7 @@
 .indBtns{
     position:relative;
     width:1020px;
-    height:323px;
+    height:350px;
     margin:0 auto;
 }
 .indBtns li{
@@ -136,22 +136,22 @@
 }
 .indBtns .news{
     top:0;
-    left:250px;
+    left:220px;
     background:#377ED8;
 }
 .indBtns .gov{
-    top:100px;
-    left:350px;
+    top:125px;
+    left:335px;
     background-color:#EC9720
 }
 .indBtns .service{
-    top:200px;
+    top:250px;
     left:450px;
     background-color:#41A03F
 }
 .indBtns .interaction{
-    top:100px;
-    left:550px;
+    top:125px;
+    left:565px;
     background-color:#905AB0
 }
 .indBtns .about{
@@ -184,7 +184,7 @@
 }
 .indBtns .open{
     top:0;
-    left:650px;
+    left:695px;
     position:relative;
     background:none;
     background-color:#333;

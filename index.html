@@ -15,9 +15,8 @@
 
   <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
   <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
-
+  <link href="/Content/Main/Base/css/cssWeiban.css" rel="stylesheet" type="text/css" />
   <link href="/Content/Main/Home/css/index.css" rel="stylesheet" />
-
 
   <link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
   <script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
@@ -25,35 +24,85 @@
   <!--     <script src="/Content/_Common/Base/js/antiClickjack.js"></script> -->
   <script src="/Content/_Common/Base/js/webCommon.js"></script>
   <script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
+  <script src="/Content/_Common/Base/js/slides.js"></script>
+  <script src="/Content/_Common/Base/js/indexJSRed.js"></script>
   <script src="/Content/_Common/Base/js/StoT.js"></script>
 </head>
 <body>
 
 <div class="wrap">
+  <!--背景轮播-->
+  <div class="loopBg">
+    <div class="bd">
+      <ul>
+        <li style="background-image: url(/Content/Main/Base/img/body.jpg);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Main/Base/img/body.jpg',sizingMethod='scale');"></li>
+        <li style="background-image: url(/Content/Main/Base/img/ind-body.jpg);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Main/Base/img/ind-body.jpg',sizingMethod='scale');"></li>
+      </ul>
+    </div>
+    <!--页码 可选-->
+    <div class="hd">
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <script>
+      $(function(){
+        /*背景轮播*/
+          $(".loopBg").slide({mainCell:".bd ul",autoPlay:true,mouseOverStop:false,effect:"fold",interTime:12000,delayTime:8000,
+              startFun:function(i,c){
+                  $(".bd ul li").eq(i).addClass("on");
+              },endFun:function(i,c){
+                  $(".bd ul li").eq(i).siblings().removeClass("on");
+              }});
+      })
+  </script>
+  <style>
+    /*背景轮播*/
+    .loopBg{ position:fixed;left:0;top:0;width:100%;height:100%;overflow: hidden; }
+    .loopBg .bd,
+    .loopBg .bd .tempWrap,
+    .loopBg .bd ul,
+    .loopBg .bd li{width:100%;height:100%;margin:0;padding:0;}
+    .loopBg .bd li{ background-repeat: no-repeat; background-position: center; background-size: cover;}
+    .loopBg .bd .on{ animation: bigger 8s linear 0s both;}
+    .loopBg .hd{ display:none;}
+    @keyframes bigger{
+      from{ transform:scale(1);}
+      to{ transform:scale(1.05);}
+    }
+  </style>
+
+
 
 
   <div class="topBar">
-    <ul class="list">
-      <li class="en"><a href="/english">English</a></li>
-      <li class="phone">
-        <a href="javascript:;">手机版</a>
-        <div class="pic">
-          <img src="/qrcode/qrcode.gif">
-          <i></i>
-        </div>
-      </li>
-      <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
-      <li class="wechat">
-        <a href="javascript:;">政务微信</a>
-        <div class="pic">
-          <img src='/Content/Main/Base/img/weixin.png' />
-          <i></i>
-        </div>
-      </li>
-      <li class="robot"><a href="/znjqr">政务机器人</a></li>
-    </ul>
+  	<div class="siteWidth">
+  		<h1 title="安州区人民政府门户网站" id="logo2"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
+  		<ul class="list">
+	      <li class="en"><a href="/english">English</a></li>
+	      <li class="phone">
+	        <a href="javascript:;">手机版</a>
+	        <div class="pic">
+	          <img src="/qrcode/qrcode.gif">
+	          <i></i>
+	        </div>
+	      </li>
+	      <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
+	      <li class="wechat">
+	        <a href="javascript:;">政务微信</a>
+	        <div class="pic">
+	          <img src='/Content/Main/Base/img/weixin.png' />
+	          <i></i>
+	        </div>
+	      </li>
+	      <li class="robot"><a href="/znjqr">政务机器人</a></li>
+	    </ul>
+  	</div>
     <span class="topBarBg"></span>
   </div>
+  <div class="topB"></div>
   <script>
       $(".topBar li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
   </script>
@@ -62,7 +111,7 @@
   <header id="header">
     <div class="headerTop siteWidth">
 
-      <h1 title="安州区人民政府门户网站" id="logo"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
+      <h1 title="安州区人民政府门户网站" id="logo"><a href="http://www.anxian.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
 
       <div class="siteSearchBar">
 
@@ -322,6 +371,49 @@
             </ul>
           </dd>
         </dl>
+        <div class="row rowA">
+          <!-- 大图 -->
+          <div id="slide-news" class="slide-news">
+          <div class="slide-md">
+            <h2 class="slide-hd">
+              <a href="1.html" target="_blank">彭宇行在调研群团工作时强调为绵阳科学发展加快发展凝聚强大正能量</a>
+              <span>11月24日，市委书记彭宇行前往市职工创新创业中心、梁声文化音乐和电影鉴赏运用推广基地、四川凯路威电子有限公司等地，调研进一步做好新形势下的群团工作，出席群团工作座谈会并讲话。市委副书记付康参加调研并主持座谈会。</span>
+            </h2>
+            <p class="slide-bd">
+              <a href="1.html" target="_blank">
+                <img border="0" src="/upload/main/contentmanage/article/image/91be97f107a7434593b16c4496c1dd0e.jpg" ></a></p>
+            <p class="slide-ft">
+            </p>
+          </div>
+          <div class="slide-md hide">
+            <h2 class="slide-hd">
+              <a href="2.html" target="_blank">[环境问题督导]胡斌到秀水镇督导环境问题整改情况</a>
+              <span>8月2日，区委副书记胡斌带队到秀水镇督导环保督查反馈问题整改完成情况。<br>
+胡斌一行先后前往绵阳市神龙重科实业有限公司、绵阳市金鸿饲料有限公司查看厂区环境，听取企业负责人环保问题整改落实情况汇报。胡斌强调，要提高认识、高度重视此次中央环保督查工作，不存侥幸心理，落实企业主体责任；要以此次中央环保督查为...</span>
+            </h2>
+            <p class="slide-bd">
+              <a href="2.html" target="_blank">
+                <img border="0" src="/upload/main/contentmanage/article/image/48f699abbb9845759f62be3422e6ffab.jpg" ></a></p>
+            <p class="slide-ft">
+            </p>
+          </div>
+          <div class="slide-md hide">
+            <h2 class="slide-hd">
+              <a href="3.html" target="_blank">区委书记廖雪梅 慰问区人武部官兵</a>
+              <span>8月1日，区委书记廖雪梅到区人武部慰问部队官兵，向他们致以节日的祝贺和亲切的问候，感谢他们为安州经济社会发展作出的贡献，强调军民同心，合力推进全省经济生态强区建设。</span>
+            </h2>
+            <p class="slide-bd">
+              <a href="3.html" target="_blank">
+                <img border="0" src="/upload/main/contentmanage/article/image/22c56297a4934e2cb9aed85b365d615b.jpg"></a></p>
+            <p class="slide-ft">
+            </p>
+          </div>
+          <ul class="slide-tabs">
+            <li class="tab current"><a href="1.html"></a></li>
+            <li class="tab"><a href="2.html"></a></li>
+            <li class="tab"><a href="3.html"></a></li></ul>
+        </div>
+        </div>
         <!-- rowA S -->
         <div class="row rowA">
           <!-- 焦点图 -->
@@ -1400,7 +1492,7 @@
 
 
                 <li class="first">
-                  <a href="http://www.luzhou.gov.cn/publicity/subject09/subject179/60908" target="_blank" title="标题：安州区人民政府办公室关于印发安州区政府质量奖评选管理办法的通知
+                  <a href="http://anxian.my.gov.cn/publicity/subject09/subject179/60908" target="_blank" title="标题：安州区人民政府办公室关于印发安州区政府质量奖评选管理办法的通知
 点击数：0
 发表时间：2017-07-28">
                     安州区人民政府办公室关于印发安州区政府质量奖评选管理办法…
@@ -1411,7 +1503,7 @@
 
 
                 <li>
-                  <a href="http://www.luzhou.gov.cn/publicity/subject010/subject186/60907" target="_blank" title="标题：安州区人民政府办公室关于印发安州区沱江水体达标方案的通知
+                  <a href="http://anxian.my.gov.cn/publicity/subject010/subject186/60907" target="_blank" title="标题：安州区人民政府办公室关于印发安州区沱江水体达标方案的通知
 点击数：0
 发表时间：2017-07-28">
                     安州区人民政府办公室关于印发安州区沱江水体达标方案的通知
@@ -1744,7 +1836,7 @@
             </div>
             <ul class="serList">
               <li class="li1"><a href="/fw/sjkf"><i></i>数据开放</a></li>
-              <li class="li2"><a href="http://zwdt.luzhou.gov.cn/eGovP1/portal/index_pc10000.jsp" target="_blank"><i></i>行权运行平台</a></li>
+              <li class="li2"><a href="http://zwdt.anxian.my.gov.cn/eGovP1/portal/index_pc10000.jsp" target="_blank"><i></i>行权运行平台</a></li>
               <li class="li3"><a href="http://egov.lzszwfw.gov.cn/status.aspx" target="_blank"><i></i>办件查询</a></li>
             </ul>
           </div>
@@ -2014,22 +2106,22 @@
 
 
                 <li class="li1 first">
-                  <a class="tit" href="http://www.tluzhou.com/lz-ddl.html" target="_blank" title="抵达安州">抵达安州</a>
+                  <a class="tit" href="http://www.mysta.gov.cn/lz-ddl.html" target="_blank" title="抵达安州">抵达安州</a>
                 </li>
                 <li class="li2">
-                  <a class="tit" href="http://www.tluzhou.com/lz-hotel.html" target="_blank" title="宾馆酒店">宾馆酒店</a>
+                  <a class="tit" href="http://www.mysta.gov.cn/lz-hotel.html" target="_blank" title="宾馆酒店">宾馆酒店</a>
                 </li>
                 <li class="li3">
-                  <a class="tit" href="http://www.tluzhou.com/scenic-list.html" target="_blank" title="景点大全">景点大全</a>
+                  <a class="tit" href="http://www.mysta.gov.cn/scenic-list.html" target="_blank" title="景点大全">景点大全</a>
                 </li>
                 <li class="li4">
-                  <a class="tit" href="http://www.tluzhou.com/visited-route.html" target="_blank" title="旅游线路">旅游线路</a>
+                  <a class="tit" href="http://www.mysta.gov.cn/visited-route.html" target="_blank" title="旅游线路">旅游线路</a>
                 </li>
                 <li class="li5">
-                  <a class="tit" href="http://www.tluzhou.com/food-list.html" target="_blank" title="安州美食">安州美食</a>
+                  <a class="tit" href="http://www.mysta.gov.cn/food-list.html" target="_blank" title="安州美食">安州美食</a>
                 </li>
                 <li class="li6 last">
-                  <a class="tit" href="http://www.tluzhou.com/lz-tc.html" target="_blank" title="旅游特产">旅游特产</a>
+                  <a class="tit" href="http://www.mysta.gov.cn/lz-tc.html" target="_blank" title="旅游特产">旅游特产</a>
                 </li>
 
               </ul>
@@ -2095,9 +2187,122 @@
     <!-- 政府信息公开等 -->
     <section class="midColumns">
 
-      <!-- 政务服务 -->
-      <iframe src="/cn/zxbs/index_sl_23449.html" height="500" width="100%" scrolling="no" frameborder="0"></iframe>
+      <!-- 政府信息公开 -->
+      <div class="indBox" id="indBox-xxgk">
+        <div class="iHd">
+          <h3><a href="/zw">重点领域信息公开</a></h3>
+        </div>
+        <div class="iBd">
+          <ul class="zfxxgkList">
+            <li class="li1"><a href="/zw/zfxxgk/zfxxgkzn"><i></i>政府信息<br/>公开指南</a></li>
+            <li class="li2"><a href="/zw/zfxxgk/cateinfos"><i></i>政府信息<br/>公开目录</a></li>
+            <li class="li3"><a href="/zw/zfxxgk/zfxxgknb"><i></i>政府信息<br/>公开年报</a></li>
+            <li class="li4"><a href="/infopublicity/applicationform"><i></i>政府信息<br/>公开申请</a></li>
+            <li class="li5"><a href="/zw/zdgz"><i></i>信息公开<br/>重点工作</a></li>
+            <li class="li6"><a href="/zw/zfxxgk/qmtjwgk"><i></i>全面推进<br/>五公开</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 公众参与 -->
+      <div class="indBox" id="indBox-zmhd">
+        <div class="iHd">
+          <h3><a href="/hd">公众参与</a></h3>
+        </div>
+        <div class="iBd">
+          <ul class="zfxxgkList">
+            <li class="li11"><a href="http://www.lzmail.gov.cn/"><i></i>市长信箱</a></li>
+            <li class="li12"><a href="http://12345.my.gov.cn:82/"><i></i>举报投诉</a></li>
+            <li class="li13"><a href="/hd/yjzj"><i></i>意见征集</a></li>
+            <li class="li14"><a href="/survey/list"><i></i>网上调查</a></li>
+            <li class="li15"><a href="/onlineinterview/"><i></i>在线访谈</a></li>
+            <li class="li16"><a href="/hd/ygzw"><i></i>阳光政务</a></li>
+          </ul>
+        </div>
+      </div>
 
+      <!-- 政务服务 -->
+      <div class="indBox" id="indBox-ztzl">
+        <div class="iHd">
+          <h3><a href="/zt">重点办事服务</a></h3>
+        </div>
+        <div class="iBd">
+          <div class="ztzl-miniSlide">
+            <div class="bd">
+              <ul>
+
+
+
+                <li class="li1 first">
+                  <a class="pic" href="http://cxhj.luzhou.gov.cn/Article/index.asp" target="_blank">
+                    <img alt="城乡环境综合整治" src="/content/main/base/img/zt/zt-01_275_80.jpg " width="275" height="80" />
+                  </a>
+                  <a class="tit" href="http://cxhj.luzhou.gov.cn/Article/index.asp" target="_blank" title="城乡环境综合整治">城乡环境综合整治</a>
+                </li>
+                <li class="li2">
+                  <a class="pic" href="http://lz.standardsc.org/" target="_blank">
+                    <img alt="安州区标准信息服务平台" src="/content/main/base/img/zt/zt-02_275_80.jpg " width="275" height="80" />
+                  </a>
+                  <a class="tit" href="http://lz.standardsc.org/" target="_blank" title="安州区标准信息服务平台">安州区标准信息服务平台</a>
+                </li>
+                <li class="li3">
+                  <a class="pic" href="http://special.lzep.cn/16yfzs/" target="_blank">
+                    <img alt="依法治市" src="/content/main/base/img/zt/zt-03_275_80.jpg " width="275" height="80" />
+                  </a>
+                  <a class="tit" href="http://special.lzep.cn/16yfzs/" target="_blank" title="依法治市">依法治市</a>
+                </li>
+                <li class="li4 last">
+                  <a class="pic" href="http://gs.aiclz.gov.cn/Home/Index" target="_blank">
+                    <img alt="安州区企业信用信息公示" src="/content/main/base/img/zt/zt-04_275_80.jpg " width="275" height="80" />
+                  </a>
+                  <a class="tit" href="http://gs.aiclz.gov.cn/Home/Index" target="_blank" title="安州区企业信用信息公示">安州区企业信用信息公示</a>
+                </li>
+
+              </ul>
+            </div>
+            <a href="javascript:void(0)" class="prev"></a>
+            <a href="javascript:void(0)" class="next"></a>
+          </div>
+          <ul class="infoList">
+
+
+
+            <li class="li1 first">
+              <a class="tit" href="http://cxhj.luzhou.gov.cn/Article/index.asp" target="_blank" title="城乡环境综合整治">城乡环境综合整治</a>
+            </li>
+            <li class="li2">
+              <a class="tit" href="http://lz.standardsc.org/" target="_blank" title="安州区标准信息服务平台">安州区标准信息服务平台</a>
+            </li>
+            <li class="li3">
+              <a class="tit" href="http://special.lzep.cn/16yfzs/" target="_blank" title="依法治市">依法治市</a>
+            </li>
+            <li class="li4">
+              <a class="tit" href="http://gs.aiclz.gov.cn/Home/Index" target="_blank" title="安州区企业信用信息公示">安州区企业信用信息公示</a>
+            </li>
+            <li class="li5">
+              <a class="tit" href="/hd/rdjyhzxta" target="_blank" title="办理人大代表建议政协提案">办理人大代表建议政协提案</a>
+            </li>
+            <li class="li6">
+              <a class="tit" href="/zt/lzszxszscxxpt" target="_blank" title="安州区最新生猪市场信息平台">安州区最新生猪市场信息平台</a>
+            </li>
+            <li class="li7">
+              <a class="tit" href="http://www.zzgsc.gov.cn/info/index/510500000" target="_blank" title="工程建设领域信息公开">工程建设领域信息公开</a>
+            </li>
+            <li class="li8 last">
+              <a class="tit" href="/zt/2011jbhztmb" target="_blank" title="安州区两会专题">安州区两会专题</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <script>
+          $(".ztzl-miniSlide").slide({ mainCell:".bd ul", effect:"leftLoop", autoPlay:true });
+      </script>
+
+
+    </section>
+
+    <!-- 横幅广告 -->
+    <section class="midGG">
       <!-- 横幅广告 -->
       <div class="slideBox">
 
@@ -2182,7 +2387,7 @@
             <li class="">
               <div class="friendlink_con">人大、政协</div>
               <div class="select_content" id="select_content2" style="display: none;">
-                <div class="select_con"> <a href="http://rd.jiangyou.gov.cn/" target="_blank" title="江油市人大">江油市人大</a><a href="http://zx.jiangyou.gov.cn/index.html" target="_blank" title="江油市政协">江油市政协</a></div>
+                <div class="select_con"> <a href="http://rd.jiangyou.gov.cn/" target="_blank" title="安州区人大">安州区人大</a><a href="http://zx.jiangyou.gov.cn/index.html" target="_blank" title="安州区政协">安州区政协</a></div>
               </div>
             </li>
             <li class="">
@@ -2206,13 +2411,13 @@
             <li class="">
               <div class="friendlink_con">市司法机关</div>
               <div class="select_content" id="select_content6" style="display: none;">
-                <div class="select_con"> <a href="http://fy.jy.gov.cn/" target="_blank" title="江油市人民法院">江油市人民法院</a><a href="http://jyjcy.my.gov.cn/" target="_blank" title="江油市人民检察院">江油市人民检察院</a> </div>
+                <div class="select_con"> <a href="http://fy.jy.gov.cn/" target="_blank" title="安州区人民法院">安州区人民法院</a><a href="http://jyjcy.my.gov.cn/" target="_blank" title="安州区人民检察院">安州区人民检察院</a> </div>
               </div>
             </li>
             <li class="">
               <div class="friendlink_con">主要企业</div>
               <div class="select_content" id="select_content7" style="display: none;">
-                <div class="select_con"> <a href="http://hf.libai.cn/" target="_blank" title="鸿飞集团">鸿飞集团</a><a href="http://ct.libai.cn/" target="_blank" title="江油城投公司">江油城投公司</a><a href="http://nt.libai.cn/" target="_blank" title="江油农投集团">江油农投集团</a><a href="http://gt.libai.cn/" target="_blank" title="江油创元公司">江油创元公司</a><a href="http://jywl.libai.cn" target="_blank" title="江油文旅公司">江油文旅公司</a> </div>
+                <div class="select_con"> <a href="http://hf.libai.cn/" target="_blank" title="鸿飞集团">鸿飞集团</a><a href="http://ct.libai.cn/" target="_blank" title="安州城投公司">安州城投公司</a><a href="http://nt.libai.cn/" target="_blank" title="安州农投集团">安州农投集团</a><a href="http://gt.libai.cn/" target="_blank" title="安州创元公司">安州创元公司</a><a href="http://jywl.libai.cn" target="_blank" title="安州文旅公司">安州文旅公司</a> </div>
               </div>
             </li>
             <li class="">
@@ -2263,25 +2468,30 @@
       var paddingTop=$(window).height()-480;
       var contentHeight = $(".slideBox .bd li").size()<1 ? 838:1210;
 
-      if(paddingTop<410){ paddingTop=410 }
+      if(paddingTop<350){ paddingTop=350 }
       $(".headerTop").css("paddingTop",paddingTop);
       var isOpen=false;
       var openFunc=function(speed,speed_logo){
           if(isOpen==false){
               isOpen=true;
               $("body").removeClass("bodyOpen");
-              $("#logo").animate({ "left":30,"top":55 },speed_logo,"swing");
-              $(".siteSearchBar").animate({ "right":40,"top":75 },speed,"swing");
+              $(".topBar").addClass("topFixed");
+      				$(".topB").addClass("open");
+              $("#logo").animate({ "left":30,"top":45 },speed_logo,"swing");
+              $(".siteSearchBar").animate({ "right":30,"top":55 },speed,"swing");
               $(".indBtns").fadeOut(speed/2,function(){
                   $("#content").css("visibility","visible").animate({"height":contentHeight},speed,"swing");
                   $(".topNav").show();
               });
-              $(".headerTop").animate({"paddingTop":190},speed,"swing",function(){
+              $(".headerTop").animate({"paddingTop":160},speed,"swing",function(){
 
               });
           }else if(isOpen==true){
               isOpen=false;
               $("body").addClass("bodyOpen");
+              $(".topBar").removeClass("topFixed topHei");
+              $(".topB").removeClass("open");
+              $("#logo2").removeClass("show");
               $("#content").css("visibility","hidden");
               $("#content").animate({"height":1},speed,"swing");
               $(".headerTop").animate({"paddingTop":paddingTop},speed,"swing",function(){
@@ -2289,7 +2499,7 @@
               });
               $(".topNav").hide();
               $("#logo").animate({ "left":412,"top":80 },speed_logo,"swing");
-              $(".siteSearchBar").animate({ "right":310,"top":260 },speed,"swing");
+              $(".siteSearchBar").animate({ "right":310,"top":210 },speed,"swing");
               $(".indBtns").fadeIn(speed)
           }
       }
@@ -2300,6 +2510,29 @@
               openFunc(1000,1500)
           }
       },10000);
+      
+      //滚动事件
+      window.onscroll = function(){
+      	if(getScrollTop()>200 && isOpen){
+      		$(".topBar").addClass("topHei");
+      		$("#logo2").addClass("show");
+      	}else{
+      		$(".topBar").removeClass("topHei");
+      		$("#logo2").removeClass("show");
+      	}
+      }
+      function getScrollTop() {
+				var scrollPos; 
+				if (window.pageYOffset) {
+					scrollPos = window.pageYOffset; 
+				} else if (document.compatMode && document.compatMode != 'BackCompat') { 
+					scrollPos = document.documentElement.scrollTop; 
+				} else if (document.body) { 
+					scrollPos = document.body.scrollTop; 
+				} 
+				return scrollPos; 
+      }
+      
 
       // 判断显示引导页还是主页
       if( showGuide==undefined ){
