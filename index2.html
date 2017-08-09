@@ -2433,13 +2433,14 @@
       });
 
       // 引导状态
-      var paddingTop=$(window).height()-480;
+      var paddingTop=$(window).height()-180;
       var contentHeight = $(".slideBox .bd li").size()<1 ? 838:1210;
 
       if(paddingTop<350){ paddingTop=350 }
       $(".headerTop").css("paddingTop",paddingTop);
       var isOpen=false;
       var openFunc=function(speed,speed_logo){
+          clearTimeout(sT);
           if(isOpen==false){
               isOpen=true;
               $("body").removeClass("bodyOpen");
@@ -2474,11 +2475,11 @@
       }
       $(".indBtns .open").click(function(){openFunc(1000,1500)});
       $(".menuBtn").click(function(){openFunc(1000,1500)});
-      // setTimeout(function(){
-      //     if(isOpen==false){
-      //         openFunc(1000,1500)
-      //     }
-      // },30000);
+      var sT = setTimeout(function(){
+          if(isOpen==false){
+              openFunc(1000,1500)
+          }
+      },10000);
       
       //滚动事件
       window.onscroll = function(){

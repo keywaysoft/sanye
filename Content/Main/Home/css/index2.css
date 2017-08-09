@@ -6,6 +6,7 @@
  .topNav{ 
      overflow:initial;
      background-color:rgba(48,105,184,.55);
+     filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#903069B8",endColorstr="#903069B8");
      transition:all 1s;
 } 
 .topNav.open{ 
@@ -138,12 +139,12 @@
     font-size:16px;
     text-align:center;
     background-color:rgba(0,0,0,.45);
-    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#70000000,endColorstr=#70000000);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#70000000",endColorstr="#70000000");
     transition:all .5s;
 }
 .indBtns li a:hover{
     background-color:rgba(0,0,0,.75);
-    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#bb000000,endColorstr=#bb000000);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#bb000000",endColorstr="#bb000000");
 }
 .indBtns li a i{
     display:inline-block;
@@ -1380,7 +1381,9 @@
     height:50px;
     line-height: 50px;
     background-color:rgba(0,0,0,.35);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#70000000",endColorstr="#70000000");
     color:#fff;
+    overflow:hidden;
 }
 .footer2 a{ color:#fff;}
 .footer2 img{ max-height:30px; margin-top:10px; margin-left:5px;}
