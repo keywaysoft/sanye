@@ -124,10 +124,12 @@
     font-size:16px;
     text-align:center;
     background-color:rgba(0,0,0,.45);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#70000000,endColorstr=#70000000);
     transition:all .5s;
 }
 .indBtns li a:hover{
     background-color:rgba(0,0,0,.75);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#bb000000,endColorstr=#bb000000);
 }
 .indBtns li a i{
     display:inline-block;
