@@ -192,7 +192,7 @@
         </ul>
 
         
-        <span class="tip">点击左方返回<i class="icon iconfont icon-pointerleft"></i></span>
+        <span class="tip">点击切换<i class="icon iconfont icon-pointerleft"></i></span>
 
         <script type="text/javascript">
             (function () {
@@ -339,7 +339,7 @@
         <i class="icon iconfont icon-p-menus"></i>
       </a>
     </li>
-    <span class="tip">点击下方展开<i class="icon iconfont icon-pointerdown"></i></span>
+    <span class="tip">点击下方展开<i class="icon iconfont icon-shoushijiaocheng"></i></span>
   </ul>
   <script>
       hover(".indBtns li");
@@ -2444,20 +2444,15 @@
               isOpen=true;
               $("body").removeClass("bodyOpen");
               $(".topBar").addClass("topFixed");
-      				$(".topB").addClass("open");
+      				$(".topB,.topNav").addClass("open");
               $("#logo").animate({ "left":30,"top":45 },speed_logo,"swing");
-              $(".siteSearchBar").animate({ "right":30,"top":55 },speed,"swing");
-              // $(".indBtns").addClass("open").fadeOut(speed/2,function(){
-              //     $("#content").css("visibility","visible").animate({"height":contentHeight},speed,"swing");
-              //     $(".topNav").show();
-              // });
-              $(".indBtns").animate({"bottom":240,"opacity":0},speed,"swing",function(){
-                  $("#content").css("visibility","visible").animate({"height":contentHeight},speed,"swing");
-                  $(".topNav").show();
-                  setTimeout(function(){
-                    $("#footer").show();
-                  },500);
+              $(".siteSearchBar").animate({ "right":30,"top":55 },speed,"swing",function(){
+                $("#content").css("visibility","visible").animate({"height":contentHeight},speed,"swing");
+                setTimeout(function(){
+                  $("#footer").show();
+                },500);
               });
+              $(".footer2").animate({"height":0},speed,"swing");
               $(".headerTop").animate({"paddingTop":160},speed,"swing",function(){
 
               });
@@ -2465,18 +2460,16 @@
               isOpen=false;
               $("body").addClass("bodyOpen");
               $(".topBar").removeClass("topFixed topHei");
-              $(".topB").removeClass("open");
+              $(".topB,.topNav").removeClass("open");
               $("#logo2").removeClass("show");
               $("#footer").hide();
               $("#content").css({"visibility":"hidden","height":1});
               $(".headerTop").animate({"paddingTop":paddingTop},speed,"swing",function(){
-
+                
               });
-              $(".topNav").hide();
+              $(".footer2").animate({"height":50},speed,"swing");
               $("#logo").animate({ "left":412,"top":80 },speed_logo,"swing");
               $(".siteSearchBar").animate({ "right":310,"top":210 },speed,"swing");
-              // $(".indBtns").removeClass("open").fadeIn(speed)
-              $(".indBtns").animate({"bottom":50,"opacity":1},speed,"swing");
           }
       }
       $(".indBtns .open").click(function(){openFunc(1000,1500)});
@@ -2545,6 +2538,12 @@
     </div>
   </footer>
   <!-- footer E -->
+
+  <footer class="footer2">
+      <div class="copyRight">
+        <p>主办：安州区人民政府办公室 &nbsp; &nbsp;承办：安州区信息化工作办公室 &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp;0816-4336030 &nbsp; &nbsp;蜀ICP备12001441号&nbsp;&nbsp;<a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg"/></a> <script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> <a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg"/></a> <a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png"/></a></p>
+      </div>
+  </footer>
 
   <!-- 侧栏固定菜单 -->
   <ul class="sideFixed" style="display:none">
