@@ -281,7 +281,7 @@ body {
     position:relative;
     background:#3069B8;
     -webkit-border-radius:5px 5px 0 0; -moz-border-radius:5px 5px 0 0; border-radius:5px 5px 0 0;
-    overflow:hidden;
+    /* overflow:hidden; */
 }
 .topNav .menuBtn{
     cursor:pointer;
