@@ -2,16 +2,16 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="中共安州区委区人民政府门户网站,安州区政府,安州" />
-    <meta name="description" content="中共安州区委区人民政府门户网站 安州区  安州政府" />
-    <meta name="application-name" content="中共安州区委区人民政府门户网站" />
+    <meta name="keywords" content="安州区人民政府门户网站,安州区政府,安州" />
+    <meta name="description" content="安州区人民政府门户网站 安州区  安州政府" />
+    <meta name="application-name" content="安州区人民政府门户网站" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="renderer" content="webkit" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no, email=no">
     <meta name="HandheldFriendly" content="true" />
 
-    <title>政务服务_中共安州区委区人民政府门户网站</title>
+    <title>政务服务_安州区人民政府门户网站</title>
 
     <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
     <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
@@ -62,7 +62,7 @@
     <header id="header">
         <div class="headerTop siteWidth">
 
-            <h1 title="中共安州区委区人民政府门户网站" id="logo"><a href="http://anxian.my.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
+            <h1 title="安州区人民政府门户网站" id="logo"><a href="http://anxian.my.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
 
             <div class="siteSearchBar">
 
@@ -240,8 +240,7 @@
     <div id="content">
 
         <!-- 政务服务 -->
-        <iframe src="/cn/zxbs/index_sl_23449.html" height="506" width="100%" scrolling="no" frameborder="0"></iframe>
-
+        <iframe src="/cn/zxbs/index_sl_23449.html" height="482" width="100%" scrolling="no" frameborder="0"></iframe>
 
         <!-- 办件展示 -->
         <div class="bjBox">
@@ -249,16 +248,36 @@
                 <h3>办件展示</h3>
             </div>
             <div class="bd">
-                <iframe src="/cn/fw" width="100%" scrolling="no" height="236" frameborder="0" vspace="0" hspace="0" marginheight="0" marginwidth="0"></iframe>
+                <iframe src="/cn/fw" width="890" scrolling="no" height="236" frameborder="0" vspace="0" hspace="0" marginheight="0" marginwidth="0"></iframe>
             </div>
         </div>
 
         <!-- 办件统计 -->
-        <div class="bjBox">
-            <div class="bd">
+        <div class="entrance ">
+            <div class="bd side">
+                <div class="fw_btn">
+                    <p><a href="/qzqd" target="_blank"><img style="width:auto;" src="/cn/images/qzqd20170724.jpg" width="260"  height="90"/></a></p>
+                </div>
+                <!-- 办件查询 -->
+                <div class="bjBox" id="bjsj">
+                    <div class="hd">
+                        <h3>服务搜索</h3>
+                    </div>
+                    <div class="bd">
+                        <table class="bjcxTable">
+                            <tr>
 
+                                <td><input id="idKeyword" type="text" placeholder="请输关键词"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" class="submitBtn" value="全文检索" onclick="search('http://anxian.my.gov.cn/status.aspx')"> <input type="button" class="submitBtn toRight" value="事项搜索" onclick="search('http://anxian.my.gov.cn/status.aspx')"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="clearbox"></div>
         <!-- service-rowA S -->
         <div class="row" id="service-rowA">
             <div class="mainContent">
@@ -274,9 +293,6 @@
                     <div class="fBd">
                         <div class="item">
                             <ul class="grbsList fwsxIcons">
-
-
-
                                 <li class="li1 first">
                                     <a class="tit" href="/fw/fwsx/jyfw" title="身份证">身份证</a>
                                 </li>
@@ -544,7 +560,6 @@
 
                             </ul>
                             <dl class="cxzx">
-                                <dt><a href="/fw/cyfwcx">查询中心</a></dt>
                                 <dd>
                                     <ul class="infoList infoList-arrow">
 
@@ -645,8 +660,7 @@
                                 <td><input id="idcart" type="text" placeholder="请输入身份证号"></td>
                             </tr>
                             <tr>
-                                <td colspan="label"></td>
-                                <td><input type="button" class="submitBtn" value="查询" onclick="search('http://egov.lzszwfw.gov.cn/status.aspx')"></td>
+                                <td colspan="2"><input type="button" class="submitBtn" value="知识问答" onclick="search('http://anxian.my.gov.cn/status.aspx')"> <input type="button" class="submitBtn toRight" value="查询" onclick="search('http://anxian.my.gov.cn/status.aspx')"></td>
                             </tr>
                         </table>
                     </div>
@@ -654,7 +668,6 @@
             </div><!-- side E -->
         </div>
         <!-- service-rowA E -->
-
 
     </div>
     <script>
@@ -719,5 +732,3 @@
 
 
 
-</body>
-</html>

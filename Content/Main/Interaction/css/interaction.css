@@ -121,7 +121,7 @@
 .hdIconsBtn{
     overflow:hidden;
     margin-right:-20px;
-    padding-bottom:19px;
+    padding-bottom:11px;
 }
 .hdIconsBtn li{
     float:left;
@@ -202,7 +202,7 @@
 }
 .interviewItem{
     overflow:hidden;
-    height:90px;
+    height:100px;
     margin-bottom:18px;
 }
 .interviewItem .interviewPic{
@@ -236,13 +236,13 @@
 }
 .itvBtns a{
     display:block;
-    height:48px;
-    line-height:48px;
-    background: url(../../Base/img/ind-interac.png) 30px -1104px no-repeat #FFF9DD;
-    border:1px solid #F0E9CA;
+    height:110px;
+    line-height:110px;
+    background: url(../../Base/img/ind-interac.png) 30px -1074px no-repeat #f6f6f6;
+    /*border:1px solid #999;*/
     font-weight:bold;
     font-size:16px;
-    color:#CE7B18;
+    color:#3069B8;
     padding-left: 80px;
     -webkit-border-radius:2px;
     -moz-border-radius:2px;
@@ -252,12 +252,13 @@
     float:right;
 }
 .itvBtns .li2 a{
-    background-position: 30px -1195px;
+    background-position: 30px -1165px;
 }
 .itvBtns a:hover{
     text-decoration:none;
-    background-color:#f9eeba;
-    border-color:#f9eeba
+    background-color:#3069B8;
+    border-color:#3069B8;
+    color:white;
 }
 /* ygzwList */
 .ygzwList li{
@@ -677,4 +678,8 @@ input[name=Email] {
 }
 .surveyPicList .pic img{
     height:192px !important;
+}
+
+#indZxft{
+    padding-bottom: 12px;
 }

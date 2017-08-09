@@ -661,9 +661,10 @@ body {
 .box .hd {
     height: 40px;
     line-height: 40px;
-    background:#F1F1F1;
+    /*background:#F1F1F1;*/
     overflow:hidden;
     font-size:16px;
+    border-bottom: 1px solid #eee;
 }
 .box .hd .more {
     color: #999;
@@ -677,15 +678,16 @@ body {
 }
 .box .hd h3 {
     float:left;
-    background:#3069B8;
-    color:#fff;
+    /*background:#3069B8;*/
+    color:#3069B8;
 }
 .box .hd h3 a {
     display:block;
     float:left;
     padding:0 28px;
-    color:#fff;
-    font-weight:bold
+    color:#3069B8;
+    font-weight:bold;
+    font-size:18px;
 }
 .box .hd h3 a:hover {
     text-decoration: none;
@@ -696,17 +698,23 @@ body {
 .box .hd li{
     float:left;
 }
+.box .hd .on{
+    height: 38px;
+    border-bottom: 2px solid #3069B8 !important;
+}
 .box .hd li a{
     display:block;
     float:left;
     padding:0 28px;
+    color:#3069B8;
 }
 .box .hd li a:hover{
-    text-decoration:none
+    text-decoration:none;
+    color:red;
 }
 .box .hd .on a{
-    background:#3069B8;
-    color:#fff;
+    /*background:#3069B8;*/
+    color:#3069B8;
 }
 .box .bd {
     padding: 15px 0;
@@ -750,8 +758,8 @@ body {
     height: 44px;
     line-height: 44px;
     position: relative;
-    border-top: 2px solid #3069B8;
-    background:#F0F2F5;
+    border-bottom: 1px solid #3069B8;
+    /*background:#F0F2F5;*/
     padding:0 10px;
 }
 .boxB .hd .more {
@@ -763,15 +771,15 @@ body {
 .boxB .hd h3 {
     padding: 0 20px;
     font-size: 18px;
-    color: #CC1111;
+    color: #3069B8;
     position: absolute;
     left: 10px;
     top: -2px;
-    font-weight:bold;
-    border-top:2px solid #CC1111
+    /*font-weight:bold;*/
+    border-bottom:2px solid #3069B8
 }
 .boxB .hd h3 a {
-    color: #CC1111
+    color: #3069B8
 }
 .boxB .hd ul{
     overflow:hidden;
@@ -791,13 +799,13 @@ body {
     padding:0 25px;
 }
 .boxB .hd .on{
-    border-top:2px solid #CC1111;
-    font-weight:bold;
-    color:#CC1111;
-    line-height:40px;
+    border-bottom:2px solid #3069B8;
+    /*font-weight:bold;*/
+    color:#3069B8;
+    line-height:44px;
 }
 .boxB .hd .on a{
-    color:#CC1111
+    color:#3069B8
 }
 .boxB .bd {
     overflow: hidden;
@@ -1183,11 +1191,11 @@ body {
 }
 .grbsList li{
     float:left;
-    margin:4px 4px 0 0;
+    margin:0 10px 10px 0;
 }
 .grbsList a{
     display:block;
-    width: 122px;
+    width: 105px;
     border:1px solid #EEEEEE;
     line-height:22px;
     padding:0 0 5px 0;

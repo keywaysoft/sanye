@@ -2,16 +2,16 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="keywords" content="中共安州区委区人民政府门户网站,安州区政府,安州" />
-  <meta name="description" content="中共安州区委区人民政府门户网站 安州区  安州政府" />
-  <meta name="application-name" content="中共安州区委区人民政府门户网站" />
+  <meta name="keywords" content="安州区人民政府门户网站,安州区政府,安州" />
+  <meta name="description" content="安州区人民政府门户网站 安州区  安州政府" />
+  <meta name="application-name" content="安州区人民政府门户网站" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="renderer" content="webkit" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="format-detection" content="telephone=no, email=no">
   <meta name="HandheldFriendly" content="true" />
 
-  <title>中共安州区委区人民政府门户网站</title>
+  <title>安州区人民政府门户网站</title>
 
   <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
   <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
@@ -79,7 +79,7 @@
 
   <div class="topBar">
   	<div class="siteWidth">
-  		<h1 title="中共安州区委区人民政府门户网站" id="logo2"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
+  		<h1 title="安州区人民政府门户网站" id="logo2"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
   		<ul class="list">
 	      <li class="en"><a href="/english">English</a></li>
 	      <li class="phone">
@@ -111,7 +111,7 @@
   <header id="header">
     <div class="headerTop siteWidth">
 
-      <h1 title="中共安州区委区人民政府门户网站" id="logo"><a href="http://www.anxian.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
+      <h1 title="安州区人民政府门户网站" id="logo"><a href="http://www.anxian.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
 
       <div class="siteSearchBar">
 
@@ -1831,7 +1831,7 @@
             <ul class="serList">
               <li class="li1"><a href="/fw/sjkf"><i></i>数据开放</a></li>
               <li class="li2"><a href="http://zwdt.anxian.my.gov.cn/eGovP1/portal/index_pc10000.jsp" target="_blank"><i></i>行权运行平台</a></li>
-              <li class="li3"><a href="http://egov.lzszwfw.gov.cn/status.aspx" target="_blank"><i></i>办件查询</a></li>
+              <li class="li3"><a href="http://anxian.gov.cn/status.aspx" target="_blank"><i></i>办件查询</a></li>
             </ul>
           </div>
         </div>
@@ -2217,45 +2217,32 @@
       <!-- 政务服务 -->
       <div class="indBox" id="indBox-ztzl">
         <div class="iHd">
-          <h3><a href="/zt">重点办事服务</a></h3>
+          <h3><a href="/zt">办事服务</a></h3>
         </div>
-          <div class="item">
-            <ul class="grbsList fwsxIcons">
-
-              <li class="li1 first">
-                <a class="tit" href="/fw/fwsx/jyfw" title="身份证">身份证</a>
-              </li>
-              <li class="li2">
-                <a class="tit" href="/fw/fwsx/sbfw" title="户口">户口</a>
-              </li>
-              <li class="li3">
-                <a class="tit" href="/fw/fwsx/ylfw" title="生育服务">生育服务</a>
-              </li>
-              <li class="li4">
-                <a class="tit" href="/fw/fwsx/jiuyfw" title="保障性住房">保障性住房</a>
-              </li>
-              <li class="li5">
-                <a class="tit" href="/fw/fwsx/zffw" title="房屋产权">房屋产权</a>
-              </li>
-              <li class="li6">
-                <a class="tit" href="/fw/fwsx/ggjt" title="公积金">公积金</a>
-              </li>
-              <li class="li7">
-                <a class="tit" href="/fw/fwsx/qykb" title="机动车驾驶证">机动车驾驶证</a>
-              </li>
-              <li class="li8">
-                <a class="tit" href="/fw/fwsx/zjbl" title="老年人福利">老年人福利</a>
-              </li>
-              <li class="li9">
-                <a class="tit" href="/fw/fwsx/hysy" title="残疾人服务">残疾人服务</a>
-              </li>
-            </ul>
-          </div>
-
+        <div class="iBd">
+          <table class="bjcxTable">
+            <tr>
+              <td class="label">按受理编号：</td>
+              <td><input id="code" type="text" placeholder="请输入受理编号"></td>
+              <td rowspan="2"><input type="button" class="submitBtn" value="查询" onclick="search('/status.aspx')"></td>
+            </tr>
+            <tr>
+              <td class="label">按身份证号：</td>
+              <td><input id="idcart" type="text" placeholder="请输入身份证号"></td>
+            </tr>
+          </table>
+          <ul class="grbsList fwsxIcons fwlink">
+            <li class="li1 first">
+              <a class="tit" href="/fw/fwsx/jyfw" title="责任清单">责任清单</a>
+            </li>
+            <li class="li2">
+              <a class="tit" href="/fw/fwsx/sbfw" title="服务搜索">服务搜索</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <script>
           $(".ztzl-miniSlide").slide({ mainCell:".bd ul", effect:"leftLoop", autoPlay:true });
-          $(".grbsList a").prepend("<i></i>")
       </script>
 
 

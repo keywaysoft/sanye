@@ -190,7 +190,8 @@
     width:106px;
 }
 #indZwyw .hd{
-    background:#f2f2f2;
+    /*background:#f2f2f2;*/
+    border-bottom: 1px solid #f8f8f8;
 }
 .box .hd{
     font-size:14px;
@@ -207,8 +208,9 @@
 .tabBox .tHd{
     height:40px;
     line-height:40px;
-    background:#f2f2f2;
+    /*background:#f2f2f2;*/
     margin-bottom:1px;
+    border-bottom: 1px solid #f2f2f2;
 }
 .tabBox .tHd ul{
     font-size:0;
@@ -227,9 +229,10 @@
     padding:0 25px;
 }
 .tabBox .tHd .on a{
-    background:#3269B8;
-    color:#fff;
+    /*background:#3269B8;*/
+    color:#3269B8;
     font-weight:bold;
+    border-bottom: 2px solid #3269B8;
 }
 .tabBox .tHd .on i{
     position:absolute;
