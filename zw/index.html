@@ -265,19 +265,19 @@
                     <a class="tit" href="/zw/zfxxgk/zfxxgknb" title="政府信息公开年报">政府信息公开年报</a>
                 </li>
                 <li class="li5">
-                    <a class="tit" href="/infopublicity/applicationform" title="政府信息公开申请">政府信息公开申请</a>
+                    <a class="tit" href="/infopublicity/applicationform" title="依申请公开">依申请公开</a>
                 </li>
                 <li class="li6">
-                    <a class="tit" href="/zw/zfxxgk/qmtjwgk" title="全面推进五公开">全面推进五公开</a>
+                    <a class="tit" href="/zw/zfxxgk/qmtjwgk" title="预决算及“三公”经费">预决算及“三公”经费</a>
                 </li>
                 <li class="li7">
-                    <a class="tit" href="/zw/zfxxgk/zdlyxxgk" title="信息公开年度要点">信息公开年度要点</a>
+                    <a class="tit" href="/zw/zfxxgk/zdlyxxgk" title="基本信息公开">基本信息公开</a>
                 </li>
                 <li class="li8">
-                    <a class="tit" href="http://www.zzgsc.gov.cn/info/index/510700000" title="工程领域信息公开">工程领域信息公开</a>
+                    <a class="tit" href="/info/index/510700000" title="重点领域信息公开">重点领域信息公开</a>
                 </li>
                 <li class="li9 last">
-                    <a class="tit" href="/zw/zfxxgk/bmxxgktjbb" title="部门信息公开统计报表">部门信息公开统计报表</a>
+                    <a class="tit" href="/zw/zfxxgk/bmxxgktjbb" title="全面推进五公开">全面推进五公开</a>
                 </li>
 
             </ul>
@@ -381,164 +381,6 @@
                 </div>
             </div>
 
-            <!-- 分类树 S -->
-            <div class="govSideBox" id="sideGkml1">
-
-                <div class="zpBox">
-                    <!--所有分类树 S-->
-                    <div class="bd">
-                        <dl class="zpCate">
-                            <dt>按基础分类</dt>
-                            <dd>
-                                <div id="Dnav">
-                                    <ul id="Basic_Catelog" class="subjectCategoryList category-list ztree" style="overflow: auto;"></ul>
-                                </div>
-                                <input type="hidden" id="basicoryUrls"
-                                       data-getbasiccategoriesurl="/infopublicity/basiccategory/getbasiccategorytree.js"
-                                       data-subjectcategoryid="0" />
-
-                                <script>
-
-                                    $(function () {
-
-                                        var treeid = "Basic_Catelog",
-                                            urls = $('#basicoryUrls').data(),
-                                            $getbasiccategoriesurl = urls.getbasiccategoriesurl;
-
-                                        buildBasicCategoryTree($getbasiccategoriesurl); // 获得主题树。
-
-                                        // 获得主题树。
-                                        function buildBasicCategoryTree(url) {
-                                            new pe.ui.tree(treeid,
-                                                {
-                                                    url: url,
-                                                    check: {
-                                                        enable: false
-                                                    },
-                                                    selectDefaultNode: false
-                                                });
-                                        }
-                                    });
-                                </script>
-                            </dd>
-                            <dt>按主题分类</dt>
-                            <dd>
-                                <div id="Dnav">
-                                    <ul id="Gov_Catelog" class="subjectCategoryList category-list ztree" style="overflow: auto;"></ul>
-                                </div>
-                                <input type="hidden" id="subjectoryUrls"
-                                       data-getpubliccategoriesurl="/infopublicity/subjectcategory/getsubjectcategorytreeall.js"
-                                       data-subjectcategoryid="0" />
-
-                                <link href="/Content/_Common/Assets/Content/zTreeStyle.css" type="text/css" rel="stylesheet">
-                                <script src="/Content/_Common/Assets/Scripts/jquery.ztree.all-3.5.min.js"></script>
-                                <script src="/Content/_Common/Assets/Scripts/jquery.ztree.exhide-3.5.min.js"></script>
-                                <script src="/Content/_Common/Base/js/power.core.js"></script>
-                                <script src="/Content/_Common/Base/js/power.ui.js"></script>
-                                <script src="/Content/_Common/Base/js/power.ui.tree.js"></script>
-
-                                <script>
-
-                                    $(function () {
-
-                                        var treeid = "Gov_Catelog",
-                                            urls = $('#subjectoryUrls').data(),
-                                            $getpubliccategoriesurl = urls.getpubliccategoriesurl;
-
-                                        buildSubjectCategoryTree($getpubliccategoriesurl); // 获得主题树。
-
-                                        // 获得主题树。
-                                        function buildSubjectCategoryTree(url) {
-                                            new pe.ui.tree(treeid,
-                                                {
-                                                    url: url,
-                                                    check: {
-                                                        enable: false
-                                                    },
-                                                    selectDefaultNode: false
-                                                });
-                                        }
-                                    });
-                                </script>
-                            </dd>
-                            <dt>按体裁分类</dt>
-                            <dd>
-                                <div id="Dnav">
-                                    <ul id="Theme_Catelog" class="subjectCategoryList category-list ztree" style="overflow: auto;"></ul>
-                                </div>
-                                <input type="hidden" id="themeUrls"
-                                       data-getcustomercategoriesurl="/infopublicity/themecategory/getthemecategorytree.js"
-                                       data-subjectcategoryid="0" />
-
-
-
-                                <script>
-
-                                    $(function () {
-
-                                        var treeid = "Theme_Catelog",
-                                            urls = $('#themeUrls').data(),
-                                            $getthemecategoriesurl = urls.getcustomercategoriesurl;
-
-                                        buildThemeCategoryTree($getthemecategoriesurl); // 获得主题树。
-
-                                        // 获得主题树。
-                                        function buildThemeCategoryTree(url) {
-                                            new pe.ui.tree(treeid,
-                                                {
-                                                    url: url,
-                                                    check: {
-                                                        enable: false
-                                                    },
-                                                    selectDefaultNode: false
-                                                });
-                                        }
-                                    });
-                                </script>
-                            </dd>
-                            <dt>按服务对象分类</dt>
-                            <dd>
-
-                                <div id="Dnav">
-                                    <ul id="Customer_Catelog" class="subjectCategoryList category-list ztree" style="overflow: auto;"></ul>
-                                </div>
-                                <input type="hidden" id="customerUrls"
-                                       data-getcustomercategoriesurl="/infopublicity/customercategory/getcustomercategorytree.js"
-                                       data-subjectcategoryid="0" />
-
-
-
-                                <script>
-
-                                    $(function () {
-
-                                        var treeid = "Customer_Catelog",
-                                            urls = $('#customerUrls').data(),
-                                            $getcutomsercategoriesurl = urls.getcustomercategoriesurl;
-
-                                        buildCustomerCategoryTree($getcutomsercategoriesurl); // 获得主题树。
-
-                                        // 获得主题树。
-                                        function buildCustomerCategoryTree(url) {
-                                            new pe.ui.tree(treeid,
-                                                {
-                                                    url: url,
-                                                    check: {
-                                                        enable: false
-                                                    },
-                                                    selectDefaultNode: false
-                                                });
-                                        }
-                                    });
-                                </script>
-                            </dd>
-                        </dl>
-                    </div>
-                    <script>
-                        $(".zpCate").slide({ targetCell:"dd",titCell:"dt",effect:"slideDown",trigger:"click" })
-                    </script>
-                </div>
-            </div>
             <!-- 分类树 E -->
 
 
@@ -551,8 +393,8 @@
             <div class="box tab" id="indZwyw">
                 <div class="hd">
                     <ul>
-                        <li><a href="/xw/zwyw">政务要闻</a></li>
-                        <li><a>最新政府信息公开</a></li>
+                        <li><a href="/xw/zwyw">最新政府信息公开</a></li>
+                        <li><a>数据开放</a></li>
                     </ul>
                 </div>
                 <div class="bd">
@@ -4067,6 +3909,48 @@
         <!-- columnB E -->
         <!-- columnC S -->
         <div class="column" id="columnC">
+            <!-- 常务会议 -->
+            <div class="cwhyBox">
+                <ul class="indCwhy">
+                    <li class="first last">
+                        <div class="title">
+                            <a class="tit" href="/zw/cwhy/lzsrmzflccwh/content_106620" title="廖雪梅">廖雪梅</a>
+                        </div>
+                        <div class="con">
+                            <dl>
+                                <dd>
+                                    <label>职&nbsp;&nbsp;&nbsp;&nbsp;务：</label>
+                                    <span class="date">区委书记</span>
+                                </dd>
+                                <dd>
+                                    <label>工作分工：</label>
+                                    <span>主持区委全面工作。<a href="#">[领导活动]</a></span>
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </li>
+                    <li class="last last">
+                        <div class="title">
+                            <a class="tit" href="/zw/cwhy/lzsrmzflccwh/content_106620" title="李昊天">李昊天</a>
+                        </div>
+                        <div class="con">
+                            <dl>
+                                <dd>
+                                    <label>职&nbsp;&nbsp;&nbsp;&nbsp;务：</label>
+                                    <span class="date">区委副书记、区长</span>
+                                </dd>
+                                <dd>
+                                    <label>工作分工：</label>
+                                    <span>投领导区政府全面工作。负责监察、审计工作。分管区监察局、审计局。<a href="#">[领导活动]</a></span>
+                                </dd>
+                            </dl>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
             <!-- 政府公告等切换 -->
             <div class="box tab" id="indZfgg">
                 <div class="hd">
@@ -4197,33 +4081,6 @@
 
                     </ul>
                 </div>
-            </div>
-            <!-- 常务会议 -->
-            <div class="cwhyBox">
-                <a class="picBtn" href="/zw/cwhy"></a>
-                <ul class="indCwhy">
-
-
-                    <li class="first last">
-                        <div class="title">
-                            <a class="tit" href="/zw/cwhy/lzsrmzflccwh/content_106620" title="安州区八届人民政府第16次常务会议公开信息内容">安州区八届人民政府第16次常务会议公开信…</a>
-                        </div>
-                        <div class="con">
-                            <dl>
-                                <dd>
-                                    <label>会议时间：</label>
-                                    <span class="date">2017年7月18日</span>
-                                </dd>
-                                <dd>
-                                    <label>会议摘要：</label>
-                                    <span>第16次常务会议时间：2017年7月18日上午摘要：市委副书记、市长廖雪梅主持召开市八届人民政府第16次常务会议，研究了安州高新区相关项目合作投资协议有关议题。市委常委、常务副市长曹俊杰，副市长马宗慧、丁湘、何…</span>
-                                </dd>
-                            </dl>
-                        </div>
-
-                    </li>
-
-                </ul>
             </div>
             <!-- 新闻发布厅 -->
             <div class="box" id="indXwfb">

@@ -425,6 +425,26 @@
 .newsPage #rowB .boxB .bd{
     height:210px;
 }
+
+.newsPage #rowB .boxB .largStyle{
+    height: 498px;
+}
+.largStyle .dateList li{
+    padding-top: 6px;
+}
+.largStyle .date dt{
+    color:#fb6e52;
+}
+
+.topicList .t .intro{
+    height: 44px;
+    line-height:20px;
+    /*border-bottom: 1px dotted #ccc;*/
+}
+.topicList .t .title{
+    text-align: left;
+}
+
 #tpxw .picPageList li{
     margin-top:7px;
 }
@@ -1073,4 +1093,35 @@
 .deptTable .even{
     background:#F8F8F8;
     border:1px dotted #ccc;
+}
+
+
+.topicList .date {
+    width: 80px;
+    height: 60px;
+    /*background: #F6F6F6;*/
+    text-align: center;
+    color: #999;
+    float: right;
+    margin-right: 0px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    /*border-radius: 2px;*/
+    /*padding: 4px;*/
+}
+.topicList .date dt {
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    background-color: #fb6e52;
+    color: white;
+    padding:0 4px;
+}
+.topicList .date dd {
+    line-height: 32px;
+    height: 30px;
+    background-color: #fbfbfb;
+    color: gray;
+    font-size: 12px;
+    padding:0 4px;
 }

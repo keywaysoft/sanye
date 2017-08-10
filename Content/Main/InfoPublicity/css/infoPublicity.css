@@ -395,25 +395,43 @@
     padding:10px 15px;
     overflow:hidden;
     font-size:12px;
-    height: 211px;
+    height: 300px;
 }
 .indCwhy .title{
-    text-align:center;
+    text-align:left;
     height:40px;
     line-height:40px;
     font-size:18px;
     font-weight:bold;
     overflow:hidden;
 }
-.indCwhy .title a{
-    color:#3269B8
+.indCwhy  dd a{
+    padding: 5px 10px;
+    background-color: #fb6e52;
+    float:right;
+    color: white;
 }
+
+.indCwhy .dd a:hover{
+    color:white !important;
+    background-color: #00b3c8 !important;
+}
+
+
+.indCwhy dl{
+    padding-bottom: 30px;
+}
+.indCwhy .title a{
+    color:#3269B8;
+    height:26px;
+}
+
 .indCwhy dd{
     margin-bottom: 5px;
 }
 .indCwhy dd label{
     background:#fff;
-    font-weight:bold;
+    font-weight:normal;
     color:#3269B8;
     padding:1px 5px;
     display:inline-block;
