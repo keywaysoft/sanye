@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="安州区人民政府门户网站,安州区政府,安州" />
+    <meta name="description" content="安州区人民政府门户网站 安州区  安州政府" />
+    <meta name="application-name" content="安州区人民政府门户网站" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true" />
+
+    <title>走进安州_安州区人民政府门户网站</title>
+
+    <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+
+    <link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
+
+
+    <link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
+    <script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
+    <script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
+    <!--     <script src="/Content/_Common/Base/js/antiClickjack.js"></script> -->
+    <script src="/Content/_Common/Base/js/webCommon.js"></script>
+    <script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
+    <script src="/Content/_Common/Base/js/StoT.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+
+
+    <div class="topBar">
+        <ul class="list">
+            <li class="en"><a href="/english">English</a></li>
+            <li class="phone">
+                <a href="javascript:;">手机版</a>
+                <div class="pic">
+                    <img src="/qrcode/qrcode.gif">
+                    <i></i>
+                </div>
+            </li>
+
+            <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
+
+
+            <li class="wechat">
+                <a href="javascript:;">政务微信</a>
+                <div class="pic">
+                    <img src='/Content/Main/Base/img/weixin.png' />
+                    <i></i>
+                </div>
+            </li>
+            <li class="robot"><a href="/znjqr">智能机器人</a></li>
+        </ul>
+        <span class="topBarBg"></span>
+    </div>
+    <script>
+        $(".topBar li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script>
+
+    <!-- header S -->
+    <header id="header">
+        <div class="headerTop siteWidth">
+
+            <h1 title="安州区人民政府门户网站" id="logo"><a href="http://anxian.my.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
+
+            <div class="siteSearchBar">
+
+
+                <div class="s-form">
+                    <input type="hidden" id="sitelist" value="[{&quot;Name&quot;:&quot;全站群&quot;,&quot;Value&quot;:0},{&quot;Name&quot;:&quot;本站&quot;,&quot;Value&quot;:1},{&quot;Name&quot;:&quot;审计局&quot;,&quot;Value&quot;:2},{&quot;Name&quot;:&quot;农业局&quot;,&quot;Value&quot;:18}]" />
+                    <input type="hidden" id="siteid" name="sid" value="0">
+                    <div class="select-box">
+                        <a id="sOptionBtn" class="s-option" href="javascript:void(0)">全站群</a>
+                        <i class="arrow-dn"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="from-control" id="inputkeyword" placeholder="请输入关键词" spellcheck="false">
+                    </div>
+                    <div class="btn-box">
+                        <input type="submit" id="search" class="btn" onclick="gSearch();" value="搜 索">
+                        <input type="hidden" id="route" value="s" />
+                    </div>
+                </div>
+                <div class="hotWords">
+                    热门搜索：<a target="_blank" href="/s?st=1&wd=环保">环保</a><a target="_blank" href="/s?st=1&wd=生育">生育</a><a target="_blank" href="/s?st=1&wd=农业">农业</a><a target="_blank" href="/s?st=1&wd=医疗">医疗</a><a target="_blank" href="/s?st=1&wd=就业">就业</a>
+                </div>
+
+                <script src="/Content/_Common/FullTextSearch/js/default-site-search-box.js"></script>
+                <script>
+                    document.getElementById("inputkeyword").onkeydown = function (e) {
+                        e = e || window.event;
+                        if (e.keyCode == 13) {
+                            gSearch();
+                        }
+                    };
+
+                    function gSearch() {
+                        var keyword = document.getElementById('inputkeyword').value;
+                        var route = document.getElementById('route').value;
+
+                        if (keyword == '' || keyword == "请输入关键字") {
+                            alert("请输入关键字");
+                        } else {
+                            var siteid = document.getElementById('siteid').value;
+                            window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
+                        }
+                    }
+                </script>
+            </div>
+
+            <nav class="topNav clearfix">
+                <span class="menuBtn"></span>
+
+
+                <ul id="mainNav" class="mainNav">
+                    <li class="li1 first1" id="li-home">
+                        <h3 class="h1">
+                            <a class="a1" href='/'>首页</a>
+                        </h3>
+                    </li>
+
+                    <li class="li1 hasUl1" id="li-xw">
+                        <h3 class="h1">
+                            <a class="a1" href="/xw">政务动态</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-zw">
+                        <h3 class="h1">
+                            <a class="a1" href="/zw">政务公开</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-fw">
+                        <h3 class="h1">
+                            <a class="a1" href="/fw">政务服务</a></h3>
+                    </li>
+                    <li class="li1 hasUl1" id="li-hd">
+                        <h3 class="h1">
+                            <a class="a1" href="/hd">公众参与</a></h3>
+                    </li>
+                    <li class="li1 hasUl1 on1" id="li-sq">
+                        <h3 class="h1">
+                            <a class="a1" href="/sq">走进安州</a></h3>
+                    </li>
+                </ul>
+
+                <script type="text/javascript">
+                    (function () {
+                        var navST;
+                        var navST1;
+                        var name = 'mainNav';
+                        var t = 200;
+                        var type = 1;
+                        var removeOn = 'False';
+                        var effect = 'fade';
+                        var appendItem = '#';
+                        var li = "#" + name + " li";
+                        var index = 0;
+
+                        if (!$("#" + name + " .li1").hasClass("on1")) {
+                            $("#" + name + " .li1").first().addClass("on1");
+                        } //默认第一个加.on1类
+                        index = $("#" + name + " .li1").index($("#" + name + " .on1"));
+
+                        //鼠标离开导航后，回复默认.on1类位置
+                        $("#" + name)
+                            .hover(
+                                function () {
+                                    if (navST1 != null) {
+                                        clearTimeout(navST1);
+                                    }
+                                },
+                                function () {
+                                    navST1 = setTimeout(function () {
+                                            $("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
+                                        },
+                                        500);
+                                }
+                            );
+
+                        if (type == '1') {
+                            li = "#" + name + " .li1";
+                        }
+                        if (appendItem != '#') { //插入内容
+                            var appendHtml = $(appendItem).html();
+                            $(li).first().append(appendHtml);
+                            $(appendItem).remove();
+                        }
+
+                        if (type == '3') {
+                            $("#" + name + " .on1").find("ul").first().show();
+                        }
+
+                        $(li)
+                            .hover(function () {
+                                    var curItem = $(this);
+                                    var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+                                    $(li).removeClass("on" + onNum);
+                                    curItem.addClass("on" + onNum);
+                                    navST = setTimeout(function () { //延时触发
+
+                                            if ($("ul:first", curItem).css("display") != "block") {
+                                                $(li + " .ul" + onNum).hide();
+                                                if (effect == 'fade') {
+                                                    $("ul:first", curItem).fadeIn(t);
+                                                } else {
+                                                    $("ul:first", curItem).slideDown(t);
+                                                }
+                                            };
+                                            navST = null;
+                                        },
+                                        t);
+                                },
+                                function () {
+                                    if (navST != null) {
+                                        clearTimeout(navST);
+                                    }
+                                    if (type == '1' || type == '2') {
+                                        if (effect == 'fade') {
+                                            $(this).find("ul").first().fadeOut(t);
+                                        } else {
+                                            $(this).find("ul").first().slideUp(t);
+                                        }
+                                    }
+                                    if (removeOn == 'True') {
+                                        $(this).removeClass("on1");
+                                    }
+                                },
+                                t); //end hover
+                    })()
+                </script>
+
+            </nav>
+            <script>
+                $(".topNav .h1").prepend("<i></i>")
+            </script>
+        </div>
+    </header>
+    <!-- header E -->
+
+    <!-- content S -->
+    <div id="content">
+        <div class="path">
+            <em>您的位置：</em><a href="/">首页</a>
+            &gt;<a href="/sq">走进安州</a></div>
+        <!-- aboutUs-rowA S -->
+        <div class="row" id="aboutUs-rowA">
+            <img src="/Content/Main/Base/img/about_gk.png" style="display: block; margin: 0 100px -110px auto ;">
+            <!-- 焦点图 -->
+            <div class="focusBox" id="zmlz">
+                <div class="bd">
+                    <ul>
+                        <li>
+                            <div class="pic"><img src='/Content/Main/Base/img/aboutUs/pic1.jpg' /></div>
+                            <div class="con">
+                                <h3 class="title">安州--国家卫生城市</h3>
+                                <span class="titleBg"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic"><img src='/Content/Main/Base/img/aboutUs/pic2.jpg' /></div>
+                            <div class="con">
+                                <h3 class="title">安州--全国双拥模范城</h3>
+                                <span class="titleBg"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic"><img src='/Content/Main/Base/img/aboutUs/pic3.jpg' /></div>
+                            <div class="con">
+                                <h3 class="title">安州--国家森林城市</h3>
+                                <span class="titleBg"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic"><img src='/Content/Main/Base/img/aboutUs/pic4.jpg' /></div>
+                            <div class="con">
+                                <h3 class="title">安州--国家优秀旅游城市</h3>
+                                <span class="titleBg"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic"><img src='/Content/Main/Base/img/aboutUs/pic5.jpg' /></div>
+                            <div class="con">
+                                <h3 class="title">安州--国家历史文化名城</h3>
+                                <span class="titleBg"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hd">
+                    <ul></ul>
+                </div>
+            </div>
+            <script> $(".focusBox").slide({ mainCell: ".bd ul", titCell:".hd ul", effect: "fold", autoPlay: true, vis: 1, autoPage:"<li></li>", interTime: 3500 });</script>
+            <div class="lzIntro">
+                绵阳市安州区，幅员面积1189平方公里，辖18个乡镇234个行政村27个社区，总人口44.9万人，其中农业人口32.2万人、非农业人口12.7万人。是中国宜居宜业典范县、中国经济发展转型示范县、国家农产品质量安全县、国家级杂交水稻制种基地县、全国粮食生产先进单位、国家义务教育发展基本均衡县、全国基层中医药工作先进县、全国科技进步先进县、四川省扩权强县试点县、四川省县域经济发展先进县、四川省法治宣传教育先进县、四川省绿化模范县、四川省维护社会稳定先进县、四川省乡村旅游示范县。2015年，安州县域经济发展综合评价排名位列全省第67位，比2014年上升7位。2016年，全区实现地区生产总值117.95亿元，同比增长8.4%；规上工业总产值219.66亿元，工业增加值增速达10.5%；地方公共财政预算收入5.67亿元，同比增长9.05%…
+            </div>
+        </div>
+        <!-- aboutUs-rowA E -->
+
+        <ul class="aboutUs-iconBtns clearfix">
+            <li class="li1 on">
+                <a href="/sq/zjlz/lzls"><i></i><s></s><p>历史沿革</p></a>
+            </li>
+            <li class="li2">
+                <a href="/sq/zjlz/jbqk"><i></i><s></s><p>安州概况</p></a>
+            </li>
+            <li class="li3">
+                <a href="/sq/zjlz/zrgk"><i></i><s></s><p>安州人文</p></a>
+            </li>
+            <li class="li4">
+                <a href="/sq/zjlz/hygk"><i></i><s></s><p>安州年鉴</p></a>
+            </li>
+            <li class="li5">
+                <a href="/sq/zjlz/cwlc"><i></i><s></s><p>安州旅游</p></a>
+            </li>
+            <li class="li6">
+                <a href="/sq/zjlz/lzzy"><i></i><s></s><p>招商引资</p></a>
+            </li>
+            <li class="li7 last">
+                <a href="http://www.lzghj.gov.cn/guihuachengguo/"><i></i><s></s><p>安州地图</p></a>
+            </li>
+        </ul>
+        <script>
+            $(".aboutUs-iconBtns li").hover(function(){
+                $(this).addClass("on").siblings().removeClass("on")
+            })
+        </script>
+
+        <!-- aboutUs-rowB S -->
+        <div class="row" id="aboutUs-rowB">
+            <!-- 旅游安州 -->
+            <div class="aboutUsBox" id="lylz">
+                <div class="hd"></div>
+                <div class="bd">
+                    <ul class="lylzList animate-scaleX">
+
+
+
+                        <li class="li1 first">
+                            <a class="tit" href="http://www.mysta.gov.cn/lz-ddl.html" target="_blank" title="抵达安州">抵达安州</a>
+                        </li>
+                        <li class="li2">
+                            <a class="tit" href="http://www.mysta.gov.cn/lz-hotel.html" target="_blank" title="宾馆酒店">宾馆酒店</a>
+                        </li>
+                        <li class="li3">
+                            <a class="tit" href="http://www.mysta.gov.cn/scenic-list.html" target="_blank" title="景点大全">景点大全</a>
+                        </li>
+                        <li class="li4">
+                            <a class="tit" href="http://www.mysta.gov.cn/visited-route.html" target="_blank" title="旅游线路">旅游线路</a>
+                        </li>
+                        <li class="li5">
+                            <a class="tit" href="http://www.mysta.gov.cn/food-list.html" target="_blank" title="安州美食">安州美食</a>
+                        </li>
+                        <li class="li6 last">
+                            <a class="tit" href="http://www.mysta.gov.cn/lz-tc.html" target="_blank" title="旅游特产">旅游特产</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 发展安州 -->
+            <div class="aboutUsBox" id="fzlz">
+                <div class="hd"></div>
+                <div class="bd">
+                    <dl>
+                        <dt>
+                        <ul>
+
+
+
+                            <li class="li1 first">
+                                <a class="tit" href="/sq/fzlz/fzgk" title="发展概况">发展概况</a>
+                            </li>
+                            <li class="li2">
+                                <a class="tit" href="/sq/fzlz/fzgh2282" title="发展规划">发展规划</a>
+                            </li>
+                            <li class="li3">
+                                <a class="tit" href="/sq/fzlz/yhhz" title="友好合作">友好合作</a>
+                            </li>
+                            <li class="li4">
+                                <a class="tit" href="/sq/fzlz/sewgh" title="“十三五”规划">“十三五”规划</a>
+                            </li>
+                            <li class="li5">
+                                <a class="tit" href="/sq/fzlz/tjsj2285" title="统计数据">统计数据</a>
+                            </li>
+                            <li class="li6 last">
+                                <a class="tit" href="/sq/fzlz/jjfz2286" title="经济发展">经济发展</a>
+                            </li>
+
+                        </ul>
+                        </dt>
+                        <dd>
+                            <ul class="list">
+
+
+
+                                <li class="first">
+                                    <a href="/sq/fzlz/fzgk/content_8424" target="_blank" title="标题：安州区2015年国民经济和社会发展统计公报
+点击数：440
+发表时间：2016-04-13">
+                                        安州区2015年国民经济和社会发展统…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/fzgk/content_90617" target="_blank" title="标题：项目建设 挺起安州城市经济发展脊梁
+点击数：423
+发表时间：2016-03-07">
+                                        项目建设 挺起安州城市经济发展脊梁
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/fzgk/content_90616" target="_blank" title="标题：建成区域中心城市 安州发展看得见
+点击数：432
+发表时间：2016-03-07">
+                                        建成区域中心城市 安州发展看得见
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/fzgk/content_90209" target="_blank" title="标题：安州旅游资源
+点击数：279
+发表时间：2016-02-14">
+                                        安州旅游资源
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/fzgk/content_89920" target="_blank" title="标题：川南城际、渝昆高铁 这些客运铁路途经安州
+点击数：367
+发表时间：2016-01-21">
+                                        川南城际、渝昆高铁 这些客运铁路…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/fzgk/content_89919" target="_blank" title="标题：加快建成区域中心 安州开启大城时代
+点击数：422
+发表时间：2016-01-21">
+                                        加快建成区域中心 安州开启大城时代
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <a href="/sq/fzlz/fzgk/content_89898" target="_blank" title="标题：安州区概况
+点击数：544
+发表时间：2016-01-20">
+                                        安州区概况
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="list">
+
+
+
+                                <li class="first">
+                                    <a href="http://anxian.my.gov.cn/publicity/subject017/subject1124/60490" target="_blank" title="标题：安州区区域卫生规划（2016-2020）
+点击数：0
+发表时间：2017-07-20">
+                                        安州区区域卫生规划（2016-2020）
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://anxian.my.gov.cn/publicity_dept21/subject01/subject13/60105" target="_blank" title="标题：关于印发《安州区医疗机构设置规划（2017-2020年）》的通知
+点击数：0
+发表时间：2017-07-20">
+                                        关于印发《安州区医疗机构设置规划…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/fzgh2282/content_101729" target="_blank" title="标题：“安州老城有机更新概念规划”通过评审 将打造中国“山水城市”典范
+点击数：151
+发表时间：2017-05-08">
+                                        “安州老城有机更新概念规划”通过…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/fzgh2282/content_12582" target="_blank" title="标题：《西部大开发“十三五”规划》确定安州为长江—川藏通道西段节点城市
+点击数：130
+发表时间：2017-02-16">
+                                        《西部大开发“十三五”规划》确定…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/fzgh2282/content_100220" target="_blank" title="标题：安州区国民经济和社会发展第十三个五年规划纲要
+点击数：1728
+发表时间：2016-07-27">
+                                        安州区国民经济和社会发展第十三个…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/fzgh2282/content_91080" target="_blank" title="标题：《安州国家高新区江南科技产业园、纳溪科技园控制性详细规 划（2015—2030）》通过评审
+点击数：349
+发表时间：2016-04-06">
+                                        《安州国家高新区江南科技产业园、…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <a href="/sq/fzlz/fzgh2282/content_8051" target="_blank" title="标题：将黄土镇打造成川滇黔渝结合部现代商贸物流中心
+点击数：293
+发表时间：2016-03-16">
+                                        将黄土镇打造成川滇黔渝结合部…
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="list">
+
+
+
+                                <li class="first">
+                                    <a href="/sq/fzlz/yhhz/content_112947" target="_blank" title="标题：安州区及安州区与长虹集团项目签约仪式在安州举行
+点击数：37
+发表时间：2017-07-28">
+                                        安州区及安州区与长虹集团项目签…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/yhhz/content_106912" target="_blank" title="标题：安州区政府与盐田港集团签署合作协议
+点击数：92
+发表时间：2017-07-21">
+                                        安州区政府与盐田港集团签署合作协议
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/yhhz/content_106510" target="_blank" title="标题：安州国家高新区与迪信通科技集团有限公司签署合作协议
+点击数：110
+发表时间：2017-07-17">
+                                        安州国家高新区与迪信通科技集团有…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/yhhz/content_106472" target="_blank" title="标题：四川自贸区成都青白江铁路港片区与川南临港片区签署战略合作协议
+点击数：104
+发表时间：2017-07-14">
+                                        四川自贸区成都青白江铁路港片区与…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/yhhz/content_106344" target="_blank" title="标题：深化区域合作 毕节金海湖新区与川南临港片区签订战略合作协议
+点击数：102
+发表时间：2017-07-11">
+                                        深化区域合作 毕节金海湖新区与川…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/yhhz/content_103149" target="_blank" title="标题：安州区政府与天津银行成都分行签署金融扶贫开发战略合作协议
+点击数：105
+发表时间：2017-06-23">
+                                        安州区政府与天津银行成都分行签署…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <a href="/sq/fzlz/yhhz/content_102970" target="_blank" title="标题：北京航空航天大学安州研究院6月15日正式挂牌成立
+点击数：105
+发表时间：2017-06-16">
+                                        北京航空航天大学安州研究院6月15…
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="list">
+
+
+
+                                <li class="first">
+                                    <a href="http://anxian.my.gov.cn/publicity/subject03/subject121/52207" target="_blank" title="标题：中国制造2025安州行动方案
+点击数：0
+发表时间：2017-07-20">
+                                        中国制造2025安州行动方案
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://anxian.my.gov.cn/publicity/subject03/subject121/58079" target="_blank" title="标题：安州区“十三五”工业和信息化发展规划
+点击数：0
+发表时间：2017-07-20">
+                                        安州区“十三五”工业和信息化发展…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://anxian.my.gov.cn/publicity/subject017/subject1124/60490" target="_blank" title="标题：安州区区域卫生规划（2016-2020）
+点击数：0
+发表时间：2017-07-20">
+                                        安州区区域卫生规划（2016-2020）
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="http://anxian.my.gov.cn/publicity/subject017/subject1124/60490" target="_blank" title="标题：安州区人民政府关于印发安州区残疾人事业“十三五”发展纲要的通知
+点击数：0
+发表时间：2017-07-11">
+                                        安州区人民政府关于印发安州区残疾…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/sewgh/content_12583" target="_blank" title="标题：《西部大开发“十三五”规划》确定安州为长江—川藏通道西段节点城市
+点击数：116
+发表时间：2017-02-16">
+                                        《西部大开发“十三五”规划》确定…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/sewgh/content_100219" target="_blank" title="标题：安州区国民经济和社会发展第十三个五年规划纲要
+点击数：1702
+发表时间：2016-07-27">
+                                        安州区国民经济和社会发展第十三个…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <a href="/sq/fzlz/sewgh/content_90619" target="_blank" title="标题：[图说]安州十三五发展主要目标
+点击数：306
+发表时间：2016-03-07">
+                                        [图说]安州十三五发展主要目标
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="list">
+
+
+
+                                <li class="first">
+                                    <a href="/sq/fzlz/tjsj2285/content_106773" target="_blank" title="标题：安州区投资高速增长继续领跑全川
+点击数：106
+发表时间：2017-07-19">
+                                        安州区投资高速增长继续领跑全川
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/tjsj2285/content_106769" target="_blank" title="标题：我市经济增长完成“双过半”目标任务
+点击数：96
+发表时间：2017-07-19">
+                                        我市经济增长完成“双过半”目标任务
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/tjsj2285/content_106615" target="_blank" title="标题：1-6月  安州区公共资源交易206.46亿元
+点击数：117
+发表时间：2017-07-18">
+                                        1-6月  安州区公共资源交易206.46…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/tjsj2285/content_106394" target="_blank" title="标题：今年上半年安州CPI同比上涨1.9%
+点击数：117
+发表时间：2017-07-12">
+                                        今年上半年安州CPI同比上涨1.9%
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/tjsj2285/content_106318" target="_blank" title="标题：2017年上半年 安州口岸进境集装箱总量同比增长近四成
+点击数：124
+发表时间：2017-07-11">
+                                        2017年上半年 安州口岸进境集装箱…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/tjsj2285/content_106279" target="_blank" title="标题：2017上半年安州审批核准备案项目954个 总投资达1266亿
+点击数：134
+发表时间：2017-07-10">
+                                        2017上半年安州审批核准备案项目95…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <a href="/sq/fzlz/tjsj2285/content_100000" target="_blank" title="标题：1-5月安州工业增长11.2%
+点击数：144
+发表时间：2017-06-23">
+                                        1-5月安州工业增长11.2%
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="list">
+
+
+
+                                <li class="first">
+                                    <a href="/sq/fzlz/jjfz2286/content_113165" target="_blank" title="标题：桑枣镇第十七届人大常委会第五次会议召开
+点击数：3
+发表时间：2017-08-01">
+                                        桑枣镇第十七届人大常委会第五次会…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/jjfz2286/content_113171" target="_blank" title="标题：安州区召开县委中心组环保专题学习会
+点击数：3
+发表时间：2017-08-01">
+                                        安州区召开县委中心组环保专题学习会
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/jjfz2286/content_113186" target="_blank" title="标题：助力大学生创业 科技创新类项目可获创业启动资金资助
+点击数：3
+发表时间：2017-08-01">
+                                        助力大学生创业 科技创新类项目可…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/jjfz2286/content_113079" target="_blank" title="标题：全省深化统计管理体制改革座谈会在安州召开
+点击数：30
+发表时间：2017-07-31">
+                                        全省深化统计管理体制改革座谈会在…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/jjfz2286/content_113072" target="_blank" title="标题：辽安产业合作园区召开&quot;自贸红利、区域共享&quot;对接会
+点击数：31
+发表时间：2017-07-31">
+                                        辽安产业合作园区召开"自贸…
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="/sq/fzlz/jjfz2286/content_113065" target="_blank" title="标题：廖雪梅率队督导安州区环境保护突出问题
+点击数：32
+发表时间：2017-07-31">
+                                        廖雪梅率队督导安州区环境保护突出问题
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="last">
+                                    <a href="/sq/fzlz/jjfz2286/content_113060" target="_blank" title="标题：廖雪梅率队督导安州桑枣镇和乐兴镇环保突出问题
+点击数：35
+发表时间：2017-07-31">
+                                        廖雪梅率队督导安州桑枣镇和乐兴镇环…
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <script> $("#fzlz").slide({ mainCell: "dd", titCell:"dt li", vis: 1, delayTime:0 });</script>
+            <!-- 投资安州 -->
+            <div class="aboutUsBox" id="tzlz">
+                <div class="hd"></div>
+                <div class="bd">
+                    <ul class="tzlzList animate-scaleX">
+
+
+
+                        <li class="li1 first">
+                            <a class="tit" href="http://www.lzzsj.gov.cn/recommend/" target="_blank" title="投资环境">投资环境</a>
+                        </li>
+                        <li class="li2">
+                            <a class="tit" href="http://www.lzzsj.gov.cn/invest/touzichengben/" target="_blank" title="投资成本">投资成本</a>
+                        </li>
+                        <li class="li3">
+                            <a class="tit" href="http://www.lzzsj.gov.cn/project/" target="_blank" title="项目推荐">项目推荐</a>
+                        </li>
+                        <li class="li4 last">
+                            <a class="tit" href="http://www.lzzsj.gov.cn/invest/service/" target="_blank" title="投资服务">投资服务</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(".lylzList li a,.tzlzList li a,#fzlz dt li").prepend("<i></i>")
+        </script>
+        <!-- aboutUs-rowB E -->
+
+        <!-- aboutUs-rowC S -->
+        <div class="row" id="aboutUs-rowC">
+            <div class="hd">
+                <h3><a href="/sq/lylz/csfm">图说安州</a></h3>
+                <i></i>
+            </div>
+            <div class="bd">
+                <ul class="video">
+
+
+
+
+                    <li class="first last">
+
+                        <div class="pic">
+                            <a href="/sq/lzxxxcp/content_4" target="_blank" title="标题：安州形象宣传片
+点击数：254
+发表时间：2017-05-26">
+                                <img alt="安州形象宣传片" src="/content/main/base/img/aboutus/video_500_370.jpg" width="500" height="370" />
+                            </a>
+                        </div>
+
+                        <div class="title">
+                            <a href="/sq/lzxxxcp/content_4" target="_blank" title="标题：安州形象宣传片
+点击数：254
+发表时间：2017-05-26">安州形象宣传片</a>
+                        </div>
+                        <span class="titleBg"></span>
+                        <i></i>
+                    </li>
+
+
+                    <!--                 <li>
+                                        <div class="pic">
+                                            <img src='~/Content/Main/Base/img/aboutUs/video.jpg' />
+                                        </div>
+                                        <h3 class="title">安州形象宣传片</h3>
+                                        <span class="titleBg"></span>
+                                        <i></i>
+                                    </li> -->
+                </ul>
+                <ul class="csfmList">
+
+
+
+
+                    <li class="first">
+
+                        <div class="pic">
+                            <a href="/sq/lylz/csfm/content_71" target="_blank" title="标题：安州夜景
+点击数：245
+发表时间：2017-07-12">
+                                <img alt="安州夜景" src="/upload/main/contentmanage/photo/201707121600449401_390_185.jpg" width="390" height="185" />
+                            </a>
+                        </div>
+
+                        <div class="title">
+                            <a href="/sq/lylz/csfm/content_71" target="_blank" title="标题：安州夜景
+点击数：245
+发表时间：2017-07-12">安州夜景</a>
+                        </div>
+                        <span class="titleBg"></span>
+
+                    </li>
+
+
+
+
+                    <li>
+
+                        <div class="pic">
+                            <a href="/sq/lylz/csfm/content_73" target="_blank" title="标题：城镇新村
+点击数：190
+发表时间：2017-05-12">
+                                <img alt="城镇新村" src="/upload/main/contentmanage/photo/201707121702363003_278_185.jpg" width="278" height="185" />
+                            </a>
+                        </div>
+
+                        <div class="title">
+                            <a href="/sq/lylz/csfm/content_73" target="_blank" title="标题：城镇新村
+点击数：190
+发表时间：2017-05-12">城镇新村</a>
+                        </div>
+                        <span class="titleBg"></span>
+
+                    </li>
+
+
+
+
+                    <li>
+
+                        <div class="pic">
+                            <a href="/sq/lylz/csfm/content_74" target="_blank" title="标题：交通港口
+点击数：171
+发表时间：2017-05-11">
+                                <img alt="交通港口" src="/upload/main/contentmanage/photo/201707121718138921_246_185.jpg" width="246" height="185" />
+                            </a>
+                        </div>
+
+                        <div class="title">
+                            <a href="/sq/lylz/csfm/content_74" target="_blank" title="标题：交通港口
+点击数：171
+发表时间：2017-05-11">交通港口</a>
+                        </div>
+                        <span class="titleBg"></span>
+
+                    </li>
+
+
+
+
+                    <li class="last">
+
+                        <div class="pic">
+                            <a href="/sq/lylz/csfm/content_34" target="_blank" title="标题：安州远景
+点击数：241
+发表时间：2017-03-24">
+                                <img alt="安州远景" src="/upload/main/contentmanage/photo/201707121556376150_422_185.jpg" width="422" height="185" />
+                            </a>
+                        </div>
+
+                        <div class="title">
+                            <a href="/sq/lylz/csfm/content_34" target="_blank" title="标题：安州远景
+点击数：241
+发表时间：2017-03-24">安州远景</a>
+                        </div>
+                        <span class="titleBg"></span>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- aboutUs-rowC E -->
+    </div><!-- content E -->
+
+
+
+    <!-- footer S -->
+    <footer id="footer">
+        <div class="siteWidth">
+            <div class="footNav">
+
+
+
+                <a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
+                <a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
+                <a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
+                <a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
+                <a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
+                <a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
+
+            </div>
+            <div class="copyRight"><p>
+                安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br/>地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br/>蜀ICP备12001441号<br/> &nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1"/>川公网安备 51070302110201号</a>
+            </p>
+                <div class="pics">
+                    <a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg"/></a> &nbsp;&nbsp;<script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg"/></a> &nbsp;&nbsp;<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png"/></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer E -->
+
+    <!-- 侧栏固定菜单 -->
+    <ul class="sideFixed" style="display:none">
+        <li class="wza"><a target="blank" target="_blank" href="/wca.html" title="无障碍版"></a></li>
+        <li class="jqr"><a target="blank" href='/znjqr' title="智能机器人"></a></li>
+        <li class="sj">
+            <a href="javascript:void(0);" title="手机版"></a>
+            <div class="pic">
+                <img src="/qrcode/qrcode.gif" />
+                <i></i>
+            </div>
+        </li>
+        <li class="wb"><a target="blank" href='http://weibo.com/luzhouzhengwu' title="政务微博"></a></li>
+        <li class="wx">
+            <a href="javascript:void(0);" title="政务微信"></a>
+            <div class="pic">
+                <img src='/Content/Main/Base/img/weixin.png' />
+                <i></i>
+            </div>
+        </li>
+        <li class="db"><a href="#" title="返回顶部"></a></li>
+    </ul>
+    <script>
+        $(".sideFixed li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
+    </script></div>
+<script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
+<script src="/Content/_Common/Base/js/power.js"></script>
+
+
+
+</body>
+</html>

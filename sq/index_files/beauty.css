@@ -1,0 +1,1306 @@
+﻿@charset "UTF-8";
+
+/* yui3 reset.css */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before,
+q:after {
+    content: "";
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%;
+}
+
+legend {
+    color: #000;
+}
+
+iframe {
+    display: block;
+}
+
+
+/* yui3 fonts */
+
+body {
+    color: #333;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+}
+
+select,
+input,
+button,
+textarea {
+    font: 99% arial, helvetica, clean, sans-serif;
+}
+
+table {
+    font-size: inherit;
+    font: 100%;
+}
+
+pre,
+code,
+kbd,
+samp,
+tt {
+    font-family: monospace;
+    *font-size: 108%;
+    line-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* utilities */
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.l {
+    float: left !important;
+}
+
+.r {
+    float: right !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+    body {
+        min-width: 1200px;
+    }
+}
+
+
+/* 侧边导航 */
+
+#side-nav {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    width: 150px;
+    z-index: 99999;
+}
+
+.ewb-nav-list {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    right: 0;
+    margin-top: -248px;
+    width: 100%;
+    height: 496px;
+    overflow: hidden;
+}
+
+.ewb-side-node,
+.ewb-side-first {
+    padding: 10px 0;
+    height: 48px;
+    line-height: 48px;
+    vertical-align: top;
+}
+
+.ewb-side-node a {
+    float: right;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ewb-side-first {
+    height: 69px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.ewb-side-first a {
+    display: block;
+    float: right;
+    padding-top: 9px;
+    height: 60px;
+    color: #fff;
+    width: 55px;
+    font-size: 16px;
+    background: url(../images/side_bg1.png) no-repeat;
+}
+
+.ewb-side-first a:hover {
+    background-image: url(../images/side_bg1h.png);
+}
+
+.ewb-side-a2 {
+    background: url(../images/side_bg2.png) no-repeat;
+}
+
+.ewb-side-a2:hover,
+.ewb-side-node.active .ewb-side-a2 {
+    background: url(../images/side_bg2h.png) no-repeat;
+}
+
+.ewb-side-a3 {
+    background: url(../images/side_bg3.png) no-repeat;
+}
+
+.ewb-side-a3:hover,
+.ewb-side-node.active .ewb-side-a3 {
+    background: url(../images/side_bg3h.png) no-repeat;
+}
+
+.ewb-side-a4 {
+    background: url(../images/side_bg4.png) no-repeat;
+}
+
+.ewb-side-a4:hover,
+.ewb-side-node.active .ewb-side-a4 {
+    background: url(../images/side_bg4h.png) no-repeat;
+}
+
+.ewb-side-a5 {
+    background: url(../images/side_bg5.png) no-repeat;
+}
+
+.ewb-side-a5:hover,
+.ewb-side-node.active .ewb-side-a5 {
+    background: url(../images/side_bg5h.png) no-repeat;
+}
+
+.ewb-side-a6 {
+    background: url(../images/side_bg6.png) no-repeat;
+}
+
+.ewb-side-a6:hover,
+.ewb-side-node.active .ewb-side-a6 {
+    background: url(../images/side_bg6h.png) no-repeat;
+}
+
+.ewb-side-a7 {
+    background: url(../images/side_bg7.png) no-repeat;
+}
+
+.ewb-side-a7:hover,
+.ewb-side-node.active .ewb-side-a7 {
+    background: url(../images/side_bg7h.png) no-repeat;
+}
+
+.ewb-side-node a span {
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 0;
+    padding-left: 60px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ewb-side-node a:hover,
+.ewb-side-node.active a {
+    width: 150px;
+}
+
+
+/* 区情首页 */
+
+.ewb-container2 {
+    width: 1200px;
+    margin: 0 auto;
+    position:relative;
+}
+
+@media(max-width: 1230px) {
+    .ewb-container2 {
+        width: 98%;
+        margin: 0 auto;
+    }
+}
+
+.ewb-section{
+    position: relative;
+    background-size: cover;
+    min-height:740px;
+}
+
+.ewb-section-box{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 600px;
+    margin-top: -300px;
+}
+
+.logo{
+    position:absolute;
+    top:54px;
+    width:100%;
+}
+
+.ewb-section.ewb-section-bg1 {
+    /* height: 746px;
+    padding-top: 334px; */
+    /* height: 1080px; */
+    background: url(../images/1/beauty_bg1.png) center top no-repeat;
+    background-size:cover;
+    /* background: url(../images/beauty_bg1.jpg) center top no-repeat; */
+}
+
+.ewb-bg1{ display:block; margin:110px auto 0;}
+
+@media(max-width: 1200px) {
+    /* .ewb-bg1 {
+        display: block;
+    } */
+    .ewb-section.ewb-section-bg1 {
+        height: auto;
+    }
+}
+
+.ewb-section-bg2 {
+    background: url(../images/2/beauty_bg2.png) center top no-repeat;
+}
+
+.ewb-section-bg3 {
+    background: url(../images/3/beauty_bg3.png) center top no-repeat;
+}
+
+.ewb-section-bg4 {
+    background: url(../images/4/beauty_bg4.png) center top no-repeat;
+}
+
+.ewb-section-bg5 {
+    background: url(../images/5/beauty_bg5.png) center top no-repeat;
+}
+
+.ewb-section-bg6 {
+    background: url(../images/beauty_bg6.jpg) center top no-repeat;
+}
+
+.ewb-first-title {
+    display: block;
+    margin: 0 auto;
+}
+
+.ewb-down-arrow {
+    display: block;
+    width: 625px;
+    height: 29px;
+    position: absolute;
+    left: 50%;
+    margin-left: -312px;
+    bottom: 30px;
+    background: url(../images/next_bg1.png) no-repeat;
+}
+
+.ewb-down-arrow.odd {
+    background-image: url(../images/next_bg2.png);
+}
+
+
+/* 湘潭简介 */
+
+.ewb-info-title {
+    position:absolute;
+    top:-70px;
+    width:100%;
+}
+
+.ewb-intro {
+    padding-top: 10px;
+}
+
+.ewb-map {
+    width: 815px;
+    float: left;
+}
+
+.ewb-map-img {
+    float: left;
+    position: relative;
+}
+
+.ewb-map-copy {
+    min-height: 168px;
+    margin-top: -5px;
+}
+
+.ewb-region-name {
+    font-size: 14px;
+    display: block;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.ewb-region-name.hover {
+    color: #f00;
+}
+
+#xxs {
+    left: 80px;
+    top: 100px;
+}
+
+#sss {
+    left: 115px;
+    top: 62px;
+}
+
+#xts {
+    left: 182px;
+    top: 140px;
+}
+
+#yhq {
+    left: 200px;
+    top: 70px;
+}
+
+#ytq {
+    left: 216px;
+    top: 88px;
+}
+.ewb-map{ margin-top:49px;}
+.ewb-map-info {
+    margin-left: 335px;
+    overflow: hidden;
+}
+
+.ewb-intro-items {
+    margin: 0 -18px;
+    padding-top: 5px;
+}
+
+.ewb-map-info p {
+    line-height: 30px;
+    text-align:justify;
+    text-indent: 2em;
+}
+
+.ewb-intro-item {
+    width: 33.33%;
+    *width: 33.2%;
+    float: left;
+    height: 34px;
+    margin-top: 10px;
+}
+
+.ewb-intro-item a {
+    display: block;
+    margin: 0 18px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #c01a1b;
+    text-align: center;
+    background: url(../images/intro_icon.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.ewb-intro-item a:hover {
+    background-image: url(../images/intro_iconh.png);
+}
+
+.ewb-intro-item a.ewb-hover {
+    background-image: url(../images/intro_iconh.png);
+}
+
+.ewb-radio-box {
+    width: 350px;
+    float: right;
+}
+.ewb-radio{ margin-top:18px;}
+.ewb-radio img {
+    vertical-align: top;
+}
+
+@media(max-width: 1200px) {
+    .ewb-map {
+        width: 68%;
+    }
+    .ewb-map-info {
+        margin-left: 310px;
+    }
+    .ewb-map-copy {
+        min-height: auto;
+    }
+    .ewb-map-p p {
+        line-height: 24px;
+    }
+}
+
+@media(max-width: 978px) {
+    .ewb-map-p p {
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .ewb-intro-items {
+        padding-top: 0;
+        margin: 0 -5px;
+    }
+    .ewb-intro-item {
+        margin-top: 5px;
+    }
+    .ewb-intro-item a {
+        margin: 0 5px;
+    }
+}
+
+
+/* @media(max-width: 1200px){
+    .ewb-map img{
+        height: 262px;
+    }
+
+    .ewb-intro-copy{
+        width: 40.5%;
+        margin-left: 2%;
+        font-size: 12px;
+    }
+
+    .ewb-intro-copy p{
+        line-height: 26px;
+    }
+
+    .ewb-intro-items{
+        padding: 0;
+        margin: 0 -5px;
+    }
+
+    .ewb-intro-item a{
+        margin: 0 5px;
+    }
+} */
+
+
+/* 城市名片 */
+
+.ewb-card {
+    margin-top: 52px;
+}
+
+.ewb-card-hd {
+    /* width: 155px;
+    height: 158px; */
+    float: left;
+}
+
+.ewb-card-hd a {
+    display: block;
+}
+
+.ewb-card-hd a img {
+    vertical-align: top;
+}
+
+.ewb-card-bd {
+    overflow: hidden;
+}
+
+.ewb-card-bd li{ float:left; margin-left:83px; position:relative;}
+
+.ewb-card-bd li span{ position:absolute; right:0; top:10%; width:1px; height:80%; background-color:#643524;}
+
+.ewb-card-bd li .i2{ margin:0 46px 0 20px;}
+
+.ewb-card-items {
+    margin: 0 -12px;
+}
+
+.ewb-card-item a {
+    display: block;
+    margin: 0 12px;
+    background: #fff;
+}
+
+.ewb-card-item a img {
+    display: block;
+    width: 100%;
+    height: 113px;
+}
+
+.ewb-card-item a span {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+    color: #333;
+    font-family: "SimSun";
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* 城市名片 */
+
+.wb-marquee {
+    height: 219px;
+}
+
+.wb-marquee-items {
+    height: 219px;
+}
+
+.wb-marquee-items li {
+    width: 209px;
+    height: 219px;
+    float: left;
+    text-align: center;
+}
+
+
+/* 湘潭概况 */
+
+.ewb-info-title-gk{
+    text-align:center;
+}
+
+.ewb-survey {
+    width:1152px;
+    height: 60px;
+    margin:0 auto;
+    position: relative;
+    background:url(../images/3/tab_bg.png) no-repeat center;
+}
+
+.ewb-survey-hd {
+    float: left;
+    width: 108.5px;
+    margin:5px 0 0 105px;
+}
+
+.ewb-survey-hd-1 {
+    margin-left:97px;
+}
+
+.ewb-survey-tt {
+    display: block;
+    position: relative;
+}
+
+.ewb-survey-tt a {
+    display: block;
+    height: 50px;
+    line-height:50px;
+    font-size: 18px;
+    text-align: center;
+    color: #3c3b40;
+}
+
+.ewb-survey-tt.current a {
+    background: #3c3b40;
+    color: #fff;
+}
+
+.ewb-survey-icon {
+    display: none;
+    position: absolute;
+    width: 19px;
+    height: 8px;
+    left: 50%;
+    margin-left: -10px;
+    bottom: -8px;
+    background: url(../images/survey_icon.png) no-repeat;
+}
+
+.ewb-survey-tt.current .ewb-survey-icon {
+    display: block;
+}
+
+.ewb-survey-bd {
+    position: absolute;
+    left: 18px;
+    right: 0;
+    top: 162px;
+}
+
+.ewb-survey-l {
+    width: 48%;
+    margin-left:7%;
+    float: left;
+}
+.ewb-survey-l h3 {
+    line-height:1;
+    margin-bottom:40px;
+    text-align:center;
+    font-size: 20px;
+    color: #fff;
+}
+.ewb-survey-l p {
+    line-height: 32px;
+    font-size: 16px;
+    color: #fff;
+    text-indent: 2em;
+    letter-spacing: 1px;
+}
+
+.ewb-survey-r {
+    width: 36%;
+    float: right;
+}
+
+.ewb-survey-r a {
+    display: block;
+}
+
+.ewb-survey-r a img {
+    vertical-align: top;
+}
+
+@media(max-width: 1200px) {
+    .ewb-survey {
+        margin-left: 0;
+    }
+    .ewb-survey-l {
+        width: 54%;
+    }
+    .ewb-survey-l p {
+        font-size: 12px;
+    }
+    .ewb-survey-tt a {
+        font-size: 16px;
+    }
+}
+
+
+/* 文化名人 */
+
+.ewb-info-title-mr{
+    text-align:center;
+}
+
+.ewb-celeb {
+    padding-top: 123px;
+    overflow: hidden;
+}
+
+
+.ewb-celeb-item {
+    width: 200px;
+    float: left;
+    margin-right:50px;
+    
+}
+
+.ewb-celeb-item a{
+    display:block;
+    height:320px;
+    background-color:#fff;
+    position:relative;
+    overflow:hidden;
+    text-align:center;
+}
+
+.ewb-celeb-item a img{
+    margin-top:26px;
+}
+
+.ewb-celeb-item a p{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    height:320px;
+    line-height:320px;
+    color:#fff;
+    background-color:rgba(39,55,78,.7);
+    transition:all .5s;
+}
+.ewb-celeb-item a:hover p{
+    top:0;
+}
+
+.ewb-bottom{ position:absolute; width:100%; bottom:0; left:0; text-align:center;}
+
+.ewb-celeb-mod {
+    margin: 0 15px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 6px rgba(210, 210, 210, .5);
+    -moz-box-shadow: 0 0 6px rgba(210, 210, 210, .5);
+    box-shadow: 0 0 6px rgba(210, 210, 210, .5);
+}
+
+.ewb-celeb-hd {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 26px;
+    background: url(../images/celeb_hd_bg.png) center top no-repeat;
+}
+
+.ewb-celeb-hd a {
+    color: #333;
+}
+
+.ewb-celeb-head {
+    text-align: center;
+}
+
+.ewb-celeb-head img {
+    vertical-align: top;
+    margin-top: 15px;
+}
+
+.ewb-celeb-copy {
+    padding: 0 30px;
+    margin-top: 12px;
+    line-height: 26px;
+    font-size: 14px;
+    min-height: 130px;
+}
+
+.ewb-name-items {
+	position:relative;
+	z-index:99999;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.ewb-name-item {
+    width: 33.3%;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ewb-name-item a {
+    color: #333;
+}
+
+@media(max-width: 1200px) {
+    .ewb-celeb-hd {
+        background-size: 100% 100%;
+        font-size: 16px;
+    }
+    .ewb-celeb-mod {
+        padding: 10px 0;
+    }
+    .ewb-celeb-copy {
+        padding: 0 5px;
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .ewb-name-items {
+        padding-left: 5px;
+        margin-top: 5px;
+    }
+}
+
+
+/* 全域旅游 */
+
+.ewb-info-title-tour{ 
+    top:0;
+    text-align:center;
+}
+
+.wb-loop{ overflow:hidden;}
+
+.wb-loop-items li {
+    width: 220px;
+    height: 220px;
+    margin-right:25px;
+    float: left;
+    text-align: center;
+    position:relative;
+}
+
+.wb-loop-items li span{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    font-size:20px;
+    color:#fff;
+    background-color:rgba(0,0,0,.2);
+}
+
+.tour{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    left:0;
+}
+
+.ewb-tour {
+    margin-top: 20px;
+    position: relative;
+}
+
+.ewb-tour-mod {
+    position: absolute;
+    width: 22.35%;
+    z-index: 1;
+    height: 187px;
+    cursor: pointer;
+}
+
+.ewb-tour-mod.ewb-spc {
+    width: 42.8%;
+    z-index: 10;
+    height: auto;
+}
+
+.ewb-tour1 {
+    left: 12.5%;
+    top: 0;
+}
+
+.ewb-tour2 {
+    left: 65.25%;
+    top: 0;
+}
+
+.ewb-tour3 {
+    left: 50%;
+    top: 80px;
+}
+
+.ewb-tour4 {
+    left: 8.3%;
+    top: 252px;
+}
+
+.ewb-tour5 {
+    left: 69.2%;
+    top: 252px;
+}
+
+.ewb-tour-info {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.ewb-tour-hd {
+    position: absolute;
+    height: 44px;
+    line-height: 44px;
+    font-size: 20px;
+    font-weight: bold;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.ewb-tour-hd a {
+    display: block;
+    float: left;
+    padding: 0 20px 0 35px;
+    color: #fff;
+}
+
+.ewb-tour-hd1 a {
+    background: #f69b39;
+}
+
+.ewb-tour-hd2 a {
+    background: #5fa4e2;
+}
+
+.ewb-tour-hd3 a {
+    background: #bd1f0e;
+}
+
+.ewb-tour-hd4 a {
+    background: #47a771;
+}
+
+.ewb-tour-hd5 a {
+    background: #39b9e3;
+}
+
+.ewb-tour-icon {
+    display: block;
+    width: 24px;
+    height: 44px;
+    float: left;
+}
+
+.ewb-tour-hd1 .ewb-tour-icon {
+    background: url(../images/tour_icon1.png) no-repeat;
+}
+
+.ewb-tour-hd2 .ewb-tour-icon {
+    background: url(../images/tour_icon2.png) no-repeat;
+}
+
+.ewb-tour-hd3 .ewb-tour-icon {
+    background: url(../images/tour_icon3.png) no-repeat;
+}
+
+.ewb-tour-hd4 .ewb-tour-icon {
+    background: url(../images/tour_icon4.png) no-repeat;
+}
+
+.ewb-tour-hd5 .ewb-tour-icon {
+    background: url(../images/tour_icon5.png) no-repeat;
+}
+
+.ewb-tour-list {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 201px;
+    z-index: 10;
+    background: url(../images/mask_bg.png) repeat;
+}
+
+.ewb-spc .ewb-tour-list {
+    display: block;
+}
+
+.ewb-tour-items {
+    padding-top: 48px;
+    padding-left: 11px;
+}
+
+.ewb-tour-item {
+    height: 30px;
+    line-height: 30px;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.ewb-tour-item a {
+    padding-left: 20px;
+    color: #fff;
+    float: left;
+    display: block;
+    max-width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: url(../images/tour_info.png) left center no-repeat;
+}
+
+.ewb-tour-info img {
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 1200px) and (min-width: 979px) {
+    .ewb-tour-items {
+        padding-top: 50px;
+    }
+    .ewb-tour-mod {
+        height: 200px;
+    }
+}
+
+@media(max-width: 979px) and (min-width: 768px) {
+    .ewb-tour-mod {
+        width: 36%;
+    }
+    .ewb-tour2 {
+        left: 60%;
+    }
+    .ewb-tour-mod.ewb-spc {
+        width: 64%;
+    }
+    .ewb-tour5 {
+        left: 63%;
+    }
+    .ewb-tour-items {
+        padding-top: 40px;
+    }
+}
+
+
+/* 旅游服务 */
+
+.ewb-service {
+    overflow: hidden;
+}
+
+.ewb-service-hd {
+    padding-left: 75px;
+}
+
+.ewb-service-item {
+    width: 33.3%;
+    float: left;
+    margin-top: 10px;
+}
+
+.ewb-service-bd {
+    padding-right: 80px;
+}
+
+.ewb-service-hd {
+    height: 165px;
+}
+
+.ewb-service-bd p {
+    line-height: 24px;
+    font-size: 14px;
+    text-indent: 2em;
+}
+
+.ewb-service-hd.spc {
+    position: relative;
+}
+
+.ewb-service-img-title {
+    position: absolute;
+    left: 220px;
+    top: 116px;
+}
+
+@media(max-width: 1200px) and (min-width: 980px) {
+    .ewb-service-hd {
+        padding-left: 42px;
+    }
+    .ewb-service-img-title {
+        left: 172px;
+    }
+}
+
+@media(max-width: 979px) and (min-width: 768px) {
+    .ewb-service-hd {
+        padding-left: 16px;
+    }
+    .ewb-service-bd {
+        padding-right: 20px;
+    }
+    .ewb-service-img-title {
+        width: 110px;
+        height: 27px;
+        left: 135px;
+        top: 130px;
+    }
+}
+
+
+/* footer */
+
+.ewb-section.ewb-section-bg6 {
+    position: relative;
+}
+
+.ewb-footer {
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(0,0,0,.35);
+}
+
+.ewb-foot-icon1,
+.ewb-foot-icon2 {
+    display: block;
+    float: left;
+    margin-top: 8px;
+}
+
+.ewb-foot-icon1 {
+    margin-left: -3px;
+}
+
+.ewb-foot-icon2 {
+    margin-left: 35px;
+}
+
+.ewb-foot-copy {
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+    padding-top: 15px;
+    margin-left: 190px;
+}
+
+@media(max-width: 979px) and (min-width: 768px) {
+    .ewb-foot-copy {
+        padding-top: 5px;
+        padding-right: 5px;
+    }
+    .ewb-foot-icon1 {
+        margin-left: 10px;
+    }
+}
+
+@media(max-width: 767px) {
+    .ewb-footer {
+        height: auto;
+    }
+    .ewb-foot-copy {
+        margin-left: 0;
+        padding: 46px 10px 0 10px;
+        font-size: 12px;
+    }
+    .ewb-foot-icon1 {
+        margin-left: 20px;
+    }
+}
+.ewb-intro-item.ewb-spc{
+    display: none;
+}
+
+.ewb-region-name.ewb-spc{
+    display: none;
+}
+/* 0630 */
+
+#yhq {
+    left: 198px;
+    top: 55px;
+}
+
+#sss {
+    left: 122px;
+    top: 55px;
+}
+
+#ytq {
+    left: 242px;
+    top: 70px;
+}
