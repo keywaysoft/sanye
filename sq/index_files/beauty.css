@@ -389,19 +389,19 @@ a {
 }
 
 .ewb-section-bg2 {
-    background: url(../images/2/beauty_bg2.png) center top no-repeat;
+    background: url(../images/2/beauty_bg2.png) center top no-repeat;background-size:cover;
 }
 
 .ewb-section-bg3 {
-    background: url(../images/3/beauty_bg3.png) center top no-repeat;
+    background: url(../images/3/beauty_bg3.png) center top no-repeat;background-size:cover;
 }
 
 .ewb-section-bg4 {
-    background: url(../images/4/beauty_bg4.png) center top no-repeat;
+    background: url(../images/4/beauty_bg4.png) center top no-repeat;background-size:cover;
 }
 
 .ewb-section-bg5 {
-    background: url(../images/5/beauty_bg5.png) center top no-repeat;
+    background: url(../images/5/beauty_bg5.png) center top no-repeat;background-size:100% auto;
 }
 
 .ewb-section-bg6 {
