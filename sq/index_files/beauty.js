@@ -5,7 +5,16 @@
         menu: '#side-nav',
         sectionSelector:'.section',
         easingcss3: "cubic-bezier(0.618, -0.384, 0.618, 1.384)",
-        scrollingSpeed: 618
+        scrollingSpeed: 618,
+        afterRender: function(){
+            $(".section.active").addClass("on");
+        },
+        onLeave: function(index,nextindex,direction){
+            $(".section").eq(index-1).removeClass("on");
+        },
+        afterLoad: function (anchorLink ,index) {
+            $(".section").eq(index-1).addClass("on");
+        }
     });
 }(this,jQuery));
 
