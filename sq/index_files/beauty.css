@@ -644,7 +644,7 @@ a {
 }
 .on .ewb-card-bd{ height:182px;}
 
-.ewb-card-bd li{ float:left; height:642px; margin-left:82px; position:relative;}
+.ewb-card-bd li{ float:left; height:100%; margin-left:82px; position:relative;}
 
 .ewb-card-bd li span{ position:absolute; right:0; top:10%; width:1px; height:80%; background-color:#643524;}
 
