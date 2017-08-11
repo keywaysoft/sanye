@@ -870,6 +870,7 @@ a {
     line-height:320px;
     color:#fff;
     background-color:rgba(39,55,78,.7);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#c0000000",endColorstr="#c0000000");
     transition:all .5s;
 }
 .ewb-celeb-item a:hover p{
@@ -996,6 +997,7 @@ a {
     font-size:20px;
     color:#fff;
     background-color:rgba(0,0,0,.2);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#33000000",endColorstr="#33000000");
     transition:all .5s;
 }
 .wb-loop-items li:hover span{
@@ -1003,6 +1005,7 @@ a {
     height:50px;
     line-height:50px;
     background-color:rgba(0,0,0,.75);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#cc000000",endColorstr="#cc000000");
 }
 
 .tour{
@@ -1279,6 +1282,7 @@ a {
     left: 0;
     right: 0;
     background-color:rgba(0,0,0,.35);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#38000000",endColorstr="#38000000");
 }
 
 .ewb-foot-icon1,
