@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1502247234634'); /* IE9*/
-  src: url('iconfont.eot?t=1502247234634#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1502247234634') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1502247234634') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1502247234634#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1502693705140'); /* IE9*/
+  src: url('iconfont.eot?t=1502693705140#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1502693705140') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1502693705140') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1502693705140#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -194,6 +194,8 @@
 .icon-qy_bdfw_7:before { content: "\e61c"; }
 
 .icon-shengchan:before { content: "\e61a"; }
+
+.icon-shuidi:before { content: "\e66c"; }
 
 .icon-shouye:before { content: "\e66f"; }
 
