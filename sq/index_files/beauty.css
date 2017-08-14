@@ -753,7 +753,7 @@ a {
     left: 50%;
     margin-left: -10px;
     bottom: -8px;
-    /*background: url(../images/survey_icon.png) no-repeat;*/
+    /* background: url(../images/survey_icon.png) no-repeat; */
 }
 
 .ewb-survey-tt.current .ewb-survey-icon {

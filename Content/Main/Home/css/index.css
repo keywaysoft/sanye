@@ -1,11 +1,48 @@
 @charset "utf-8";
 .wrap{
     visibility:hidden;
+    position:relative
 }
-
+ .topNav{ 
+     overflow:initial;
+     background-color:rgba(48,105,184,.55);
+     filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#903069B8",endColorstr="#903069B8");
+     transition:all 1s;
+} 
+.topNav.open{ 
+     background-color:#3069B8;
+} 
 .topNav .menuBtn{
     display:block;
 }
+@media screen and (max-width: 1370px) {
+    .topNav .tip{ display:none;}
+}
+.topNav .tip{
+    position:absolute;
+    top:-5px;
+    right:-85px;
+    width:80px;
+     font-size:12px;
+    color:#fff;
+    line-height:1.2;
+    text-align:center;
+}
+.topNav .tip i{
+    display:block;
+    font-size:35px;
+    animation: dian 1s ease-in-out infinite alternate;
+}
+
+@keyframes dian{
+    from{
+        transform: translate3d(0,0,0) scale(.9);
+    }
+    to{
+        transform: translate3d(-5px,0,0) scale(1);
+    }
+}
+
 .topNav li a{
     width:138px;
 }
@@ -57,10 +94,11 @@
     background:none;
     width:1200px;
     min-height:1px;
+    padding-bottom:70px;
 }
 .headerTop{
+    height:100%;
     padding-top: 390px;
-    position:relative;
 }
 #logo{
     left: 412px;
@@ -70,130 +108,73 @@
     right: 310px;
     top: 260px;
 }
-.topNav{
-    display:none;
-}
 .indBtns{
-    position:relative;
+    display:none;
+    position:absolute;
+    top:734px;
+    left:50%;
     width:1020px;
-    height:350px;
-    margin:0 auto;
+    margin-left:-510px;
+    font-size:0;
+    text-align:center;
 }
 .indBtns li{
-    position:absolute;
-    width:120px;
-    height:120px;
-    float:left;
-    margin-right:24px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
+    width:140px;
+    height:40px;
+    display:inline-block;
     overflow:hidden;
-    -webkit-transform:rotateZ(45deg);
-    -o-transform:rotateZ(45deg);
-    -moz-transform:rotateZ(45deg);
-    transform:rotateZ(45deg);
+    border-right:1px solid #aaa;
     -webkit-transition:margin-top 400ms;
     -o-transition:margin-top 400ms;
     -moz-transition:margin-top 400ms;
     transition:margin-top 400ms;
 }
+.indBtns .bnone{ border:none;}
+.indBtns .mBtn{
+    width:50px;
+}
+.indBtns .mBtn a,
+.indBtns .mBtn.hover a{ background-color:#377ed8;}
 .indBtns li a{
     display:block;
-    height:120px;
+    height:40px;
+    line-height: 40px;
     color:#fff;
-    line-height:50px;
     font-size:16px;
-    -webkit-transform:rotateZ(-45deg);
-    -o-transform:rotateZ(-45deg);
-    -moz-transform:rotateZ(-45deg);
-    transform:rotateZ(-45deg);
+    text-align:center;
+    background-color:rgba(0,0,0,.45);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#70000000",endColorstr="#70000000");
+    transition:all .5s;
 }
-.indBtns li i{
+.indBtns li a:hover{
+    background-color:rgba(0,0,0,.75);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#bb000000",endColorstr="#bb000000");
+}
+.indBtns li a i{
+    display:inline-block;
+    vertical-align:bottom;
+    font-size:24px;
+}
+.indBtns li a h5{
+    display:inline-block;
+    vertical-align:bottom;
+}
+.indBtns .tip{
+    position:absolute;
+    bottom:40px;
+    right:45px;
+    width:80px;
+    font-size:12px;
+    color:#fff;
+    line-height:1.2;
+}
+.indBtns .tip i{
     display:block;
-    height:70px;
-    background:url(../../Base/img/indBtns.png) center 22px no-repeat;
-    -webkit-transition:400ms;
-    -o-transition:400ms;
-    -moz-transition:400ms;
-    transition:400ms;
-}
-.indBtns li h5{
-    line-height:2;
-}
-.indBtns .hover{
-    text-decoration:none;
-    margin-top:-20px;
-}
-.indBtns .hover i{
-    -moz-transform:scaleX(-1);
-    -webkit-transform:scaleX(-1);
-    -o-transform:scaleX(-1);
-    transform:scaleX(-1);
-}
-.indBtns a:hover{
-    text-decoration:none
-}
-.indBtns .news{
-    top:0;
-    left:220px;
-    background:#377ED8;
-}
-.indBtns .gov{
-    top:125px;
-    left:335px;
-    background-color:#EC9720
-}
-.indBtns .service{
-    top:250px;
-    left:450px;
-    background-color:#41A03F
-}
-.indBtns .interaction{
-    top:125px;
-    left:565px;
-    background-color:#905AB0
-}
-.indBtns .about{
-    top:0;
-    left:450px;
-    background-color:#B63C30
+    font-size:35px;
+    transform:rotate(180deg);
 }
 
 
-.indBtns .leader{
-    background-color:#B63C30
-}
-.indBtns .gov i{
-    background-position: center -215px;
-}
-.indBtns .leader i{
-    background-position: center -452px;
-}
-.indBtns .service i{
-    background-position: center -687px;
-}
-.indBtns .interaction i{
-    background-position: center -926px;
-}
-.indBtns .about i{
-    background-position: center -1167px;
-}
-.indBtns .open i{
-    background-position: center -1400px;
-}
-.indBtns .open{
-    top:0;
-    left:695px;
-    position:relative;
-    background:none;
-    background-color:#333;
-    background-color:rgba(0,0,0,.6)
-}
-.indBtns .open a{
-    position:relative;
-    z-index:1;
-}
 /* 展开状态 */
 #content section{
     padding:15px;
@@ -205,7 +186,6 @@
     border-radius:5px;
 }
 #content .topColumns{
-    height: 405px;
     margin-bottom:0;
     -webkit-border-radius:0;
     -moz-border-radius:0;
@@ -377,7 +357,7 @@
 #indBox-ztzl .iBd{
     background:#eee;
     margin-top:4px;
-    padding:18px 10px;
+    padding:18px 20px;
     height: 197px;
     overflow:hidden;
 }
@@ -997,12 +977,12 @@
     width:400px;
 }
 #indSjxx{
-    width:518px;
+    /* width:518px; */
     float:left;
 
 }
 #indSjxx .bd{
-    height:224px;
+     height:120px; 
 }
 .ywzsk{
     width:220px;
@@ -1021,21 +1001,21 @@
     font-size:24px;
     padding-left:75px;
     font-weight:bold;
-    background: url(../../Base/img/ind-interac.png) 20px -816px no-repeat #f6f6f6;
-    border:1px solid #f0f0f0;
-    -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:0px;
+    background: url(../../Base/img/ind-interac.png) 20px -816px no-repeat #F2FBE8;
+    border:1px solid #DFEBD1;
+    -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
     -webkit-transition:background 200ms;-o-transition:background 200ms;-moz-transition:background 200ms;transition:background 200ms;
 }
 .ywzsk .li2 a{
     background-position: 20px -908px;
-    background-color:#f6f6f6;
-    border-color:#f0f0f0;
+    background-color:#DFF9F2;
+    border-color:#C8E6DE;
     color:#008B76;
 }
 .ywzsk .li3 a{
     background-position: 20px -994px;
-    background-color:#f6f6f6;
-    border-color:#f0f0f0;
+    background-color:#FFE8E5;
+    border-color:#F2B6B6;
     line-height:28px;
     padding-top:14px;
     height:71px;
@@ -1087,7 +1067,7 @@
 }
 .interacBtns a:hover{
     text-decoration:none;
-    background-color:#f4f4f4;
+    background-color:#EEF5FF;
     color:#3069B8;
     font-weight:bold;
     border-color:#D8E1EE;
@@ -1180,11 +1160,11 @@
     display:block;
     height:48px;
     line-height:48px;
-    background: url(../../Base/img/ind-interac.png) 30px -1104px no-repeat #f6f6f6;
+    background: url(../../Base/img/ind-interac.png) 30px -1104px no-repeat #FFF9DD;
     border:1px solid #F0E9CA;
     font-weight:bold;
     font-size:16px;
-    color:#3069B8;
+    color:#CE7B18;
     padding-left: 80px;
     -webkit-border-radius:2px;
     -moz-border-radius:2px;
@@ -1219,7 +1199,7 @@
     float:right;
 }
 .grbsList{
-   height: 247px;
+   height: 237px;
 }
 .zdfwList{
     overflow:hidden;
@@ -1376,8 +1356,7 @@
     background:#daf0f9
 }
 .indFwsx{
-    overflow:hidden;
-    padding-top: 15px;
+    overflow:hidden
 }
 .indFwsx dt{
     height:80px;
@@ -1397,61 +1376,17 @@
     text-align:center;
 }
 
-
-
-.bjcxTable{
-    width:360px;
-    font-size:12px;
-}
-.bjcxTable td{
-    padding:5px 0;
-}
-.bjcxTable .label{
-    /*width:85px;*/
-    text-align:right;
-}
-.bjcxTable input{
-    width:160px;
-    padding:5px;
-    height:22px;
-    line-height:22px;
-    border:1px solid #61b5d0;
-}
-.bjcxTable .submitBtn{
-    height:88px;
-    border:0;
-    background:#3269B8;
+.footer2{ 
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    background-color:rgba(0,0,0,.35);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr="#70000000",endColorstr="#70000000");
     color:#fff;
-    font-size:16px;
-    width:80px;
-    border-radius: 4px;
+    overflow:hidden;
 }
-
-
-.fwlink li{
-    padding-top: 20px;
-    width:170px;
-}
-
-.fwlink li a{
-    width: 170px !important;
-    height: 80px;
-    line-height: 80px;
-    font-size: 20px;
-    border-radius: 4px;
-    color: white;
-}
-.fwlink .li1 a{
-    background-color:#00B1EF;
-}
-.fwlink .li2 a{
-    background-color:#F5AA4C;
-}
-
-#indGrbs .bd{
-    padding-top: 0 !important;
-}
-
-.parallel {
-    padding-top: 10px !important;
-}
+.footer2 a{ color:#fff;}
+.footer2 img{ max-height:30px; margin-top:10px; margin-left:5px;}
