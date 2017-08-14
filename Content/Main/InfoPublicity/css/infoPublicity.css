@@ -147,7 +147,7 @@
     background-position: 19px -833px;
 }
 .govSideBox{
-    margin-bottom:15px;
+    margin-bottom:30px;
     border-top:2px solid #3269B8;
    /* background:#EFFBFF;*/
 }
@@ -160,7 +160,7 @@
     color:#3269B8;
 }
 #sideZdly .bd{
-    height:280px;
+    height:380px;
 }
 .govSideBox .hd h3 a{
     color:#3269B8
@@ -182,12 +182,12 @@
     overflow:hidden;
 }
 .sideNodeList li a{
-    padding-left:8px;
-    background: url(../../Base/img/icons.png) 0 -1358px no-repeat;
+    padding-left: 9px;
+    background: url(../../Base/img/catg.png) -1px 5px no-repeat
 }
 #sideZdly .sideNodeList li{
     width:auto;
-    width:106px;
+    min-width: 107px;
 }
 #indZwyw .hd{
     /*background:#f2f2f2;*/
@@ -208,7 +208,7 @@
 .tabBox .tHd{
     height:40px;
     line-height:40px;
-    /*background:#f2f2f2;*/
+    background:#f2f2f2;
     margin-bottom:1px;
     border-bottom: 1px solid #f2f2f2;
 }
@@ -229,8 +229,8 @@
     padding:0 25px;
 }
 .tabBox .tHd .on a{
-    /*background:#3269B8;*/
-    color:#3269B8;
+    background:#3269B8;
+    color:white;
     font-weight:bold;
     border-bottom: 2px solid #3269B8;
 }
@@ -388,14 +388,20 @@
 .cwhyBox .picBtn{
     height:60px;
     display:block;
+    background-color: #5093D4;
+    font-size: 24px;
+    line-height: 60px;
+    color:white;
     border-bottom:5px solid #5093D4;
-    background:url(../img/cwhy.jpg);
+    text-align: center;
+    background:url(../img/leader.png) no-repeat #5093D4;
+    background-position:72px 15px
 }
 .indCwhy{
     padding:10px 15px;
     overflow:hidden;
     font-size:12px;
-    height: 300px;
+    height: 238px;
 }
 .indCwhy .title{
     text-align:left;
@@ -410,6 +416,7 @@
     background-color: #fb6e52;
     float:right;
     color: white;
+    border-radius: 4px;
 }
 
 .indCwhy .dd a:hover{
@@ -419,7 +426,7 @@
 
 
 .indCwhy dl{
-    padding-bottom: 30px;
+    padding-bottom: 5px;
 }
 .indCwhy .title a{
     color:#3269B8;
@@ -1497,4 +1504,105 @@
     background:#F7F7F7;
     font-weight:bold;
 }
-/** by lyj **/
+
+
+.bjBox .hd {
+    height: 50px;
+    border-bottom: 0px solid #eee;
+    position: relative;
+    text-align: left;
+    margin-bottom: -6px;
+}
+.bjBox .bd {
+    padding: 0 0 3px 0;
+    overflow: hidden;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.bjcxTable {
+    width: 100%;
+    font-size: 12px;
+}
+.bjcxTable td {
+    padding: 5px 0;
+}
+.toRight {
+    margin-left: 10px !important;
+    margin-right: 0px !important;
+}
+input[type=button], input[type=submit], input[type=file], button {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.bjcxTable input {
+    width: 206px;
+    padding: 5px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #eee;
+}
+.bjcxTable .submitBtn {
+    height: 64px;
+    border: 0;
+    background: #3269B8;
+    color: #fff;
+    font-size: 26px;
+    width: 220px;
+    border-radius: 2px;
+    background:url(/Content/Main/ServiceHall/img/dSearch.png) 35px 15px no-repeat #3269B8;
+}
+
+.bjcxTable .btnLeft {
+    height: 64px;
+    border: 0;
+    background: #3269B8;
+    color: #fff;
+    font-size: 26px;
+    width: 200px;
+    border-radius: 2px;
+    background:url(/Content/Main/ServiceHall/img/dSearch.png) 35px 15px no-repeat #3269B8;
+}
+
+.bjcxTable .label {
+    width: 85px;
+    text-align: right;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+.bjBox .hd h3 {
+    display: inline-block;
+    zoom: 1;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3269b8;
+    background: url(/Content/Main/ServiceHall/img/fw-icons.png) 17px -98px no-repeat #fff;
+    padding: 0 20px 0 50px;
+    height: 44px;
+    line-height: 44px;
+    position: relative;
+}
+.bjBox .hd h3 {
+    background-position-x: 17px;
+    background-position-y: -205px;
+}
+#bjtj h3 {
+    background-position-x: 17px;
+    background-position-y: -280px;
+}
+
+#bjtj{
+    border-top: 2px solid #3269B8;
+}
+
+.xxgkInput{
+    width: 218px;
+    height: 30px;
+    border-color: #eee;
+}

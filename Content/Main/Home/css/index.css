@@ -1021,21 +1021,21 @@
     font-size:24px;
     padding-left:75px;
     font-weight:bold;
-    background: url(../../Base/img/ind-interac.png) 20px -816px no-repeat #F2FBE8;
-    border:1px solid #DFEBD1;
-    -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
+    background: url(../../Base/img/ind-interac.png) 20px -816px no-repeat #f6f6f6;
+    border:1px solid #f0f0f0;
+    -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:0px;
     -webkit-transition:background 200ms;-o-transition:background 200ms;-moz-transition:background 200ms;transition:background 200ms;
 }
 .ywzsk .li2 a{
     background-position: 20px -908px;
-    background-color:#DFF9F2;
-    border-color:#C8E6DE;
+    background-color:#f6f6f6;
+    border-color:#f0f0f0;
     color:#008B76;
 }
 .ywzsk .li3 a{
     background-position: 20px -994px;
-    background-color:#FFE8E5;
-    border-color:#F2B6B6;
+    background-color:#f6f6f6;
+    border-color:#f0f0f0;
     line-height:28px;
     padding-top:14px;
     height:71px;
@@ -1087,7 +1087,7 @@
 }
 .interacBtns a:hover{
     text-decoration:none;
-    background-color:#EEF5FF;
+    background-color:#f4f4f4;
     color:#3069B8;
     font-weight:bold;
     border-color:#D8E1EE;
@@ -1376,7 +1376,8 @@
     background:#daf0f9
 }
 .indFwsx{
-    overflow:hidden
+    overflow:hidden;
+    padding-top: 15px;
 }
 .indFwsx dt{
     height:80px;
@@ -1445,4 +1446,12 @@
 }
 .fwlink .li2 a{
     background-color:#F5AA4C;
+}
+
+#indGrbs .bd{
+    padding-top: 0 !important;
+}
+
+.parallel {
+    padding-top: 10px !important;
 }

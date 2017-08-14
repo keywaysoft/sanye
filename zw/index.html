@@ -284,10 +284,11 @@
             <script>
                 $(".zwgkBtns li").prepend("<s></s>")
             </script>
-            <!-- 区政府公开目录 -->
+            <!-- 基本信息公开 -->
+            <!--
             <div class="govSideBox" id="sideGkml">
                 <div class="hd">
-                    <h3><a href="/publicity">区政府公开目录</a></h3>
+                    <h3><a href="/publicity">基本信息公开</a></h3>
                 </div>
                 <div class="bd">
                     <ul class="sideNodeList">
@@ -315,73 +316,187 @@
                     </ul>
                 </div>
             </div>
+            -->
 
+            <!-- 信息公开 -->
+            <div class="bjBox" id="bjtj">
+                <div class="hd">
+                    <h3>信息公开查询</h3>
+                </div>
+                <div class="bd">
+                    <table class="bjcxTable">
+                        <tr>
+                            <td><label>查询关键词：</label><br>
+                                <input id="code" type="text" placeholder="关键词"></td>
+                        </tr>
+                        <tr>
+                            <td><label>查询范围：</label><br>
+                                <select name="department" id="department" class="xxgkInput">
+                                    <option value="0">全部</option>
+                                    <option value="92338135">区政府办公室</option>
+                                    <option value="92338136">区信访和群众工作局</option>
+                                    <option value="92338137">区法制办</option>
+                                    <option value="92338138">区安全生产监督管理局</option>
+                                    <option value="92338139">区政务中心</option>
+                                    <option value="92338140">县国资办</option>
+                                    <option value="92338141">区信息办</option>
+                                    <option value="92338143">区人力资源和社会保障局</option>
+                                    <option value="92338144">区监察局</option>
+                                    <option value="92338145">区审计局</option>
+                                    <option value="92338146">区公安分局</option>
+                                    <option value="92338147">区司法局</option>
+                                    <option value="92338148">区民政局</option>
+                                    <option value="92338149">区档案局</option>
+                                    <option value="92338150">区供销社</option>
+                                    <option value="92338151">区食品药品工商和质监管理局</option>
+                                    <option value="92338154">区财政局</option>
+                                    <option value="92338155">区住房公积金管理中心</option>
+                                    <option value="92338156">区国税局</option>
+                                    <option value="92338158">红十字会</option>
+                                    <option value="92338159">区地税局</option>
+                                    <option value="92338162">区农业局</option>
+                                    <option value="92338163">区林业局</option>
+                                    <option value="92338164">区水务局</option>
+                                    <option value="92338168">区民宗局</option>
+                                    <option value="92338169">区扶贫开发局</option>
+                                    <option value="92338170">中共安州区委党史研究室区政府地方志办公室</option>
+                                    <option value="92338171">区发展和改革局</option>
+                                    <option value="92338176">区食品药品和工商质监管理局</option>
+                                    <option value="92338177">区商务和旅游局</option>
+                                    <option value="92338178">区统计局</option>
+                                    <option value="92338179">区交通运输局</option>
+                                    <option value="92338180">县电信局</option>
+                                    <option value="92338183">区气象局</option>
+                                    <option value="92338184">区城乡规划建设和住房保障局</option>
+                                    <option value="92338185">区国土资源局</option>
+                                    <option value="92338186">区环境保护局</option>
+                                    <option value="92338187">县人防办</option>
+                                    <option value="92338188">区教育体育局</option>
+                                    <option value="92338189">区科学技术和知识产权局</option>
+                                    <option value="92338190">区防震减灾局</option>
+                                    <option value="92338192">区卫生和计划生育局</option>
+                                    <option value="92338193">区文化广电新闻出版局</option>
+                                    <option value="92338197">花荄镇</option>
+                                    <option value="92338198">桑枣镇</option>
+                                    <option value="92338199">晓坝镇</option>
+                                    <option value="92338200">千佛镇</option>
+                                    <option value="92338201">黄土镇</option>
+                                    <option value="92338202">界牌镇</option>
+                                    <option value="92338203">兴仁乡</option>
+                                    <option value="92338204">塔水镇</option>
+                                    <option value="92338205">乐兴镇</option>
+                                    <option value="92338206">宝林镇</option>
+                                    <option value="92338207">清泉镇</option>
+                                    <option value="92338208">秀水镇</option>
+                                    <option value="92338209">沸水镇</option>
+                                    <option value="92338210">雎水镇</option>
+                                    <option value="92338211">高川乡</option>
+                                    <option value="92338212">河清镇</option>
+                                    <option value="92338213">永河镇</option>
+                                    <option value="92338214">迎新乡</option>
+                                    <option value="92338215">区工业和信息化局</option>
+                                    <option value="92338872">区投促局</option>
+                                    <option value="92338873">金融办</option>
+                                    <option value="92338874">人防办</option>
+                                    <option value="92338876">信息办</option>
+                                    <option value="92338901">县法院</option>
+                                    <option value="92338902">县检察院</option>
+                                    <option value="92338903">区工商联</option>
+                                    <option value="92338904">团县委</option>
+                                    <option value="92338905">区妇联</option>
+                                    <option value="92338906">区残联</option>
+                                    <option value="92338907">区城管局</option>
+                                    <option value="92338925">应急办</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="submitBtn" value="查询" onclick="search('http://anxian.my.gov.cn/status.aspx')">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <a href="#"><img src="/Content/Main/Base/img/sgjf.png"></a>
+            <br><br>
+
+            <!--基本信息公开-->
             <div class="govSideBox" id="sideZdly">
                 <div class="hd">
-                    <h3><a href="/zw/zfxxgk/zdlyxxgk">信息公开年度要点</a></h3>
+                    <h3><a href="/zw/zfxxgk/zdlyxxgk">基本信息公开</a></h3>
                 </div>
                 <div class="bd">
                     <ul class="sideNodeList">
-
-
-
                         <li class="li1 first">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/xzqlyh" title="行政权力运行">行政权力运行</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/xzqlyh" title="机构职能">机构职能</a>
                         </li>
                         <li class="li2">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/czzj" title="财政资金">财政资金</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/czzj" title="领导简介及分工">领导简介及分工</a>
                         </li>
                         <li class="li3">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggzypz" title="公共资源配置">公共资源配置</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggzypz" title="政策文件">政策文件</a>
                         </li>
                         <li class="li4">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/jsjfwz" title="减税降费">减税降费</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/jsjfwz" title="文件解读">文件解读</a>
                         </li>
                         <li class="li5">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/jzfpwz" title="精准扶贫">精准扶贫</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/jzfpwz" title="规划计划">规划计划</a>
                         </li>
                         <li class="li6">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/hjbhwz" title="环境保护">环境保护</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/hjbhwz" title="工作动态">工作动态</a>
                         </li>
                         <li class="li7">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/gyqywz" title="国有企业">国有企业</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/gyqywz" title="统计数据">统计数据</a>
                         </li>
                         <li class="li8">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/jghsfwz" title="价格和收费">价格和收费</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/jghsfwz" title="重要会议">重要会议</a>
                         </li>
                         <li class="li9">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggfwwz" title="公共服务">公共服务</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggfwwz" title="人事信息">人事信息</a>
                         </li>
                         <li class="li10">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/spypaqwz" title="食品药品安全">食品药品安全</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/spypaqwz" title="执法监督">执法监督</a>
                         </li>
                         <li class="li11">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/aqscwz" title=" 安全生产"> 安全生产</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/aqscwz" title=" 公示公告"> 公示公告</a>
                         </li>
                         <li class="li12">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggqsydwxxwz" title="公共企事业单位信息">公共企事业单位信息</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggqsydwxxwz" title="预决算及“三公”经费">预决算及“三公”经费</a>
                         </li>
                         <li class="li13">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/zdjsxmwz" title="重大建设项目">重大建设项目</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/zdjsxmwz" title="专项资金">专项资金</a>
                         </li>
                         <li class="li14">
-                            <a class="tit" href="/zt/sjbmys" target="_blank" title="三公经费">三公经费</a>
+                            <a class="tit" href="/zt/sjbmys" target="_blank" title="政府采购与招投标">政府采购与招投标</a>
                         </li>
                         <li class="li15">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="社会组织、中介机构">社会组织、中介机构</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="行政事业性收费">行政事业性收费</a>
                         </li>
                         <li class="li16">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="信用">信用</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="便民服务">便民服务</a>
                         </li>
                         <li class="li17 last">
-                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/czsjwz" target="_blank" title="财政审计">财政审计</a>
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk/czsjwz" target="_blank" title="人大代表建议政协提案">人大代表建议政协提案</a>
+                        </li>
+
+                        <li class="li16">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="重大项目">重大项目</a>
+                        </li>
+                        <li class="li16">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="应急管理">应急管理</a>
+                        </li>
+                        <li class="li16">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="政府信息公开工作年度报告">政府信息公开工作年度报告</a>
+                        </li>
+                        <li class="li16">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="政府信息公开指南">政府信息公开指南</a>
+                        </li>
+                        <li class="li16">
+                            <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="依申请公开指引">依申请公开指引</a>
                         </li>
 
                     </ul>
                 </div>
             </div>
-
-            <!-- 分类树 E -->
 
 
 
@@ -393,8 +508,8 @@
             <div class="box tab" id="indZwyw">
                 <div class="hd">
                     <ul>
-                        <li><a href="/xw/zwyw">最新政府信息公开</a></li>
-                        <li><a>数据开放</a></li>
+                        <li><a href="/xw/zwyw">政策文件</a></li>
+                        <li><a>政务动态</a></li>
                     </ul>
                 </div>
                 <div class="bd">
@@ -573,11 +688,11 @@
             <div class="tabBox" id="indZcfg">
                 <div class="tHd">
                     <ul>
-                        <li><a href="/zw/zcfg">政策法规</a><i></i></li>
-                        <li><a href="/zw/hzql">行政权力</a><i></i></li>
-                        <li><a href="/zw/fazgh">发展规划</a><i></i></li>
-                        <li><a href="/zw/zfgzxx">政府工作信息</a><i></i></li>
-                        <li><a href="/zw/zdgz">重点工作</a><i></i></li>
+                        <li><a href="/zw/zcfg">稳增长</a><i></i></li>
+                        <li><a href="/zw/hzql">促改革</a><i></i></li>
+                        <li><a href="/zw/fazgh">调结构</a><i></i></li>
+                        <li><a href="/zw/zfgzxx">惠民生</a><i></i></li>
+                        <li><a href="/zw/zdgz">防风险</a><i></i></li>
                     </ul>
                 </div>
                 <div class="tBd">
@@ -588,13 +703,19 @@
 
 
                                 <li class="li1 first">
-                                    <a class="tit" href="/zw/zcfg/gwyfg" title="国务院法规">国务院法规</a>
+                                    <a class="tit" href="/zw/zcfg/gwyfg" title="重大建设项目">重大建设项目</a>
                                 </li>
                                 <li class="li2">
-                                    <a class="tit" href="/zw/zcfg/szfwj" title="区政府文件">区政府文件</a>
+                                    <a class="tit" href="/zw/zcfg/szfwj" title="国有企业运营监管">国有企业运营监管</a>
                                 </li>
-                                <li class="li3 last">
-                                    <a class="tit" href="/zw/zcfg/zcjd" title="政策解读">政策解读</a>
+                                <li class="li3">
+                                    <a class="tit" href="/zw/zcfg/zcjd" title="环境保护">环境保护</a>
+                                </li>
+                                <li class="li4">
+                                    <a class="tit" href="/zw/zcfg/zcjd" title="教育">教育</a>
+                                </li>
+                                <li class="li5 last">
+                                    <a class="tit" href="/zw/zcfg/zcjd" title="财政资金">财政资金</a>
                                 </li>
                             </ul>
                         </div>
@@ -867,9 +988,10 @@
                     <section class="tabBoxIn">
                         <div class="hd">
                             <ul>
-                                <li><a href="/zw/hzql/hzqlqd1">行政权力责任清单</a></li>
-                                <li><a href="/zw/hzql/hzqlqd">行政权力清单</a></li>
-                                <li><a href="/zw/hzql/xzzfgk">行政权力“双公示”</a></li>
+                                <li><a href="/zw/hzql/hzqlqd1">公开权责清单</a></li>
+                                <li><a href="/zw/hzql/hzqlqd">政务服务</a></li>
+                                <li><a href="/zw/hzql/xzzfgk">就业创业</a></li>
+                                <li><a href="/zw/hzql/xzzfgk">科技管理和项目经费</a></li>
                             </ul>
                         </div>
                         <div class="bd">
@@ -935,12 +1057,25 @@
                                         </a>
                                     </li>
 
+                                    <li class="first">
+                                        <span class="date">2017-03-16</span>
+                                        <a href="/zw/hzql/hzqlqd/content_98031" target="_blank" title="标题：新调整安州区行政权力清单目录（2017-03-08）
+点击数：257
+发表时间：2017-03-16">
+                                            新调整安州区行政权力清单目录（2017-03-08）
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <span class="date">2016-07-26</span>
+                                        <a href="/zw/hzql/hzqlqd/content_92727" target="_blank" title="标题：市安全监管局行政权力事项目录表
+点击数：201
+发表时间：2016-07-26">
+                                            市安全监管局行政权力事项目录表
+                                        </a>
+                                    </li>
 
                                 </ul>
-                                <div class="btns">
-                                    <a class="linkBtn fl linkBtn1" href="http://zwdt.anxian.my.gov.cn/eGovP1/portal/pc/pages10000/egov_openness/power/list.jsp">行政权力事项目录</a>
-                                    <a class="linkBtn fr linkBtn2" href="/zw/zfxxgk/zdlyxxgk/xzqlyh">行政权力运行</a>
-                                </div>
                             </div>
 
                             <ul class="infoList">
@@ -1306,16 +1441,16 @@
 
 
                                 <li class="li1 first">
-                                    <a class="tit" href="/zw/fazgh/fzgh" title="五年规划">五年规划</a>
+                                    <a class="tit" href="/zw/fazgh/fzgh" title="公共资源配置">公共资源配置</a>
                                 </li>
                                 <li class="li2">
-                                    <a class="tit" href="/zw/fazgh/sgszlfzjs" title="专项规划">专项规划</a>
+                                    <a class="tit" href="/zw/fazgh/sgszlfzjs" title="减税降费">减税降费</a>
                                 </li>
                                 <li class="li3">
-                                    <a class="tit" href="/zw/fazgh/csgh" title="城市规划">城市规划</a>
+                                    <a class="tit" href="/zw/fazgh/csgh" title="卫生">卫生</a>
                                 </li>
                                 <li class="li4 last">
-                                    <a class="tit" href="/zw/fazgh/qygh" title="区域规划">区域规划</a>
+                                    <a class="tit" href="/zw/fazgh/qygh" title="社会组织和中介机构">社会组织和中介机构</a>
                                 </li>
                             </ul>
                         </div>
@@ -1678,19 +1813,13 @@
 
 
                                 <li class="li1 first">
-                                    <a class="tit" href="/zw/zfgzxx/ssdb" title="实事督办">实事督办</a>
+                                    <a class="tit" href="/zw/zfgzxx/ssdb" title="扶贫工作">扶贫工作</a>
                                 </li>
                                 <li class="li2">
-                                    <a class="tit" href="/zw/zfxxgk/cateinfos?basiccategoryid=28" target="_blank" title="应急管理">应急管理</a>
+                                    <a class="tit" href="/zw/zfxxgk/cateinfos?basiccategoryid=28" target="_blank" title="社会救助">社会救助</a>
                                 </li>
-                                <li class="li3">
-                                    <a class="tit" href="/zw/zfgzxx/jhzj" title="计划总结">计划总结</a>
-                                </li>
-                                <li class="li4">
-                                    <a class="tit" href="/zw/zfgzxx/gzjh" title="工作报告">工作报告</a>
-                                </li>
-                                <li class="li5 last">
-                                    <a class="tit" href="/zw/zfgzxx/szfgztb" title="工作通报">工作通报</a>
+                                <li class="li3 last">
+                                    <a class="tit" href="/zw/zfgzxx/jhzj" title="棚户区改造和农村危房改造及保障性住房">棚户区改造和农村危房改造及保障性住房</a>
                                 </li>
                             </ul>
                         </div>
@@ -2456,16 +2585,19 @@
 
 
                                 <li class="li1 first">
-                                    <a class="tit" href="/zw/zdgz/lzhmhdzt" title="惠民行动">惠民行动</a>
+                                    <a class="tit" href="/zw/zdgz/lzhmhdzt" title="监管执法">监管执法</a>
                                 </li>
                                 <li class="li2">
-                                    <a class="tit" href="/zw/zdgz/zhdgz" title="重点工作">重点工作</a>
+                                    <a class="tit" href="/zw/zdgz/zhdgz" title="信用信息">信用信息</a>
                                 </li>
                                 <li class="li3">
-                                    <a class="tit" href="/zw/zfxxgk/cateinfos?basiccategoryid=27" target="_blank" title="重点项目">重点项目</a>
+                                    <a class="tit" href="/zw/zfxxgk/cateinfos?basiccategoryid=27" target="_blank" title="食品药品安全">食品药品安全</a>
                                 </li>
-                                <li class="li4 last">
-                                    <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggzypz/zdxxwz" title="征地拆迁">征地拆迁</a>
+                                <li class="li4">
+                                    <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggzypz/zdxxwz" title="督查审计">督查审计</a>
+                                </li>
+                                <li class="li5 last">
+                                    <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggzypz/zdxxwz" title="安全生产">安全生产</a>
                                 </li>
                             </ul>
                         </div>
@@ -2732,10 +2864,6 @@
                 <div class="tHd">
                     <ul>
                         <li><a href="/zw/zfxxgk/qmtjwgk">全面推进五公开</a><i></i></li>
-                        <li><a href="/zt/sjbmys" target="_blank">财政公开</a><i></i></li>
-                        <li><a href="/zw/rsxx">人事信息</a><i></i></li>
-                        <li><a href="/zw/tjxx">统计信息</a><i></i></li>
-                        <li><a href="/zw/gysy">公益事业</a><i></i></li>
                     </ul>
                 </div>
                 <div class="tBd">
@@ -3911,6 +4039,7 @@
         <div class="column" id="columnC">
             <!-- 常务会议 -->
             <div class="cwhyBox">
+                <a class="picBtn" href="/zw/cwhy">领导信息</a>
                 <ul class="indCwhy">
                     <li class="first last">
                         <div class="title">

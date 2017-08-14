@@ -25,6 +25,43 @@
     float: right;
     color: #999;
 }
+/* 通用信息列表 */
+.zwgk {
+    text-align: left;
+}
+.zwgk li {
+    /*height: 30px;*/
+    line-height: 30px;
+    overflow: hidden;
+    padding:0 5px;
+}
+.zwgk li a {
+    font-size:14px;
+    padding-left: 16px;
+    background: url(../img/icons.png) 0 7px no-repeat;
+}
+
+.zwgk li .date {
+    font-size: 11px;
+    margin-left: 16px;
+    /* float: right; */
+    color: #ddd;
+    height: 24px;
+    margin-top: -10px;
+    line-height: 24px;
+}
+
+.zwgk li .date span {
+    margin-left: 30px;
+}
+.zwgk li .node {
+    color: #f00;
+    margin-right: 5px;
+}
+
+.infoList li .date span {
+    margin-left: 30px;
+}
 .infoList li .node {
     color: #f00;
     margin-right: 5px;
@@ -37,7 +74,7 @@
     line-height: 32px;
 }
 .infoList-letter li a{
-    background-position: 0 -87px;
+    background: url(/Content/Main/Base/img/ts.png) 0 2px no-repeat;
     padding-left: 23px;
 }
 .infoList-idea li a{background-position: 0 -162px;padding-left: 19px;}
@@ -483,3 +520,23 @@
 #1E72B4 深蓝色标题
 #C4DEF8 淡蓝色边框
 --*/
+
+
+.sideNodeList{
+    overflow:hidden;
+    padding-left:5px;
+    padding-top:5px;
+}
+.sideNodeList li{
+    float:left;
+    width:33.3%;
+    *width:71px;
+    font-size:12px;
+    height:33px;
+    line-height:33px;
+    overflow:hidden;
+}
+.sideNodeList li a{
+    padding-left: 9px;
+    background: url(../../Base/img/catg.png) -1px 5px no-repeat
+}
