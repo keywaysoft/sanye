@@ -119,9 +119,9 @@
         _activeTabContent: function(targetId) {
             var $tabCons = this.$tabCons;
 
-            $tabCons.addClass('hidden')
+            $tabCons.removeClass('show')
                 .filter('[data-id="' + targetId + '"]')
-                .removeClass('hidden');
+                .addClass('show');
         }
     });
 }(this, jQuery));

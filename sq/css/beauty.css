@@ -749,7 +749,11 @@ img {
     right: 0;
     top: 130px;
     overflow:hidden;
+    opacity:0;
+    transition:all .5s;
 }
+
+.ewb-survey-bd.show{ opacity: 1;}
 
 .ewb-survey-l {
     width: 48%;
@@ -781,8 +785,8 @@ img {
     float: right;
     overflow:hidden;
 }
-.ewb-survey-r img{ position:relative; left:-100%; transition: left .25s linear .75s;}
-.on .ewb-survey-r img{ left:0;}
+.show .ewb-survey-r img{ transform-origin:center; transform:scale(0) rotate(0deg); transition:all .5s;}
+.on .show .ewb-survey-r img{ transform:scale(1) rotate(360deg);}
 
 .ewb-survey-r a {
     display: block;
