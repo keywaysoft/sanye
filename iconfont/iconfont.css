@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1502693705140'); /* IE9*/
-  src: url('iconfont.eot?t=1502693705140#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1502693705140') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1502693705140') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1502693705140#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1502763859268'); /* IE9*/
+  src: url('iconfont.eot?t=1502763859268#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1502763859268') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1502763859268') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1502763859268#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -52,6 +52,8 @@
 .icon-xinxigongkaibaozhangbiao:before { content: "\e60f"; }
 
 .icon-zaixianfangtan:before { content: "\e615"; }
+
+.icon-iconfonttouzi:before { content: "\e62f"; }
 
 .icon-shouye1:before { content: "\e60c"; }
 

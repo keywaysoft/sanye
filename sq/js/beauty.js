@@ -1,7 +1,7 @@
 (function(win,$){
     // 配置fullpage
     $('#dowebok').fullpage({
-        anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5','page6'],
         menu: '#side-nav',
         sectionSelector:'.section',
         easingcss3: "cubic-bezier(0.618, -0.384, 0.618, 1.384)",
