@@ -1,0 +1,19 @@
+/*****样式调整*****/
+body{ background-color:#fff; color:#333;}
+p{ color:#333;}
+
+.mui-content{ background-color:#fff;}
+.sj-content{ margin:11px 15px; padding:0 10px 10px; background-color:#f1f2f6;}
+
+/*字体*/
+.iconfont{ font-size:24px;}
+.c-gray{ color:#999;}
+
+/*顶部*/
+.mui-bar{ background-color:#3069b8;}
+.mui-bar a{ color:#fff;}
+.mui-bar .mui-title{ font-size:36px;}
+/*侧边导航*/
+.mui-off-canvas-left .mui-table-view-cell .iconfont{ float:left; margin:-2px 5px 0 0;}
+
+/*****end 样式调整*****/
