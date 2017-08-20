@@ -1,0 +1,55 @@
+.mui-scroll{ padding: 0 10px;}
+
+/*快捷导航*/
+.fast-nav{ list-style:none;}
+.fast-nav li{ position:relative; float:left; width:31.33%; height:0; padding-bottom:31.33%;  margin:5px 1% 0; border-radius:5px;}
+.fast-nav li a{ position:absolute; width:100%; height:100%; color:#fff; font-size:12px; text-align:center;}
+.fast-nav .l1{ background-color:#EE4242;}
+.fast-nav .l2{ background-color:#80A7EE;}
+.fast-nav .l3{ background-color:#78BDE8;}
+.fast-nav .l4{ background-color:#FC6767;}
+.fast-nav .l5{ background-color:#F78449;}
+.fast-nav .l6{ background-color:#90D856;}
+.fast-nav li a i{ display:block; margin:25% 0 10%; font-size:24px;}
+.fast-nav .l5 a{ line-height:1.4;}
+
+
+/*选项卡-1*/
+#slider{  background-color:#fff;}
+#slider .mui-segmented-control .mui-control-item{ width:auto; padding-top:8px; line-height:30px; font-size:16px;}
+#slider .mui-segmented-control .more{ position:absolute; bottom:5px; right:15px; font-family: Simsun;}
+.mui-fullscreen #slider .mui-segmented-control~.mui-slider-group{ position:relative; top:auto; bottom:auto;}
+#slider.mui-slider .mui-slider-group .mui-slider-item{ height:auto; border-bottom:none;}
+#slider.mui-slider .mui-slider-group .mui-slider-item .mui-spinner{ position:absolute; top:50%; left:50%; margin:-12px 0 0 -12px;}
+#slider .mui-table-view-cell:after{ right:15px;}
+#slider .mui-table-view .mui-media-object{ max-width:66px; width:66px; height:auto; margin-top:5px; margin-right:10px; line-height:1; text-align:center; border-radius:4px;}
+#slider .mui-table-view .mui-media-object small{ line-height:2.6; font-size:14px; color:#999; margin-top:5px; }
+#slider .mui-table-view .mui-media-object em{ display:block; line-height:2; font-style:normal; font-size:12px; color:#fff; border-radius:4px;}
+#slider .mui-table-view .mui-media-object.ed{ border:1px solid #999;}
+#slider .mui-table-view .mui-media-object.ing{ border:1px solid #007aff;}
+#slider .mui-table-view .mui-media-object.ed em{ background-color:#999;}
+#slider .mui-table-view .mui-media-object.ing em{ background-color:#007aff;}
+#slider .mui-table-view .mui-media-body h3{ margin-bottom:10px; font-size:15px; color:#333;}
+#slider .mui-table-view .mui-media-body span{ position:absolute; bottom:11px; right:15px; padding-left:10px; background-color:#fff; color:#3069b8;}
+/*网上调查*/
+#item2 .mui-table-view{ }
+#item2 .mui-table-view-cell:after{ left:0;}
+#item2 .mui-table-view-cell a{ margin:-11px -25px;}
+#item2 .mui-table-view-cell p{ width:77%; position:relative; padding-left:8px;}
+#item2 .mui-table-view-cell p:before{ position:absolute; content:""; bottom:50%; left:0; margin-top:2px; width:4px; height:4px; background-color:#999;}
+#item2 .mui-table-view-cell .time{ position:absolute; bottom:11px; right:15px; padding-left:5px; background-color:#fff; font-size:12px; color:#999;}
+
+.mui-segmented-control .sj-active{color:#007aff !important; }
+.mui-table-view:after{ height:0;}
+
+/*政协提案和答复*/
+.list-tadf{ position: relative;z-index: 1;overflow: hidden;width: 100%;}
+.list-tadf .mui-segmented-control .mui-control-item{ width:50%; padding-top:8px; padding-left:10px; line-height:30px; font-size:16px; text-align:left;}
+.list-tadf .mui-segmented-control .more{ position:absolute; bottom:5px; right:15px; font-family: Simsun;}
+.list-tadf .mui-segmented-control~.mui-slider-group{ position:relative; top:auto; bottom:auto;}
+.list-tadf.mui-slider .mui-slider-group .mui-slider-item{ height:auto; border-bottom:none;}
+.list-tadf .mui-table-view-cell:after{ left:0;}
+.list-tadf .mui-table-view-cell a{ margin:-11px -25px;}
+.list-tadf .mui-table-view-cell p{ width:77%; position:relative; padding-left:8px;}
+.list-tadf .mui-table-view-cell p:before{ position:absolute; content:""; bottom:50%; left:0; margin-top:2px; width:4px; height:4px; background-color:#999;}
+.list-tadf .mui-table-view-cell .time{ position:absolute; bottom:11px; right:15px; padding-left:5px; background-color:#fff; font-size:12px; color:#999;}

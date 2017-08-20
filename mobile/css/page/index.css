@@ -28,9 +28,9 @@
 #slider2.mui-slider .mui-slider-group .mui-slider-item{ height:auto; border-bottom:none;}
 #slider2.mui-slider .mui-slider-group .mui-slider-item .mui-spinner{ position:absolute; top:50%; left:50%; margin:-12px 0 0 -12px;}
 #slider2 .mui-table-view-cell:after{ right:15px;}
-#slider2 .mui-table-view-cell p{ width:78%; position:relative; padding-left:8px;}
+#slider2 .mui-table-view-cell p{ width:80%; position:relative; padding-left:8px;}
 #slider2 .mui-table-view-cell p:before{ position:absolute; content:""; bottom:50%; left:0; margin-top:2px; width:4px; height:4px; background-color:#999;}
-#slider2 .mui-table-view-cell .time{ position:absolute; bottom:11px; right:15px; padding-left:10px; background-color:#fff; font-size:12px; color:#999;}
+#slider2 .mui-table-view-cell .time{ position:absolute; bottom:11px; right:15px; padding-left:5px; background-color:#fff; font-size:12px; color:#999;}
 
 /*视频新闻*/
 .list-media{ position: relative;z-index: 1;overflow: hidden;width: 100%; background-color:#fff;}
@@ -43,18 +43,47 @@
 .list-media .mui-table-view li a{ position:absolute; left:0; top:0; width:100%; height:100%;}
 .list-media .mui-table-view li p{ position:absolute; bottom:0; left:0; width:100%; height:30px; margin:0; padding:0 2%; line-height:30px; text-align:center; font-size:12px; color:#fff; background-color:rgba(0,0,0,.35);}
 
+
+.mui-segmented-control .sj-active{color:#007aff !important; }
+.mui-table-view:after{ height:0;}
 /*政府公告*/
-.list-gg{ position: relative;z-index: 1;overflow: hidden;width: 100%;}
-.list-gg .mui-segmented-control .mui-control-item{ width:25%; padding-top:8px; line-height:30px; font-size:16px;}
-.list-gg .mui-segmented-control .more{ position:absolute; bottom:5px; right:15px; font-family: Simsun;}
-.list-gg .mui-segmented-control~.mui-slider-group{ position:relative; top:auto; bottom:auto;}
-.list-gg.mui-slider .mui-slider-group .mui-slider-item{ height:auto; border-bottom:none;}
-.list-gg .mui-table-view{ background-color:#f1f2f6;}
-.list-gg .mui-table-view-cell:after{ left:0;}
-.list-gg .mui-table-view-cell a{ margin:-11px -25px;}
-.list-gg .mui-table-view .mui-media-object{ margin-right:20px; line-height:1; text-align:center;}
-.list-gg .mui-table-view .mui-media-object em{ line-height:2; font-style:normal; font-size:24px; font-weight:bold; color:#fb6e52;}
-.list-gg .mui-table-view .mui-media-object small{ font-size:12px; color:#999; position:relative; top:-6px;}
-.list-gg .mui-table-view .mui-media-body h3{ margin-bottom:10px; font-size:15px; color:#333;}
-.list-gg .mui-table-view .mui-media-body span{ position:absolute; bottom:11px; right:15px; padding-left:10px; background-color:#f1f2f6; font-size:14px; color:#3069b8;}
+.list-zfgg{ position: relative;z-index: 1;overflow: hidden;width: 100%;}
+.list-zfgg .mui-segmented-control .mui-control-item{ width:25%; padding-top:8px; line-height:30px; font-size:16px;}
+.list-zfgg .mui-segmented-control .more{ position:absolute; bottom:5px; right:15px; font-family: Simsun;}
+.list-zfgg .mui-segmented-control~.mui-slider-group{ position:relative; top:auto; bottom:auto;}
+.list-zfgg.mui-slider .mui-slider-group .mui-slider-item{ height:auto; border-bottom:none;}
+.list-zfgg .mui-table-view{ background-color:#f1f2f6;}
+.list-zfgg .mui-table-view-cell:after{ left:0;}
+.list-zfgg .mui-table-view-cell a{ margin:-11px -25px;}
+.list-zfgg .mui-table-view .mui-media-object{ max-width:66px; width:60px; height:auto; border-radius:6px; margin-top:5px; margin-right:20px; line-height:1; text-align:center; background-color:#fff;}
+.list-zfgg .mui-table-view .mui-media-object em{ line-height:1.8; font-style:normal; font-size:24px; font-weight:bold; color:#999;}
+.list-zfgg .mui-table-view .mui-media-object small{ font-size:12px; color:#999; position:relative; top:-6px;}
+.list-zfgg .mui-table-view .mui-media-body h3{ margin-bottom:10px; font-size:15px; color:#333;}
+.list-zfgg .mui-table-view .mui-media-body span{ position:absolute; bottom:11px; right:15px; padding-left:10px; background-color:#f1f2f6; font-size:14px; color:#3069b8;}
+
+/*便民公告*/
+.list-bmgg{ position: relative;z-index: 1;overflow: hidden;width: 100%;}
+.list-bmgg .mui-segmented-control .mui-control-item{ width:25%; padding-top:8px; line-height:30px; font-size:16px;}
+.list-bmgg .mui-segmented-control .more{ position:absolute; bottom:5px; right:15px; font-family: Simsun;}
+.list-bmgg .mui-segmented-control~.mui-slider-group{ position:relative; top:auto; bottom:auto;}
+.list-bmgg.mui-slider .mui-slider-group .mui-slider-item{ height:auto; border-bottom:none;}
+.list-bmgg .mui-table-view{ background-color:#f1f2f6;}
+.list-bmgg .mui-table-view-cell:after{ left:0;}
+.list-bmgg .mui-table-view-cell a{ margin:-11px -25px;}
+.list-bmgg .mui-table-view-cell p{ width:77%; position:relative; padding-left:8px;}
+.list-bmgg .mui-table-view-cell p:before{ position:absolute; content:""; bottom:50%; left:0; margin-top:2px; width:4px; height:4px; background-color:#999;}
+.list-bmgg .mui-table-view-cell .time{ position:absolute; bottom:11px; right:15px; padding-left:5px; background-color:#f1f2f6; font-size:12px; color:#999;}
+
+/*热点关注*/
+.list-rdgz{ position: relative;z-index: 1;overflow: hidden;width: 100%;}
+.list-rdgz .mui-segmented-control .mui-control-item{ width:25%; padding-top:8px; line-height:30px; font-size:16px;}
+.list-rdgz .mui-segmented-control .more{ position:absolute; bottom:5px; right:15px; font-family: Simsun;}
+.list-rdgz .mui-segmented-control~.mui-slider-group{ position:relative; top:auto; bottom:auto;}
+.list-rdgz.mui-slider .mui-slider-group .mui-slider-item{ height:auto; border-bottom:none;}
+.list-rdgz .mui-table-view{ background-color:#f1f2f6;}
+.list-rdgz .mui-table-view-cell:after{ left:0;}
+.list-rdgz .mui-table-view-cell a{ margin:-11px -25px;}
+.list-rdgz .mui-table-view-cell span{ display:block; width:20px; height:20px; line-height:20px; text-align:center; border-radius:20px; font-size:12px; background-color:#E1E1E1;}
+.list-rdgz .mui-table-view-cell .f3{ color:#fff; background-color:#F6B765;}
+.list-rdgz .mui-table-view-cell p{ position:absolute; bottom:11px; right:15px; width:80%; color:#999;}
 
