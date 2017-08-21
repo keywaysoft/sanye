@@ -10,7 +10,7 @@
 .fast-nav .l4{ background-color:#FC6767;}
 .fast-nav .l5{ background-color:#F78449;}
 .fast-nav .l6{ background-color:#90D856;}
-.fast-nav li a i{ display:block; margin:25% 0 10%; font-size:24px;}
+.fast-nav li a i{ display:block; margin:20% 0 10%; font-size:30px;}
 .fast-nav .l5 a{ line-height:1.4;}
 
 
@@ -53,3 +53,28 @@
 .list-tadf .mui-table-view-cell p{ width:77%; position:relative; padding-left:8px;}
 .list-tadf .mui-table-view-cell p:before{ position:absolute; content:""; bottom:50%; left:0; margin-top:2px; width:4px; height:4px; background-color:#999;}
 .list-tadf .mui-table-view-cell .time{ position:absolute; bottom:11px; right:15px; padding-left:5px; background-color:#fff; font-size:12px; color:#999;}
+
+/*在线访谈*/
+.list-zxft{ position: relative;z-index: 1;overflow: hidden;width: 100%;}
+.list-zxft .mui-segmented-control .mui-control-item{ width:25%; padding-top:8px; line-height:30px; font-size:16px;}
+.list-zxft .mui-segmented-control .more{ position:absolute; bottom:5px; right:15px; font-family: Simsun;}
+.list-zxft .mui-segmented-control~.mui-slider-group{ position:relative; top:auto; bottom:auto;}
+.list-zxft.mui-slider .mui-slider-group .mui-slider-item{ height:auto; border-bottom:none;}
+.list-zxft .mui-table-view-cell:after{ left:0;}
+.list-zxft .mui-table-view-cell a{ margin:-11px -25px;}
+.list-zxft .mui-table-view-cell .img{ width:33%; height:82px; float:left;}
+.list-zxft .mui-table-view-cell .con{ width:63%; float:right;}
+.list-zxft .btn-ft li{ position:relative; float:left; width:46%; margin:0 2%; background-color:#f6f6f6; border-radius:5px; }
+.list-zxft .btn-ft li a{ display:block; text-align:center; padding:8% 0; font-size:16px;}
+.list-zxft .btn-ft li a i{ margin-right:10px; color:#EC971F;}
+
+/*阳光政务*/
+.list-ygzw{ position: relative;z-index: 1;overflow: hidden;width: 100%;}
+.list-ygzw .mui-segmented-control .mui-control-item{ width:25%; padding-top:8px; line-height:30px; font-size:16px;}
+.list-ygzw .mui-segmented-control .more{ position:absolute; bottom:5px; right:15px; font-family: Simsun;}
+.list-ygzw .mui-segmented-control~.mui-slider-group{ position:relative; top:auto; bottom:auto;}
+.list-ygzw.mui-slider .mui-slider-group .mui-slider-item{ height:auto; border-bottom:none;}
+.list-ygzw .mui-table-view-cell:after{ left:0; width:100%;}
+.list-ygzw .mui-table-view-cell a{ margin:-11px -25px;}
+.list-ygzw .mui-table-view-cell .img{ width:33%; height:82px; float:left;}
+.list-ygzw .mui-table-view-cell .con{ width:63%; float:right;}

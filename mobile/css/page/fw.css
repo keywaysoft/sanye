@@ -1,0 +1,16 @@
+.mui-scroll{ padding: 0 10px;}
+
+/*办事*/
+.nav-bs{ list-style:none;}
+.nav-bs li{ position:relative; float:left; width:31.33%; height:0; padding-bottom:31.33%;  margin:5px 1% 0; border-radius:5px;}
+.nav-bs li a{ position:absolute; width:100%; height:100%; color:#fff; font-size:12px; text-align:center;}
+.nav-bs .l1{ background-color:#EE4242;}
+.nav-bs .l2{ background-color:#80A7EE;}
+.nav-bs .l3{ background-color:#78BDE8;}
+.nav-bs .l4{ background-color:#FC6767;}
+.nav-bs .l5{ background-color:#F78449;}
+.nav-bs .l6{ background-color:#90D856;}
+.nav-bs li a i{ display:block; margin:20% 0 10%; font-size:30px;}
+.nav-bs .l5 a{ line-height:1.4;}
+
+

@@ -1,7 +1,7 @@
 /*****样式调整*****/
 body{ background-color:#fff; color:#333;}
 p{ color:#333;}
-ul{ margin:0; padding:0;}
+ul{ margin:0; padding:0; list-style: none;}
 
 .mui-content{ background-color:#fff;}
 .sj-content{ margin:11px 15px; padding:0 10px 10px; background-color:#f1f2f6;}
