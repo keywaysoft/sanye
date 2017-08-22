@@ -16,6 +16,13 @@ var base = {
 				}
 			}
 		});
+	},
+	muiSlideFun:function(target){
+		mui(target).on("tap","span:not(.active)",function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			//切换
+			$($(this).data("target")).addClass("active").siblings().removeClass("active");
+		})
 	}
 }
 

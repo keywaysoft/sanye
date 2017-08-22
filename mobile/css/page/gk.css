@@ -68,4 +68,44 @@ hr{ margin:20px 0; color:007AFF;}
 #slider .mui-table-view .mui-media-body h3{ margin-bottom:10px; font-size:15px; color:#333;}
 #slider .mui-table-view .mui-media-body span{ position:absolute; bottom:11px; right:15px; padding-left:10px; background-color:#fff; color:#3069b8;}
 
+/*稳增长等*/
+.h-title1{ height:36px; line-height:36px; font-size:16px; font-weight:normal; background-color:#ebebeb;}
+.h-title1 span{ float:left; width:20%; text-align:center; color:#333;}
+.h-title1 .active{ position:relative; background-color:#3269b9; color:#fff;}
+.h-title1 .active:after{ position:absolute; content:""; left:50%; bottom:-10px; margin-left:-5px; width:0; height:0; border:5px solid transparent; border-top-color:#3269b9;}
+
+.h-title2{ margin-bottom:0; line-height:32px; font-size:15px; font-weight:normal; }
+.h-title2:before,.h-title2:after{ display:table;content:'';}
+.h-title2:after{ clear:both;}
+.h-title2 span{ float:left; padding:0 5px; white-space: nowrap; }
+.h-title2 .active{ position:relative; color:#007AFF;}
+.h-title2 .active:after{ position:absolute; content:""; left:5%; bottom:0; width:90%; height:1px; background-color:#007AFF;}
+
+.tab-con{}
+.tab-con .nav-zzd{ display:none;}
+.tab-con .nav-zzd.active{ display:block;}
+.tab2-con{}
+.tab2-con .nav-zzd2{ display:none;}
+.tab2-con .nav-zzd2.active{ display:block;}
+.tab2-con .nav-zzd2 li{ position:relative; padding:11px 15px;}
+.tab2-con .nav-zzd2 li:not(last-child):after{ position:absolute; content:""; bottom:0; left:15px; width:calc(100% - 30px); height:1px; background-color:#eee;}
+.tab2-con .nav-zzd2 p{ width:77%; position:relative; margin-bottom:0; padding-left:8px;}
+.tab2-con .nav-zzd2 p:before{ position:absolute; content:""; bottom:40%; left:0; width:4px; height:4px; background-color:#999;}
+.tab2-con .nav-zzd2 .time{ position:absolute; bottom:11px; right:15px; padding-left:5px; background-color:#fff; font-size:12px; color:#999;}
+
+/*五公开*/
+.h-title1-wgk span{ width:auto; padding:0 15px;}
+
+/*选项卡-3*/
+#slider3{ background-color:#fff;}
+#slider3 .mui-segmented-control .mui-control-item{ width:auto; padding-top:8px; line-height:30px; font-size:16px;}
+#slider3 .mui-segmented-control .more{ position:absolute; bottom:5px; right:15px; font-family: Simsun;}
+#slider3 .mui-segmented-control~.mui-slider-group{ position:relative; top:auto; bottom:auto;}
+#slider3.mui-slider .mui-slider-group .mui-slider-item{ height:auto; border-bottom:none;}
+#slider3.mui-slider .mui-slider-group .mui-slider-item .mui-spinner{ position:absolute; top:50%; left:50%; margin:-12px 0 0 -12px;}
+#slider3 .mui-table tr{ border-bottom:1px solid #eee;}
+#slider3 .mui-table tr:nth-child(2n){ background-color:#f8f8f8;}
+#slider3 .mui-table td{ padding:6px 10px;}
+#slider3 .mui-table a{ position:relative; display:block; font-size:12px; color:#666;}
+#slider3 .mui-table a:after{ position:absolute; content:""; left:-8px; top:50%; margin-top:-4px; width:0; height:0; border:4px solid transparent; border-left-color:#ccc;}
 

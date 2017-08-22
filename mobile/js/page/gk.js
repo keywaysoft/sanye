@@ -50,4 +50,16 @@ mui.init();
 	itemArr[1] = document.getElementById('item2-2');
 	base.slideFun(htmlArr,itemArr,'slider2');
 	
+	//选项卡-2
+	var htmlArr = [],
+		itemArr = [];
+	htmlArr[0] = '<table class="mui-table sj-table"><tr><td><a href="#">2政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td><a href="#">审计局</a></td></tr><tr><td><a href="#">政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td><a href="#">审计局</a></td></tr><tr><td><a href="#">政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td><a href="#">审计局</a></td></tr><tr><td><a href="#">政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td><a href="#">审计局</a></td></tr><tr><td><a href="#">政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td><a href="#">审计局</a></td></tr><tr><td><a href="#">政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td><a href="#">审计局</a></td></tr><tr><td><a href="#">政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td><a href="#">审计局</a></td></tr><tr><td><a href="#">政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td></td></tr></table>';
+	itemArr[0] = document.getElementById('item3-1');
+	itemArr[1] = document.getElementById('item3-2');
+	base.slideFun(htmlArr,itemArr,'slider3');
+	
+	//选项卡
+	base.muiSlideFun(".h-title1-tab");
+	base.muiSlideFun(".h-title2-tab");
 })();
+
