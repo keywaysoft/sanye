@@ -1,0 +1,71 @@
+.mui-scroll{ padding: 0 10px;}
+hr{ margin:20px 0; color:007AFF;}
+.h-title{ margin:10px 0; text-align:center; font-size:16px; color:#007AFF;}
+
+.h-title1{ height:36px; line-height:36px; font-size:16px; font-weight:normal; background-color:#ebebeb;}
+.h-title1 span{ float:left; width:25%; text-align:center; }
+.h-title1 .active{ position:relative; background-color:#3269b9; color:#fff;}
+.h-title1 .active:after{ position:absolute; content:""; left:50%; bottom:-10px; margin-left:-5px; width:0; height:0; border:5px solid transparent; border-top-color:#3269b9;}
+
+/*快捷导航*/
+.fast-nav{ list-style:none;}
+.fast-nav li{ position:relative; float:left; width:48%; margin:5px 1% 0; background-color:#f8fafa;}
+.fast-nav li:after{ position:absolute; content:""; left:0; top:0; width:4px; height:100%; background-color:#007AFF;}
+.fast-nav li a{ height:36px; line-height:36px; color:#666; font-size:12px; text-align:center; }
+.fast-nav li a i{ display:inline-block; vertical-align:middle; margin:0 10px; font-size:20px; color:#007AFF;}
+
+/*搜索*/
+.sj-search{ margin:20px 0; }
+.sj-search fieldset{ border:none;}
+.sj-search legend{ text-align:center; font-size:16px; font-weight:bold; color:#007AFF;}
+.sj-search p{ margin-bottom:0;}
+.sj-search #bmfw{ position:relative; display:block; height:36px; margin:5px 0 10px; text-align:left;}
+.sj-search #bmfw i{ position:absolute; right:2%; top:5px; font-size:24px !important;}
+.sj-search input[type=text]{ height:36px; margin:5px 0 10px;} 
+.sj-search input[type=submit]{ display:block; width:48%; margin:20px auto 0; height:40px; font-size:16px;}
+
+/*政务大厅*/
+.add a{ display:block; height:65px;}
+.add .zwdt{ background:url(../../images/fw/fw-zwdt.jpg) no-repeat center; background-size:cover;}
+
+/*基本信息公开*/
+.jbxx{ margin-bottom:10px;}
+.jbxx li{ float:left; min-width:48%; width:auto; margin:5px 1% 0; }
+.jbxx li a{ font-size:14px; color:#333;}
+.jbxx li a i{ margin-right:10px; font-size:18px; }
+
+/*选项卡-2*/
+#slider2{ background-color:#fff;}
+#slider2 .mui-segmented-control .mui-control-item{ width:auto; padding-top:8px; line-height:30px; font-size:16px;}
+#slider2 .mui-segmented-control .more{ position:absolute; bottom:5px; right:15px; font-family: Simsun;}
+#slider2 .mui-segmented-control~.mui-slider-group{ position:relative; top:auto; bottom:auto;}
+#slider2.mui-slider .mui-slider-group .mui-slider-item{ height:auto; border-bottom:none;}
+#slider2.mui-slider .mui-slider-group .mui-slider-item .mui-spinner{ position:absolute; top:50%; left:50%; margin:-12px 0 0 -12px;}
+#slider2 .mui-table-view-cell:after{ right:15px;}
+#slider2 .mui-table-view-cell p{ width:80%; position:relative; padding-left:8px;}
+#slider2 .mui-table-view-cell p:before{ position:absolute; content:""; bottom:50%; left:0; margin-top:2px; width:4px; height:4px; background-color:#999;}
+#slider2 .mui-table-view-cell .time{ position:absolute; bottom:11px; right:15px; padding-left:5px; background-color:#fff; font-size:12px; color:#999;}
+
+/*领导信息*/
+.h-title1{ margin:10px 0; line-height:38px; font-size:17px; text-align:center; color:#fff; background-color:#0062CC;}
+.h-title1 i{ font-size:18px; margin-right:5px;}
+.leader li{ position:relative; padding:5px 10px; }
+.leader .name{ font-size:16px; }
+.leader label{ color:#007AFF; }
+.leader .sj-btn{ position:absolute; right:5px; top:21px; font-size:12px; color:#fff; background-color:#fb6e52}
+
+/*选项卡-1*/
+#slider{  background-color:#fff;}
+#slider .mui-segmented-control .mui-control-item{ width:auto; padding-top:8px; line-height:30px; font-size:16px;}
+#slider .mui-segmented-control .more{ position:absolute; bottom:5px; right:15px; font-family: Simsun;}
+.mui-fullscreen #slider .mui-segmented-control~.mui-slider-group{ position:relative; top:auto; bottom:auto;}
+#slider.mui-slider .mui-slider-group .mui-slider-item{ height:auto; border-bottom:none;}
+#slider.mui-slider .mui-slider-group .mui-slider-item .mui-spinner{ position:absolute; top:50%; left:50%; margin:-12px 0 0 -12px;}
+#slider .mui-table-view-cell:after{ right:15px;}
+#slider .mui-table-view .mui-media-object{ max-width:66px; width:60px; height:auto; border-radius:6px; margin-top:5px; margin-right:20px; line-height:1; text-align:center; background-color:#f7f7f7;}
+#slider .mui-table-view .mui-media-object em{ line-height:1.8; font-style:normal; font-size:24px; font-weight:bold; color:#999;}
+#slider .mui-table-view .mui-media-object small{ font-size:12px; color:#999; position:relative; top:-6px;}
+#slider .mui-table-view .mui-media-body h3{ margin-bottom:10px; font-size:15px; color:#333;}
+#slider .mui-table-view .mui-media-body span{ position:absolute; bottom:11px; right:15px; padding-left:10px; background-color:#fff; color:#3069b8;}
+
+

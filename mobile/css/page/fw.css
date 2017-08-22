@@ -5,6 +5,10 @@
 .h-title .active{ background-color:#00b8ee; color:#fff;}
 .h-title span i{ font-size:18px; margin-right:5px;}
 
+.h-title1{ height:36px; line-height:36px; font-size:16px; font-weight:normal; background-color:#ebebeb;}
+.h-title1 span{ float:left; width:25%; text-align:center; }
+.h-title1 .active{ position:relative; background-color:#3269b9; color:#fff;}
+.h-title1 .active:after{ position:absolute; content:""; left:50%; bottom:-10px; margin-left:-5px; width:0; height:0; border:5px solid transparent; border-top-color:#3269b9;}
 
 /*办事*/
 .nav-bs{ display:none; list-style:none;}
@@ -15,3 +19,35 @@
 .nav-bs li a i{ display:block; margin:20% 0 10%; font-size:30px; }
 .nav-bs .more{ float:left; width:100%; line-height:36px; color:#999; text-align:center;}
 
+/*部门服务*/
+.select-box{ position:relative; margin:10px 0;}
+.select-box #bmfw{ width:60%; margin-left:40%; margin-bottom:0; background-color:#f6f6f6; text-align:left;}
+.select-box i{ position:absolute; right:2%; top:4px; background-color:#007AFF; color:#fff; border-radius:4px; font-size:24px !important;}
+.nav-bm{ display:none; list-style:none;}
+.nav-bm.active{ display:block;}
+.nav-bm li:nth-child(n+6){ display:none;}
+.nav-bm li a{ padding-left:10px; line-height:32px; font-size:14px; color:#333; text-align:center;}
+.nav-bm .more{ float:left; width:100%; line-height:36px; color:#999; text-align:center;}
+
+/*重点等服务*/
+.nav-zdd{ display:none; list-style:none;}
+.nav-zdd.active{ display:block;}
+.nav-zdd li{ position:relative; float:left; width:30.33%; height:0; padding-bottom:30.33%;  margin:5px 1.5% 0; background-color:#f6f6f6; border:1px solid #f1f1f1; box-sizing:border-box;}
+.nav-zdd li:nth-child(n+7){ display:none;}
+.nav-zdd li a{ position:absolute; width:100%; height:100%; font-size:13px; color:#666; text-align:center;}
+.nav-zdd li a i{ display:block; margin:25% 0 10%; font-size:24px; color:#999;}
+.nav-zdd .more{ float:left; width:100%; line-height:36px; color:#999; text-align:center;}
+
+/*权责清单等*/
+.add{ margin:10px auto;}
+.add a{ display:block; height:65px;}
+.add .qzqd{ display:block; line-height:65px; text-align:center; background-color:#11c6fd; color:#fff; font-size:20px; font-weight:bold;}
+.add .zwdt{ background:url(../../images/fw/fw-zwdt.jpg) no-repeat center; background-size:cover;}
+
+/*搜索*/
+.sj-search{ margin:20px 0; }
+.sj-search fieldset{ border:none;}
+.sj-search legend{ text-align:center; font-size:16px; font-weight:bold; color:#007AFF;}
+.sj-search p{ margin-bottom:0;}
+.sj-search input[type=text]{ height:36px; margin:5px 0 10px;}
+.sj-search input[type=submit]{ width:48%; margin:0 1%; height:40px; font-size:16px;}

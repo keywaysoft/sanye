@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>政务公开</title>
+    <link href="fonts/iconfont.css" rel="stylesheet"/>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/mui.picker.css" rel="stylesheet" />
+	<link href="css/mui.poppicker.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/page/gk.css" rel="stylesheet"/>
+</head>
+<body>
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable">
+	  <!-- 菜单容器 -->
+	  <aside class="mui-off-canvas-left" id="leftNav">
+	    <div class="mui-scroll-wrapper">
+	      <div class="mui-scroll">
+	        <!-- 菜单具体展示内容 -->
+	        <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<span class="mui-icon iconfont icon-shouye2"></span>首页
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<span class="mui-icon iconfont icon-zhengwudongtai"></span>政务动态
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<span class="mui-icon iconfont icon-zhengwugongkai"></span>政务公开
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<span class="mui-icon iconfont icon-zhengwufuwu"></span>政务服务
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<span class="mui-icon iconfont icon-gongzhongcanyu"></span>公共参与
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<span class="mui-icon iconfont icon-zoujinanzhou"></span>走进安州
+					</a>
+				</li>
+			</ul>
+	      </div>
+	    </div>
+	  </aside>
+	  <!-- 主页面容器 -->
+	  <div class="mui-inner-wrap">
+	    <!-- 主页面标题 -->
+	    <header class="mui-bar mui-bar-nav">
+	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#leftNav"></a>
+	      <a class="mui-icon mui-icon-search mui-pull-right"></a>
+	      <h1 class="mui-title">政务公开</h1>
+	    </header>
+	    <div class="mui-content mui-scroll-wrapper">
+	      	<div class="mui-scroll">
+		        <!-- 主界面具体展示内容 -->
+		        
+		        <!--快捷导航-->
+		        <ul class="fast-nav mui-clearfix">
+					<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>政府信息公开指南</a></li>
+					<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>政府信息公开目录</a></li>
+					<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>政府信息公开制度</a></li>
+					<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>政府信息公开年报</a></li>
+					<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>依申请公开</a></li>
+					<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>重点领域信息公开</a></li>
+					<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>全面推进五公开</a></li>
+				</ul>
+		        <!--end 快捷导航-->
+		        
+		        <hr/>
+
+		        <!--信息公开查询-->
+		        <form class="mui-search sj-search" id="form1" action="" method="POST">
+		        	<fieldset>
+		        		<legend>信息公开查询</legend>
+		        		<p><label for="key">查询关键词:</label><input type="text" id="key" placeholder="请输入关键词"/></p>
+		        		<div><label for="key">查询范围:</label>
+		        			<div class="mui-btn" id="bmfw">
+				        		<div id='result-bmfw' class="ui-alert">全部</div>
+				        		<i class="mui-icon mui-icon-arrowdown"></i>
+				        	</div>
+		        		</div>
+		        		<p><input class="mui-btn mui-btn-primary" type="submit" value="查询"/></p>
+		        	</fieldset>
+		        </form>
+		        
+		        <div class="add">
+		        	<a class="zwdt" href="#"></a>	
+		        </div>
+		        
+		        <hr/>
+		        
+		        <!--基本信息公开-->
+		        <h3 class="h-title">基本信息公开</h3>
+		        <ul class="jbxx mui-clearfix">
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>机构职能</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>领导简介及分工</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>政策文件</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>文件解读</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>规划计划</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>工作动态</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>统计数据</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>重要会议</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>人事信息</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>机构职能</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>政府采购与招投标</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>机构职能</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>政府信息公开工作年度报告</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>机构职能</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>人大代表建议政协提案</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>机构职能</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>机构职能</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>机构职能</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>预决算及“三公”经费</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>机构职能</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>机构职能</a></li>
+		        	<li><a href="#"><i class="mui-icon iconfont icon-xie"></i>依申请公开指引</a></li>
+		        </ul>
+		        <!--基本信息公开-->
+		        
+		        <!--选项卡-2-->
+		        <div id="slider2" class="mui-slider">
+					<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+						<a class="mui-control-item mui-active" href="#item2-1">政策文件</a>
+						<a class="mui-control-item" href="#item2-2">政务动态</a>
+						<a class="mui-control-item" href="" style="opacity:0;">新闻发布会</a>
+						<a class="more c-gray">更多&gt;&gt;</a>
+					</div>
+					<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+					<div class="mui-slider-group">
+						<div id="item2-1" class="mui-slider-item mui-control-content mui-active">
+							<!--列表-->
+							<ul class="mui-table-view">
+							    <li class="mui-table-view-cell">
+							        <a href="javascript:;">
+							        	<p class="mui-ellipsis">安州区花荄镇、桑枣镇将成为南开大学基层实践基地</p>
+							        	<span class="time">2017-08-15</span>
+							        </a>
+							    </li>
+							    <li class="mui-table-view-cell">
+							        <a href="javascript:;">
+							        	<p class="mui-ellipsis">廖雪梅率队督导安州区环境保护突出问题</p>
+							        	<span class="time">2017-08-15</span>
+							        </a>
+							    </li>
+							    <li class="mui-table-view-cell">
+							        <a href="javascript:;">
+							        	<p class="mui-ellipsis">安州召开集贸市场创文工作现场推进会</p>
+							        	<span class="time">2017-08-15</span>
+							        </a>
+							    </li>
+							    <li class="mui-table-view-cell">
+							        <a href="javascript:;">
+							        	<p class="mui-ellipsis">四川日报：安州“创文” 小举动折射大文明</p>
+							        	<span class="time">2017-08-15</span>
+							        </a>
+							    </li>
+							    <li class="mui-table-view-cell">
+							        <a href="javascript:;">
+							        	<p class="mui-ellipsis">安州城西将建连江公园 造价3.5亿元绿地率82.5%</p>
+							        	<span class="time">2017-08-15</span>
+							        </a>
+							    </li>
+							    <li class="mui-table-view-cell">
+							        <a href="javascript:;">
+							        	<p class="mui-ellipsis">安州区发放首批四川省工会会员服务卡</p>
+							        	<span class="time">2017-08-15</span>
+							        </a>
+							    </li>
+							</ul>
+						</div>
+						<div id="item2-2" class="mui-slider-item mui-control-content">
+							<div class="mui-spinner">
+							</div>
+						</div>
+					</div>
+				</div>
+		        <!--end 选项卡-2-->
+		        
+		        <!--领导信息-->
+		        <h3 class="h-title1"><i class="mui-icon iconfont icon-xie"></i>领导信息</h3>
+		        <ul class="leader">
+		        	<li>
+		        		<p class="name"><a href="">廖雪梅</a></p>
+		        		<p><label>职务：</label>区委书记</p>
+		        		<p><label>工作分工：</label>主持区委全面工作。</p>
+		        		<a class="sj-btn mui-btn" href="#">[领导活动]</a>
+		        	</li>
+		        	<li>
+		        		<p class="name"><a href="">李昊天</a></p>
+		        		<p><label>职务：</label>区委副书记、区长</p>
+		        		<p><label>工作分工：</label>投领导区政府全面工作。负责监察、审计工作。分管区监察局、审计局。。</p>
+		        		<a class="sj-btn mui-btn" href="#">[领导活动]</a>
+		        	</li>
+		        </ul>
+		        
+		        <!--选项卡-1-->
+		        <div id="slider" class="mui-slider">
+					<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+						<a class="mui-control-item mui-active" href="#item1">政府公示</a>
+						<a class="mui-control-item" href="#item2">政府公告</a>
+						<a class="mui-control-item" href="#" style="opacity:0;">工作动态</a>
+						<a class="more c-gray">更多&gt;&gt;</a>
+					</div>
+					<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+					<div class="mui-slider-group">
+						<div id="item1" class="mui-slider-item mui-control-content mui-active">
+							<!--列表-->
+							<ul class="mui-table-view">
+							    <li class="mui-table-view-cell">
+							        <a href="javascript:;">
+							            <div class="mui-media-object mui-pull-left">
+							            	<em>16</em><br><small>2017-08</small>
+							            </div>
+							            <div class="mui-media-body">
+							                <h3 class="mui-ellipsis">民政部就有序参与四川九寨沟地区抗震救灾工作作出了安排</h3>
+							                <p class='mui-ellipsis-2 c-gray'>根据《中华人民共和国土地管理法》、《中华人民共和国城市房地产管理条例》的规定，我们必须要</p>
+							                <span class="detail">[详细]</span>
+							            </div>
+							        </a>
+							    </li>
+							    <li class="mui-table-view-cell">
+							        <a href="javascript:;">
+							            <div class="mui-media-object mui-pull-left">
+							            	<em>16</em><br><small>2017-08</small>
+							            </div>
+							            <div class="mui-media-body">
+											<h3 class="mui-ellipsis">民政部就有序参与四川九寨沟地区抗震救灾工作作出了安排</h3>
+							                <p class='mui-ellipsis-2 c-gray'>根据《中华人民共和国土地管理法》、《中华人民共和国城市房地产管理条例》的规定，我们必须要</p>
+							                <span class="detail">[详细]</span>
+							            </div>
+							        </a>
+							    </li>
+							    <li class="mui-table-view-cell">
+							        <a href="javascript:;">
+							            <div class="mui-media-object mui-pull-left">
+							            	<em>16</em><br><small>2017-08</small>
+							            </div>
+							            <div class="mui-media-body">
+							                <h3 class="mui-ellipsis">民政部就有序参与四川九寨沟地区抗震救灾工作作出了安排</h3>
+							                <p class='mui-ellipsis-2 c-gray'>根据《中华人民共和国土地管理法》、《中华人民共和国城市房地产管理条例》的规定，我们必须要</p>
+							                <span class="detail">[详细]</span>
+							            </div>
+							        </a>
+							    </li>
+							</ul>
+						</div>
+						<div id="item2" class="mui-slider-item mui-control-content">
+							<div class="mui-spinner">
+							</div>
+						</div>
+					</div>
+				</div>
+		        <!--end 选项卡-1-->
+	        	
+	        
+	      	</div>
+	    </div>  
+	    <!-- off-canvas backdrop -->
+		<div class="mui-off-canvas-backdrop"></div>
+	  </div>
+	</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/mui.min.js"></script>
+	<script src="js/mui.picker.min.js"></script>
+	<script src="js/mui.poppicker.js"></script>
+	<script src="js/base.js"></script>
+	<script src="js/page/gk.js"></script>
+	
+</body>
+</html>
