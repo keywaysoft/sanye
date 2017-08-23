@@ -47,8 +47,8 @@ hr{ margin:20px 0; color:007AFF;}
 #slider2 .mui-table-view-cell .time{ position:absolute; bottom:11px; right:15px; padding-left:5px; background-color:#fff; font-size:12px; color:#999;}
 
 /*领导信息*/
-.h-title1{ margin:10px 0; line-height:38px; font-size:17px; text-align:center; color:#fff; background-color:#0062CC;}
-.h-title1 i{ font-size:18px; margin-right:5px;}
+.h-title-leader{ margin:10px 0; line-height:38px; font-size:17px; text-align:center; color:#fff; background-color:#0062CC;}
+.h-title-leader i{ font-size:18px; margin-right:5px;}
 .leader li{ position:relative; padding:5px 10px; }
 .leader .name{ font-size:16px; }
 .leader label{ color:#007AFF; }
