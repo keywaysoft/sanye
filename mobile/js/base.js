@@ -47,6 +47,26 @@ var base = {
 		var removed = obj_class.replace(' '+cls+' ', ' ');//在原来的 class 替换掉首尾加了空格的 class. ex) ' abc bcd ' -> 'bcd '  
 		removed = removed.replace(/(^\s+)|(\s+$)/g, '');//去掉首尾空格. ex) 'bcd ' -> 'bcd'  
 		obj.className = removed;//替换原来的 class.  
-	}
+	},
+	toggleClass: function(obj,cls){  
+	    if(base.hasClass(obj,cls)){  
+	        base.removeClass(obj, cls);  
+	    }else{  
+	        base.addClass(obj, cls);  
+	    }  
+	}  
 }
+
+//通用事件处理
+//页面跳转
+mui('body').on('tap', 'a', function() {
+	var _url = this.getAttribute("href");
+	if(!_url || _url.indexOf('#')!='-1')return;
+  	//打开关于页面
+  	mui.openWindow({
+    	url: _url
+  	});
+});
+
+
 

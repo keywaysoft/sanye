@@ -15,8 +15,9 @@
 .nav-bs.active{ display:block;}
 .nav-bs li{ position:relative; float:left; width:31.33%; height:0; padding-bottom:31.33%;  margin:5px 1% 0; background-color:#f6f6f6;}
 .nav-bs li:nth-child(n+7){ display:none;}
-.nav-bs li a{ position:absolute; width:100%; height:100%; font-size:14px; color:#333; text-align:center;}
-.nav-bs li a i{ display:block; margin:20% 0 10%; font-size:30px; }
+.nav-bs li a{ display:table; position:absolute; width:100%; height:100%; font-size:14px; color:#333; }
+.nav-bs li a span{ display:table-cell; vertical-align:middle; text-align:center;}
+.nav-bs li a i{ display:block; margin-bottom:10%; font-size:30px; }
 .nav-bs .more{ float:left; width:100%; line-height:36px; color:#999; text-align:center;}
 
 /*部门服务*/
@@ -34,8 +35,9 @@
 .nav-zdd.active{ display:block;}
 .nav-zdd li{ position:relative; float:left; width:30.33%; height:0; padding-bottom:30.33%;  margin:5px 1.5% 0; background-color:#f6f6f6; border:1px solid #f1f1f1; box-sizing:border-box;}
 .nav-zdd li:nth-child(n+7){ display:none;}
-.nav-zdd li a{ position:absolute; width:100%; height:100%; font-size:13px; color:#666; text-align:center;}
-.nav-zdd li a i{ display:block; margin:25% 0 10%; font-size:24px; color:#999;}
+.nav-zdd li a{ display:table; position:absolute; width:100%; height:100%; font-size:13px; color:#666; }
+.nav-zdd li a span{ display:table-cell; vertical-align:middle; text-align:center;}
+.nav-zdd li a i{ display:block; margin-bottom:10%; font-size:24px; color:#999;}
 .nav-zdd .more{ float:left; width:100%; line-height:36px; color:#999; text-align:center;}
 
 /*权责清单等*/
@@ -49,5 +51,5 @@
 .sj-search fieldset{ border:none;}
 .sj-search legend{ text-align:center; font-size:16px; font-weight:bold; color:#007AFF;}
 .sj-search p{ margin-bottom:0;}
-.sj-search input[type=text]{ height:36px; margin:5px 0 10px;}
+.sj-search input[type=text]{ height:36px; margin:5px 0 10px; font-size:14px;}
 .sj-search input[type=submit]{ width:48%; margin:0 1%; height:40px; font-size:16px;}

@@ -3,14 +3,15 @@
 /*快捷导航*/
 .fast-nav{ list-style:none;}
 .fast-nav li{ position:relative; float:left; width:31.33%; height:0; padding-bottom:31.33%;  margin:5px 1% 0; border-radius:5px;}
-.fast-nav li a{ position:absolute; width:100%; height:100%; color:#fff; font-size:12px; text-align:center;}
+.fast-nav li a{ display:table; position:absolute; width:100%; height:100%; color:#fff; font-size:12px; }
 .fast-nav .l1{ background-color:#EE4242;}
 .fast-nav .l2{ background-color:#80A7EE;}
 .fast-nav .l3{ background-color:#78BDE8;}
 .fast-nav .l4{ background-color:#FC6767;}
 .fast-nav .l5{ background-color:#F78449;}
 .fast-nav .l6{ background-color:#90D856;}
-.fast-nav li a i{ display:block; margin:20% 0 10%; font-size:30px;}
+.fast-nav li a span{ display:table-cell; vertical-align:middle; text-align:center;}
+.fast-nav li a i{ display:block; margin-bottom:10%; font-size:30px;}
 .fast-nav .l5 a{ line-height:1.4;}
 
 

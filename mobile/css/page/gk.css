@@ -15,13 +15,13 @@ hr{ margin:20px 0; color:007AFF;}
 .fast-nav li a i{ display:inline-block; vertical-align:middle; margin:0 10px; font-size:20px; color:#007AFF;}
 
 /*搜索*/
-.sj-search{ margin:20px 0; }
+.sj-search{ margin:20px 0; font-size:14px;}
 .sj-search fieldset{ border:none;}
 .sj-search legend{ text-align:center; font-size:16px; font-weight:bold; color:#007AFF;}
 .sj-search p{ margin-bottom:0;}
 .sj-search #bmfw{ position:relative; display:block; height:36px; margin:5px 0 10px; text-align:left;}
 .sj-search #bmfw i{ position:absolute; right:2%; top:5px; font-size:24px !important;}
-.sj-search input[type=text]{ height:36px; margin:5px 0 10px;} 
+.sj-search input[type=text]{ height:36px; margin:5px 0 10px; font-size:14px;} 
 .sj-search input[type=submit]{ display:block; width:48%; margin:20px auto 0; height:40px; font-size:16px;}
 
 /*政务大厅*/
@@ -29,7 +29,7 @@ hr{ margin:20px 0; color:007AFF;}
 .add .zwdt{ background:url(../../images/fw/fw-zwdt.jpg) no-repeat center; background-size:cover;}
 
 /*基本信息公开*/
-.jbxx{ margin-bottom:10px;}
+.jbxx{ margin-bottom:20px;}
 .jbxx li{ float:left; min-width:48%; width:auto; margin:5px 1% 0; }
 .jbxx li a{ font-size:14px; color:#333;}
 .jbxx li a i{ margin-right:10px; font-size:18px; }
