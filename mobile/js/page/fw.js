@@ -6,14 +6,18 @@ mui.init();
 	});
 	
 	//选项卡
-	mui(".h-title-tab").on("tap","span:not(.active)",function(){
-		$(this).addClass("active").siblings().removeClass("active");
-		//切换
-		$($(this).data("target")).addClass("active").siblings().removeClass("active");
-	})
+	//选项卡
+	base.muiSlideFun(".h-title-tab");
+	
+	
 	//更多
 	mui(".tab-con").on("tap",".more",function(){
-		$(this).hide().siblings().show();
+		var _children = this.parentNode.children,
+			_len = _children.length;
+		for(var i=0;i<_len;i++){
+			_children[i].style.display = "block";
+		}
+		this.style.display = "none";
 	})
 	
 	//下拉
@@ -33,7 +37,7 @@ mui.init();
 	showUserPickerButton.addEventListener('tap', function(event) {
 		userPicker.show(function(items) {
 			userResult.innerText = items[0].text;
-			$(".tab-con .nav-bm").eq(items[0].value).addClass("active").siblings().removeClass("active");
+			base.tabFun(mui(".tab-con .nav-bm")[items[0].value]);
 			
 			//返回 false 可以阻止选择框的关闭
 			//return false;

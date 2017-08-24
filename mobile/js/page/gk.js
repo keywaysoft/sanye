@@ -5,11 +5,6 @@ mui.init();
 		deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
 	});
 	
-	//更多
-	mui(".tab-con").on("tap",".more",function(){
-		$(this).hide().siblings().show();
-	})
-	
 	//下拉
 	var userPicker = new mui.PopPicker();
 	userPicker.setData([{
@@ -27,8 +22,6 @@ mui.init();
 	showUserPickerButton.addEventListener('tap', function(event) {
 		userPicker.show(function(items) {
 			userResult.innerText = items[0].text;
-			$(".tab-con .nav-bm").eq(items[0].value).addClass("active").siblings().removeClass("active");
-			
 			//返回 false 可以阻止选择框的关闭
 			//return false;
 		});
@@ -50,7 +43,7 @@ mui.init();
 	itemArr[1] = document.getElementById('item2-2');
 	base.slideFun(htmlArr,itemArr,'slider2');
 	
-	//选项卡-2
+	//选项卡-3
 	var htmlArr = [],
 		itemArr = [];
 	htmlArr[0] = '<table class="mui-table sj-table"><tr><td><a href="#">2政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td><a href="#">审计局</a></td></tr><tr><td><a href="#">政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td><a href="#">审计局</a></td></tr><tr><td><a href="#">政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td><a href="#">审计局</a></td></tr><tr><td><a href="#">政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td><a href="#">审计局</a></td></tr><tr><td><a href="#">政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td><a href="#">审计局</a></td></tr><tr><td><a href="#">政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td><a href="#">审计局</a></td></tr><tr><td><a href="#">政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td><a href="#">审计局</a></td></tr><tr><td><a href="#">政府办</a></td><td><a href="#">应急办</a></td><td><a href="#">政务中心</a></td><td></td></tr></table>';

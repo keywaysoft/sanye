@@ -1,18 +1,6 @@
-/*扩展*/
-//判断数组中是否包含某个元素
-Array.prototype.contains = function(obj) {
-	var i = this.length;
-	while(i--) {
-		if(this[i] === obj) {
-			return true;
-		}
-	}
-	return false;
-};
-
 /*功能封装库*/
 var base = {
-	//选项卡
+	//拖动选项卡
 	slideFun:function(htmlArr,itemArr,slider){
 		var itemHeight = itemArr[0].offsetHeight,
 			len = itemArr.length;
@@ -29,12 +17,26 @@ var base = {
 			}
 		});
 	},
-	muiSlideFun:function(target){
+	//点击选项卡
+	muiSlideFun: function(target){
 		mui(target).on("tap","span:not(.active)",function(){
-			$(this).addClass("active").siblings().removeClass("active");
+			var _that = document.querySelector(this.getAttribute("data-target"));
+			//本身
+			base.tabFun(this);
 			//切换
-			$($(this).data("target")).addClass("active").siblings().removeClass("active");
-		})
+			base.tabFun(_that);
+		});
+	},
+	tabFun: function(target){
+		var _children = target.parentNode.children,
+			_len = _children.length;
+		for(var i=0;i<_len;i++){
+			if(base.hasClass(_children[i],"active")){
+				base.removeClass(_children[i],"active");
+				continue;
+			}
+		}
+		base.addClass(target,"active");
 	},
 	addClass: function(obj, cls){  
 		var obj_class = obj.className;//获取 class 内容.  

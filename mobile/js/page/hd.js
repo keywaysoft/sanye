@@ -13,4 +13,16 @@ mui.init();
 	itemArr[1] = document.getElementById('item2')
 	base.slideFun(htmlArr,itemArr,'slider');
 	
+	//图片比例调整
+//	var imgs = mui(".img img"),
+//		_len = imgs.length;
+//	for(var i=0;i<_len;i++){
+//		var _l
+//	}
+//	mui(".img").each(function(){
+//		var li_h = $(this).height(),
+//			ul_h = $(this).parent().height();
+//		$(this).closest(".bd").css({"background":"#d8cfbf"}).end().css({"margin-top":(ul_h - li_h)/2});
+//	});
+	
 })(mui);
