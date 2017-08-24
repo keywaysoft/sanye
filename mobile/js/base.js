@@ -1,3 +1,15 @@
+/*扩展*/
+//判断数组中是否包含某个元素
+Array.prototype.contains = function(obj) {
+	var i = this.length;
+	while(i--) {
+		if(this[i] === obj) {
+			return true;
+		}
+	}
+	return false;
+};
+
 /*功能封装库*/
 var base = {
 	//选项卡

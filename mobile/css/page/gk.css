@@ -12,7 +12,7 @@ hr{ margin:20px 0; color:007AFF;}
 .fast-nav li{ position:relative; float:left; width:48%; margin:5px 1% 0; background-color:#f8fafa;}
 .fast-nav li:after{ position:absolute; content:""; left:0; top:0; width:4px; height:100%; background-color:#007AFF;}
 .fast-nav li a{ height:36px; line-height:36px; color:#666; font-size:12px; text-align:center; }
-.fast-nav li a i{ display:inline-block; vertical-align:middle; margin:0 10px; font-size:20px; color:#007AFF;}
+.fast-nav li a i{ display:inline-block; width:20px; vertical-align:middle; margin:0 10px; font-size:20px; color:#007AFF;}
 
 /*搜索*/
 .sj-search{ margin:20px 0; font-size:14px;}
@@ -30,9 +30,9 @@ hr{ margin:20px 0; color:007AFF;}
 
 /*基本信息公开*/
 .jbxx{ margin-bottom:20px;}
-.jbxx li{ float:left; min-width:48%; width:auto; margin:5px 1% 0; }
-.jbxx li a{ font-size:14px; color:#333;}
-.jbxx li a i{ margin-right:10px; font-size:18px; }
+.jbxx li{ position:relative; float:left; min-width:48%; width:auto; margin:5px 1% 0; }
+.jbxx li:before{ position:absolute; content:""; left:0; top:25%; height:50%; width:1px; background-color:#007AFF;}
+.jbxx li a{ margin-left:10px; font-size:14px; color:#333;}
 
 /*选项卡-2*/
 #slider2{ background-color:#fff;}

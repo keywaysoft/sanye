@@ -6,7 +6,7 @@
 .h-title span i{ font-size:18px; margin-right:5px;}
 
 .h-title1{ height:36px; line-height:36px; font-size:16px; font-weight:normal; background-color:#ebebeb;}
-.h-title1 span{ float:left; width:25%; text-align:center; }
+.h-title1 span{ float:left; padding:0 10px; text-align:center; }
 .h-title1 .active{ position:relative; background-color:#3269b9; color:#fff;}
 .h-title1 .active:after{ position:absolute; content:""; left:50%; bottom:-10px; margin-left:-5px; width:0; height:0; border:5px solid transparent; border-top-color:#3269b9;}
 
@@ -39,6 +39,9 @@
 .nav-zdd li a span{ display:table-cell; vertical-align:middle; text-align:center;}
 .nav-zdd li a i{ display:block; margin-bottom:10%; font-size:24px; color:#999;}
 .nav-zdd .more{ float:left; width:100%; line-height:36px; color:#999; text-align:center;}
+
+/*办件统计*/
+.bjtj{ position:relative; width:100%; height:0; padding-bottom:100%;}
 
 /*权责清单等*/
 .add{ margin:10px auto;}
