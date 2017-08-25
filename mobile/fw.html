@@ -535,7 +535,7 @@
 		        <h3 class="h-title"><span class="active"><i class="mui-icon iconfont icon-banjiantongji"></i>办件统计</span></h3>
 		        <div class="bjtj">
 		        	<!--图表-->
-		        	<div class="active" id="echarts_bjtj" style="position:absolute;width: 100%;height:100%;"></div>
+		        	<div class="echart" id="echarts_bjtj"></div>
 		        </div>
 		        <!--end 办件统计-->
 		        
@@ -555,7 +555,9 @@
 		        
 		        
 		        <div class="add">
-		        	<a class="zwdt" href="#"></a>	
+		        	<a class="zwdt img" href="#">
+		        		<img class="lazy" src="images/grey.gif" data-echo="images/fw/fw-zwdt.jpg" />
+		        	</a>	
 		        </div>
 		        
 	        	<!--办件状态查询-->
@@ -576,6 +578,7 @@
 	</div>
 	
 	<script src="js/mui.min.js"></script>
+	<script src="js/echo.min.js"></script>
 	<script src="js/mui.picker.min.js"></script>
 	<script src="js/mui.poppicker.js"></script>
 	<script src="js/echarts.min.js"></script>

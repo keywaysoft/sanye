@@ -68,7 +68,38 @@ var base = {
 	    }else{  
 	        base.addClass(obj, cls);  
 	    }  
-	}  
+	},
+	//图片在容器中实现background-size:cover的背景效果
+	muiImgCenter: function(){
+		var imgs = mui(".img img"),
+			_len = imgs.length;
+		for(var i=0;i<_len;i++){
+			//如果图片还未加载完成
+			if(imgs[i].offsetWidth == 1){
+				imgs[i].onload=function(){
+					calFun(this);
+				}
+			}else{
+				calFun(imgs[i]);
+			}
+		}
+		//计算函数封装
+		function calFun(target){
+			var _w = target.offsetWidth,
+				_h = target.offsetHeight,
+				_wp = target.parentNode.offsetWidth,
+				_hp = target.parentNode.offsetHeight;
+			//计算比例
+			if(_wp/_hp > _w/_h){//如果容器的宽高比较大，则设置图片宽度为容器宽度
+				target.style.width = _wp + "px";
+				//调整图片位置
+				target.style.marginTop = (_hp-_wp/_w*_h)/2 + "px";
+			}else{//否则，则设置图片高度为容器高度
+				target.style.height = _hp + "px";
+				target.style.marginLeft = (_wp - _hp/_h*_w)/2 + "px";
+			}
+		}
+	}
 }
 
 //通用事件处理
@@ -81,6 +112,19 @@ mui('body').on('tap', 'a', function() {
     	url: _url
   	});
 });
+
+//图片懒加载
+Echo.init({
+	offset: 0,
+	throttle: 0
+});	
+
+window.onload = function(){
+	//图片居中
+	if(mui(".img").length>0){
+		base.muiImgCenter();
+	}
+}
 
 
 
